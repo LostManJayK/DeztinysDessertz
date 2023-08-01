@@ -1,0 +1,28 @@
+#contact
+{
+    justify-content: space-between;
+}
+
+.contact_card
+{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.socials
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social_logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}

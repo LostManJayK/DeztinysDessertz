@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="fonts/font.css">
+        <link rel="stylesheet" href="styles/universal_style.css">
+        <link rel="stylesheet" href="layouts/universal_layout.css">
+        
+        <!--navbar sheets-->
+        <link rel="stylesheet" href="styles/header_style.css">
+        <link rel="stylesheet" href="layouts/header_layout.css">
+
+        <link rel="stylesheet" href="styles/catering_style.css">
+        <link rel="stylesheet" href="layouts/catering_layout.css">
+    </head>
+    <body>
+        <!--header bar containing navigation, site logo and cart-->
+        <header>
+            <nav id="navbar">
+                <a class="navbar_item" href="home.html"> <p> Home </p> </a>
+                <a class="navbar_item" href="menu.html"> <p> Menu </p> </a>
+                <a class="navbar_item" href="request.html"> <p> Request </p> </a>
+                <a class="navbar_item" href="catering.html"> <p> Catering </p> </a>
+                <a class="navbar_item" href="profile.html"> <p> Profile </p> </a>
+            </nav>
+            <a id="site_logo" href=""> <img src="images/universal_images/site-logo.png"> </a>
+            <a id="cart" href=""> <img src="icons/universal_icons/cupcart.png"> </a>
+            <img id="dial1" src="icons/universal_icons/dial-myrtle.png">
+            <img id="dial2" src="icons/universal_icons/dial-myrtle.png">
+        </header>
+        <section id="catering" class="page_content">
+            <div class="form_holder">
+                <h1> Plan an Event </h1>
+                <form>
+                    <input id="first_name" type="text" placeholder="First">
+                    <input id="last_name" type="text" placeholder="Last">
+                    <input id="email" type="text" placeholder="Email: example@domain.com">
+                    <input id="phone" type="tel" placeholder="Phone: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <input id="date" type="date">
+                    <input id="time" type="time" placeholder="Event Time">
+                    <input id="duration" type="text" placeholder="Event Duration">
+                    <input id="count" type="text" placeholder="Event Headcount">
+                    <input id="dress" type="text" placeholder="Dress Code">
+                    <input id="event_title" type="text" placeholder="What is your event called?">
+                    <textarea id="description" type="text" placeholder="What's for dessert? (Let us know what you need. Please note any allergies or dietary considerations here, as well as any other information which may be helpful.)"></textarea>
+                    <button id="submit_req" onlcik="submitReq()" type="submit"> Submit </button>
+                </form>
+            </div>
+        </section>
+        
+    </body>
+
+</html>

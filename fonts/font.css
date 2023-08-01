@@ -1,0 +1,57 @@
+@font-face 
+{
+    font-family: 'NavbarItem';
+    src: url('Courgette-Regular.ttf') format('truetype');
+
+}
+
+@font-face
+{
+    font-family: 'PictureNavs';
+    src: url('Lemonada/static/Lemonada-Medium.ttf') format('truetype');
+}
+
+.navbar_item
+{
+    font-family: 'NavbarItem';
+}
+
+#main_home_photo p
+{
+    font-family: 'PictureNavs';
+}
+
+.home_pics p
+{
+    font-family: 'PictureNavs';
+}
+
+.form_holder h1
+{
+    font-family: 'PictureNavs';
+}
+
+.form_holder input, #description
+{
+    font-family: NavbarItem;
+}
+
+.social_logo
+{
+    font-family: 'PictureNavs';
+}
+
+.bio ul li
+{
+    font-family: 'PictureNavs';
+}
+
+.menu_item
+{
+    font-family: 'PictureNavs';
+}
+
+button
+{
+    font-family: 'NavbarItem';
+}

@@ -1,0 +1,81 @@
+#catering
+{
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+#catering .form_holder
+{
+    width: 40%;
+    height: 100vh;
+    background-color: #048a81;
+    padding: 2%;
+    gap: 3%;
+    border-radius: 35px;
+}
+
+.form_holder h1
+{
+    width: 100%;
+    text-align: center;
+    color: #ffddfe;
+    font-size: 22pt;
+}
+
+.form_holder form
+{
+    width: 100%;
+    height: 52%;
+}
+
+.form_holder input
+{
+    width: 47.5%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.form_holder textarea
+{
+    margin-top: 1%;
+}
+
+.form_holder #date, #time, #duration
+{
+    width: 31.2%;
+}
+
+.form_holder #event_title
+{
+    width: 97.5%;
+}
+
+.form_holder form #description
+{
+    height: 80%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 97.8%;
+    resize: none;
+    scrollbar-width: thin; 
+}
+
+button
+{
+    height: 15%;
+    width: 30%;
+    background-color: #048a81;
+    color: #ceffe2;
+    border-radius: 20px;
+    border-color: #ceffe2;
+    font-size: 12pt;
+    transition: background-color 1s, color 1s, border-color 1s;
+    margin-top: 1%;
+}
+
+button:hover
+{
+    background-color: #ceffe2;
+    color: #048a81;
+    border-color: #FFDDFE;
+}

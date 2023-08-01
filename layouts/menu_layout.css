@@ -1,0 +1,34 @@
+.menu_holder ul
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.menu_item
+{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+
+.menu_item div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    gap: 1vh;   
+}
+
+.menu_item_options
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2%;
+}

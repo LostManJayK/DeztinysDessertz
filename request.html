@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="fonts/font.css">
+        <link rel="stylesheet" href="styles/universal_style.css">
+        <link rel="stylesheet" href="layouts/universal_layout.css">
+        
+        <!--navbar sheets-->
+        <link rel="stylesheet" href="styles/header_style.css">
+        <link rel="stylesheet" href="layouts/header_layout.css">
+        <title> Home </title>
+
+        <!-- sheets-->
+        <link rel="stylesheet" href="styles/request_style.css">
+        <link rel="stylesheet" href="layouts/request_layout.css">
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <a class="navbar_item" href="home.html"> <p> Home </p> </a>
+                <a class="navbar_item" href="menu.html"> <p> Menu </p> </a>
+                <a class="navbar_item" href="request.html"> <p> Request </p> </a>
+                <a class="navbar_item" href="catering.html"> <p> Catering </p> </a>
+                <a class="navbar_item" href="profile.html"> <p> Profile </p> </a>
+            </nav>
+            <a id="site_logo" href=""> <img src="images/universal_images/site-logo.png"> </a>
+            <a id="cart" href=""> <img src="icons/universal_icons/cupcart.png"> </a>
+            <img id="dial1" src="icons/universal_icons/dial-myrtle.png">
+            <img id="dial2" src="icons/universal_icons/dial-myrtle.png">
+        </header>
+
+        <section id="request_form" class="page_content">
+            <div class="form_holder">
+                <h1> Some clever or cute way to ask for a new dessert item </h1>
+                <form>
+                    <input id="name" type="text" placeholder="Name or Nickname">
+                    <input id="email" type="text" placeholder="Email: example@domain.com">
+                    <input id="phone" type="text" placeholder="Phone (Optional): 123-456-7890">
+                    <input id="req_title" type="text" placeholder="What is your dessert called?">
+                    <textarea id="description" type="text" placeholder="Describe your dessert."></textarea>
+                </form>
+                <button id="submit_req" onlcik="submitReq()" type="submit"> Submit </button>
+               
+            </div>
+        </section>
+       
+    </body>
+</html>

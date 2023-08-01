@@ -1,0 +1,82 @@
+#main_home_photo
+{
+    width: 70vw;
+    height: 40vh;
+    overflow: hidden;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: #048A81;
+    border-width: 1PX;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 50% 50% 10% #A75097;;
+
+}
+
+#main_home_photo a
+{
+    display: block;
+    width: 23.3333vw;
+    height: auto;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#main_home_photo img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#main_home_photo p
+{
+    color: #048a81;
+    background-color: #ffabfc;
+    /*background-image: linear-gradient(0deg, #db97c9 20%, #f0eee4 20%, #f0eee4 50%, #db97c9 50%, #db97c9 70%, #f0eee4 70%, #f0eee4 100%);*/
+    
+    text-align: center;
+    font-size: 24pt;
+    width: 100%;
+    min-height: 40vh;
+    padding-top: 40%;
+    background-image: url("../images/home_images/bg-sparkle.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+#small_home_photos
+{
+    width: 50%;
+    height: 20vh;
+    gap: 5%;
+    margin-top: 2vh;
+}
+
+.home_pics
+{
+    height: 100%;
+    width: 25%;
+    background-color:#CEFFE2;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3%;
+    text-decoration: none;
+   
+}
+
+.home_pics img
+{
+    height: 60%;
+    width: auto;
+}
+
+.home_pics *
+{
+    text-decoration: none;
+    font-size: 80%;
+}
+
