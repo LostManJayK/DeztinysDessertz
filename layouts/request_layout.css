@@ -1,4 +1,4 @@
-#request_form .form_holder
+#request_form_holder .form_holder
 {
     margin-top: 5%;
     display: flex;
@@ -11,4 +11,5 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }

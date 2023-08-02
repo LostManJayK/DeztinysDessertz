@@ -12,6 +12,7 @@
     padding: 2%;
     gap: 3%;
     border-radius: 35px;
+    box-shadow: -1px 2px 5px rgb(222, 184, 89);
 }
 
 .form_holder h1

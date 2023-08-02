@@ -12,6 +12,7 @@
     padding: 2%;
     gap: 2%;
     background-color: #a75097;
+    box-shadow: -1px 2px 5px darkslategray;
 }
 
 .contact_card .bio

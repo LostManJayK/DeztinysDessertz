@@ -32,19 +32,19 @@
         <section id="catering" class="page_content">
             <div class="form_holder">
                 <h1> Plan an Event </h1>
-                <form>
-                    <input id="first_name" type="text" placeholder="First">
-                    <input id="last_name" type="text" placeholder="Last">
-                    <input id="email" type="text" placeholder="Email: example@domain.com">
-                    <input id="phone" type="tel" placeholder="Phone: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                    <input id="date" type="date">
-                    <input id="time" type="time" placeholder="Event Time">
-                    <input id="duration" type="text" placeholder="Event Duration">
-                    <input id="count" type="text" placeholder="Event Headcount">
-                    <input id="dress" type="text" placeholder="Dress Code">
-                    <input id="event_title" type="text" placeholder="What is your event called?">
-                    <textarea id="description" type="text" placeholder="What's for dessert? (Let us know what you need. Please note any allergies or dietary considerations here, as well as any other information which may be helpful.)"></textarea>
-                    <button id="submit_req" onlcik="submitReq()" type="submit"> Submit </button>
+                <form action="https://formspree.io/f/xjvqgeed" method="POST" id="catering_form">
+                    <input id="first_name" name="First Name" type="text" placeholder="First" form="catering_form" required>
+                    <input id="last_name" name="Last Name" type="text" placeholder="Last" form="catering_form" required>
+                    <input id="email" name="Email" type="text" placeholder="Email: example@domain.com" form="catering_form" required>
+                    <input id="phone" name="Phone" type="tel" placeholder="Phone: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" form="catering_form">
+                    <input id="date" name="Date" type="date"form="catering_form" required>
+                    <input id="time" name="Time" type="time" placeholder="Event Time" form="catering_form" required>
+                    <input id="duration" name="Duration" type="text" placeholder="Event Duration" form="catering_form" required>
+                    <input id="count" name="Headcount" type="text" placeholder="Event Headcount" form="catering_form" required>
+                    <input id="dress" name="Dress Code" type="text" placeholder="Dress Code" form="catering_form">
+                    <input id="event_title" name="Event Title" type="text" placeholder="What is your event called?" form="catering_form" required>
+                    <textarea id="description" name="Details" type="text" placeholder="What's for dessert? (Let us know what you need. Please note any allergies or dietary considerations here, as well as any other information which may be helpful.)" form="catering_form" required></textarea>
+                    <button id="submit_req" type="submit"> Submit </button>
                 </form>
             </div>
         </section>

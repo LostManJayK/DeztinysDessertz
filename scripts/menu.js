@@ -25,7 +25,7 @@ class MenuItem
     //Expand the menu item
     #expand()
     {
-        this.element.style.height = 70 + 'vh';
+        this.element.style.height = 75 + 'vh';
         this.elementContent.style.width = 100 + '%';
         this.isExpanded = true;
         this.element.style.flexWrap = "wrap";

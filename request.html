@@ -29,17 +29,18 @@
             <img id="dial2" src="icons/universal_icons/dial-myrtle.png">
         </header>
 
-        <section id="request_form" class="page_content">
+        <section id="request_form_holder" class="page_content">
             <div class="form_holder">
                 <h1> Some clever or cute way to ask for a new dessert item </h1>
-                <form>
-                    <input id="name" type="text" placeholder="Name or Nickname">
-                    <input id="email" type="text" placeholder="Email: example@domain.com">
-                    <input id="phone" type="text" placeholder="Phone (Optional): 123-456-7890">
-                    <input id="req_title" type="text" placeholder="What is your dessert called?">
-                    <textarea id="description" type="text" placeholder="Describe your dessert."></textarea>
+                <form action="https://formspree.io/f/mknlovvv" method="POST" id="request_form">
+                    <input id="name" name="Requester Name" type="text" placeholder="Name or Nickname" required form="request_form">
+                    <input id="email" name="Requester Email" type="email" placeholder="Email: example@domain.com" required form="request_form">
+                    <input id="phone" name="Requester Phone" type="tel" placeholder="Phone (Optional): 123-456-7890" form="request_form" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <input id="req_title" name="Requested Item" type="text" placeholder="What is your dessert called?" required form="request_form">
+                    <textarea id="description" name="Request Description" placeholder="Describe your dessert." form="request_form"></textarea>
+                    <button id="submit_req" type="submit" name="submit_req"> Submit </button>
                 </form>
-                <button id="submit_req" onlcik="submitReq()" type="submit"> Submit </button>
+                
                
             </div>
         </section>

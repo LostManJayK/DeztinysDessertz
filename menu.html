@@ -36,10 +36,10 @@
                         <img src="images/menu_images/cake1.jpg">
                         <div class="menu_item_content">
                             <h2> Cakes </h2>
-                            <form id="cake_options" class="menu_item_options">
+                            <form id="cake_options" name="cake_options" class="menu_item_options" action="https://formspree.io/f/xgejolzy" method="POST">
                                 <section class="option_holder">
                                     <label class="first_label "for="cake_type">Cake Type</label>
-                                    <select name="cake_type" id="cake_type" required form="menu_item_options">
+                                    <select name="Cake Type" id="cake_type" required form="cake_options">
 
                                         <option value="">-Select-</option>
 
@@ -58,7 +58,7 @@
 
                                 <section class="option_holder">
                                     <label for="cake_flavour">Cake Flavour</label>
-                                    <select name="cake_flavour" id="cake_flavour" form="menu_item_options">
+                                    <select name="Cake Flavour" id="cake_flavour" form="cake_options" required>
                                         <option value="">-Select-</option>
                                         <option value="chocolate">Chocolate</option>
                                         <option value="vanilla">Vanilla</option>
@@ -66,17 +66,17 @@
                                         <option value="angel">Angel Food</option>
                                         <option value="other">Other</option>
                                     </select>
-                                    <input name="cake_flavour" id="other_cake_flavour" type="text" placeholder="Other Flavour" form="menu_item_options">
+                                    <input name="Cake Flavour" id="other_cake_flavour" type="text" placeholder="Other Flavour" form="cake_options">
                                 </section>
                                 
                                 <section class="option_holder">
                                     <label for="cake_has_filling">Would you like filling?</label>
-                                    <input name="cake_has_filling" id="cake_has_filling" type="checkbox" form="menu_item_options">
+                                    <input name="Wants Filling" id="cake_has_filling" type="checkbox" form="cake_options">
                                 </section>
                                 
                                 <section class="option_holder">
                                     <label for="cake_filling">Filling Flavour</label>
-                                    <select name="cake_filling" id="cake_filling" form="menu_item_options">
+                                    <select name="Cake Filling" id="cake_filling" form="cake_options">
                                         <option value="">-Select-</option>
                                         <option value="ganache">Ganache</option>
                                         <option value="strawberry">Strawberry</option>
@@ -84,15 +84,17 @@
                                         <option value="mashmallow">Mashmallow</option>
                                         <option value="other">Other</option>
                                     </select>
-                                    <input name="cake_flavour" id="other_cake_flavour" type="text" placeholder="Other Flavour" form="menu_item_options">
+                                    <input name="Cake Filling" id="other_cake_filling" type="text" placeholder="Other Filling" form="cake_options" required>
                                 </section>
 
                                 <section class="option_holder">
                                     <label for="num_tiers">Number of Tiers</label>
-                                    <input name="num_tiers" id="num_tiers" type="number" min="2" max="4" placeholder="2-4" form="menu_item_options">
+                                    <input name="Number of Tiers" id="num_tiers" type="number" min="2" max="4" placeholder="2-4" form="cake_options">
                                     <label for="num_layers">Layers per Tier</label>
-                                    <input name="num_layers" id="num_layers" type="number" min="1" max="3" placeholder="1-3" form="menu_item_options">
+                                    <input name="Layers per TIer" id="num_layers" type="number" min="1" max="3" placeholder="1-3" form="cake_options">
                                 </section>
+
+                                <button id="cake_submit" type="submit" class="menu_submit" form="cake_options"> Submit Order </button>
 
                             </form>
                         </div> 
@@ -101,10 +103,10 @@
                         <img src="images/menu_images/cupcakes.jpg">
                         <div class="menu_item_content">
                             <h2> Cupcakes </h2>
-                            <form id="cupcake_options" class="menu_item_options">
+                            <form id="cupcake_options" name="cupcake_options" class="menu_item_options" action="https://formspree.io/f/xgejolzy" method="POST">
                                 <section class="option_holder">
                                     <label for="cupcake_flavour">Cake Flavour</label>
-                                    <select name="cupcake_flavour" id="cupcake_flavour" form="menu_item_options">
+                                    <select name="Cupcake Flavour" id="cupcake_flavour" form="menu_item_options">
                                         <option value="">-Select-</option>
                                         <option value="chocolate">Chocolate</option>
                                         <option value="vanilla">Vanilla</option>
@@ -112,17 +114,17 @@
                                         <option vlaue="cheesecake">Cheesecake</option>
                                         <option value="other">Other</option>
                                     </select>
-                                    <input name="cupcake_flavour" id="other_cupcake_flavour" type="text" placeholder="Other Flavour" form="menu_item_options">
+                                    <input name="Cupcake Flavour" id="other_cupcake_flavour" type="text" placeholder="Other Flavour" form="menu_item_options">
                                 </section>
                                 
                                 <section class="option_holder">
                                     <label for="cupcake_has_filling">Would you like filling?</label>
-                                    <input name="cupcake_has_filling" id="cupcake_has_filling" type="checkbox" form="menu_item_options">
+                                    <input name="Wants Filling" id="cupcake_has_filling" type="checkbox" form="menu_item_options">
                                 </section>
                                 
                                 <section class="option_holder">
                                     <label for="cupcake_filling">Filling Flavour</label>
-                                    <select name="cupcake_filling" id="cupcake_filling" form="menu_item_options">
+                                    <select name="Cupcake Filling" id="cupcake_filling" form="menu_item_options">
                                         <option value="">-Select-</option>
                                         <option value="ganache">Ganache</option>
                                         <option value="strawberry">Strawberry</option>
@@ -130,11 +132,11 @@
                                         <option value="mashmallow">Mashmallow</option>
                                         <option value="other">Other</option>
                                     </select>
-                                    <input name="cupcake_flavour" id="other_cupcake_flavour" type="text" placeholder="Other Flavour" form="menu_item_options">
+                                    <input name="Cupcake Filling" id="other_cupcake_flavour" type="text" placeholder="Other Flavour" form="menu_item_options">
                                 </section>
                                 <section class="option_holder">
                                     <label for="num_cupcakes">Quantity</label>
-                                    <select name="num_cupcakes" id="num_cupcakes" form="menu_item_options">
+                                    <select name="Cupcake Quantity" id="num_cupcakes" form="menu_item_options">
                                         <option value="">-Select-</option>
                                         <option value="4">4</option>
                                         <option value="6">6</option>
@@ -142,6 +144,9 @@
                                         <option value="12">12</option>
                                     </select>
                                 </section>
+
+                                <button id="cupcake_submit" type="submit" class="menu_submit"> Submit Order </button>
+
                             </form>
                         </div>
                     </li>
@@ -149,10 +154,10 @@
                         <img src="images/menu_images/berries.jpg">
                         <div class="menu_item_content">
                             <h2> Decorated Snacks </h2>
-                            <form id="snack_options" class="menu_item_options">
+                            <form id="snack_options" name="snack_options" class="menu_item_options" action="https://formspree.io/f/xgejolzy" method="POST">
                                 <section class="option_holder">
                                     <label for="snack_type">Snack Type</label>
-                                    <select name="snack_type" id="snack_type" form="menu_item_options">
+                                    <select name="Snack Type" id="snack_type" form="snack_options" required>
                                         <option value="">-Select-</option>
                                         <optgroup label="Fruits">
                                             <option value="strawberry">Strawberries</option>
@@ -169,12 +174,12 @@
                                         </optgroup>
                                         <option value="other">Other</option>
                                     </select>
-                                    <input name="snack_type" id="other_snack_type" type="text" placeholder="Other Snack Type" form="menu_item_options">
+                                    <input name="Snack Type" id="other_snack_type" type="text" placeholder="Other Snack Type" form="snack_options">
                                 </section>
                                 
                                 <section class="option_holder">
                                     <label for="coating">Coating Type</label>
-                                    <select name="coating" id="snack_coating" form="menu_item_options">
+                                    <select name="Snack Coating" id="snack_coating" form="snack_options">
                                         <option value="">-Select-</option>
                                         <option value="dark_chocolate">Dark Chocolate</option>
                                         <option value="milk_chocolate">Milk Chocolate</option>
@@ -186,7 +191,7 @@
                                 </section>
                                 <section class="option_holder">
                                     <label for="num_snacks">Quantity</label>
-                                    <select name="num_snacks" id="num_snacks" form="menu_item_options">
+                                    <select name="Snack Quantity" id="num_snacks" form="snack_options" required>
                                         <option value="">-Select-</option>
                                         <option value="5">5</option>
                                         <option value="10">10</option>
@@ -196,8 +201,11 @@
                                 </section>
                                 <section class="option_holder">
                                     <label for="snack_colour">Colour (Separate Colors with a comma)</label>
-                                    <input name="snack_colour" id="snack_colour" form="menu_item_options">
+                                    <input name="Snack Colour" id="snack_colour" form="snack_options">
                                 </section>
+
+                                <button id="cupcake_submit" type="submit" class="menu_submit"> Submit Order </button>
+
                             </form>
                         </div>
                         
@@ -207,11 +215,9 @@
                         <div class="menu_item_content">
                             <h2> Macaroons </h2>
                             <ul class="menu_item_options">
-                                <a href=""><li>Baked Cheesecakes</li></a>
-                                <a><li>No-Bake Cheesecakes</li></a>
-                                <a><li>Tiered Cakes</li></a>
-                                <a><li>Sheet Cakes</li></a>
-                                <a><li>Layered Cakes</li></a>
+                                <a><li>Cookies</li></a>
+                                <a><li>Macaroons</li></a>
+                                <a><li>Hot Chocolates</li></a>
                             </ul>
                         </div>
                     </li>

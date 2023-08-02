@@ -11,6 +11,8 @@
     padding: 1vh;
 }
 
+
+
 .menu_holder > ul
 {
     list-style: none;
@@ -64,6 +66,26 @@
     height: auto;
     visibility: hidden;
     color: #ffddfe;
+}
+
+.menu_submit
+{
+    height: 20%;
+    width: 30%;
+    background-color: #048a81;
+    color: #ceffe2;
+    border-radius: 20px;
+    border-color: #ceffe2;
+    font-size: 12pt;
+    transition: background-color 1s, color 1s, border-color 1s;
+    margin-top: 1%;
+}
+
+.menu_submit:hover
+{
+    background-color: #ceffe2;
+    color: #048a81;
+    border-color: #FFDDFE;
 }
 
 /*Cake Styling*/
