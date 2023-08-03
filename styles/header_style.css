@@ -48,32 +48,7 @@ header > img
     margin: auto;
 }
 
-@media screen and (max-width: 1000px)
-{
 
-    .navbar_item
-    {
-        width: 3vw;
-    }
-
-    #navbar
-    {
-        width: 20vw;
-    }
-
-    .navbar_item p
-    {
-        visibility: hidden;
-        width: fit-content;
-    }
-
-    .navbar_item img
-    {
-        width: 100%;
-        height: auto;
-        margin-top: 3vh;
-    };
-}
 
 .navbar_item:hover
 {
@@ -114,4 +89,36 @@ header > img
     height: 100%;
     width: auto;
 
+}
+
+@media screen and (max-width: 900px)
+{
+
+    .navbar_item
+    {
+        width: 3vw;
+    }
+
+    #navbar
+    {
+        width: 20vw;
+    }
+
+    .navbar_item p
+    {
+        visibility: hidden;
+        width: fit-content;
+    }
+
+    .navbar_item img
+    {
+        width: 100%;
+        height: auto;
+        margin-top: 3vh;
+    }
+
+    #dial1, #dial2
+    {
+        display: none;
+    }
 }
