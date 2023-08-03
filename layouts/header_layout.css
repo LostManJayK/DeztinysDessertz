@@ -36,6 +36,9 @@ header > #dial2
 {
     position: absolute;
     right: 2vw;
-    
 }
 
+.navbar_item
+{
+    text-align: center;
+}
