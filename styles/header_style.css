@@ -121,4 +121,10 @@ header > img
     {
         display: none;
     }
+
+    #site_logo
+    {
+        height: 80%;
+        width: auto;
+    }
 }

@@ -2,7 +2,11 @@
 const orderButton = document.getElementById("main_home_photo");
 
 //Set the default value for the text width to 0
-orderButton.querySelector("#order_text").style.width = 0;
+if(window.innerWidth > 900)
+{
+    orderButton.querySelector("#order_text").style.width = 0;
+}
+
 
 //Store the original width of the container and shrink the container to 2/3 size
 const startWidth = orderButton.offsetWidth;
@@ -31,44 +35,49 @@ orderButton.onmouseleave = function()
 //Expand the button on hover
 function orderHover(el, el_width)
 {
-
-    clearInterval(contractTimer);
-
-    if(el.offsetWidth < el_width)
+    if(window.innerWidth > 900)
     {
-        el.style.width = (el.offsetWidth+2) + 'px';
+        clearInterval(contractTimer);
+
+        if(el.offsetWidth < el_width)
+        {
+            el.style.width = (el.offsetWidth+2) + 'px';
+        }
+    
+        if(el.querySelector("#order_text").offsetWidth < el_width/3)
+        {
+            el.querySelector("#order_text").style.width = (el.querySelector("#order_text").offsetWidth+3) + 'px';
+        }
+    
+        if(el.offsetWidth == el_width && el.querySelector("#order_text").offsetWidth == el_width/3)
+        {
+            clearInterval(expandTimer);
+        }
     }
 
-    if(el.querySelector("#order_text").offsetWidth < el_width/3)
-    {
-        el.querySelector("#order_text").style.width = (el.querySelector("#order_text").offsetWidth+3) + 'px';
-    }
-
-    if(el.offsetWidth == el_width && el.querySelector("#order_text").offsetWidth == el_width/3)
-    {
-        clearInterval(expandTimer);
-    }
 
 }
 
 //Collapse the button on exit
 function orderUnhover(el, el_width)
 {
-
-    clearInterval(expandTimer);
-
-    if(el.offsetWidth > el_width * (2/3))
+    if(window.innerWidth > 900)
     {
-        el.style.width = (el.offsetWidth-5) + 'px';
-    }
+        clearInterval(expandTimer);
 
-    if(el.querySelector("#order_text").offsetWidth > 0)
-    {
-        el.querySelector("#order_text").style.width = (el.querySelector("#order_text").offsetWidth-3) + 'px';
-    }
-    if(el.offsetWidth == el_width * (2/3) && el.querySelector("#order_text").offsetWidth == 0)
-    {
-        clearInterval(contractTimer);
+        if(el.offsetWidth > el_width * (2/3))
+        {
+            el.style.width = (el.offsetWidth-5) + 'px';
+        }
+    
+        if(el.querySelector("#order_text").offsetWidth > 0)
+        {
+            el.querySelector("#order_text").style.width = (el.querySelector("#order_text").offsetWidth-3) + 'px';
+        }
+        if(el.offsetWidth == el_width * (2/3) && el.querySelector("#order_text").offsetWidth == 0)
+        {
+            clearInterval(contractTimer);
+        }
     }
 }
 
