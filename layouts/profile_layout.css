@@ -1,6 +1,7 @@
 #contact
 {
     justify-content: space-between;
+    gap: 2vh;
 }
 
 .contact_card
