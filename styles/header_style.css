@@ -1,5 +1,3 @@
-
-
 header
 {
     background-color: #A75097;
@@ -23,9 +21,10 @@ header > img
 #navbar
 {
     gap: 10%;
-    width: 30%;
+    width: 20%;
     position: absolute;
     left: 1vw;
+    height: 80%;
 }
 
 #navbar > .navbar_item
@@ -38,8 +37,19 @@ header > img
     border-radius: 3px;
     border-color: #cecece29;
     transition: all 1000ms;
-
+    height: 70%;
 }
+
+.navbar_item img
+{
+    width: 2vw;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+
 .navbar_item:hover
 {
     background-color: #ffddfe;
@@ -81,5 +91,40 @@ header > img
 
 }
 
+@media screen and (max-width: 900px)
+{
 
+    .navbar_item
+    {
+        width: 3vw;
+    }
 
+    #navbar
+    {
+        width: 20vw;
+    }
+
+    .navbar_item p
+    {
+        visibility: hidden;
+        width: fit-content;
+    }
+
+    .navbar_item img
+    {
+        width: 100%;
+        height: auto;
+        margin-top: 3vh;
+    }
+
+    #dial1, #dial2
+    {
+        display: none;
+    }
+
+    #site_logo
+    {
+        height: 80%;
+        width: auto;
+    }
+}

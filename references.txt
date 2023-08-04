@@ -1,1 +1,11 @@
 sparkle-pic: <a href="https://www.freepik.com/free-vector/pink-blue-pastel-shimmery-dreamy-pattern-wallpaper_16338087.htm#query=sparkle%20wallpaper&position=0&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik
+
+bakery-home-icon: <a target="_blank" href="https://icons8.com/icon/sH8W3lDAzq73/bakery">Bakery</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+bakery-menu-icon: <a target="_blank" href="https://icons8.com/icon/52999/restaurant-menu">Restaurant Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+bakery-request-icon: <a target="_blank" href="https://icons8.com/icon/48277/ask-question">Request</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+bakery-catering-icon: <a target="_blank" href="https://icons8.com/icon/110384/food-truck">Catering</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+bakery-profile-icon: <a target="_blank" href="https://icons8.com/icon/STnMtJBENvFn/baker">Baker</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
