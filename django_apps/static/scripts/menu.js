@@ -2,6 +2,24 @@
 const itemsArr = document.getElementsByClassName("menu_item");
 const numItems = itemsArr.length;
 
+
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+
+
 //Create a custom class for menu items which inlcudes their expand and contract methods as well as other relevant properties
 class MenuItem
 {
@@ -18,7 +36,11 @@ class MenuItem
         this.elementContent = element.querySelector('.menu_item_content');//The header text in each menu item
         this.elementOptions = this.elementContent.querySelector('.menu_item_options');
         this.isExpanded = false; //Tracks whether the item is expanded or contracted
-        this.name = this.elementContent.innerHTML; //Name of menu item
+        this.name = this.elementContent.querySelector('h2').innerHTML; //Name of menu item
+
+        this.order_specs = element.querySelectorAll('.order_spec'); //List of elements containing user input
+        this.add_cart_btn = element.querySelector('.menu_submit'); //Menu item add to cart button
+        console.log(this.name);
     }
 
     
@@ -69,6 +91,42 @@ class MenuItem
     {
         console.log("Item Selected!");
     }
+
+    addToCart()
+    {
+
+        let itemObject = {"Name" : this.name};
+
+        //Add order information into an object
+        this.order_specs.forEach(spec =>
+        {
+            itemObject[spec.id] = spec.value;
+        });
+
+        console.log(itemObject);
+
+        // fetch('/add_to_cart/', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'X-CSRFToken': getCookie('csrftoken')
+        //     },
+        //     body: JSON.stringify(itemObject),
+        // })
+        // .then(response => {
+        //     if (!response.ok) {
+        //         throw new Error('Network response was not ok');
+        //     }
+        //     return response.json();
+        // })
+        // .then(data => {
+        //     console.log('Order submitted successfully:', data);
+        //     // Optionally, you can perform additional actions after the order is submitted
+        // })
+        // .catch(error => {
+        //     console.error('Error submitting order:', error);
+        // }); 
+    }
     
 }
 
@@ -88,9 +146,5 @@ for(let i=0; i<numItems; i++)
     items[i].elementContent.style.cursor = 'pointer';
     items[i].elementContent.onclick = function(){items[i].headerClick();};
     items[i].elementImg.onclick = function(){items[i].imgClick();};
+    items[i].add_cart_btn.onclick = function(){items[i].addToCart();};
 }
-
-//Define behaviour for cake options
-let cakeTypeOptions = document.getElementById('cake_type').querySelector('option');
-cakeTypeOptions.onselect = function(){console.log('Hello!')};
-console.log(cakeTypeOptions);
