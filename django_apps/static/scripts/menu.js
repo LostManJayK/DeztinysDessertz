@@ -40,7 +40,7 @@ class MenuItem
 
         this.order_specs = element.querySelectorAll('.order_spec'); //List of elements containing user input
         this.add_cart_btn = element.querySelector('.menu_submit'); //Menu item add to cart button
-        console.log(this.name);
+        console.log(this.add_cart_btn);
     }
 
     
@@ -105,27 +105,27 @@ class MenuItem
 
         console.log(itemObject);
 
-        // fetch('/add_to_cart/', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //         'X-CSRFToken': getCookie('csrftoken')
-        //     },
-        //     body: JSON.stringify(itemObject),
-        // })
-        // .then(response => {
-        //     if (!response.ok) {
-        //         throw new Error('Network response was not ok');
-        //     }
-        //     return response.json();
-        // })
-        // .then(data => {
-        //     console.log('Order submitted successfully:', data);
-        //     // Optionally, you can perform additional actions after the order is submitted
-        // })
-        // .catch(error => {
-        //     console.error('Error submitting order:', error);
-        // }); 
+        fetch('/add_to_cart/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCookie('csrftoken')
+            },
+            body: JSON.stringify(itemObject),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Order submitted successfully:', data);
+            // Optionally, you can perform additional actions after the order is submitted
+        })
+        .catch(error => {
+            console.error('Error submitting order:', error);
+        }); 
     }
     
 }
@@ -146,5 +146,7 @@ for(let i=0; i<numItems; i++)
     items[i].elementContent.style.cursor = 'pointer';
     items[i].elementContent.onclick = function(){items[i].headerClick();};
     items[i].elementImg.onclick = function(){items[i].imgClick();};
-    items[i].add_cart_btn.onclick = function(){items[i].addToCart();};
+    items[i].add_cart_btn.onclick = function(event){
+        event.preventDefault();
+        items[i].addToCart();};
 }

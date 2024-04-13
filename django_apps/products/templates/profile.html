@@ -1,103 +1,64 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="fonts/font.css">
-        <link rel="stylesheet" href="styles/universal_style.css">
-        <link rel="stylesheet" href="layouts/universal_layout.css">
-        
-        <!--navbar sheets-->
-        <link rel="stylesheet" href="styles/header_style.css">
-        <link rel="stylesheet" href="layouts/header_layout.css">
+{% extends 'header.html' %}
+{% load static %}
 
-        <link rel="stylesheet" href="styles/profile_style.css">
-        <link rel="stylesheet" href="layouts/profile_layout.css">
-    </head>
-    <body>
-        <!--header bar containing navigation, site logo and cart-->
-        <header>
-            <nav id="navbar">
-                <a class="navbar_item" href="index.html">
-                    <img src="icons/universal_icons/bakery-home.png"> 
-                    <p> Home </p>               
-                </a>
-                <a class="navbar_item" href="menu.html"> 
-                    <img src="icons/universal_icons/bakery-menu.png">
-                    <p> Menu </p>
-                </a>
-                <a class="navbar_item" href="requests.html"> 
-                    <img src="icons/universal_icons/bakery-request.png">
-                    <p> Request </p> 
-                </a>
-                <a class="navbar_item" href="catering.html"> 
-                    <img src="icons/universal_icons/bakery-catering.png">
-                    <p> Catering </p> 
-                </a>
-                <a class="navbar_item" href="profile.html"> 
-                    <img src="icons/universal_icons/bakery-profile.png">
-                    <p> Profile </p> 
-                </a>
-            </nav>
-            <a id="site_logo" href="index.html"> <img src="images/universal_images/site-logo.png"> </a>
-            <a id="cart" href=""> <img src="icons/universal_icons/cupcart.png"> </a>
-            <img id="dial1" src="icons/universal_icons/dial-myrtle.png">
-            <img id="dial2" src="icons/universal_icons/dial-myrtle.png">
-        </header>
-        <section id="contact" class="page_content">
-            <div id="baker" class="contact_card">
-                <div class="bio">
-                    <img src="images/profile_images/dezyroo.png">
-                    <ul>
-                        <li> Destiny Hopkins </li>
-                        <li> 22yo </li>
-                        <li> New Westminster, BC </li>
-                        <li> Baker/Dessert Artist </li>
-                    </ul>
-                </div>
-                <div class="socials">
-                    <a class="social_logo" href="https://www.facebook.com/profile.php?id=100090285048457&mibextid=ZbWKwL"> 
-                        <img src="icons/profile_icons/logo-fb.png"> 
-                        <p> Deztiny's Dessertz </p>
-                    </a>
-                    <a class="social_logo" href="https://www.instagram.com/deztinysdessertz/"> 
-                        <img src="icons/profile_icons/logo-ig.png"> 
-                        <p> @deztinysdessertz </p>
-                    </a>
-                    <a class="social_logo" href="https://www.tiktok.com/@deztinysdessertz?is_from_webapp=1&sender_device=pc"> 
-                        <img src="icons/profile_icons/logo-tiktok.png"> 
-                        <p> @deztinysdessertz </p>
-                    </a>
-                    <a class="social_logo" href="mailto:deztinysdessertz@gmail.com"> 
-                        <img src="icons/profile_icons/logo-gmail.png"> 
-                        <p> deztinysdessertz@gmail.com </p>
-                    </a>
-                </div>
-            </div>
-            <div id="dev" class="contact_card">
-                <div class="bio">
-                    <img src="images/profile_images/me.jpg">
-                    <ul>
-                        <li> Andrew Spence </li>
-                        <li> 24yo </li>
-                        <li> New Westminster, BC </li>
-                        <li> Website Designer/Developer (CSS & Javascript)</li>
-                    </ul>
-                </div>
-                <div class="socials">
-                    <a class="social_logo" href="https://www.github.com/LostManJayK"> 
-                        <img src="icons/profile_icons/logo-github.png"> 
-                        <p> LostManJayK </p>
-                    </a>
-                    <a class="social_logo" href="mailto:andrews2192@gmail.com"> 
-                        <img src="icons/profile_icons/logo-gmail.png"> 
-                        <p> andrews2192@gmail.com </p>
-                    </a>
-                </div>    
-            </div>
+{% block content %}
 
-        </section>
-        
-    </body>
+<link rel="stylesheet" href="{% static 'styles/profile_style.css' %}">
+<link rel="stylesheet" href="{% static 'layouts/profile_layout.css' %}">
 
-</html>
+<section id="contact" class="page_content">
+    <div id="baker" class="contact_card">
+        <div class="bio">
+            <img src="{% static 'images/profile_images/dezyroo.png' %}">
+            <ul>
+                <li> Destiny Hopkins </li>
+                <li> 22yo </li>
+                <li> New Westminster, BC </li>
+                <li> Baker/Dessert Artist </li>
+            </ul>
+        </div>
+        <div class="socials">
+            <a class="social_logo" href="https://www.facebook.com/profile.php?id=100090285048457&mibextid=ZbWKwL"> 
+                <img src="{% static 'icons/profile_icons/logo-fb.png' %}"> 
+                <p> Deztiny's Dessertz </p>
+            </a>
+            <a class="social_logo" href="https://www.instagram.com/deztinysdessertz/"> 
+                <img src="{% static 'icons/profile_icons/logo-ig.png' %}"> 
+                <p> @deztinysdessertz </p>
+            </a>
+            <a class="social_logo" href="https://www.tiktok.com/@deztinysdessertz?is_from_webapp=1&sender_device=pc"> 
+                <img src="{% static 'icons/profile_icons/logo-tiktok.png' %}"> 
+                <p> @deztinysdessertz </p>
+            </a>
+            <a class="social_logo" href="mailto:deztinysdessertz@gmail.com"> 
+                <img src="{% static 'icons/profile_icons/logo-gmail.png' %}"> 
+                <p> deztinysdessertz@gmail.com </p>
+            </a>
+        </div>
+    </div>
+    <div id="dev" class="contact_card">
+        <div class="bio">
+            <img src="{% static 'images/profile_images/me.jpg' %}">
+            <ul>
+                <li> Andrew Spence </li>
+                <li> 25yo </li>
+                <li> New Westminster, BC </li>
+                <li> Website Designer/Developer</li>
+            </ul>
+        </div>
+        <div class="socials">
+            <a class="social_logo" href="https://www.github.com/LostManJayK"> 
+                <img src="{% static 'icons/profile_icons/logo-github.png' %}"> 
+                <p> LostManJayK </p>
+            </a>
+            <a class="social_logo" href="mailto:andrews2192@gmail.com"> 
+                <img src="{% static 'icons/profile_icons/logo-gmail.png' %}"> 
+                <p> andrews2192@gmail.com </p>
+            </a>
+        </div>    
+    </div>
+
+</section>
+
+
+{% endblock %}

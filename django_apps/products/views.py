@@ -25,20 +25,26 @@ def cart(request):
     return render(request, "cart.html")
 
 def add_to_cart(request):
-    
+
     #Create the cart in session storage
-    if 'cart' not in request.session:
-        request.session['cart'] = []
+    cart = request.session.get('cart', [])
 
     if request.method == 'POST':
 
-        request.session['cart'].append(parse_qs(request.body.decode()))
-        print(request.session['cart'])
+        cart.append(request.body.decode())
+        request.session['cart'] = cart
+        request.session.save()
+
+        for item in request.session['cart']:
+            print(f'\n{item}\n')
+
         return JsonResponse({'message': 'Item added to cart successfully'})
 
     else:
 
         return JsonResponse({'error': 'Invalid request method'}, status=400)
+
+
 
 
     

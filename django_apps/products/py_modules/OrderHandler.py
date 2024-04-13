@@ -6,8 +6,8 @@ import getpass
 
 class OrderHandler:
 
-    def __init__(self):
-        pass
+    def __init__(self, order):
+        self.order = order
 
     #Format the JSON string for the email
     def format_json(self):
