@@ -77,14 +77,14 @@ header > img
     width: auto;
 }
 
-#cart
+#cart_link
 {
     width: fit-content;
     height: 40%;
 }
 
 
-#cart > img
+#cart_link > img
 {
     height: 100%;
     width: auto;

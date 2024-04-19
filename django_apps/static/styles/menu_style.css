@@ -70,7 +70,7 @@
 
 .menu_submit
 {
-    height: 20%;
+    height: 30px;
     width: 30%;
     background-color: #048a81;
     color: #ceffe2;
@@ -93,6 +93,11 @@
 #cake_has_filling
 {
     width: auto;
+}
+
+#cake_size
+{
+    width: 5%;
 }
 
 #num_tiers

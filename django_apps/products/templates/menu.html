@@ -17,16 +17,13 @@
                         {% csrf_token %}
                         <section class="option_holder">
                             <label class="first_label "for="cake_type">Cake Type</label>
-                            <select name="Cake Type" id="cake_type" class="order_spec" form="cake_options">
-
+                            <select name="Cake Type" id="cake_type" class="order_spec" form="cake_options" required>
                                 <option value="">-Select-</option>
-
                                 <optgroup label="Cakes">
                                     <option value="tiered">Tiered</option>
                                     <option value="layered">Layered</option>
                                     <option value="sheet">Sheet</option>
                                 </optgroup>
-
                                 <optgroup label="Cheesecakes">
                                     <option value="bake_cc">Baked</option>
                                     <option value="nobake_cc">No-Bake</option>
@@ -44,32 +41,45 @@
                                 <option value="angel">Angel Food</option>
                                 <option value="other">Other</option>
                             </select>
-                            <input name="Cake Flavour" id="other_cake_flavour" type="text" placeholder="Other Flavour" form="cake_options">
-                        </section>
-                        
-                        <section class="option_holder">
-                            <label for="cake_has_filling">Would you like filling?</label>
-                            <input name="Wants Filling" id="cake_has_filling" class="order_spec" type="checkbox" form="cake_options">
+                            <input name="Cake Flavour" id="other_cake_flavour" class="order_spec" type="text" placeholder="Other Flavour" form="cake_options">
                         </section>
                         
                         <section class="option_holder">
                             <label for="cake_filling">Filling Flavour</label>
-                            <select name="Cake Filling" id="cake_filling" class="order_spec" form="cake_options">
-                                <option value="">-Select-</option>
+                            <select name="Cake Filling" id="cake_filling" class="order_spec" form="cake_options" required>
+                                <option value="none">None</option>
                                 <option value="ganache">Ganache</option>
                                 <option value="strawberry">Strawberry</option>
                                 <option value="boston_cream">Boston Cream</option>
                                 <option value="mashmallow">Mashmallow</option>
                                 <option value="other">Other</option>
                             </select>
-                            <input name="Cake Filling" id="other_cake_filling" class="order_spec" type="text" placeholder="Other Filling" form="cake_options" required>
+                            <input name="Cake Filling" id="other_cake_filling" class="order_spec" type="text" placeholder="Other Filling" form="cake_options">
                         </section>
 
                         <section class="option_holder">
                             <label for="num_tiers">Number of Tiers</label>
                             <input name="Number of Tiers" id="num_tiers" class="order_spec" type="number" min="2" max="4" placeholder="2-4" form="cake_options">
-                            <label for="num_layers">Layers per Tier</label>
+                            <label for="num_layers">Layers</label>
                             <input name="Layers per TIer" id="num_layers" class="order_spec" type="number" min="1" max="3" placeholder="1-3" form="cake_options">
+                            <label for="cake_size">Size (Inches)</label>
+                            <select name="Cake Size" id="cake_size" class="order_spec" form="cake_options">
+                                <option value='4'>4"</option>
+                                <option value='6'>6"</option>
+                                <option value='8'>8"</option>
+                                <option value='10'>10"</option>
+                                <option value='12'>12"</option>
+                            </select>
+                        </section>
+                        <section class="option_holder">
+                            <label for="cake_shape">Shape</label>
+                            <select name="Cake Shape" id="cake_shape" class="order_spec" form="cake_options">
+                                <option value="circle">Circle</option>
+                                <option value="heart">Heart</option>
+                                <option value="square">Square</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <input name="Other Cake Shape" id="other_cake_shape" type="text" placeholder="Other Shape" form="cake_options">
                         </section>
 
                         <button id="cake_submit" class="menu_submit"> Add to Cart </button>
@@ -86,7 +96,6 @@
                         <section class="option_holder">
                             <label for="cupcake_flavour">Cake Flavour</label>
                             <select name="Cupcake Flavour" id="cupcake_flavour" class="order_spec" form="menu_item_options">
-                                <option value="">-Select-</option>
                                 <option value="chocolate">Chocolate</option>
                                 <option value="vanilla">Vanilla</option>
                                 <option value="velvet">Red Velvet</option>
@@ -97,14 +106,9 @@
                         </section>
                         
                         <section class="option_holder">
-                            <label for="cupcake_has_filling">Would you like filling?</label>
-                            <input name="Wants Filling" id="cupcake_has_filling"  class="order_spec" type="checkbox" form="menu_item_options">
-                        </section>
-                        
-                        <section class="option_holder">
                             <label for="cupcake_filling">Filling Flavour</label>
                             <select name="Cupcake Filling" id="cupcake_filling"  class="order_spec" form="menu_item_options">
-                                <option value="">-Select-</option>
+                                <option value="none">None</option>
                                 <option value="ganache">Ganache</option>
                                 <option value="strawberry">Strawberry</option>
                                 <option value="creamcheese">Cream Cheese</option>

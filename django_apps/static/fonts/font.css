@@ -55,3 +55,14 @@ button
 {
     font-family: 'NavbarItem';
 }
+
+.order_item h2
+{
+    font-family: 'PictureNavs';
+}
+
+.order_item p
+{
+    font-family: 'PictureNavs';
+    font-size: 10pt;
+}

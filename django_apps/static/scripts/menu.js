@@ -2,7 +2,7 @@
 const itemsArr = document.getElementsByClassName("menu_item");
 const numItems = itemsArr.length;
 
-
+//Get the appropriate cookie id
 function getCookie(name) {
     var cookieValue = null;
     if (document.cookie && document.cookie !== '') {
@@ -40,14 +40,14 @@ class MenuItem
 
         this.order_specs = element.querySelectorAll('.order_spec'); //List of elements containing user input
         this.add_cart_btn = element.querySelector('.menu_submit'); //Menu item add to cart button
-        console.log(this.add_cart_btn);
     }
 
     
     //Expand the menu item
     #expand()
     {
-        this.element.style.height = 75 + 'vh';
+        //this.element.style.height = 75 + 'vh';
+        this.element.style.height = (this.element.scrollHeight+100) + 'px';
         this.elementContent.style.width = 100 + '%';
         this.isExpanded = true;
         this.element.style.flexWrap = "wrap";
@@ -66,7 +66,7 @@ class MenuItem
         this.elementContent.style.cursor = "pointer";
     }
 
-    //When clicked, if the element is expanded, collapse it and vice versa
+    //When clicked, if the element is expanded, collapse it and vice versa. If the menu area is clicked while expanded, ignore
     headerClick()
     {
         if(!this.isExpanded)
@@ -92,40 +92,72 @@ class MenuItem
         console.log("Item Selected!");
     }
 
+
+    //Add specified item to the cart
     addToCart()
     {
 
         let itemObject = {"Name" : this.name};
+        let requiredFilled = true;
+        let otherOption = false;
 
         //Add order information into an object
         this.order_specs.forEach(spec =>
         {
-            itemObject[spec.id] = spec.value;
+
+            if(spec.value == 'other')
+            {
+                otherOption = true;
+            }
+            else if((spec.hasAttribute('required') || otherOption) && !spec.value.trim())
+            {
+                requiredFilled = false;
+                spec.style.borderColor = 'red';
+                otherOption = false;
+                return;
+            }
+            else
+            {
+                spec.style.borderColor = '';
+            }
+
         });
 
-        console.log(itemObject);
 
-        fetch('/add_to_cart/', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': getCookie('csrftoken')
-            },
-            body: JSON.stringify(itemObject),
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log('Order submitted successfully:', data);
-            // Optionally, you can perform additional actions after the order is submitted
-        })
-        .catch(error => {
-            console.error('Error submitting order:', error);
-        }); 
+        if(requiredFilled)
+        {
+            this.order_specs.forEach(spec =>
+            {
+                if(!(spec.id == 'num_tiers' && itemObject['cake_type'] != 'tiered'))
+                {
+                    itemObject[spec.id] = spec.value;
+                }
+                
+            })
+        
+
+            fetch('/add_to_cart/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify(itemObject),
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Order submitted successfully:', data);
+                // Optionally, you can perform additional actions after the order is submitted
+            })
+            .catch(error => {
+                console.error('Error submitting order:', error);
+            });
+        }
     }
     
 }
