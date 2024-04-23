@@ -23,6 +23,7 @@ def catering(request):
     return render(request, "catering.html")
 
 
+#Cart Functions
 def cart(request):
 
     handler = OrderHandler()
@@ -75,6 +76,25 @@ def remove_from_cart(request):
         return JsonResponse({'error': 'Invalid request method'}, status=400)
 
 
+def submit_order(request):
+
+    handler = OrderHandler()
+
+    cart = request.session['cart']
+
+    if request.method == 'POST':
+
+        customer_info = json.loads(request.body.decode())
+
+        html_str = handler.format_email(cart, customer_info)
+
+        handler.send_order_confirmation(html_str, customer_info['email'])
+
+        return JsonResponse({'message': 'Order Submitted'})
+
+    else:
+
+        return JsonResponse({'error': 'Invalid request method'}, status=400)
 
 
     

@@ -47,7 +47,7 @@ class MenuItem
     #expand()
     {
         //this.element.style.height = 75 + 'vh';
-        this.element.style.height = (this.element.scrollHeight+100) + 'px';
+        this.element.style.height = (this.element.scrollHeight+200) + 'px';
         this.elementContent.style.width = 100 + '%';
         this.isExpanded = true;
         this.element.style.flexWrap = "wrap";

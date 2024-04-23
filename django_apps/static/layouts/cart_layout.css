@@ -23,6 +23,12 @@
     gap: 1%;
 }
 
+.order_item
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .order_item p
 {
     display: inline-block;

@@ -5,25 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Order Confirmation</title>
         <style>
-
         </style>
     </head>
     <body>
         <h1>Order Confirmation</h1>
         <p>Order Number: {order_num}</p>
         <p>Customer Name: {customer_name}</p>
-        <table>
+        <p>Email: {customer_email}</p>
+        <p>Phone: {customer_phone}</p>
+        <p>Date Required: {order_date}</p>
+        <p>Time Required: {order_time}</p>
+        <table style="margin-left: 0; width:40%;">
             <thead>
                 <tr>
-                    <th>Description</th>
-                    <th>Quantity</th>
-                    <th>Unit Price</th>
-                    <th>Total</th>
+                    <th style="text-align:left;font-size:16pt;">Description</th>
+                    <th style="text-align:left;font-size:16pt;">Unit Price</th>
+                    <th style="text-align:left;font-size:16pt;">Total</th>
                 </tr>
             </thead>
-            <tbody>
-                {items_html}
-            </tbody>
+            <tbody>{items_html}</tbody>
         </table>
         <p>Total: ${total}</p>
     </body>

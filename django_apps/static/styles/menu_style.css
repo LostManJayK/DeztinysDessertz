@@ -125,3 +125,17 @@
 {
     width: fit-content;
 }
+
+#cake_notes
+{
+    width: 80%;
+    height: 200px;
+    box-sizing: border-box;
+    display: block;
+}
+
+#cake_note_label
+{
+    width: 100%;
+    display: block;
+}

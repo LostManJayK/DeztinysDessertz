@@ -1,5 +1,6 @@
 import smtplib
 import getpass
+import os
 
 
 
@@ -17,7 +18,7 @@ class OrderHandler:
             'cake_size' : 'Cake Size',
             'cake_shape' : 'Cake Shape',
             'num_tiers' : 'Tiers',
-            'num_layers' : 'Layers per Tier',
+            'num_layers' : 'Layers',
             'cupcake_flavour' : 'Cupcake Flavour',
             'cupcake_filling' : 'Filling',
             'num_cupcakes' : 'Count',
@@ -40,13 +41,64 @@ class OrderHandler:
             'heart' : 'Heart',
             'tiered' : 'Tiered',
             'layered' : 'Layered',
-            'sheet' : 'Sheet'
-            
+            'sheet' : 'Sheet',
+            'cake_notes' : 'Cake Notes'         
         }
 
     #Format the JSON string for the email
-    def format_email(self):
-        pass
+    def format_email(self, cart, customer_info):
+
+        cart_data = cart
+        cart_data = self.replace_keyval(cart_data)
+        
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        tmplt_path = os.path.join(base_dir, 'email_content', 'email.html')
+
+        with open(tmplt_path) as email_template:
+            html_str = email_template.read()
+        email_template.close()
+        
+
+        items_html = ""
+        
+        print(cart_data)
+        for item in cart_data:
+
+            items_html += '<tr style="height:200px">'
+            description = ""
+            order_num = 123456
+
+            items_html += '<td>'
+
+            for detail in item:
+
+                if detail == 'Name':
+                    description += f'<div style="white-space:pre-line; text-align:left; font-weight:bold;">Type: {item[detail][:-1:1]}</div>'
+                else:
+                    description += f'<div style="white-space: pre-line; text-align: left">{detail}: {item[detail]}</div>'
+
+            items_html += description
+            items_html += "</td>"
+
+            items_html += '<td style="text-align:left;">0.00</td>'
+            items_html += '<td style="text-align:left;">0.00</td>'
+
+            items_html += "</tr>"
+
+        html_str = html_str.format(
+        items_html=items_html, 
+        order_num=order_num, 
+        customer_name=customer_info['name'],
+        customer_email=customer_info['email'],
+        customer_phone=customer_info['phone'],
+        order_date=customer_info['date'],
+        order_time=customer_info['time'], 
+        total="0.00")
+
+        
+
+
+        return html_str
 
     def replace_keyval(self, cart):
 
@@ -86,7 +138,7 @@ class OrderHandler:
 
     
     #Send the email containing email details
-    def send_order_confirmation(self):
+    def send_order_confirmation(self, html_str, customer_email):
 
         print("Setting up SMTP")
         
@@ -96,18 +148,23 @@ class OrderHandler:
 
         print(smtp_object.starttls())
         
-        email = input('Email: ')
+        email = 'deztinysdessertz@gmail.com' #input('Email: ')
         password = getpass.getpass('Password: ')
         print(smtp_object.login(email, password))
 
         from_email = email
-        to_email = email
+        to_email = customer_email
         subject = "ORDER #TEST - Confirmation"
-        message = "Order Contents"
+        message = html_str
 
-        msg = f"Subject: {subject}\n{message}"
+        msg = f"Subject: {subject}\n"
+        msg += "Content-Type: text/html\n\n"  # Set content type to HTML
+        msg += html_str
 
         smtp_object.sendmail(from_email, to_email, msg)
+        smtp_object.sendmail(from_email, from_email, msg)
+
+        smtp_object.quit()
 
 
 

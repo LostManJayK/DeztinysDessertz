@@ -75,20 +75,36 @@ button:hover
     border-color: #FFDDFE;
 }
 
+#order_items
+{
+    max-width: 100%;
+}
+
 .order_item
 {
     background-color: #ffffff;
     padding: 1%;
     border-radius: 35px;
     margin-bottom: 5px;
-    width: 30%;
+    min-width: 30%;
+    max-width: 30%;
+
 }
 
 .order_item p
 {
     padding: 5px;
     width: 45%;
-    height: 100px;
+    min-height: 50px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.p_note
+{
+    max-width: 100%;
+    min-width: 100%;
+
 }
 
 .form_holder h1
@@ -117,6 +133,7 @@ button:hover
     width: 70%;
     margin-right: 0;
 }
+
 
 
 
