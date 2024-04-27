@@ -1,11 +1,12 @@
-USE DeztinysDessertz_DB;
+CREATE DATABASE IF NOT EXISTS DeztinysDessertzDB;
+USE DeztinysDessertzDB;
 
 -- Main orders table
-CREATE TABLE Orders
+CREATE TABLE IF NOT EXISTS Orders
 (
 		order_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
         customer_id INT UNSIGNED NOT NULL,
-        name VARCHAR(40) NOT NULL,
+        customer_name VARCHAR(40) NOT NULL,
         contact VARCHAR(50) NOT NULL,
         date_ordered DATETIME NOT NULL,
         date_fulfilled DATETIME,
@@ -15,7 +16,7 @@ CREATE TABLE Orders
 );
 
 -- Item specific order tables
-CREATE TABLE CakeOrders
+CREATE TABLE IF NOT EXISTS CakeOrders
 (
 	order_id INT UNSIGNED NOT NULL, -- Matches one in Orders table. May be repeated if multiple cakes in one order
 	cake_type VARCHAR(20) NOT NULL,
@@ -27,7 +28,7 @@ CREATE TABLE CakeOrders
     notes VARCHAR(300)
 );
 
-CREATE TABLE CupcakeOrders
+CREATE TABLE IF NOT EXISTS CupcakeOrders
 (
 	order_id INT UNSIGNED NOT NULL, -- Matches one in Orders table. May be repeated if multiple cakes in one order
     quantity TINYINT(60) UNSIGNED NOT NULL,
@@ -38,7 +39,7 @@ CREATE TABLE CupcakeOrders
 
 
 -- Payment Table
-CREATE TABLE Payments
+CREATE TABLE IF NOT EXISTS Payments
 (
 	order_id INT UNSIGNED PRIMARY KEY,
     base_price FLOAT(2) UNSIGNED,
@@ -53,36 +54,70 @@ CREATE TABLE Payments
 );
 
 -- Customers Table
-CREATE TABLE Customers
+CREATE TABLE IF NOT EXISTS Customers
 (
 	customer_id INT PRIMARY KEY AUTO_INCREMENT,
-    name  VARCHAR(40) NOT NULL,
+    customer_name  VARCHAR(40) NOT NULL,
     email VARCHAR(50) NOT NULL,
     phone VARCHAR(10),
-    password VARCHAR(16) NOT NULL -- Hashed value
+    user_pass VARCHAR(16) NOT NULL -- Hashed value
 );
 
 -- Main Menu Table
-CREATE TABLE MenuItems
+CREATE TABLE IF NOT EXISTS MenuItems
 (
 	menu_index TINYINT PRIMARY KEY AUTO_INCREMENT,
     item_name VARCHAR(30) NOT NULL
 );
 
--- Cake Options Table
-CREATE TABLE CakeOptions -- Also used for cupcakes
+-- Options Tables
+
+-- Cake Types
+CREATE TABLE IF NOT EXISTS CakeTypes
 (
-	co_index TINYINT PRIMARY KEY AUTO_INCREMENT,
-    cake_types VARCHAR(30),
-    cake_flavours VARCHAR(30),
-    filling_flavours VARCHAR(30)
+	type_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    type_name VARCHAR(30) NOT NULL
 );
 
--- Decorated Snacks Options Table
-CREATE TABLE DecoratedSnackOptions
+-- Cake Flavours
+CREATE TABLE IF NOT EXISTS CakeFlavours
 (
-	ds_index TINYINT PRIMARY KEY AUTO_INCREMENT,
-    snack_types VARCHAR(30),
-    coating_types VARCHAR(30),
-    flavour VARCHAR(30)
+	flavour_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    flavour_name VARCHAR(30) NOT NULL
 );
+
+-- Cake Fillings
+CREATE TABLE IF NOT EXISTS CakeFillings
+(
+	filling_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    filling_name VARCHAR(30) NOT NULL
+);
+
+-- Cupcake Quantities
+CREATE TABLE IF NOT EXISTS CupcakeQuantities
+(
+	quantity_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    quantity TINYINT NOT NULL
+);
+
+-- Dipped Dessert Types
+CREATE TABLE IF NOT EXISTS DippedDessertTypes
+(
+	type_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    type_name VARCHAR(30) NOT NULL
+);
+
+-- Dipped Dessert Coatings
+CREATE TABLE IF NOT EXISTS Coatings
+(
+	coating_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    coating_name VARCHAR(30) NOT NULL
+);
+
+-- Other Desserts
+CREATE TABLE IF NOT EXISTS OtherDessertTypes
+(
+	type_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    type_name VARCHAR(30) NOT NULL
+);
+

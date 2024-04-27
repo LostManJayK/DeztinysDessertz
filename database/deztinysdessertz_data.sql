@@ -1,5 +1,5 @@
 -- Add main menu options
-INSERT INTO MenuItems(item_name)
+INSERT IGNORE INTO MenuItems(item_name)
 VALUES
 	('Cakes'),
     ('Cupcakes'),
@@ -8,7 +8,7 @@ VALUES
 -- BUILD CAKE OPTIONS
 
 -- Add cake types
-INSERT INTO CakeOptions(cake_types)
+INSERT IGNORE INTO CakeOptions(cake_types)
 VALUES
 	('Tiered'),
     ('Layered'),
@@ -17,7 +17,7 @@ VALUES
     ('Cheesecake (No-Bake)');
     
 -- Add cake flavours
-INSERT INTO CakeOptions(cake_flavours)
+INSERT IGNORE INTO CakeOptions(cake_flavours)
 VALUES
 	('Chocolate'),
     ('Vanilla'),
@@ -26,7 +26,7 @@ VALUES
     ('Other');
     
 -- Add filling flavours
-INSERT INTO CakeOptions(filling_flavours)
+INSERT IGNORE INTO CakeOptions(filling_flavours)
 VALUES
 	('Same as buttercream'),
     ('Ganache'),
@@ -36,14 +36,14 @@ VALUES
     ('Cookies & Cream'),
     ('Other');
     
--- BUILD SNACK OPTIONS
+-- BUILD DIPPED DESSERT OPTIONS
 
--- Add snack types
-INSERT INTO DippedDessertzOptions(snack_types)
+-- Add dessert types
+INSERT IGNORE INTO DippedDessertzOptions(dessert_types)
 VALUES
 	('Strawberries'),
     ('Pretzels'),
     ('Dezzy Dotz'),
     ('Cake Pops'),
     ('Marshmallow'),
-    ('Oreos')
+    ('Oreos');
