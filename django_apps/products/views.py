@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .py_modules.OrderHandler import OrderHandler
+from .py_modules.SQLHandler import MySQLHandler
 from urllib.parse import parse_qs
 import json
 
@@ -11,7 +12,14 @@ def index(request):
     return render(request, "index.html")
 
 def menu(request):
-    return render(request, "menu.html")
+
+    handler = MySQLHandler()
+    menu_items = handler.get_data(("MenuItems", ("item_name",)))
+    menu_items = [item[0] for item in menu_items["MenuItems"]]
+
+    print(menu_items)
+
+    return render(request, "menu.html", {"menu_items" : menu_items})
 
 def requests(request):
     return render(request, "requests.html")

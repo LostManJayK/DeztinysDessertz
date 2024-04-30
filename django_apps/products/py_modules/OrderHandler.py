@@ -2,9 +2,7 @@ import smtplib
 import getpass
 import os
 
-
-
-
+#Handles operations relating to the cart and ordering
 class OrderHandler:
 
     def __init__(self):

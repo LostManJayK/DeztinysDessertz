@@ -7,214 +7,23 @@
 <link rel="stylesheet" href="{% static 'layouts/menu_layout.css' %}">
 
 <section id="menu" class="page_content">
-    <div class="menu_holder">
-        <ul>
-            <li class="menu_item">
-                <img src="{% static 'images/menu_images/cake1.jpg' %}">
-                <div class="menu_item_content">
-                    <h2> Cakes </h2>
-                    <form id="cake_options" name="cake_options" class="menu_item_options" action="{% url 'add_to_cart' %}" method="POST"> <!--action="{% url 'add_to_cart' %}" method="POST">--> 
-                        {% csrf_token %}
-                        <section class="option_holder">
-                            <label class="first_label "for="cake_type">Cake Type</label>
-                            <select name="Cake Type" id="cake_type" class="order_spec" form="cake_options" required>
-                                <option value="">-Select-</option>
-                                <optgroup label="Cakes">
-                                    <option value="tiered">Tiered</option>
-                                    <option value="layered">Layered</option>
-                                    <option value="sheet">Sheet</option>
-                                </optgroup>
-                                <optgroup label="Cheesecakes">
-                                    <option value="bake_cc">Baked</option>
-                                    <option value="nobake_cc">No-Bake</option>
-                                </optgroup>                                    
-                            </select>
-                        </section>
+    <div id= menu_holder class="menu_holder">
+        <ul id="menu_list">
 
-                        <section class="option_holder">
-                            <label for="cake_flavour">Cake Flavour</label>
-                            <select name="Cake Flavour" id="cake_flavour" class="order_spec" form="cake_options" required>
-                                <option value="">-Select-</option>
-                                <option value="chocolate">Chocolate</option>
-                                <option value="vanilla">Vanilla</option>
-                                <option value="velvet">Red Velvet</option>
-                                <option value="angel">Angel Food</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <input name="Cake Flavour" id="other_cake_flavour" class="order_spec" type="text" placeholder="Other Flavour" form="cake_options">
-                        </section>
-                        
-                        <section class="option_holder">
-                            <label for="cake_filling">Filling Flavour</label>
-                            <select name="Cake Filling" id="cake_filling" class="order_spec" form="cake_options" required>
-                                <option value="none">None</option>
-                                <option value="ganache">Ganache</option>
-                                <option value="strawberry">Strawberry</option>
-                                <option value="boston_cream">Boston Cream</option>
-                                <option value="mashmallow">Mashmallow</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <input name="Cake Filling" id="other_cake_filling" class="order_spec" type="text" placeholder="Other Filling" form="cake_options">
-                        </section>
-
-                        <section class="option_holder">
-                            <label for="num_tiers">Number of Tiers</label>
-                            <input name="Number of Tiers" id="num_tiers" class="order_spec" type="number" min="2" max="4" placeholder="2-4" form="cake_options">
-                            <label for="num_layers">Layers</label>
-                            <input name="Layers per TIer" id="num_layers" class="order_spec" type="number" min="1" max="3" placeholder="1-3" form="cake_options">
-                            <label for="cake_size">Size (Inches)</label>
-                            <select name="Cake Size" id="cake_size" class="order_spec" form="cake_options">
-                                <option value='4'>4"</option>
-                                <option value='6'>6"</option>
-                                <option value='8'>8"</option>
-                                <option value='10'>10"</option>
-                                <option value='12'>12"</option>
-                            </select>
-                        </section>
-                        <section class="option_holder">
-                            <label for="cake_shape">Shape</label>
-                            <select name="Cake Shape" id="cake_shape" class="order_spec" form="cake_options">
-                                <option value="circle">Circle</option>
-                                <option value="heart">Heart</option>
-                                <option value="square">Square</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <input name="Other Cake Shape" id="other_cake_shape" class="order_spec"type="text" placeholder="Other Shape" form="cake_options">
-                        </section>
-                        <section class="option_holder">
-                            <label id="cake_note_label" for="cake_notes">Notes</label>
-                            <textarea name="Cake Notes" id="cake_notes" class="order_spec" placeholder="Add any specific details about the cake we would need here! (Design, diet restrictions, etc.)"></textarea>
-                        </section>
-                        <button id="cake_submit" class="menu_submit"> Add to Cart </button>
-                        
-
-
-                    </form>
-                </div> 
-            </li>
-            <li class="menu_item">
-                <img src="{% static 'images/menu_images/cupcakes.jpg' %}">
-                <div class="menu_item_content">
-                    <h2> Cupcakes </h2>
-                    <form id="cupcake_options" name="cupcake_options" class="menu_item_options" action="{% url 'add_to_cart' %}" method="POST">  <!--action="{% url 'add_to_cart' %}" method="POST">-->
-                        {% csrf_token %}
-                        <section class="option_holder">
-                            <label for="cupcake_flavour">Cake Flavour</label>
-                            <select name="Cupcake Flavour" id="cupcake_flavour" class="order_spec" form="menu_item_options">
-                                <option value="chocolate">Chocolate</option>
-                                <option value="vanilla">Vanilla</option>
-                                <option value="velvet">Red Velvet</option>
-                                <option vlaue="cheesecake">Cheesecake</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <input name="Cupcake Flavour" id="other_cupcake_flavour"  class="order_spec" type="text" placeholder="Other Flavour" form="menu_item_options">
-                        </section>
-                        
-                        <section class="option_holder">
-                            <label for="cupcake_filling">Filling Flavour</label>
-                            <select name="Cupcake Filling" id="cupcake_filling"  class="order_spec" form="menu_item_options">
-                                <option value="none">None</option>
-                                <option value="ganache">Ganache</option>
-                                <option value="strawberry">Strawberry</option>
-                                <option value="creamcheese">Cream Cheese</option>
-                                <option value="mashmallow">Mashmallow</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <input name="Cupcake Filling" id="other_cupcake_flavour"  class="order_spec" type="text" placeholder="Other Flavour" form="menu_item_options">
-                        </section>
-                        <section class="option_holder">
-                            <label for="num_cupcakes">Quantity</label>
-                            <select name="Cupcake Quantity" id="num_cupcakes" class="order_spec" form="menu_item_options">
-                                <option value="">-Select-</option>
-                                <option value="4">4</option>
-                                <option value="6">6</option>
-                                <option value="8">8</option>
-                                <option value="12">12</option>
-                            </select>
-                        </section>
-
-                        <button id="cupcake_submit" class="menu_submit"> Add to Cart </button>
-                    </form>
-                </div>
-            </li>
-            <li class="menu_item">
-                <img src="{% static 'images/menu_images/berries.jpg' %}">
-                <div class="menu_item_content">
-                    <h2> Decorated Snacks </h2>
-                    <form id="snack_options" name="snack_options" class="menu_item_options" action="{% url 'add_to_cart' %}" method="POST"> <!--action="{% url 'add_to_cart' %}" method="POST">--> 
-                        {% csrf_token %}
-                        <section class="option_holder">
-                            <label for="snack_type">Snack Type</label>
-                            <select name="Snack Type" id="snack_type" class="order_spec" form="snack_options" required>
-                                <option value="">-Select-</option>
-                                <optgroup label="Fruits">
-                                    <option value="strawberry">Strawberries</option>
-                                    <option value="grape">Grapes</option>
-                                    <option value="banana">Bananas</option>
-                                    <option vlaue="apple">Apples</option>
-                                    <option vlaue="mango">Mangoes</option>
-                                </optgroup>
-                                <optgroup label="Snacks">
-                                    <option value="pretzel">Pretzels</option>
-                                    <option value="almond">Almonds</option>
-                                    <option value="peanuts">Peanuts</option>
-                                    <option value="mixed">Mixed Nuts</option>
-                                </optgroup>
-                                <option value="other">Other</option>
-                            </select>
-                            <input name="Snack Type" id="other_snack_type" class="order_spec" type="text" placeholder="Other Snack Type" form="snack_options">
-                        </section>
-                        
-                        <section class="option_holder">
-                            <label for="coating">Coating Type</label>
-                            <select name="Snack Coating" id="snack_coating" class="order_spec" form="snack_options">
-                                <option value="">-Select-</option>
-                                <option value="dark_chocolate">Dark Chocolate</option>
-                                <option value="milk_chocolate">Milk Chocolate</option>
-                                <option value="vanilla_yogurt">Vanilla Yogurt</option>
-                                <option value="strawberry_yogurt">Strawberry Yogurt</option>
-                                <option value="caramel">Caramel</option>
-                                <option value="candy">Candy</option>
-                            </select>
-                        </section>
-                        <section class="option_holder">
-                            <label for="num_snacks">Quantity</label>
-                            <select name="Snack Quantity" id="num_snacks" class="order_spec" form="snack_options" required>
-                                <option value="">-Select-</option>
-                                <option value="5">5</option>
-                                <option value="10">10</option>
-                                <option value="20">20</option>
-                                <option value="40">40</option>
-                            </select>
-                        </section>
-                        <section class="option_holder">
-                            <label for="snack_colour">Colour (Separate Colors with a comma)</label>
-                            <input name="Snack Colour" id="snack_colour" class="order_spec" form="snack_options">
-                        </section>
-
-                        <button id="snack_submit" class="menu_submit"> Add to Cart </button>
-
-                    </form>
-                </div>
-                
-            </li>
-            <!-- <li class="menu_item">
-                <img src="{% static 'images/menu_images/macaroons.jpg' %}">
-                <div class="menu_item_content">
-                    <h2> Macaroons </h2>
-                    <ul class="menu_item_options">
-                        <a><li>Cookies</li></a>
-                        <a><li>Macaroons</li></a>
-                        <a><li>Hot Chocolates</li></a>
-                    </ul>
-                </div>
-            </li> -->
         </ul>
-
     </div>
 
-</section>
 
+</section>
+<script>
+    let menu_items = "{{ menu_items|escapejs }}";
+    let img_urls = {
+        "Cakes" : "{% static 'images/menu_images/cake1.jpg' %}",
+        "Cupcakes" : "{% static 'images/menu_images/cupcakes.jpg' %}",
+        "Dipped Dessertz" : "{% static 'images/menu_images/dippeddessert.jpg' %}",
+        "Other Dessertz" : "{% static 'images/menu_images/otherdessert.jpg' %}"
+    };
+</script>
 <script src="{% static 'scripts/menu.js' %}"></script>
 
 {% endblock %}

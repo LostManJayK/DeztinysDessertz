@@ -1,7 +1,3 @@
-//Check if the cursor has entered a menu item
-const itemsArr = document.getElementsByClassName("menu_item");
-const numItems = itemsArr.length;
-
 //Get the appropriate cookie id
 function getCookie(name) {
     var cookieValue = null;
@@ -17,6 +13,56 @@ function getCookie(name) {
     }
     return cookieValue;
 }
+
+
+//Render the menu item with the appropriate options
+function renderMenu()
+{
+    menu_list = document.getElementById('menu_list');
+
+    menu_items = menu_items.replaceAll("'", '"');
+
+    try 
+    {
+        menu_items = JSON.parse(menu_items);
+    }
+    catch (error) 
+    {
+        console.error("Error parsing JSON:", error);
+    }
+
+    menu_items.forEach(item => 
+    {
+
+        //Create a new list item, add appropriate class name, and add to menu list
+        let li = document.createElement('li');
+        li.classList.add("menu_item");
+        menu_list.appendChild(li);
+
+        //Create the image element for the menu item, add the source and add to list element
+        let img = document.createElement('img');
+        img.src = img_urls[item];
+        li.appendChild(img);
+
+        //Create the div holder for the menu item content and add to list element
+        let item_content = document.createElement('div');
+        item_content.classList.add("menu_item_content");
+        li.appendChild(item_content);
+
+        //Add header(2) element and add to item content
+        let name_header = document.createElement('h2');
+        name_header.innerHTML += item;
+
+        //Add the form element with appropriate class, id, name, action and method
+
+    })
+}
+
+
+renderMenu();
+
+const itemsArr = document.getElementsByClassName("menu_item");
+const numItems = itemsArr.length;
 
 
 
@@ -42,7 +88,6 @@ class MenuItem
         this.add_cart_btn = element.querySelector('.menu_submit'); //Menu item add to cart button
     }
 
-    
     //Expand the menu item
     #expand()
     {
@@ -169,6 +214,7 @@ for(let i=0; i<numItems; i++)
 {
     items[i] = new MenuItem(itemsArr[i]);
 }
+
 
 
 //Set the onlcik listeners

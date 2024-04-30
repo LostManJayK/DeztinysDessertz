@@ -16,9 +16,4 @@ class ItemOption:
 
     def __init__(self):
 
-        pass
-
-    #Create the HTML to populate the MenuItem
-    def construct_items(self):
-
-        pass
+        selections = [] #Available selections for each option
