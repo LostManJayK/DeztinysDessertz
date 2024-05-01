@@ -17,8 +17,25 @@ VALUES
 ('Tiered'),
 ('Layered'),
 ('Sheet'),
-('No-Bake Cheescake'),
+('No-Bake Cheesecake'),
 ('Baked Cheesecake');
+
+-- Cake Tiers
+INSERT IGNORE INTO CakeTiers(tier_vals)
+VALUES
+('2'),
+('3'),
+('4');
+
+-- Cake Layers
+INSERT IGNORE INTO CakeLayers(layer_vals)
+VALUES
+('1'),
+('2'),
+('3'),
+('4'),
+('5'),
+('6');
 
 -- Cake Flavours
 INSERT IGNORE INTO CakeFlavours(flavour_name)
@@ -46,6 +63,13 @@ VALUES
 ('Square'),
 ('Heart'),
 ('Other');
+
+-- Cake Sizes
+INSERT IGNORE INTO CakeSizes(size)
+VALUES
+(4),
+(6),
+(8);
 
 -- Cupcake Quantities
 INSERT IGNORE INTO CupcakeQuantities(quantity)
@@ -97,34 +121,42 @@ VALUES
 	('Cake Cups'),
     ('Cheesecake Cups');
     
+-- Other Dessert Quantities
+INSERT IGNORE INTO OtherDessertQuantities(quantity)
+VALUES
+	('5'),
+	('10'),
+	('20'),
+	('40');
+    
 -- Options Tables
 
-INSERT IGNORE INTO CakeOptions(option_name, option_id)
+INSERT IGNORE INTO CakeOptions(option_name, option_id, option_list)
 VALUES
-	('Cake Type', 'cake_type'),
-    ('Tiers', 'num_tiers'),
-    ('Layers per Tier', 'num_layers'),
-    ('Cake Flavour', 'cake_flavour'),
-    ('Filling', 'cake_filling'),
-    ('Size', 'cake_size'),
-    ('Shape', 'cake_shape');
+	('Cake Type', 'cake_type', 'CakeTypes'),
+    ('Tiers', 'num_tiers', 'CakeTiers'),
+    ('Layers per Tier', 'num_layers', 'CakeLayers'),
+    ('Cake Flavour', 'cake_flavour', 'CakeFlavours'),
+    ('Filling', 'cake_filling', 'CakeFillings'),
+    ('Size', 'cake_size', 'CakeSizes'),
+    ('Shape', 'cake_shape', 'CakeShapes');
     
-INSERT IGNORE INTO CupcakeOptions(option_name, option_id)
+INSERT IGNORE INTO CupcakeOptions(option_name, option_id, option_list)
 VALUES
-	('Cupcake Flavour', 'cupcake_flavour'),
-    ('Filling', 'cupcake_filling'),
-    ('Quantity', 'num_cupcakes');
+	('Cupcake Flavour', 'cupcake_flavour', 'CakeFlavours'),
+    ('Filling', 'cupcake_filling', 'CakeFillings'),
+    ('Quantity', 'num_cupcakes', 'CupcakeQuantities');
     
-INSERT IGNORE INTO DippedDessertOptions(option_name, option_id)
+INSERT IGNORE INTO DippedDessertOptions(option_name, option_id, option_list)
 VALUES
-	('Dessert Type', 'dipped_dessert_type'),
-    ('Coating', 'dipped_dessert_coating'),
-    ('Quantity', 'num_dipped_desserts');
+	('Dessert Type', 'dipped_dessert_type', 'DippedDessertTypes'),
+    ('Coating', 'dipped_dessert_coating', 'Coatings'),
+    ('Quantity', 'num_dipped_desserts', 'DippedDessertQuantities');
     
-INSERT IGNORE INTO OtherDessertOptions(option_name, option_id)
+INSERT IGNORE INTO OtherDessertOptions(option_name, option_id, option_list)
 VALUES
-	('Dessert Type', 'other_dessert_type'),
-    ('Quantity', 'num_other_desserts');
+	('Dessert Type', 'other_dessert_type', 'OtherDessertTypes'),
+    ('Quantity', 'num_other_desserts', 'OtherDessertQuantities');
     
 	
 

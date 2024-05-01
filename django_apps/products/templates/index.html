@@ -8,20 +8,20 @@
 
 <section id="landing_photos" class="page_content">
     <div id="main_home_photo">
-        <a id="home_cake" href="menu.html"> <img src="{% static 'images/home_images/cake1.jpg' %}"> </a>
+        <a id="home_cake" href="{% url 'menu' %}"> <img src="{% static 'images/home_images/cake1.jpg' %}"> </a>
         <a href="menu.html" id="order_text"> <p> Order </br> Now </p> </a>
-        <a id="home_cupcake" href="menu.html"> <img src="{% static 'images/home_images/cupcakes2.jpg' %}"> </a>
+        <a id="home_cupcake" href="{% url 'menu' %}"> <img src="{% static 'images/home_images/cupcakes2.jpg' %}"> </a>
     </div>
     <div id="small_home_photos"> 
-        <a class=home_pics href="profile.html"> 
+        <a class=home_pics href="{% url 'profile' %}"> 
             <img src="{% static 'icons/home_icons/profile_icon.png' %}">
             <p> About Me </p>
         </a>
-        <a class=home_pics href="requests.html"> 
+        <a class=home_pics href="{% url 'requests' %}"> 
             <img src="{% static 'icons/home_icons/question_icon.png' %}">
             <p> Something Special </p>
         </a>
-        <a class=home_pics href="catering.html"> 
+        <a class=home_pics href="{% url 'cart' %}"> 
             <img src="{% static 'icons/home_icons/catering_icon.png' %}"> 
             <p> Events & Catering </p>
         </a>

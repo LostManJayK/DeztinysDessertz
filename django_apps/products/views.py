@@ -14,12 +14,30 @@ def index(request):
 def menu(request):
 
     handler = MySQLHandler()
-    menu_items = handler.get_data(("MenuItems", ("item_name",)))
-    menu_items = [item[0] for item in menu_items["MenuItems"]]
+    menu_data = handler.get_data(
+        ("MenuItems", ("item_name",)),
+        ("CakeOptions", ("option_name", "option_id", "option_list")),
+        ("CupcakeOptions", ("option_name", "option_id", "option_list")),
+        ("DippedDessertOptions", ("option_name", "option_id", "option_list")),
+        ("OtherDessertOptions", ("option_name", "option_id", "option_list")),
+        ("CakeTypes", ("type_name",)),
+        ("CakeTiers", ("tier_vals",)),
+        ("CakeLayers", ("layer_vals",)),
+        ("CakeFlavours", ("flavour_name",)),
+        ("CakeFillings", ("filling_name",)),
+        ("CakeShapes", ("shape_name",)),
+        ("CakeSizes", ("size",)),
+        ("CupcakeQuantities", ("quantity",)),
+        ("DippedDessertTypes", ("type_name",)),
+        ("Coatings", ("coating_name",)),
+        ("DippedDessertQuantities", ("quantity",)),
+        ("OtherDessertTypes", ("type_name",)),
+        ("OtherDessertQuantities", ("quantity",))
+    )
 
-    print(menu_items)
+    print(menu_data)
 
-    return render(request, "menu.html", {"menu_items" : menu_items})
+    return render(request, "menu.html", {"menu_data" : menu_data})
 
 def requests(request):
     return render(request, "requests.html")

@@ -90,11 +90,6 @@
 
 /*Cake Styling*/
 
-#cake_has_filling
-{
-    width: auto;
-}
-
 #cake_size
 {
     width: 5%;
@@ -116,17 +111,13 @@
 }
 
 /*Cupcake Styling*/
-#cupcake_has_filling
-{
-    width: auto;
-}
 
 #num_cupcakes
 {
-    width: fit-content;
+    width: 10%;
 }
 
-#cake_notes
+.note_area
 {
     width: 80%;
     height: 200px;
@@ -134,8 +125,14 @@
     display: block;
 }
 
-#cake_note_label
+.note_label
 {
     width: 100%;
     display: block;
 }
+
+select
+{
+    margin-left: 5px;
+}
+

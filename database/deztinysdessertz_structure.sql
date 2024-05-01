@@ -75,28 +75,32 @@ CREATE TABLE IF NOT EXISTS CakeOptions
 (
 	option_index TINYINT PRIMARY KEY AUTO_INCREMENT,
     option_name VARCHAR(30) NOT NULL UNIQUE,
-    option_id VARCHAR(30) NOT NULL UNIQUE
+    option_id VARCHAR(30) NOT NULL UNIQUE,
+    option_list VARCHAR(30) NOT NULL UNIQUE
 );
 
 CREATE TABLE IF NOT EXISTS CupcakeOptions
 (
 	option_index TINYINT PRIMARY KEY AUTO_INCREMENT,
     option_name VARCHAR(30) NOT NULL UNIQUE,
-    option_id VARCHAR(30) NOT NULL UNIQUE
+    option_id VARCHAR(30) NOT NULL UNIQUE,
+    option_list VARCHAR(30) NOT NULL UNIQUE
 );
 
 CREATE TABLE IF NOT EXISTS DippedDessertOptions
 (
 	option_index TINYINT PRIMARY KEY AUTO_INCREMENT,
     option_name VARCHAR(30) NOT NULL UNIQUE,
-    option_id VARCHAR(30) NOT NULL UNIQUE
+    option_id VARCHAR(30) NOT NULL UNIQUE,
+    option_list VARCHAR(30) NOT NULL UNIQUE
 );
 
 CREATE TABLE IF NOT EXISTS OtherDessertOptions
 (
 	option_index TINYINT PRIMARY KEY AUTO_INCREMENT,
     option_name VARCHAR(30) NOT NULL UNIQUE,
-    option_id VARCHAR(30) NOT NULL UNIQUE
+    option_id VARCHAR(30) NOT NULL UNIQUE,
+    option_list VARCHAR(30) NOT NULL UNIQUE
 );
 
 -- Cake Types
@@ -104,6 +108,20 @@ CREATE TABLE IF NOT EXISTS CakeTypes
 (
 	type_index TINYINT PRIMARY KEY AUTO_INCREMENT,
     type_name VARCHAR(30) NOT NULL UNIQUE
+);
+
+-- Cake Tiers
+CREATE TABLE IF NOT EXISTS CakeTiers
+(
+	tier_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    tier_vals TINYINT NOT NULL UNIQUE
+);
+
+-- Cake Layers
+CREATE TABLE IF NOT EXISTS CakeLayers
+(
+	layer_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    layer_vals TINYINT NOT NULL UNIQUE
 );
 
 -- Cake Flavours
@@ -125,6 +143,13 @@ CREATE TABLE IF NOT EXISTS CakeShapes
 (
 	shape_index TINYINT PRIMARY KEY AUTO_INCREMENT,
     shape_name VARCHAR(30) NOT NULL UNIQUE
+);
+
+-- Cake Sizes
+CREATE TABLE IF NOT EXISTS CakeSizes
+(
+	size_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    size TINYINT NOT NULL UNIQUE
 );
 
 -- Cupcake Quantities
@@ -166,6 +191,6 @@ CREATE TABLE IF NOT EXISTS OtherDessertTypes
 CREATE TABLE IF NOT EXISTS OtherDessertQuantities
 (
 	quantity_index TINYINT PRIMARY KEY AUTO_INCREMENT,
-    quantiy TINYINT NOT NULL UNIQUE
-)
+    quantity TINYINT NOT NULL UNIQUE
+);
 

@@ -8,9 +8,9 @@ class MySQLHandler:
 
         self.db = mysql.connector.connect(
             host="localhost",
-            user=input("Database Username: "),
+            user='luminyx',#input("Database Username: "),
             password=getpass.getpass("Database Password: "),
-            database=input("Database: ")
+            database='DeztinysDessertzDB'#input("Database: ")
         )
 
         self.cursor = self.db.cursor()
@@ -42,6 +42,13 @@ class MySQLHandler:
                 query_columns = ', '.join(columns)
                 self.cursor.execute("SELECT {} FROM {}".format(query_columns, table))
                 db_data[table] = self.cursor.fetchall()
+
+            #Convert single element tuples to strings for ease of use
+            for i in range(len(db_data[table])):
+
+                if len(db_data[table][i]) == 1:
+
+                    db_data[table][i] = db_data[table][i][0]
 
         return db_data
 

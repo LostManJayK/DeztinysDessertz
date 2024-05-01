@@ -18,20 +18,27 @@ function getCookie(name) {
 //Render the menu item with the appropriate options
 function renderMenu()
 {
+
+    //Retrieve the menu_list element
     menu_list = document.getElementById('menu_list');
 
-    menu_items = menu_items.replaceAll("'", '"');
+    //Convert the string into a JSON compatible string
+    menu_data = menu_data.replace(/'/g, '"');
+    menu_data = menu_data.replace(/\(/g, '[');
+    menu_data = menu_data.replace(/,\)/g, ']');
+    menu_data = menu_data.replace(/\)/g, ']');
 
+    //Parse the string as JSON data
     try 
     {
-        menu_items = JSON.parse(menu_items);
+        menu_data = JSON.parse(menu_data);
     }
     catch (error) 
     {
         console.error("Error parsing JSON:", error);
     }
 
-    menu_items.forEach(item => 
+    menu_data['MenuItems'].forEach(item => 
     {
 
         //Create a new list item, add appropriate class name, and add to menu list
@@ -52,10 +59,181 @@ function renderMenu()
         //Add header(2) element and add to item content
         let name_header = document.createElement('h2');
         name_header.innerHTML += item;
+        item_content.appendChild(name_header);
 
         //Add the form element with appropriate class, id, name, action and method
+        let item_form = document.createElement('form');
+        item_form.classList.add('menu_item_options');
 
-    })
+        //Select appropriate id based on the item name
+        switch(item)
+        {
+            case "Cakes":
+                item_form.id = "cake_options";
+                break;
+
+            case "Cupcakes":
+                item_form.id = "cupcake_options";
+                break;
+            
+            case "Dipped Dessertz":
+                item_form.id = "dipped_dessert_options";
+                break;
+            
+            case "Other Dessertz":
+                item_form.id = "other_dessert_options";
+                break;
+                
+            default:
+                item_form.id = item+"_id";
+        }
+
+        //Name matches id
+        item_form.name = item_form.id;
+
+        //Set method and action
+        item_form.method = "POST";
+        item_form.action = "/add_to_cart/";
+
+        //Append to item_content element
+        item_content.appendChild(item_form);
+
+        //Add the appropriate options into the form
+        switch(item)
+        {
+            case "Cakes":
+                item_form.id = "cake_options";
+                break;
+
+            case "Cupcakes":
+                item_form.id = "cupcake_options";
+                break;
+            
+            case "Dipped Dessertz":
+                item_form.id = "dipped_dessert_options";
+                break;
+            
+            case "Other Dessertz":
+                item_form.id = "other_dessert_options";
+                break;
+                
+            default:
+                item_form.id = item+"_options";
+                break;
+        }
+
+        //Define appropriate options table for each item
+        let options_table = {
+
+            'Cakes' : 'CakeOptions',
+            'Cupcakes' : 'CupcakeOptions',
+            'Dipped Dessertz' : 'DippedDessertOptions',
+            'Other Dessertz' : 'OtherDessertOptions'
+        };
+
+        item_option_table = options_table[item];
+
+        //Iterate through the options table
+        menu_data[item_option_table].forEach(option =>
+        {
+            //Create option holder seciton
+            let section = document.createElement('section');
+            section.classList.add("option_holder");
+            item_form.appendChild(section);
+
+            //Creaete label for select element
+            let label = document.createElement('label');
+            label.setAttribute("for", option[1]);
+            label.innerHTML += option[0];
+            section.appendChild(label);
+
+            //Create select element
+            let select = document.createElement('select');
+            select.classList.add("order_spec");
+            select.name = option[0];
+            select.id = option[1];
+            select.setAttribute("form", item_form.id);
+            select.required = true;
+            section.appendChild(select);
+
+            if(option[2] == 'CakeTypes')
+            {
+                //Create optgroups for cakes
+                var optgroup_cake = document.createElement('optgroup');
+                optgroup_cake.label = "Cakes";
+                select.appendChild(optgroup_cake);
+                //Create optgroups for cheesecakes
+                var optgroup_cheesecake = document.createElement('optgroup');
+                optgroup_cheesecake.label = "Cheesecakes";
+                select.appendChild(optgroup_cheesecake);
+            }
+
+            //Populate select elements
+            menu_data[option[2]].forEach(selection =>
+            {
+                //Create the option element for the current selection
+                opt = document.createElement('option');
+
+                try
+                {
+                    opt.value = selection.toLowerCase();
+                }
+                catch(err)
+                {
+                    opt.value = selection;
+                }
+
+                opt.innerHTML += selection;
+
+                //Create the Cake Type specific logic
+                if(option[2] == "CakeTypes")
+                {
+                    //Add the selection into the appropriate optgroup
+                    if(selection.includes("Cheesecake"))
+                    {
+                        optgroup_cheesecake.appendChild(opt);
+                    }
+                    else
+                    {
+                        optgroup_cake.appendChild(opt);
+                    }
+                }
+                //If the option isn't cake types, add the current selection directly into the select element
+                else
+                {
+                    select.appendChild(opt);
+                }
+            });
+        });
+
+        //Create the note element for each menu item and fill in the appropriate attributes
+        let note = document.createElement('textarea');
+        note.id = item.toLowerCase().slice(0, -1) + "_notes";
+        note.name = item + "Notes";
+        note.classList.add("order_spec", "note_area");
+        note.placeholder = "Add any specific details we would need here! (Specific flavours, design, diertary restrictions, etc..)";
+
+        //Creaete label for select element
+        let label = document.createElement('label');
+        label.setAttribute("for", note.id);
+        label.classList.add("note_label");
+        label.innerHTML += "Notes";
+
+        let section = document.createElement('section');
+        section.classList.add("option_holder");
+        item_form.appendChild(section);
+
+        section.appendChild(label);
+        section.appendChild(note);
+
+        //Create the add to cart button
+        button = document.createElement("button");
+        button.id = item.toLowerCase()+"submit";
+        button.classList.add("menu_submit");
+        button.innerHTML += "Add to Cart";
+        item_form.appendChild(button);
+        
+    });
 }
 
 
@@ -92,7 +270,7 @@ class MenuItem
     #expand()
     {
         //this.element.style.height = 75 + 'vh';
-        this.element.style.height = (this.element.scrollHeight+200) + 'px';
+        this.element.style.height = (this.element.scrollHeight+250) + 'px';
         this.elementContent.style.width = 100 + '%';
         this.isExpanded = true;
         this.element.style.flexWrap = "wrap";
