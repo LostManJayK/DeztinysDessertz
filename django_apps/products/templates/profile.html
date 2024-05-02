@@ -1,0 +1,64 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'styles/profile_style.css' %}">
+<link rel="stylesheet" href="{% static 'layouts/profile_layout.css' %}">
+
+<section id="contact" class="page_content">
+    <div id="baker" class="contact_card">
+        <div class="bio">
+            <img src="{% static 'images/profile_images/dezyroo.png' %}">
+            <ul>
+                <li> Destiny Hopkins </li>
+                <li> 22yo </li>
+                <li> New Westminster, BC </li>
+                <li> Baker/Dessert Artist </li>
+            </ul>
+        </div>
+        <div class="socials">
+            <a class="social_logo" href="https://www.facebook.com/profile.php?id=100090285048457&mibextid=ZbWKwL"> 
+                <img src="{% static 'icons/profile_icons/logo-fb.png' %}"> 
+                <p> Deztiny's Dessertz </p>
+            </a>
+            <a class="social_logo" href="https://www.instagram.com/deztinysdessertz/"> 
+                <img src="{% static 'icons/profile_icons/logo-ig.png' %}"> 
+                <p> @deztinysdessertz </p>
+            </a>
+            <a class="social_logo" href="https://www.tiktok.com/@deztinysdessertz?is_from_webapp=1&sender_device=pc"> 
+                <img src="{% static 'icons/profile_icons/logo-tiktok.png' %}"> 
+                <p> @deztinysdessertz </p>
+            </a>
+            <a class="social_logo" href="mailto:deztinysdessertz@gmail.com"> 
+                <img src="{% static 'icons/profile_icons/logo-gmail.png' %}"> 
+                <p> deztinysdessertz@gmail.com </p>
+            </a>
+        </div>
+    </div>
+    <div id="dev" class="contact_card">
+        <div class="bio">
+            <img src="{% static 'images/profile_images/me.jpg' %}">
+            <ul>
+                <li> Andrew Spence </li>
+                <li> 25yo </li>
+                <li> New Westminster, BC </li>
+                <li> Website Designer/Developer</li>
+            </ul>
+        </div>
+        <div class="socials">
+            <a class="social_logo" href="https://www.github.com/LostManJayK"> 
+                <img src="{% static 'icons/profile_icons/logo-github.png' %}"> 
+                <p> LostManJayK </p>
+            </a>
+            <a class="social_logo" href="mailto:andrews2192@gmail.com"> 
+                <img src="{% static 'icons/profile_icons/logo-gmail.png' %}"> 
+                <p> andrews2192@gmail.com </p>
+            </a>
+        </div>    
+    </div>
+
+</section>
+
+
+{% endblock %}

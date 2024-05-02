@@ -1,0 +1,34 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'styles/cart_style.css' %}">
+<link rel="stylesheet" href="{% static 'layouts/cart_layout.css' %}">
+
+<section id="cart" class="page_content">
+    <div class="form_holder">
+        <form action="{% url 'submit_order' %}" method="POST" id="cart_form">
+            <section id="customer_info">
+                <h1> Customer Info </h1>
+                <input id="name" class="customer_detail" name="Name" type="text" placeholder="Name" form="cart_form" required>
+                <input id="email" class="customer_detail" name="Email" type="text" placeholder="Email: example@domain.com" form="catering_form" required>
+                <input id="phone" class="customer_detail" name="Phone" type="tel" placeholder="Phone: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" form="cart_form">
+                <input id="date" class="customer_detail" name="Date" type="date"form="catering_form" required>
+                <input id="time" class="customer_detail" name="Time" type="time" placeholder="Event Time" form="cart_form" required>
+            </section>
+            <section >
+                <h1> Order Items </h1>
+                <div id="order_items"></div>
+            </section>
+            <button id="submit_order" type="submit"> Submit </button>
+            
+        </form>
+    </div>
+</section>
+<script>
+    let json_data = "{{ cart_data|escapejs }}";
+</script>
+<script src="{% static 'scripts/cart.js' %}"></script>
+
+{% endblock %}

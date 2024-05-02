@@ -1,0 +1,30 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'styles/menu_style.css' %}">
+<link rel="stylesheet" href="{% static 'layouts/menu_layout.css' %}">
+
+<section id="menu" class="page_content">
+    <div id= menu_holder class="menu_holder">
+        <ul id="menu_list">
+
+        </ul>
+    </div>
+
+
+</section>
+<script>
+    let menu_data = "{{ menu_data|escapejs }}";
+    let img_urls = {
+        "Cakes" : "{% static 'images/menu_images/cake1.jpg' %}",
+        "Cupcakes" : "{% static 'images/menu_images/cupcakes.jpg' %}",
+        "Dipped Dessertz" : "{% static 'images/menu_images/dippeddessert.jpg' %}",
+        "Other Dessertz" : "{% static 'images/menu_images/otherdessert.jpg' %}",
+        "Something else?" : "{% static 'icons/home_icons/question_icon.png' %}"
+    };
+</script>
+<script src="{% static 'scripts/menu.js' %}"></script>
+
+{% endblock %}

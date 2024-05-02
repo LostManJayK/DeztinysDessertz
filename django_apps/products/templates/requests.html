@@ -1,0 +1,25 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'styles/request_style.css' %}">
+<link rel="stylesheet" href="{% static 'layouts/request_layout.css' %}">
+
+<section id="request_form_holder" class="page_content">
+    <div class="form_holder">
+        <h1> What can we make for you? </h1>
+        <form action="" method="POST" id="request_form">
+            <input id="name" class=".customer_detail" name="Requester Name" type="text" placeholder="Name or Nickname" required form="request_form">
+            <input id="email" class=".customer_detail" name="Requester Email" type="email" placeholder="Email: example@domain.com" required form="request_form">
+            <input id="phone" class=".customer_detail" name="Requester Phone" type="tel" placeholder="Phone (Optional): 123-456-7890" form="request_form" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input id="req_title" class=".customer_detail" name="Requested Item" type="text" placeholder="What is your dessert called?" required form="request_form">
+            <textarea id="description" name="Request Description" placeholder="Describe your dessert." form="request_form"></textarea>
+            <button id="submit_req" type="submit" name="submit_req"> Submit </button>
+        </form>
+        
+       
+    </div>
+</section>
+
+{% endblock %}
