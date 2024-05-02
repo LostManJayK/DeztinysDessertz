@@ -86,8 +86,8 @@ button:hover
     padding: 1%;
     border-radius: 35px;
     margin-bottom: 5px;
-    min-width: 30%;
-    max-width: 30%;
+    min-width: 33%;
+    max-width: 33%;
 
 }
 
@@ -130,7 +130,7 @@ button:hover
 
 .order_item h2
 {
-    width: 70%;
+    width: 80%;
     margin-right: 0;
 }
 

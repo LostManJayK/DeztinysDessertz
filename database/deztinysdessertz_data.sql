@@ -6,7 +6,8 @@ VALUES
 ('Cakes'),
 ('Cupcakes'),
 ('Dipped Dessertz'),
-('Other Dessertz');
+('Other Dessertz'),
+('Something else?');
 
 
 -- OPTIONS TABLES
@@ -157,6 +158,10 @@ INSERT IGNORE INTO OtherDessertOptions(option_name, option_id, option_list)
 VALUES
 	('Dessert Type', 'other_dessert_type', 'OtherDessertTypes'),
     ('Quantity', 'num_other_desserts', 'OtherDessertQuantities');
+    
+INSERT IGNORE INTO RequestOptions(option_name, option_id)
+VALUES
+	('Dessert Name', 'request_name');
     
 	
 

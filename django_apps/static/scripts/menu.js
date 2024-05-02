@@ -85,7 +85,11 @@ function renderMenu()
                 break;
                 
             default:
-                item_form.id = item+"_id";
+                let new_id = item.toLowerCase();
+                new_id = new_id.replaceAll(' ', '_');
+                new_id = new_id.slice(0, -1);
+                item_form.id = new_id+"_optoins";
+                break;
         }
 
         //Name matches id
@@ -99,28 +103,6 @@ function renderMenu()
         item_content.appendChild(item_form);
 
         //Add the appropriate options into the form
-        switch(item)
-        {
-            case "Cakes":
-                item_form.id = "cake_options";
-                break;
-
-            case "Cupcakes":
-                item_form.id = "cupcake_options";
-                break;
-            
-            case "Dipped Dessertz":
-                item_form.id = "dipped_dessert_options";
-                break;
-            
-            case "Other Dessertz":
-                item_form.id = "other_dessert_options";
-                break;
-                
-            default:
-                item_form.id = item+"_options";
-                break;
-        }
 
         //Define appropriate options table for each item
         let options_table = {
@@ -128,7 +110,8 @@ function renderMenu()
             'Cakes' : 'CakeOptions',
             'Cupcakes' : 'CupcakeOptions',
             'Dipped Dessertz' : 'DippedDessertOptions',
-            'Other Dessertz' : 'OtherDessertOptions'
+            'Other Dessertz' : 'OtherDessertOptions',
+            'Something else?' : 'RequestOptions'
         };
 
         item_option_table = options_table[item];
@@ -136,6 +119,7 @@ function renderMenu()
         //Iterate through the options table
         menu_data[item_option_table].forEach(option =>
         {
+
             //Create option holder seciton
             let section = document.createElement('section');
             section.classList.add("option_holder");
@@ -147,68 +131,79 @@ function renderMenu()
             label.innerHTML += option[0];
             section.appendChild(label);
 
-            //Create select element
-            let select = document.createElement('select');
-            select.classList.add("order_spec");
-            select.name = option[0];
-            select.id = option[1];
-            select.setAttribute("form", item_form.id);
-            select.required = true;
-            section.appendChild(select);
-
-            if(option[2] == 'CakeTypes')
-            {
-                //Create optgroups for cakes
-                var optgroup_cake = document.createElement('optgroup');
-                optgroup_cake.label = "Cakes";
-                select.appendChild(optgroup_cake);
-                //Create optgroups for cheesecakes
-                var optgroup_cheesecake = document.createElement('optgroup');
-                optgroup_cheesecake.label = "Cheesecakes";
-                select.appendChild(optgroup_cheesecake);
-            }
-
-            //Populate select elements
-            menu_data[option[2]].forEach(selection =>
-            {
-                //Create the option element for the current selection
-                opt = document.createElement('option');
-
-                try
+            if(option[2])
+            {                //Create select element
+                let select = document.createElement('select');
+                select.classList.add("order_spec");
+                select.name = option[0];
+                select.id = option[1];
+                select.setAttribute("form", item_form.id);
+                select.required = true;
+                section.appendChild(select);
+                
+                if(option[2] == 'CakeTypes')
                 {
-                    opt.value = selection.toLowerCase();
-                }
-                catch(err)
-                {
-                    opt.value = selection;
+                    //Create optgroups for cakes
+                    var optgroup_cake = document.createElement('optgroup');
+                    optgroup_cake.label = "Cakes";
+                    select.appendChild(optgroup_cake);
+                    //Create optgroups for cheesecakes
+                    var optgroup_cheesecake = document.createElement('optgroup');
+                    optgroup_cheesecake.label = "Cheesecakes";
+                    select.appendChild(optgroup_cheesecake);
                 }
 
-                opt.innerHTML += selection;
-
-                //Create the Cake Type specific logic
-                if(option[2] == "CakeTypes")
+                //Populate select elements
+                menu_data[option[2]].forEach(selection =>
                 {
-                    //Add the selection into the appropriate optgroup
-                    if(selection.includes("Cheesecake"))
+                    //Create the option element for the current selection
+                    opt = document.createElement('option');
+
+                    try
                     {
-                        optgroup_cheesecake.appendChild(opt);
+                        opt.value = selection.toLowerCase();
                     }
+                    catch(err)
+                    {
+                        opt.value = selection;
+                    }
+
+                    opt.innerHTML += selection;
+
+                    //Create the Cake Type specific logic
+                    if(option[2] == "CakeTypes")
+                    {
+                        //Add the selection into the appropriate optgroup
+                        if(selection.includes("Cheesecake"))
+                        {
+                            optgroup_cheesecake.appendChild(opt);
+                        }
+                        else
+                        {
+                            optgroup_cake.appendChild(opt);
+                        }
+                    }
+                    //If the option isn't cake types, add the current selection directly into the select element
                     else
                     {
-                        optgroup_cake.appendChild(opt);
+                        select.appendChild(opt);
                     }
-                }
-                //If the option isn't cake types, add the current selection directly into the select element
-                else
-                {
-                    select.appendChild(opt);
-                }
-            });
+                });
+            }
+            else
+            {
+                let input = document.createElement('input');
+                input.id = option[1];
+                input.classList.add('order_spec');
+                input.type = 'text';
+                input.placeholder = 'Dessert  Name'
+                section.appendChild(input);
+            }
         });
 
         //Create the note element for each menu item and fill in the appropriate attributes
         let note = document.createElement('textarea');
-        note.id = item.toLowerCase().slice(0, -1) + "_notes";
+        note.id = item.toLowerCase().replaceAll(' ', '_').slice(0, -1) + "_notes";
         note.name = item + "Notes";
         note.classList.add("order_spec", "note_area");
         note.placeholder = "Add any specific details we would need here! (Specific flavours, design, diertary restrictions, etc..)";

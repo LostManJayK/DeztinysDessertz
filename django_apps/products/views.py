@@ -20,6 +20,7 @@ def menu(request):
         ("CupcakeOptions", ("option_name", "option_id", "option_list")),
         ("DippedDessertOptions", ("option_name", "option_id", "option_list")),
         ("OtherDessertOptions", ("option_name", "option_id", "option_list")),
+        ("RequestOptions", ("option_name", "option_id")),
         ("CakeTypes", ("type_name",)),
         ("CakeTiers", ("tier_vals",)),
         ("CakeLayers", ("layer_vals",)),
@@ -34,8 +35,6 @@ def menu(request):
         ("OtherDessertTypes", ("type_name",)),
         ("OtherDessertQuantities", ("quantity",))
     )
-
-    print(menu_data)
 
     return render(request, "menu.html", {"menu_data" : menu_data})
 
@@ -121,6 +120,12 @@ def submit_order(request):
     else:
 
         return JsonResponse({'error': 'Invalid request method'}, status=400)
+
+def send_dessert_request(request):
+
+    hanlder = OrderHandler()
+
+
 
 
     

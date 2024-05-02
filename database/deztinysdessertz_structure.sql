@@ -103,6 +103,13 @@ CREATE TABLE IF NOT EXISTS OtherDessertOptions
     option_list VARCHAR(30) NOT NULL UNIQUE
 );
 
+CREATE TABLE IF NOT EXISTS RequestOptions
+(
+	option_index TINYINT PRIMARY KEY AUTO_INCREMENT,
+    option_name VARCHAR(30) NOT NULL UNIQUE,
+    option_id VARCHAR(30) NOT NULL UNIQUE
+);
+
 -- Cake Types
 CREATE TABLE IF NOT EXISTS CakeTypes
 (

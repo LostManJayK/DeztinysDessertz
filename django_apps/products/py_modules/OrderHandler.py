@@ -40,7 +40,12 @@ class OrderHandler:
             'tiered' : 'Tiered',
             'layered' : 'Layered',
             'sheet' : 'Sheet',
-            'cake_notes' : 'Cake Notes'         
+            'cake_notes' : 'Notes',
+            'cupcake_notes' : 'Notes',
+            'dipped_dessert_notes' : 'Notes',
+            'other_dessert_notes' : 'Notes',
+            'something_else_notes' : 'Notes',
+            'request_name' : 'Request Name'         
         }
 
     #Format the JSON string for the email
@@ -84,14 +89,15 @@ class OrderHandler:
             items_html += "</tr>"
 
         html_str = html_str.format(
-        items_html=items_html, 
-        order_num=order_num, 
-        customer_name=customer_info['name'],
-        customer_email=customer_info['email'],
-        customer_phone=customer_info['phone'],
-        order_date=customer_info['date'],
-        order_time=customer_info['time'], 
-        total="0.00")
+            items_html=items_html, 
+            order_num=order_num, 
+            customer_name=customer_info['name'],
+            customer_email=customer_info['email'],
+            customer_phone=customer_info['phone'],
+            order_date=customer_info['date'],
+            order_time=customer_info['time'], 
+            total="0.00"
+        )
 
         
 

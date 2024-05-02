@@ -175,7 +175,7 @@ function renderCart()
 
             if(detail.includes('Notes'))
             {
-                current_item.innerHTML += '<p class="p_note">' + detail + ':\n ' + item[detail] + '</p>';
+                current_item.innerHTML += '<p class="p_note">' + detail + ':<br>' + item[detail].replaceAll('\n', '<br>') + '</p>';
             }
             else if(detail != 'Name')
             {
