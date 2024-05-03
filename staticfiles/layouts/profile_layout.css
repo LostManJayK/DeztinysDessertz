@@ -1,0 +1,54 @@
+#contact
+{
+    justify-content: space-between;
+    gap: 2vh;
+}
+
+.contact_card
+{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.socials
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social_logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .contact_card
+    {
+        flex-direction: column;
+    }
+
+    .socials
+    {
+        width: 100%;
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .socials p
+    {
+        display: none;
+    }
+
+    .socials img
+    {
+        height: 5vw;
+        width: auto;
+    }
+}

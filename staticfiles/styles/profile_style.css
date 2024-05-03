@@ -1,0 +1,74 @@
+#contact
+{
+    height: 150vh;
+    padding-top: 18vh;
+    padding-bottom: 18vh;
+}
+
+.contact_card
+{
+    width: 40%;
+    border-radius: 50px;
+    padding: 2%;
+    gap: 2%;
+    background-color: #a75097;
+    box-shadow: -1px 2px 5px darkslategray;
+}
+
+.contact_card .bio
+{
+    width: 65%;
+    height: 100%;
+}
+
+.bio img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+#dev, #dev2, #dev3
+{
+    background-color: #048a81;
+}
+
+.bio ul li
+{
+    font-size: 9pt;
+    color: #cecece;
+}
+
+
+
+.contact_card .socials
+{
+    height: 100%;
+    width: fit-content;
+}
+
+.social_logo
+{
+    width: auto;
+    height: auto;
+    gap: 2%;
+    text-decoration: none;
+
+}
+
+.social_logo img
+{
+    width: 10%;
+    height: auto;
+}
+
+.social_logo p
+{
+    color: #cecece;
+}
+
+
+
+
+
+
