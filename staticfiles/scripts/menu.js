@@ -101,7 +101,7 @@ function renderMenu()
 
         //Add csrf token to the form
         csrf_input = document.createElement('input');
-        csrf_input.type = hidden;
+        csrf_input.type = 'hidden';
         csrf_input.name = 'csrfmiddlewaretoken';
         csrf_input.value = csrfToken;
         item_form.appendChild(csrf_input);
