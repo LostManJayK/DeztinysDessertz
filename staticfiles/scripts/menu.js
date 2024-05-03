@@ -101,7 +101,6 @@ function renderMenu()
 
         //Append to item_content element
         item_content.appendChild(item_form);
-        item_form.innerHTML += "<br>{% csrf_token %}<br>";
 
         //Add the appropriate options into the form
 
