@@ -99,8 +99,16 @@ function renderMenu()
         item_form.method = "POST";
         item_form.action = "/add_to_cart/";
 
+        //Add csrf token to the form
+        csrf_input = document.createElement('input');
+        csrf_input.type = hidden;
+        csrf_input.name = 'csrfmiddlewaretoken';
+        csrf_input.value = csrfToken;
+        item_form.appendChild(csrf_input);
+
         //Append to item_content element
         item_content.appendChild(item_form);
+
 
         //Add the appropriate options into the form
 
