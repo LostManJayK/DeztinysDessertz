@@ -188,6 +188,17 @@ function renderMenu()
                     {
                         select.appendChild(opt);
                     }
+
+
+                    if(selection === 'Other')
+                    {
+                        let input = document.createElement('input');
+                        input.id = 'other_' + option[1];
+                        input.classList.add('order_spec');
+                        input.type = 'text';
+                        input.placeholder = option[0];
+                        section.appendChild(input);
+                    }
                 });
             }
             else
@@ -329,6 +340,7 @@ class MenuItem
             }
             else if((spec.hasAttribute('required') || otherOption) && !spec.value.trim())
             {
+                console.log(spec.value.trim());
                 requiredFilled = false;
                 spec.style.borderColor = 'red';
                 otherOption = false;
@@ -337,7 +349,10 @@ class MenuItem
             else
             {
                 spec.style.borderColor = '';
+                otherOption = false;
             }
+
+            
 
         });
 

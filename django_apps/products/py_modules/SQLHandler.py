@@ -1,5 +1,6 @@
 import mysql.connector
 import getpass
+import os
 
 #Handles operations relating to the MySQL database
 class MySQLHandler:
@@ -7,10 +8,10 @@ class MySQLHandler:
     def __init__(self):
 
         self.db = mysql.connector.connect(
-            host="localhost",
-            user='luminyx',#input("Database Username: "),
-            password=getpass.getpass("Database Password: "),
-            database='DeztinysDessertzDB'#input("Database: ")
+            host=os.environ.get("DB_HOST"),
+            user=os.environ.get("DB_USER"),
+            password=os.environ.get("DB_PASS"),
+            database=os.environ.get("DB_NAME")
         )
 
         self.cursor = self.db.cursor()

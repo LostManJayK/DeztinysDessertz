@@ -45,7 +45,10 @@ class OrderHandler:
             'dipped_dessert_notes' : 'Notes',
             'other_dessert_notes' : 'Notes',
             'something_else_notes' : 'Notes',
-            'request_name' : 'Request Name'         
+            'request_name' : 'Request Name',
+            'other_cake_flavour' : 'Cake Flavour',
+            
+
         }
 
     #Format the JSON string for the email
@@ -152,8 +155,8 @@ class OrderHandler:
 
         print(smtp_object.starttls())
         
-        email = 'deztinysdessertz@gmail.com' #input('Email: ')
-        password = getpass.getpass('Password: ')
+        email = os.environ.get("DD_APP_EMAIL")
+        password = os.environ.get("DD_APP_PASS")
         print(smtp_object.login(email, password))
 
         from_email = email
