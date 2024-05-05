@@ -10,7 +10,7 @@ class MySQLHandler:
         self.db = mysql.connector.connect(
             host=os.environ.get("DB_HOST"),
             user=os.environ.get("DB_USER"),
-            password=os.environ.get("DB_PASS"),
+            password=''#os.environ.get("DB_PASS"),
             database=os.environ.get("DB_NAME")
         )
 
