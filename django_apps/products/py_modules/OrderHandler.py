@@ -2,6 +2,17 @@ import smtplib
 import getpass
 import os
 
+def get_html(tmplt_name):
+
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    tmplt_path = os.path.join(base_dir, 'email_content', f'{tmplt_name}_email.html')
+
+    with open(tmplt_path) as email_template:
+        html_str = email_template.read()
+    email_template.close()
+
+    return html_str
+
 #Handles operations relating to the cart and ordering
 class OrderHandler:
 
@@ -47,23 +58,49 @@ class OrderHandler:
             'something_else_notes' : 'Notes',
             'request_name' : 'Request Name',
             'other_cake_flavour' : 'Cake Flavour',
-            
-
         }
 
-    #Format the JSON string for the email
-    def format_email(self, cart, customer_info):
+    
+
+    #Format the JSON string for the catering email
+    def format_catering_email(self, catering):
+
+        catering_data = catering
+
+        html_str = get_html('catering')
+
+        print(html_str)
+
+        customer_info = catering['customer_info']
+        catering_details = catering['catering_details'].replace('\n', '<br><br>')
+
+        html_str = html_str.format(
+            customer_first=customer_info['first_name'],
+            customer_last=customer_info['last_name'],
+            customer_email=customer_info['email'],
+            customer_phone=customer_info['phone'],
+            event_name=customer_info['event_title'],
+            catering_date=customer_info['date'],
+            catering_time=customer_info['time'],
+            duration=customer_info['duration'],
+            headcount=customer_info['count'],
+            dress_code=customer_info['dress'],
+            catering_details=catering_details
+        )
+
+        return html_str
+
+
+
+       
+
+    #Format the JSON string for the order email
+    def format_order_email(self, cart, customer_info):
 
         cart_data = cart
         cart_data = self.replace_keyval(cart_data)
-        
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-        tmplt_path = os.path.join(base_dir, 'email_content', 'email.html')
 
-        with open(tmplt_path) as email_template:
-            html_str = email_template.read()
-        email_template.close()
-        
+        html_str = get_html('order')
 
         items_html = ""
         
@@ -101,9 +138,6 @@ class OrderHandler:
             order_time=customer_info['time'], 
             total="0.00"
         )
-
-        
-
 
         return html_str
 
@@ -145,7 +179,12 @@ class OrderHandler:
 
     
     #Send the email containing email details
-    def send_order_confirmation(self, html_str, customer_email):
+    def send_order_confirmation(self, html_str, customer_email, email_type, event_name=""):
+
+        subjects = {
+            'order' : "ORDER #TEST - Confirmation",
+            'catering' : f'Catering Request -  {event_name}'
+        }
 
         print("Setting up SMTP")
         
@@ -161,7 +200,7 @@ class OrderHandler:
 
         from_email = email
         to_email = customer_email
-        subject = "ORDER #TEST - Confirmation"
+        subject = subjects[email_type]
         message = html_str
 
         msg = f"Subject: {subject}\n"
@@ -172,9 +211,6 @@ class OrderHandler:
         smtp_object.sendmail(from_email, from_email, msg)
 
         smtp_object.quit()
-
-
-
 
 if __name__ == "__main__":
 

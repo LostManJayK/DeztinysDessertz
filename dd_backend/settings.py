@@ -25,7 +25,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 SECRET_KEY = os.environ['DJANGO_SECRET']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '209.38.130.13',
@@ -83,14 +83,14 @@ WSGI_APPLICATION = 'dd_backend.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': os.environ.get("DB_NAME"),
-    #     'USER': os.environ.get("DB_USER"),
-    #     'PASSWORD': os.environ.get("DB_PASS"),
-    #     'HOST': os.environ.get("DB_HOST"),
-    #     'PORT': '3306'
-    # }
+     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get("DB_NAME"),
+        'USER': os.environ.get("DB_USER"),
+        'PASSWORD': os.environ.get("DB_PASS"),
+        'HOST': os.environ.get("DB_HOST"),
+        'PORT': '3306'
+    }
 }
 
 

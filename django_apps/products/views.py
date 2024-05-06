@@ -111,9 +111,9 @@ def submit_order(request):
 
         customer_info = json.loads(request.body.decode())
 
-        html_str = handler.format_email(cart, customer_info)
+        html_str = handler.format_order_email(cart, customer_info)
 
-        handler.send_order_confirmation(html_str, customer_info['email'])
+        handler.send_order_confirmation(html_str, customer_info['email'], 'order')
 
         return JsonResponse({'message': 'Order Submitted'})
 
@@ -121,9 +121,25 @@ def submit_order(request):
 
         return JsonResponse({'error': 'Invalid request method'}, status=400)
 
-def send_dessert_request(request):
+def send_catering_request(request):
 
-    hanlder = OrderHandler()
+    handler = OrderHandler()
+
+    if request.method == 'POST':
+
+        catering_data = json.loads(request.body.decode())
+
+        customer_info = catering_data['customer_info']
+
+        html_str = handler.format_catering_email(catering_data)
+
+        handler.send_order_confirmation(html_str, customer_info['email'], 'catering', customer_info['event_title'])
+
+        return JsonResponse({'message': 'Catering Request Sent'})
+    
+    else:
+
+        return JsonResponse({'error': 'Invalid request method'})
 
 
 
