@@ -9,7 +9,7 @@
 <section id="landing_photos" class="page_content">
     <div id="main_home_photo">
         <a id="home_cake" href="{% url 'menu' %}"> <img src="{% static 'images/home_images/cake1.jpg' %}"> </a>
-        <a href="menu.html" id="order_text"> <p> Order </br> Now </p> </a>
+        <a href="{% url 'menu' %}" id="order_text"> <p> Order </br> Now </p> </a>
         <a id="home_cupcake" href="{% url 'menu' %}"> <img src="{% static 'images/home_images/cupcakes2.jpg' %}"> </a>
     </div>
     <div id="small_home_photos"> 

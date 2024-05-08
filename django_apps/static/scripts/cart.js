@@ -45,13 +45,11 @@ function removeFromCart(target)
     })
     .then(data => {
         console.log('Item removed successfully:', data);
-        // Optionally, you can perform additional actions after the order is submitted
+        location.reload();
     })
     .catch(error => {
         console.error('Error removing item:', error);
     });
-
-    location.reload();
 
 }
 

@@ -1069,3 +1069,858 @@ cake_flavour
 [2024-05-08 09:22:06 +0000] [24362] [DEBUG] POST /remove_from_cart/
 [2024-05-08 09:22:06 +0000] [24363] [DEBUG] GET /cart/
 [2024-05-08 09:22:10 +0000] [24361] [DEBUG] GET /catering/
+[2024-05-08 09:53:14 +0000] [24361] [DEBUG] GET /favicon.ico
+[2024-05-08 09:53:15 +0000] [24363] [DEBUG] GET /robots.txt
+[2024-05-08 09:53:16 +0000] [24362] [DEBUG] GET /sitemap.xml
+[2024-05-08 10:42:05 +0000] [24362] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-08 12:12:48 +0000] [24361] [DEBUG] GET /
+[2024-05-08 12:30:30 +0000] [24362] [DEBUG] GET /.env
+[2024-05-08 12:30:31 +0000] [24361] [DEBUG] POST /
+[2024-05-08 12:30:34 +0000] [24363] [DEBUG] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-08 12:40:06 +0000] [24363] [DEBUG] GET /
+[2024-05-08 12:40:07 +0000] [24362] [DEBUG] GET //cjfuns.php
+[2024-05-08 12:40:07 +0000] [24361] [DEBUG] GET //wp-head.php
+[2024-05-08 12:40:09 +0000] [24362] [DEBUG] GET //class.api.php
+[2024-05-08 12:40:10 +0000] [24363] [DEBUG] GET //st.php
+[2024-05-08 12:40:11 +0000] [24361] [DEBUG] GET //my1.php
+[2024-05-08 12:44:06 +0000] [24361] [DEBUG] GET /
+[2024-05-08 13:08:16 +0000] [24363] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-08 13:53:12 +0000] [24362] [DEBUG] GET /
+[2024-05-08 14:30:21 +0000] [24363] [DEBUG] GET /
+[2024-05-08 14:30:22 +0000] [24361] [DEBUG] GET /favicon.ico
+[2024-05-08 14:30:23 +0000] [24362] [DEBUG] GET /favicon.ico
+[2024-05-08 14:30:25 +0000] [24362] [DEBUG] GET /favicon.ico
+[2024-05-08 15:15:47 +0000] [24362] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-08 16:01:27 +0000] [24361] [DEBUG] GET /
+[2024-05-08 16:10:56 +0000] [24363] [DEBUG] GET /
+[2024-05-08 16:10:56 +0000] [24361] [DEBUG] GET /
+[2024-05-08 16:10:56 +0000] [24362] [DEBUG] GET /
+[2024-05-08 16:11:02 +0000] [24362] [DEBUG] GET /favicon.ico
+[2024-05-08 16:11:03 +0000] [24363] [DEBUG] GET /favicon.ico
+[2024-05-08 16:11:03 +0000] [24361] [DEBUG] GET /favicon.ico
+[2024-05-08 16:12:00 +0000] [24361] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-08 16:17:34 +0000] [24363] [DEBUG] GET /
+[2024-05-08 16:17:36 +0000] [24361] [DEBUG] GET /favicon.ico
+[2024-05-08 16:56:04 +0000] [24361] [DEBUG] GET /.env
+[2024-05-08 17:02:22 +0000] [24363] [DEBUG] GET /
+[2024-05-08 17:02:27 +0000] [24361] [DEBUG] GET /menu/
+[2024-05-08 17:02:54 +0000] [24363] [DEBUG] POST /add_to_cart/
+
+{'Name': 'Dipped Dessertz', 'dipped_dessert_type': 'almonds', 'other_dipped_dessert_type': '', 'dipped_dessert_coating': 'candy', 'num_dipped_desserts': '5', 'dipped_dessert_notes': ''}
+
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da1b2ed0>
+Item: {'Name': 'Dipped Dessertz', 'dipped_dessert_type': 'almonds', 'other_dipped_dessert_type': '', 'dipped_dessert_coating': 'candy', 'num_dipped_desserts': '5', 'dipped_dessert_notes': ''}
+Name
+dipped_dessert_type
+
+{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+
+0
+0
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+0
+1
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+0
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da00b7a0>
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cheesecake cups', 'num_other_desserts': '20', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cheesecake cups', 'num_other_desserts': '20', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da005ca0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da0072c0>
+
+{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+
+
+{'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da00b530>
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+[2024-05-08 17:02:56 +0000] [24361] [DEBUG] GET /cart/
+[2024-05-08 17:02:58 +0000] [24362] [DEBUG] GET /cart/
+[2024-05-08 17:58:12 +0000] [24363] [DEBUG] GET /cart/
+[2024-05-08 17:58:14 +0000] [24362] [DEBUG] POST /remove_from_cart/
+[2024-05-08 17:58:14 +0000] [24362] [DEBUG] Ignoring EPIPE
+[2024-05-08 17:58:14 +0000] [24361] [DEBUG] GET /cart/
+[2024-05-08 18:09:05 +0000] [24361] [DEBUG] GET /cart/
+[2024-05-08 18:09:05 +0000] [24363] [DEBUG] GET /favicon.ico
+[2024-05-08 18:09:06 +0000] [24362] [DEBUG] GET /menu/
+[2024-05-08 18:09:09 +0000] [24362] [DEBUG] POST /add_to_cart/
+[2024-05-08 18:09:10 +0000] [24361] [DEBUG] GET /cart/
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da17e1b0>
+
+{'Name': 'Dipped Dessertz', 'dipped_dessert_type': 'almonds', 'other_dipped_dessert_type': '', 'dipped_dessert_coating': 'candy', 'num_dipped_desserts': '5', 'dipped_dessert_notes': ''}
+
+
+{'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+
+Item: {'Name': 'Dipped Dessertz', 'dipped_dessert_type': 'almonds', 'other_dipped_dessert_type': '', 'dipped_dessert_coating': 'candy', 'num_dipped_desserts': '5', 'dipped_dessert_notes': ''}
+Name
+dipped_dessert_type
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+0
+0
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+1
+1
+0
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+1
+
+{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+
+
+{'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+
+
+{'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+Item: {'Name': 'Dipped Dessertz', 'dipped_dessert_type': 'almonds', 'other_dipped_dessert_type': '', 'dipped_dessert_coating': 'candy', 'num_dipped_desserts': '5', 'dipped_dessert_notes': ''}
+Name
+dipped_dessert_type
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+Name
+cupcake_flavour
+other_cupcake_flavour
+cupcake_filling
+other_cupcake_filling
+num_cupcakes
+cupcake_notes
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+Item: {'Name': 'Dipped Dessertz', 'dipped_dessert_type': 'almonds', 'other_dipped_dessert_type': '', 'dipped_dessert_coating': 'candy', 'num_dipped_desserts': '5', 'dipped_dessert_notes': ''}
+Name
+dipped_dessert_type
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da0144a0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da01bd10>
+
+{'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}
+
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da01b560>
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+[2024-05-08 18:09:12 +0000] [24363] [DEBUG] POST /remove_from_cart/
+[2024-05-08 18:09:12 +0000] [24363] [DEBUG] Ignoring EPIPE
+[2024-05-08 18:09:12 +0000] [24363] [DEBUG] GET /cart/
+[2024-05-08 18:09:13 +0000] [24361] [DEBUG] POST /remove_from_cart/
+[2024-05-08 18:09:13 +0000] [24362] [DEBUG] GET /cart/
+[2024-05-08 18:09:13 +0000] [24363] [DEBUG] POST /remove_from_cart/
+[2024-05-08 18:09:13 +0000] [24363] [DEBUG] Ignoring EPIPE
+[2024-05-08 18:09:13 +0000] [24361] [DEBUG] GET /cart/
+[2024-05-08 18:09:14 +0000] [24362] [DEBUG] POST /remove_from_cart/
+[2024-05-08 18:09:14 +0000] [24362] [DEBUG] Ignoring EPIPE
+[2024-05-08 18:09:14 +0000] [24362] [DEBUG] GET /cart/
+[2024-05-08 18:09:15 +0000] [24363] [DEBUG] POST /remove_from_cart/
+[2024-05-08 18:09:15 +0000] [24363] [DEBUG] Ignoring EPIPE
+[2024-05-08 18:09:15 +0000] [24361] [DEBUG] GET /cart/
+[2024-05-08 18:10:02 +0000] [24361] [DEBUG] POST /remove_from_cart/
+[2024-05-08 18:10:02 +0000] [24361] [DEBUG] Ignoring EPIPE
+[2024-05-08 18:10:02 +0000] [24362] [DEBUG] GET /cart/
+[2024-05-08 18:11:53 +0000] [24362] [DEBUG] GET /cart/
+[2024-05-08 18:30:51 +0000] [24361] [DEBUG] GET /menu/
+[2024-05-08 18:30:51 +0000] [24362] [DEBUG] GET /favicon.ico
+[2024-05-08 18:30:54 +0000] [24361] [DEBUG] POST /add_to_cart/
+[2024-05-08 18:30:55 +0000] [24362] [DEBUG] GET /cart/
+[2024-05-08 18:30:57 +0000] [24363] [DEBUG] POST /remove_from_cart/
+[2024-05-08 18:30:57 +0000] [24362] [DEBUG] GET /cart/
+[2024-05-08 18:31:15 +0000] [24362] [DEBUG] GET /menu/
+[2024-05-08 18:31:19 +0000] [24361] [DEBUG] POST /add_to_cart/
+[2024-05-08 18:31:20 +0000] [24363] [DEBUG] GET /cart/
+[2024-05-08 18:34:30 +0000] [24363] [DEBUG] GET /menu/
+[2024-05-08 18:36:15 +0000] [24363] [DEBUG] POST /add_to_cart/
+[2024-05-08 18:36:16 +0000] [24361] [DEBUG] GET /cart/
+[2024-05-08 18:36:18 +0000] [24363] [DEBUG] POST /remove_from_cart/
+[2024-05-08 18:36:18 +0000] [24362] [DEBUG] GET /cart/
+[2024-05-08 18:36:20 +0000] [24362] [DEBUG] POST /remove_from_cart/
+[2024-05-08 18:36:20 +0000] [24361] [DEBUG] GET /cart/
+[2024-05-08 18:36:21 +0000] [24363] [DEBUG] GET /menu/
+[2024-05-08 18:40:23 +0000] [24363] [DEBUG] GET /.git/config
+[2024-05-08 18:40:26 +0000] [24362] [DEBUG] GET /.svn/entries
+[2024-05-08 18:41:41 +0000] [24362] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-08 18:42:26 +0000] [24361] [DEBUG] GET /
+[2024-05-08 18:42:27 +0000] [24363] [DEBUG] GET /menu.html
+[2024-05-08 18:43:41 +0000] [24363] [DEBUG] GET /menu.html
+[2024-05-08 18:45:02 +0000] [24362] [DEBUG] GET /
+[2024-05-08 18:45:04 +0000] [24363] [DEBUG] GET /menu.html
+[2024-05-08 18:45:19 +0000] [24361] [DEBUG] GET /
+[2024-05-08 18:45:20 +0000] [24362] [DEBUG] GET /favicon.ico
+[2024-05-08 18:45:20 +0000] [24363] [DEBUG] GET /menu/
+[2024-05-08 18:45:22 +0000] [24363] [DEBUG] GET /
+[2024-05-08 18:45:24 +0000] [24361] [DEBUG] GET /menu/
+[2024-05-08 18:45:24 +0000] [24362] [DEBUG] GET /
+[2024-05-08 18:45:26 +0000] [24363] [DEBUG] GET /menu.html
+[2024-05-08 18:46:21 +0000] [24358] [INFO] Handling signal: term
+[2024-05-08 18:46:21 +0000] [24361] [INFO] Worker exiting (pid: 24361)
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+0
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+0
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da0d32c0>
+
+{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+
+
+{'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+Item: {'Name': 'Something else?', 'request_name': 'Oompa Loompa', 'something_else_notes': 'sadfasfsa;ldfkasdcioas;docihasdofsadf'}
+Name
+request_name
+something_else_notes
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da0d3ce0>
+[2024-05-08 18:46:21 +0000] [24362] [INFO] Worker exiting (pid: 24362)
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+[{'Name': 'Cakes', 'Cake Type': 'Baked Cheesecake', 'Layers': '1', 'Cake Flavour': 'Angel Food', 'Cake Filling': 'Boston Cream', 'Cake Size': '4', 'Cake Shape': 'Circle', 'Notes': ''}, {'Name': 'Other Dessertz'}]
+Setting up SMTP
+(250, b'smtp.gmail.com at your service, [209.38.130.13]\nSIZE 35882577\n8BITMIME\nSTARTTLS\nENHANCEDSTATUSCODES\nPIPELINING\nCHUNKING\nSMTPUTF8')
+(220, b'2.0.0 Ready to start TLS')
+(235, b'2.7.0 Accepted')
+0
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+1
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da0af1a0>
+
+{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+0
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da0afda0>
+Item: {'Name': 'Something else?', 'request_name': 'Oompa Loompa', 'something_else_notes': 'sadfasfsa;ldfkasdcioas;docihasdofsadf'}
+Name
+request_name
+something_else_notes
+0
+[2024-05-08 18:46:21 +0000] [24363] [INFO] Worker exiting (pid: 24363)
+
+{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+0
+Item: {'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}
+Name
+cake_type
+num_layers
+cake_flavour
+other_cake_flavour
+cake_filling
+other_cake_filling
+cake_size
+cake_shape
+other_cake_shape
+cake_notes
+0
+0
+0
+Item: {'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+Name
+other_dessert_type
+num_other_desserts
+other_dessert_notes
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da0ae240>
+
+{'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}
+
+
+{'Name': 'Something else?', 'request_name': 'Oompa Loompa', 'something_else_notes': 'sadfasfsa;ldfkasdcioas;docihasdofsadf'}
+
+0
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da0af680>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7a79da0087d0>
+[2024-05-08 18:46:22 +0000] [24358] [INFO] Shutting down: Master
+[2024-05-08 18:46:26 +0000] [26910] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luminyx/DeztinysDessertz
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: “DeztinysDessertz”
+  default_proc_name: dd_backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x76ba5663fc40>
+  on_reload: <function OnReload.on_reload at 0x76ba5663fd80>
+  when_ready: <function WhenReady.when_ready at 0x76ba5663fec0>
+  pre_fork: <function Prefork.pre_fork at 0x76ba5665c0e0>
+  post_fork: <function Postfork.post_fork at 0x76ba5665c220>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x76ba5665c360>
+  worker_int: <function WorkerInt.worker_int at 0x76ba5665c4a0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x76ba5665c5e0>
+  pre_exec: <function PreExec.pre_exec at 0x76ba5665c720>
+  pre_request: <function PreRequest.pre_request at 0x76ba5665c860>
+  post_request: <function PostRequest.post_request at 0x76ba5665c900>
+  child_exit: <function ChildExit.child_exit at 0x76ba5665ca40>
+  worker_exit: <function WorkerExit.worker_exit at 0x76ba5665cb80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x76ba5665ccc0>
+  on_exit: <function OnExit.on_exit at 0x76ba5665ce00>
+  ssl_context: <function NewSSLContext.ssl_context at 0x76ba5665cfe0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-05-08 18:46:26 +0000] [26910] [INFO] Starting gunicorn 22.0.0
+[2024-05-08 18:46:26 +0000] [26910] [DEBUG] Arbiter booted
+[2024-05-08 18:46:26 +0000] [26910] [INFO] Listening at: unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock (26910)
+[2024-05-08 18:46:26 +0000] [26910] [INFO] Using worker: sync
+[2024-05-08 18:46:26 +0000] [26913] [INFO] Booting worker with pid: 26913
+[2024-05-08 18:46:26 +0000] [26914] [INFO] Booting worker with pid: 26914
+[2024-05-08 18:46:26 +0000] [26915] [INFO] Booting worker with pid: 26915
+[2024-05-08 18:46:26 +0000] [26910] [DEBUG] 3 workers
+[2024-05-08 18:46:41 +0000] [26913] [DEBUG] GET /
+[2024-05-08 18:46:42 +0000] [26914] [DEBUG] GET /favicon.ico
+[2024-05-08 18:46:43 +0000] [26913] [DEBUG] GET /menu/
