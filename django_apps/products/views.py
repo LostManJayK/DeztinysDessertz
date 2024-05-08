@@ -124,6 +124,8 @@ def submit_order(request):
 
         handler.send_order_confirmation(html_str, customer_info['email'], 'order')
 
+        del request.session['cart']
+
         return JsonResponse({'message': 'Order Submitted'})
 
     else:
@@ -143,6 +145,8 @@ def send_catering_request(request):
         html_str = handler.format_catering_email(catering_data)
 
         handler.send_order_confirmation(html_str, customer_info['email'], 'catering', customer_info['event_title'])
+
+        
 
         return JsonResponse({'message': 'Catering Request Sent'})
     

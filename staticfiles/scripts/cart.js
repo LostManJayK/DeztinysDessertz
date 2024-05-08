@@ -117,7 +117,6 @@ function submitOrder()
         })
         .then(data => {
             console.log('Order submitted successfully:', data);
-            // Optionally, you can perform additional actions after the order is submitted
         })
         .catch(error => {
             console.error('Error submitting order:', error);

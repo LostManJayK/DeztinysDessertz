@@ -1924,3 +1924,574 @@ other_dessert_notes
 [2024-05-08 18:46:41 +0000] [26913] [DEBUG] GET /
 [2024-05-08 18:46:42 +0000] [26914] [DEBUG] GET /favicon.ico
 [2024-05-08 18:46:43 +0000] [26913] [DEBUG] GET /menu/
+[2024-05-08 18:55:21 +0000] [26913] [DEBUG] GET /
+[2024-05-08 18:55:23 +0000] [26914] [DEBUG] GET /catering/
+[2024-05-08 18:55:25 +0000] [26915] [DEBUG] GET /
+[2024-05-08 18:55:28 +0000] [26913] [DEBUG] GET /profile/
+[2024-05-08 18:58:50 +0000] [26913] [DEBUG] GET /
+[2024-05-08 19:04:05 +0000] [26915] [DEBUG] GET /menu/
+[2024-05-08 21:13:21 +0000] [26910] [INFO] Handling signal: term
+[2024-05-08 21:13:21 +0000] [26913] [INFO] Worker exiting (pid: 26913)
+[2024-05-08 21:13:21 +0000] [26915] [INFO] Worker exiting (pid: 26915)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x76ba544e7680>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x76ba544e3560>
+[2024-05-08 21:13:21 +0000] [26914] [INFO] Worker exiting (pid: 26914)
+[2024-05-08 21:13:21 +0000] [26910] [INFO] Shutting down: Master
+[2024-05-08 21:13:28 +0000] [27971] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luminyx/DeztinysDessertz
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: “DeztinysDessertz”
+  default_proc_name: dd_backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x77d19aec7c40>
+  on_reload: <function OnReload.on_reload at 0x77d19aec7d80>
+  when_ready: <function WhenReady.when_ready at 0x77d19aec7ec0>
+  pre_fork: <function Prefork.pre_fork at 0x77d19aee40e0>
+  post_fork: <function Postfork.post_fork at 0x77d19aee4220>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x77d19aee4360>
+  worker_int: <function WorkerInt.worker_int at 0x77d19aee44a0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x77d19aee45e0>
+  pre_exec: <function PreExec.pre_exec at 0x77d19aee4720>
+  pre_request: <function PreRequest.pre_request at 0x77d19aee4860>
+  post_request: <function PostRequest.post_request at 0x77d19aee4900>
+  child_exit: <function ChildExit.child_exit at 0x77d19aee4a40>
+  worker_exit: <function WorkerExit.worker_exit at 0x77d19aee4b80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x77d19aee4cc0>
+  on_exit: <function OnExit.on_exit at 0x77d19aee4e00>
+  ssl_context: <function NewSSLContext.ssl_context at 0x77d19aee4fe0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-05-08 21:13:28 +0000] [27971] [INFO] Starting gunicorn 22.0.0
+[2024-05-08 21:13:28 +0000] [27971] [DEBUG] Arbiter booted
+[2024-05-08 21:13:28 +0000] [27971] [INFO] Listening at: unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock (27971)
+[2024-05-08 21:13:28 +0000] [27971] [INFO] Using worker: sync
+[2024-05-08 21:13:28 +0000] [27974] [INFO] Booting worker with pid: 27974
+[2024-05-08 21:13:28 +0000] [27975] [INFO] Booting worker with pid: 27975
+[2024-05-08 21:13:28 +0000] [27976] [INFO] Booting worker with pid: 27976
+[2024-05-08 21:13:28 +0000] [27971] [DEBUG] 3 workers
+[2024-05-08 21:13:47 +0000] [27976] [DEBUG] GET /menu/
+[2024-05-08 21:13:47 +0000] [27974] [DEBUG] GET /favicon.ico
+[2024-05-08 21:13:52 +0000] [27975] [DEBUG] POST /add_to_cart/
+[2024-05-08 21:13:53 +0000] [27976] [DEBUG] GET /cart/
+[2024-05-08 21:13:57 +0000] [27974] [DEBUG] POST /remove_from_cart/
+[2024-05-08 21:13:57 +0000] [27975] [DEBUG] GET /cart/
+[2024-05-08 21:15:01 +0000] [27975] [DEBUG] GET /menu/
+[2024-05-08 21:15:05 +0000] [27976] [DEBUG] POST /add_to_cart/
+[2024-05-08 21:15:06 +0000] [27974] [DEBUG] GET /cart/
+[2024-05-08 21:16:00 +0000] [27976] [DEBUG] POST /submit_order/
+[2024-05-08 21:16:13 +0000] [27975] [DEBUG] POST /remove_from_cart/
+[2024-05-08 21:16:13 +0000] [27974] [DEBUG] GET /cart/
+[2024-05-08 21:22:30 +0000] [27974] [DEBUG] GET /menu/
+[2024-05-08 21:22:33 +0000] [27976] [DEBUG] POST /add_to_cart/
+[2024-05-08 21:22:34 +0000] [27975] [DEBUG] GET /cart/
+[2024-05-08 21:22:57 +0000] [27975] [DEBUG] POST /submit_order/
+[2024-05-08 21:23:01 +0000] [27976] [DEBUG] GET /cart/
+[2024-05-08 21:23:13 +0000] [27974] [DEBUG] POST /submit_order/
+[2024-05-08 21:23:29 +0000] [27975] [DEBUG] POST /remove_from_cart/
+[2024-05-08 21:23:29 +0000] [27976] [DEBUG] GET /cart/
+[2024-05-08 21:24:00 +0000] [27971] [INFO] Handling signal: term
+[2024-05-08 21:24:00 +0000] [27975] [INFO] Worker exiting (pid: 27975)
+[{'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}]
+BEFORE KEYVAL:  []
+AFTER KEYVAL:  []
+<mysql.connector.connection_cext.CMySQLConnection object at 0x77d198c1e600>
+BEFORE KEYVAL:  [{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}]
+AFTER KEYVAL:  [{'Name': 'Cakes', 'Cake Type': 'Baked Cheesecake', 'Layers': '1', 'Cake Flavour': 'Angel Food', 'Cake Filling': 'Boston Cream', 'Cake Size': '4', 'Cake Shape': 'Circle', 'Notes': ''}]
+Setting up SMTP
+(250, b'smtp.gmail.com at your service, [209.38.130.13]\nSIZE 35882577\n8BITMIME\nSTARTTLS\nENHANCEDSTATUSCODES\nPIPELINING\nCHUNKING\nSMTPUTF8')
+(220, b'2.0.0 Ready to start TLS')
+(235, b'2.7.0 Accepted')
+[2024-05-08 21:24:00 +0000] [27974] [INFO] Worker exiting (pid: 27974)
+BEFORE KEYVAL:  [{'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}]
+AFTER KEYVAL:  [{'Name': 'Cupcakes', 'Cupcake Flavour': 'Angel Food', 'Filling': 'Boston Cream', 'Count': '6', 'Notes': ''}]
+BEFORE KEYVAL:  []
+AFTER KEYVAL:  []
+<mysql.connector.connection_cext.CMySQLConnection object at 0x77d198c27d10>
+Setting up SMTP
+(250, b'smtp.gmail.com at your service, [209.38.130.13]\nSIZE 35882577\n8BITMIME\nSTARTTLS\nENHANCEDSTATUSCODES\nPIPELINING\nCHUNKING\nSMTPUTF8')
+(220, b'2.0.0 Ready to start TLS')
+(235, b'2.7.0 Accepted')
+[2024-05-08 21:24:00 +0000] [27976] [INFO] Worker exiting (pid: 27976)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x77d199120470>
+BEFORE KEYVAL:  [{'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}]
+AFTER KEYVAL:  [{'Name': 'Other Dessertz', 'Dessert Type': 'Cake Cups', 'Quantity': '5', 'Notes': ''}]
+[{'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}]
+Setting up SMTP
+(250, b'smtp.gmail.com at your service, [209.38.130.13]\nSIZE 35882577\n8BITMIME\nSTARTTLS\nENHANCEDSTATUSCODES\nPIPELINING\nCHUNKING\nSMTPUTF8')
+(220, b'2.0.0 Ready to start TLS')
+(235, b'2.7.0 Accepted')
+[{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}]
+BEFORE KEYVAL:  [{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}]
+AFTER KEYVAL:  [{'Name': 'Cakes', 'Cake Type': 'Baked Cheesecake', 'Layers': '1', 'Cake Flavour': 'Angel Food', 'Cake Filling': 'Boston Cream', 'Cake Size': '4', 'Cake Shape': 'Circle', 'Notes': ''}]
+BEFORE KEYVAL:  []
+AFTER KEYVAL:  []
+[2024-05-08 21:24:00 +0000] [27971] [INFO] Shutting down: Master
+[2024-05-08 21:24:05 +0000] [28285] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luminyx/DeztinysDessertz
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: “DeztinysDessertz”
+  default_proc_name: dd_backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x793bb0197c40>
+  on_reload: <function OnReload.on_reload at 0x793bb0197d80>
+  when_ready: <function WhenReady.when_ready at 0x793bb0197ec0>
+  pre_fork: <function Prefork.pre_fork at 0x793bb01b40e0>
+  post_fork: <function Postfork.post_fork at 0x793bb01b4220>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x793bb01b4360>
+  worker_int: <function WorkerInt.worker_int at 0x793bb01b44a0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x793bb01b45e0>
+  pre_exec: <function PreExec.pre_exec at 0x793bb01b4720>
+  pre_request: <function PreRequest.pre_request at 0x793bb01b4860>
+  post_request: <function PostRequest.post_request at 0x793bb01b4900>
+  child_exit: <function ChildExit.child_exit at 0x793bb01b4a40>
+  worker_exit: <function WorkerExit.worker_exit at 0x793bb01b4b80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x793bb01b4cc0>
+  on_exit: <function OnExit.on_exit at 0x793bb01b4e00>
+  ssl_context: <function NewSSLContext.ssl_context at 0x793bb01b4fe0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-05-08 21:24:05 +0000] [28285] [INFO] Starting gunicorn 22.0.0
+[2024-05-08 21:24:05 +0000] [28285] [DEBUG] Arbiter booted
+[2024-05-08 21:24:05 +0000] [28285] [INFO] Listening at: unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock (28285)
+[2024-05-08 21:24:05 +0000] [28285] [INFO] Using worker: sync
+[2024-05-08 21:24:05 +0000] [28288] [INFO] Booting worker with pid: 28288
+[2024-05-08 21:24:05 +0000] [28289] [INFO] Booting worker with pid: 28289
+[2024-05-08 21:24:05 +0000] [28290] [INFO] Booting worker with pid: 28290
+[2024-05-08 21:24:05 +0000] [28285] [DEBUG] 3 workers
+[2024-05-08 21:24:13 +0000] [28289] [DEBUG] GET /menu/
+[2024-05-08 21:24:14 +0000] [28288] [DEBUG] GET /favicon.ico
+[2024-05-08 21:24:16 +0000] [28290] [DEBUG] POST /add_to_cart/
+[2024-05-08 21:24:17 +0000] [28289] [DEBUG] GET /cart/
+[2024-05-08 21:24:26 +0000] [28288] [DEBUG] GET /cart/
+[2024-05-08 21:24:27 +0000] [28289] [DEBUG] POST /remove_from_cart/
+[2024-05-08 21:24:27 +0000] [28290] [DEBUG] GET /cart/
+[2024-05-08 21:25:54 +0000] [28290] [DEBUG] GET /
+[2024-05-08 21:25:54 +0000] [28288] [DEBUG] GET //wp-content/uploads/
+[2024-05-08 21:25:55 +0000] [28289] [DEBUG] GET //wp-content/plugins/
+[2024-05-08 21:25:55 +0000] [28289] [DEBUG] GET //wp-admin/admin-ajax.php
+[2024-05-08 21:25:55 +0000] [28288] [DEBUG] GET //wp-content/themes/twenty/twenty.php
+[2024-05-08 21:25:56 +0000] [28290] [DEBUG] GET //wp-content/patior/
+[2024-05-08 21:25:56 +0000] [28289] [DEBUG] GET //wp-includes/js/tinymce/plugins/compat3x/css/index.php
+[2024-05-08 21:25:57 +0000] [28288] [DEBUG] GET //dropdown.php
+[2024-05-08 21:25:57 +0000] [28288] [DEBUG] GET //wp-includes/Text/about.php
+[2024-05-08 21:25:57 +0000] [28290] [DEBUG] GET //wp-includes/rest-api/about.php
+[2024-05-08 21:25:58 +0000] [28289] [DEBUG] GET //ee.php
+[2024-05-08 21:25:58 +0000] [28290] [DEBUG] GET //wp-admin/install.php
+[2024-05-08 21:25:58 +0000] [28288] [DEBUG] GET //wp-content/plugins/install.php
+[2024-05-08 21:25:59 +0000] [28289] [DEBUG] GET //wp-content/install.php
+[2024-05-08 21:25:59 +0000] [28290] [DEBUG] GET //install.php
+[2024-05-08 21:25:59 +0000] [28289] [DEBUG] GET //wp-includes/install.php
+[2024-05-08 21:26:00 +0000] [28288] [DEBUG] GET //wp-admin/images/install.php
+[2024-05-08 21:26:00 +0000] [28290] [DEBUG] GET //cgi-bin/install.php
+[2024-05-08 21:26:01 +0000] [28289] [DEBUG] GET //.well-known/acme-challenge/install.php
+[2024-05-08 21:26:01 +0000] [28288] [DEBUG] GET //css/install.php
+[2024-05-08 21:26:02 +0000] [28289] [DEBUG] GET //wp-admin/js/about.php7
+[2024-05-08 21:26:02 +0000] [28290] [DEBUG] GET //wp-admin/js/about.php
+[2024-05-08 21:26:02 +0000] [28290] [DEBUG] GET //wp-admin/maint/moon.php
+[2024-05-08 21:26:03 +0000] [28288] [DEBUG] GET //cgi-bin/cgi-bin/about.php
+[2024-05-08 21:26:03 +0000] [28289] [DEBUG] GET //cgi-bin/cgi-bin/about.php7
+[2024-05-08 21:26:04 +0000] [28289] [DEBUG] GET //wp-admin/dropdown.php
+[2024-05-08 21:26:04 +0000] [28290] [DEBUG] GET //wp-content/plugins/Cache/dropdown.php
+[2024-05-08 21:26:04 +0000] [28288] [DEBUG] GET //wp-content/dropdown.php
+[2024-05-08 21:26:43 +0000] [28285] [INFO] Handling signal: term
+[2024-05-08 21:26:43 +0000] [28288] [INFO] Worker exiting (pid: 28288)
+BEFORE KEYVAL:  [{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}]
+AFTER KEYVAL:  [{'Name': 'Cakes', 'Cake Type': 'Baked Cheesecake', 'Layers': '1', 'Cake Flavour': 'Angel Food', 'Cake Filling': 'Boston Cream', 'Cake Size': '4', 'Cake Shape': 'Circle', 'Notes': ''}]
+[2024-05-08 21:26:43 +0000] [28289] [INFO] Worker exiting (pid: 28289)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x793badf7a630>
+BEFORE KEYVAL:  [{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}]
+AFTER KEYVAL:  [{'Name': 'Cakes', 'Cake Type': 'Baked Cheesecake', 'Layers': '1', 'Cake Flavour': 'Angel Food', 'Cake Filling': 'Boston Cream', 'Cake Size': '4', 'Cake Shape': 'Circle', 'Notes': ''}]
+[2024-05-08 21:26:43 +0000] [28290] [INFO] Worker exiting (pid: 28290)
+[{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}]
+BEFORE KEYVAL:  []
+AFTER KEYVAL:  []
+[2024-05-08 21:26:44 +0000] [28285] [INFO] Shutting down: Master
+[2024-05-08 21:26:49 +0000] [28448] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luminyx/DeztinysDessertz
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: “DeztinysDessertz”
+  default_proc_name: dd_backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ee86db6bc40>
+  on_reload: <function OnReload.on_reload at 0x7ee86db6bd80>
+  when_ready: <function WhenReady.when_ready at 0x7ee86db6bec0>
+  pre_fork: <function Prefork.pre_fork at 0x7ee86db880e0>
+  post_fork: <function Postfork.post_fork at 0x7ee86db88220>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ee86db88360>
+  worker_int: <function WorkerInt.worker_int at 0x7ee86db884a0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ee86db885e0>
+  pre_exec: <function PreExec.pre_exec at 0x7ee86db88720>
+  pre_request: <function PreRequest.pre_request at 0x7ee86db88860>
+  post_request: <function PostRequest.post_request at 0x7ee86db88900>
+  child_exit: <function ChildExit.child_exit at 0x7ee86db88a40>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ee86db88b80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ee86db88cc0>
+  on_exit: <function OnExit.on_exit at 0x7ee86db88e00>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7ee86db88fe0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-05-08 21:26:49 +0000] [28448] [INFO] Starting gunicorn 22.0.0
+[2024-05-08 21:26:49 +0000] [28448] [DEBUG] Arbiter booted
+[2024-05-08 21:26:49 +0000] [28448] [INFO] Listening at: unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock (28448)
+[2024-05-08 21:26:49 +0000] [28448] [INFO] Using worker: sync
+[2024-05-08 21:26:49 +0000] [28451] [INFO] Booting worker with pid: 28451
+[2024-05-08 21:26:49 +0000] [28452] [INFO] Booting worker with pid: 28452
+[2024-05-08 21:26:49 +0000] [28453] [INFO] Booting worker with pid: 28453
+[2024-05-08 21:26:49 +0000] [28448] [DEBUG] 3 workers
+[2024-05-08 21:26:54 +0000] [28452] [DEBUG] GET /menu/
+[2024-05-08 21:26:58 +0000] [28453] [DEBUG] POST /add_to_cart/
+[2024-05-08 21:26:59 +0000] [28451] [DEBUG] GET /cart/
+[2024-05-08 21:27:09 +0000] [28452] [DEBUG] GET /menu/
+[2024-05-08 21:27:09 +0000] [28453] [DEBUG] GET /favicon.ico
+[2024-05-08 21:27:12 +0000] [28451] [DEBUG] POST /add_to_cart/
+[2024-05-08 21:27:13 +0000] [28451] [DEBUG] GET /cart/
+[2024-05-08 21:28:11 +0000] [28453] [DEBUG] POST /remove_from_cart/
+[2024-05-08 21:28:11 +0000] [28452] [DEBUG] GET /cart/
+[2024-05-08 21:28:18 +0000] [28451] [DEBUG] GET /menu/
+[2024-05-08 21:28:25 +0000] [28452] [DEBUG] POST /add_to_cart/
+[2024-05-08 21:28:26 +0000] [28453] [DEBUG] GET /cart/
+[2024-05-08 21:30:59 +0000] [28453] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-08 21:31:41 +0000] [28448] [INFO] Handling signal: term
+[2024-05-08 21:31:41 +0000] [28451] [INFO] Worker exiting (pid: 28451)
+BEFORE KEYVAL:  [{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}]
+AFTER KEYVAL:  [{'Name': 'Cakes', 'Cake Type': 'Baked Cheesecake', 'Layers': '1', 'Cake Flavour': 'Angel Food', 'Cake Filling': 'Boston Cream', 'Cake Size': '4', 'Cake Shape': 'Circle', 'Notes': ''}]
+[{'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}]
+BEFORE KEYVAL:  [{'Name': 'Other Dessertz', 'other_dessert_type': 'cake cups', 'num_other_desserts': '5', 'other_dessert_notes': ''}]
+AFTER KEYVAL:  [{'Name': 'Other Dessertz', 'Dessert Type': 'Cake Cups', 'Quantity': '5', 'Notes': ''}]
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7ee86b82f020>
+[2024-05-08 21:31:41 +0000] [28453] [INFO] Worker exiting (pid: 28453)
+[{'Name': 'Cakes', 'cake_type': 'baked cheesecake', 'num_layers': '1', 'cake_flavour': 'angel food', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}]
+BEFORE KEYVAL:  [{'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}]
+AFTER KEYVAL:  [{'Name': 'Cupcakes', 'Cupcake Flavour': 'Angel Food', 'Filling': 'Boston Cream', 'Count': '6', 'Notes': ''}]
+[2024-05-08 21:31:41 +0000] [28452] [INFO] Worker exiting (pid: 28452)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7ee86b9a61e0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7ee86b802b10>
+BEFORE KEYVAL:  []
+AFTER KEYVAL:  []
+[{'Name': 'Cupcakes', 'cupcake_flavour': 'angel food', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}]
+[2024-05-08 21:31:41 +0000] [28448] [INFO] Shutting down: Master
+[2024-05-08 21:31:46 +0000] [28632] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luminyx/DeztinysDessertz
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: “DeztinysDessertz”
+  default_proc_name: dd_backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7d88b04c7c40>
+  on_reload: <function OnReload.on_reload at 0x7d88b04c7d80>
+  when_ready: <function WhenReady.when_ready at 0x7d88b04c7ec0>
+  pre_fork: <function Prefork.pre_fork at 0x7d88b04e40e0>
+  post_fork: <function Postfork.post_fork at 0x7d88b04e4220>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7d88b04e4360>
+  worker_int: <function WorkerInt.worker_int at 0x7d88b04e44a0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7d88b04e45e0>
+  pre_exec: <function PreExec.pre_exec at 0x7d88b04e4720>
+  pre_request: <function PreRequest.pre_request at 0x7d88b04e4860>
+  post_request: <function PostRequest.post_request at 0x7d88b04e4900>
+  child_exit: <function ChildExit.child_exit at 0x7d88b04e4a40>
+  worker_exit: <function WorkerExit.worker_exit at 0x7d88b04e4b80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7d88b04e4cc0>
+  on_exit: <function OnExit.on_exit at 0x7d88b04e4e00>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7d88b04e4fe0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-05-08 21:31:46 +0000] [28632] [INFO] Starting gunicorn 22.0.0
+[2024-05-08 21:31:46 +0000] [28632] [DEBUG] Arbiter booted
+[2024-05-08 21:31:46 +0000] [28632] [INFO] Listening at: unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock (28632)
+[2024-05-08 21:31:46 +0000] [28632] [INFO] Using worker: sync
+[2024-05-08 21:31:46 +0000] [28635] [INFO] Booting worker with pid: 28635
+[2024-05-08 21:31:46 +0000] [28636] [INFO] Booting worker with pid: 28636
+[2024-05-08 21:31:46 +0000] [28637] [INFO] Booting worker with pid: 28637
+[2024-05-08 21:31:46 +0000] [28632] [DEBUG] 3 workers
+[2024-05-08 21:32:31 +0000] [28637] [DEBUG] GET /
+[2024-05-08 21:34:22 +0000] [28636] [DEBUG] POST /submit_order/
+[2024-05-08 21:34:24 +0000] [28637] [DEBUG] GET /cart/
+[2024-05-08 21:34:31 +0000] [28635] [DEBUG] GET /cart/
+[2024-05-08 21:34:34 +0000] [28636] [DEBUG] GET /menu/
+[2024-05-08 21:34:37 +0000] [28637] [DEBUG] POST /add_to_cart/
+[2024-05-08 21:34:38 +0000] [28635] [DEBUG] GET /cart/
+[2024-05-08 21:34:59 +0000] [28635] [DEBUG] POST /submit_order/
+[2024-05-08 21:35:13 +0000] [28635] [DEBUG] GET /cart/
+[2024-05-08 21:35:58 +0000] [28635] [DEBUG] GET /
+[2024-05-08 21:36:00 +0000] [28636] [DEBUG] GET /favicon.ico
+[2024-05-08 21:36:16 +0000] [28637] [DEBUG] GET /
+[2024-05-08 21:36:20 +0000] [28635] [DEBUG] GET /
+[2024-05-08 21:36:25 +0000] [28636] [DEBUG] GET /menu/
+[2024-05-08 21:36:28 +0000] [28637] [DEBUG] GET /
+[2024-05-08 21:36:42 +0000] [28635] [DEBUG] GET /menu/
+[2024-05-08 22:06:28 +0000] [28636] [DEBUG] GET /
