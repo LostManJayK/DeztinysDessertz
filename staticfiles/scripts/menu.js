@@ -345,6 +345,8 @@ class MenuItem
     addToCart()
     {
 
+        console.log(this.order_specs);
+
         let itemObject = {"Name" : this.name};
         let requiredFilled = true;
         let otherOption = false;

@@ -54,7 +54,12 @@ def cart(request):
     handler = OrderHandler()
 
     cart_data = request.session.get("cart", [])
+
+    print("BEFORE KEYVAL: ", cart_data)
+
     cart_data = handler.replace_keyval(cart_data)
+
+    print("AFTER KEYVAL: ", cart_data)
    
     return render(request, "cart.html", {"cart_data" : cart_data})
 
@@ -70,12 +75,14 @@ def add_to_cart(request):
 
         cart.append(json.loads(request.body.decode()))
         request.session['cart'] = cart
-        request.session.modified = True
+        #request.session.modified = True
         request.session.save()
-        request.session.modified = False
+        #request.session.modified = False
 
-        for item in request.session['cart']:
-            print(f'\n{item}\n')
+        # for item in request.session['cart']:
+        #     print(f'\n{item}\n')
+
+        print(request.session['cart'])
 
         return JsonResponse({'message': 'Item added to cart successfully'})
 
@@ -87,10 +94,8 @@ def add_to_cart(request):
 def remove_from_cart(request):
     
     cart = request.session.get('cart', [])
-    print('BEFORE REMOVE: ', cart)
     item_index = int(json.loads(request.body.decode())['item_index']) - 1
 
-    print(item_index)
 
     if request.method == 'POST':
 

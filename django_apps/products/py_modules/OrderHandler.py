@@ -58,6 +58,9 @@ class OrderHandler:
             'something_else_notes' : 'Notes',
             'request_name' : 'Request Name',
             'other_cake_flavour' : 'Cake Flavour',
+            'other_dessert_type' : 'Dessert Type',
+            'num_other_desserts' : 'Quantity',
+            'other_dessert_notes' : 'Notes'
         }
 
     
@@ -68,9 +71,6 @@ class OrderHandler:
         catering_data = catering
 
         html_str = get_html('catering')
-
-        print(html_str)
-
         customer_info = catering['customer_info']
         catering_details = catering['catering_details'].replace('\n', '<br><br>')
 
@@ -103,8 +103,7 @@ class OrderHandler:
         html_str = get_html('order')
 
         items_html = ""
-        
-        print(cart_data)
+
         for item in cart_data:
 
             items_html += '<tr style="height:200px">'
@@ -148,13 +147,10 @@ class OrderHandler:
         for item in cart:
 
             new_item = {}
-            print(f'Item: {item}')
+
 
             for detail in item:
-
-                print(detail)
-
-                if 'other' in detail:
+                if 'other' in detail and not 'dessert' in detail:
                     continue
 
                 new_key = self.value_map[detail]
