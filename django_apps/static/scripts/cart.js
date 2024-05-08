@@ -133,10 +133,12 @@ function renderCart()
 {
 
     json_data = json_data.replaceAll("'", '"');
+    console.log("JSON DATA: " + json_data);
 
     try 
     {
         json_data = JSON.parse(json_data);
+        console.log(json_data);
     } 
     catch (error) 
     {

@@ -46,19 +46,27 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
-SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+SESSION_ENGINE = "django.contrib.sessions.backends.db"
+SESSION_COOKIE_DOMAIN = ".deztinysdessertz.ca"
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_NAME = 'dd_sessionid'
+
+CORS_ALLOWED_ORIGINS = ['https://deztinysdessertz.ca', 'https://www.deztinysdessertz.ca']
+CSRF_TRUSTED_ORIGINS = ['https://deztinysdessertz.ca', 'https://www.deztinysdessertz.ca']
 
 ROOT_URLCONF = 'dd_backend.urls'
 

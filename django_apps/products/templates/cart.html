@@ -9,6 +9,7 @@
 <section id="cart" class="page_content">
     <div class="form_holder">
         <form action="{% url 'submit_order' %}" method="POST" id="cart_form">
+        {% csrf_token %}
             <section id="customer_info">
                 <h1> Customer Info </h1>
                 <input id="name" class="customer_detail" name="Name" type="text" placeholder="Name" form="cart_form" required>

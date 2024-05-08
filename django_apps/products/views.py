@@ -70,9 +70,9 @@ def add_to_cart(request):
 
         cart.append(json.loads(request.body.decode()))
         request.session['cart'] = cart
-	request.session.modified = True
+        request.session.modified = True
         request.session.save()
-	request.session.modified = False
+        request.session.modified = False
 
         for item in request.session['cart']:
             print(f'\n{item}\n')
@@ -95,11 +95,10 @@ def remove_from_cart(request):
 
         cart.pop(item_index)
         request.session['cart'] = cart
-	request.session.modified = True
+        request.session.modified = True
         request.session.save()
         request.session.modified = False
         return JsonResponse({'message': 'Item removed from cart successfully'})
-d
     else:
 
         return JsonResponse({'error': 'Invalid request method'}, status=400)
