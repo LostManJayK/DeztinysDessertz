@@ -53,6 +53,10 @@ class OrderHandler:
             'sheet' : 'Sheet',
             'cake_notes' : 'Notes',
             'cupcake_notes' : 'Notes',
+            'dipped_dessert_type' : 'Dessert Type',
+            'dipped_dessert_coating' : 'Coating',
+            'num_dipped_desserts' : 'Quantity',
+            'other_dipped_dessert_type' : 'Dessert Type',
             'dipped_dessert_notes' : 'Notes',
             'other_dessert_notes' : 'Notes',
             'something_else_notes' : 'Notes',
@@ -150,7 +154,7 @@ class OrderHandler:
 
 
             for detail in item:
-                if 'other' in detail and not 'dessert' in detail:
+                if 'other' in detail and not 'other_dessert' in detail:
                     continue
 
                 new_key = self.value_map[detail]

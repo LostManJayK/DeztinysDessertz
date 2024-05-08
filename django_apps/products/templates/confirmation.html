@@ -1,0 +1,18 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'styles/confirmation_style.css' %}">
+<link rel="stylesheet" href="{% static 'layouts/confirmation_layout.css' %}">
+
+
+<section id="message_holder" class="page_content">
+    <div id="message">
+        <img id="confirm_img" src="{% static 'images/confirmation_images/confirmation.png' %}">
+        <h2 id="msg_h"> Thanks for your request! </h2>
+        <p id="msg_p"> Your confirmation email has been sent and you will receive a response within 48 hours. </p>
+    </div>
+</section>
+
+{% endblock %}

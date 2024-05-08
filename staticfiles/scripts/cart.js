@@ -117,6 +117,8 @@ function submitOrder()
         })
         .then(data => {
             console.log('Order submitted successfully:', data);
+            window.location.href = '/confirmation/';
+            //location.reload();
         })
         .catch(error => {
             console.error('Error submitting order:', error);

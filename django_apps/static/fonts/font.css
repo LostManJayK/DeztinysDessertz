@@ -66,3 +66,13 @@ button
     font-family: 'PictureNavs';
     font-size: 10pt;
 }
+
+#message h2
+{
+    font-family: 'NavbarItem';
+}
+
+#message p
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
