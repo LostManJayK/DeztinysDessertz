@@ -63,7 +63,7 @@
 
 button
 {
-    height: 15%;
+    height: 10vh;
     width: 30%;
     background-color: #048a81;
     color: #ceffe2;
@@ -71,7 +71,7 @@ button
     border-color: #ceffe2;
     font-size: 12pt;
     transition: background-color 1s, color 1s, border-color 1s;
-    margin-top: 1%;
+    margin-top: 50px;
 }
 
 button:hover

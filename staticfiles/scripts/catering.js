@@ -1,4 +1,5 @@
 //Get the appropriate cookie id
+/*
 function getCookie(name) {
     var cookieValue = null;
     if (document.cookie && document.cookie !== '') {
@@ -13,6 +14,22 @@ function getCookie(name) {
     }
     return cookieValue;
 }
+*/
+
+
+
+function getCookie(name) {
+    let cookie = {};
+    document.cookie.split(';').forEach(function(el) {
+        let [k,v] = el.split('=');
+        cookie[k.trim()] = v;
+    })
+    return cookie[name];
+}
+
+
+
+
 
 function sendCateringRequest()
 {   
@@ -83,7 +100,7 @@ function sendCateringRequest()
         })
         .then(data => {
             console.log('Order submitted successfully:', data);
-            // Optionally, you can perform additional actions after the order is submitted
+            window.location.href = '/confirmation/';
         })
         .catch(error => {
             console.error('Error submitting order:', error);

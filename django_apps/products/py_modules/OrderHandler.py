@@ -126,9 +126,6 @@ class OrderHandler:
             items_html += description
             items_html += "</td>"
 
-            items_html += '<td style="text-align:left;">0.00</td>'
-            items_html += '<td style="text-align:left;">0.00</td>'
-
             items_html += "</tr>"
 
         html_str = html_str.format(
@@ -138,8 +135,7 @@ class OrderHandler:
             customer_email=customer_info['email'],
             customer_phone=customer_info['phone'],
             order_date=customer_info['date'],
-            order_time=customer_info['time'], 
-            total="0.00"
+            order_time=customer_info['time']
         )
 
         return html_str

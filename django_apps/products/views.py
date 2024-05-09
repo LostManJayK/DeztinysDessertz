@@ -136,9 +136,13 @@ def send_catering_request(request):
 
     handler = OrderHandler()
 
+    print('request function entered')
+
     if request.method == 'POST':
 
         catering_data = json.loads(request.body.decode())
+
+        print('decoded info: ', catering_data)
 
         customer_info = catering_data['customer_info']
 
