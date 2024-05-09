@@ -403,8 +403,8 @@ class MenuItem
                 return response.json();
             })
             .then(data => {
-                console.log('Order submitted successfully:', data);
-                // Optionally, you can perform additional actions after the order is submitted
+                console.log('Add to cart successful:', data);
+                window.alert("Item added to cart!");
             })
             .catch(error => {
                 console.error('Error submitting order:', error);
