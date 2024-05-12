@@ -137,3 +137,66 @@
     margin-left: 5px;
 }
 
+@media only screen and (max-width: 768px) {
+    #menu {
+        min-height: auto; /* Remove minimum height */
+        background-image: linear-gradient(180deg, #CEFFE2, #FFDDFE);
+    }
+
+    .menu_holder {
+        margin-top: 5%;
+        width: 90%; /* Adjust width for smaller screens */
+        min-height: auto; /* Remove minimum height */
+        padding: 1vh;
+    }
+
+    .menu_holder > ul {
+        gap: 10vh; /* Adjust gap between menu items */
+    }
+
+    .menu_item_content
+    {
+        width: 100%;
+    }
+
+    .menu_item {
+        height: auto; 
+        gap: 2%; 
+    }
+
+    .menu_item img {
+        width: 30%; /* Adjust image width */
+        height: auto; /* Let height adjust automatically */
+        border-radius: 50%; /* Circular border radius */
+    }
+
+    .option_holder select,
+    .option_holder input {
+        width: 90%; /* Adjust width to fill container */
+    }
+
+    .menu_submit {
+        width: 50%; /* Adjust width */
+    }
+
+    /* Cake Styling */
+    #cake_size,
+    #num_tiers,
+    #tier_size,
+    #num_layers {
+        width: 90%; /* Adjust width to fill container */
+    }
+
+    /* Cupcake Styling */
+    #num_cupcakes {
+        width: 90%; /* Adjust width to fill container */
+    }
+
+    .note_area,
+    .note_label,
+    .order_spec {
+        width: 90%; /* Adjust width to fill container */
+        margin-left: 0; /* Remove left margin */
+    }
+}
+

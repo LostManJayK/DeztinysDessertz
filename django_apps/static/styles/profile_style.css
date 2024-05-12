@@ -167,6 +167,47 @@
     transform: scaleX(-1);
 }
 
+@media only screen and (max-width: 768px) {
+    #about {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .contact_card {
+        width: 90%;
+        margin: 20px auto;
+       height: auto;
+        border-radius: 20px;
+    }
+
+    .contact_card .bio {
+        width: 100%;
+    }
+
+    .bio img {
+        border-radius: 20px;
+    }
+
+    .info_section {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #gallery_img_holder {
+        width: 70%;
+        padding: 10px;
+    }
+
+    #gallery_img {
+        width: 100%;
+    }
+
+    .nav_btn {
+        width: 8%;
+    }
+}
 
 
 

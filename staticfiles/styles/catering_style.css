@@ -80,3 +80,61 @@ button:hover
     color: #048a81;
     border-color: #FFDDFE;
 }
+
+@media screen and (max-width: 768px) 
+{
+    #catering 
+    {
+        padding-top: 35%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+
+    #catering .form_holder 
+    {
+        width: 85%;
+        height: 70vh;
+        padding: 5%;
+        
+    }
+
+    .form_holder input,
+    .form_holder textarea,
+    .form_holder select 
+    {
+        width: 100%;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    .form_holder #date,
+    .form_holder #time,
+    .form_holder #duration 
+    {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .form_holder #event_title 
+    {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .form_holder form #description 
+    {
+        height: 10vh;
+        border-radius: 0;
+        width: 100%;
+        resize: vertical;
+        text-align: left;
+    }
+
+    button 
+    {
+        height: 50px;
+        width: 100%;
+        max-width: 200px;
+        margin-top: 90px;
+    }
+}

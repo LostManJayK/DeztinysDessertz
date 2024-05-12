@@ -96,12 +96,16 @@ header > img
 
     .navbar_item
     {
-        width: 3vw;
+        width: 30%;
+        max-height: 35%;
     }
 
     #navbar
     {
-        width: 20vw;
+        max-width: 20vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .navbar_item p
@@ -114,7 +118,6 @@ header > img
     {
         width: 100%;
         height: auto;
-        margin-top: 3vh;
     }
 
     #dial1, #dial2

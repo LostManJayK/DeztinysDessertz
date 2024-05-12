@@ -274,12 +274,13 @@ class MenuItem
 {
 
     //Initial height and width of the menu item elements
-    static #startHeight = itemsArr[0].offsetHeight;
+    static #startHeight = itemsArr[0].offsetHeight * (1 - ((window.screen.width <= 768) * .75));
     static #startWidth = itemsArr[0].querySelector('h2').offsetWidth;
 
     //Constructor
     constructor(element)
     {
+        
         this.element = element; //Refers to the actual menu item element
         this.elementImg = element.querySelector('img'); //The image in each menu item
         this.elementContent = element.querySelector('.menu_item_content');//The header text in each menu item
@@ -294,8 +295,9 @@ class MenuItem
     //Expand the menu item
     #expand()
     {
+        let expand_height = 250+(window.screen.width <= 768)*150
         //this.element.style.height = 75 + 'vh';
-        this.element.style.height = (this.element.scrollHeight+250) + 'px';
+        this.element.style.height = (this.element.scrollHeight+expand_height) + 'px';
         this.elementContent.style.width = 100 + '%';
         this.isExpanded = true;
         this.element.style.flexWrap = "wrap";
@@ -434,6 +436,12 @@ for(let i=0; i<numItems; i++)
     items[i].add_cart_btn.onclick = function(event){
         event.preventDefault();
         items[i].addToCart();};
+
+    if(window.screen.width <= 768)
+    {
+        items[i].imgClick();
+        items[i].imgClick();
+    }
 }
 
 //Get the cake_type select element and add an onselect listener
@@ -457,3 +465,8 @@ cake_type_element.onchange = function()
         num_layers_label.innerHTML = "Layers per Tier";
     }
 };
+
+if(window.screen.width <= 768)
+{
+    
+}
