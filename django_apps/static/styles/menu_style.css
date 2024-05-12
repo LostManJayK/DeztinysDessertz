@@ -1,6 +1,6 @@
 #menu
 {
-    min-height: 150vh;
+    min-height: 180vh;
 }
 
 .menu_holder
@@ -48,6 +48,7 @@
     height: atuo;
     border-radius: 100px;
     box-shadow: -1px 2px 5px darkslategray;
+    background-color: white;
 }
 
 .option_holder

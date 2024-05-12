@@ -76,3 +76,15 @@ button
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
+.info_section h1
+{
+    font-family: 'PictureNavs';
+    font-size: 30pt;
+}
+
+.info_section p
+{
+    font-family: 'NavbarItem';
+    display: block;
+}

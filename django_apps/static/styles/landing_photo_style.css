@@ -80,6 +80,12 @@
     font-size: 75%;
 }
 
+.page_content
+{
+    min-height: 85vh;
+    max-height: 85vh;
+}
+
 @media screen and (min-width: 901px) and (max-width: 4096px)
 {
     #main_home_photo

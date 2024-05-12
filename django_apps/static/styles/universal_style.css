@@ -14,7 +14,6 @@ body
 
 .page_content
 {
-    background-image: linear-gradient(180deg, #CEFFE2, #FFDDFE);
     min-height: 100vh;
     width: 100vw;
     display: flex;
@@ -23,4 +22,8 @@ body
     padding-top: 15vh;
     padding-bottom: 16vh;
     gap: 5%;
+    background-image: url("../images/profile_images/border.png"), linear-gradient(180deg, #CEFFE2, #FFDDFE);
+    background-position: center;
+    background-size: 100% 130%;
+    overflow: hidden;
 }

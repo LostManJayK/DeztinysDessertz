@@ -141,7 +141,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'django_apps/static/')
+    os.path.join(BASE_DIR, 'django_apps/static/'),
 ]
 
 # Default primary key field type

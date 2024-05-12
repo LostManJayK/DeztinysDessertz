@@ -11,10 +11,6 @@
         <!--navbar sheets-->
         <link rel="stylesheet" href="{% static 'layouts/header_layout.css' %}">
         <link rel="stylesheet" href="{% static 'styles/header_style.css' %}">
-
-        <!--landing photo sheets-->
-        <link rel="stylesheet" href="{% static 'styles/landing_photo_style.css' %}">
-        <link rel="stylesheet" href="{% static 'layouts/landing_photo_layout.css' %}">
     </head>
     <body>
         <header>
@@ -27,17 +23,13 @@
                     <img src="{% static 'icons/universal_icons/bakery-menu.png' %}">
                     <p> Menu </p>
                 </a>
-                <!-- <a class="navbar_item" href="{% url 'requests' %}"> 
-                    <img src="{% static 'icons/universal_icons/bakery-request.png' %}">
-                    <p> Request </p> 
-                </a> -->
                 <a class="navbar_item" href="{% url 'catering' %}"> 
                     <img src="{% static 'icons/universal_icons/bakery-catering.png' %}">
                     <p> Catering </p> 
                 </a>
-                <a class="navbar_item" href="{% url 'profile' %}"> 
+                <a class="navbar_item" href="{% url 'about' %}"> 
                     <img src="{% static 'icons/universal_icons/bakery-profile.png' %}">
-                    <p> Profile </p> 
+                    <p> About </p> 
                 </a>
             </nav>
             <a id="site_logo" href="{% url 'index' %}"> <img src="{% static 'images/universal_images/site-logo.png' %}"> </a>

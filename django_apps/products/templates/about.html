@@ -1,0 +1,86 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'styles/profile_style.css' %}">
+<link rel="stylesheet" href="{% static 'layouts/profile_layout.css' %}">
+
+<section id="about" class="page_content">
+    <section id="general" class="info_section">
+        <h1>About Us</h1>
+        <p>We are a local bakery business started in 2023 in New Westminster, BC. We specialize in made to order desserts with hand crafter custom designs.<br></p>
+        <h2>Location<br></h2>
+        <p>New Westminster, BC<br></p>
+        <h2>Area of Service<br></h2>
+        <p>Lower Mainland, BC (As far West as Richmond, as far East as Chilliwack)</p>
+
+    </section>
+
+    <section id="gallery" class="info_section">
+        <h1>Gallery</h1>
+        <button id="left_btn" class="nav_btn"><img src="{% static 'images/profile_images/arrow.png' %}"></button>
+        <div id="gallery_img_holder"><img id="gallery_img"></div>
+        <button id="right_btn" class="nav_btn"><img src="{% static 'images/profile_images/arrow.png' %}"></button>
+    </section>
+
+    <section id="team" class="info_section">
+        <h1>Meet the Team</h1>
+        <div id="baker" class="contact_card">
+            <div class="bio">
+                <img src="{% static 'images/profile_images/dezyroo.jpeg' %}">
+                <ul>
+                    <li> Destiny Hopkins </li>
+                    <li> New Westminster, BC </li>
+                    <li> Baker/Dessert Artist </li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a class="social_logo" href="https://www.facebook.com/profile.php?id=100090285048457&mibextid=ZbWKwL"> 
+                    <img src="{% static 'icons/profile_icons/logo-fb.png' %}"> 
+                    <p> Deztiny's Dessertz </p>
+                </a>
+                <a class="social_logo" href="https://www.instagram.com/deztinysdessertz/"> 
+                    <img src="{% static 'icons/profile_icons/logo-ig.png' %}"> 
+                    <p> @deztinysdessertz </p>
+                </a>
+                <a class="social_logo" href="https://www.tiktok.com/@deztinysdessertz?is_from_webapp=1&sender_device=pc"> 
+                    <img src="{% static 'icons/profile_icons/logo-tiktok.png' %}"> 
+                    <p> @deztinysdessertz </p>
+                </a>
+                <a class="social_logo" href="mailto:deztinysdessertz@gmail.com"> 
+                    <img src="{% static 'icons/profile_icons/logo-gmail.png' %}"> 
+                    <p> deztinysdessertz@gmail.com </p>
+                </a>
+            </div>
+        </div>
+        <div id="dev" class="contact_card">
+            <div class="bio">
+                <img src="{% static 'images/profile_images/me.jpg' %}">
+                <ul>
+                    <li> Andrew Spence </li>
+                    <li> New Westminster, BC </li>
+                    <li> Website Designer/Developer</li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a class="social_logo" href="https://www.github.com/LostManJayK"> 
+                    <img src="{% static 'icons/profile_icons/logo-github.png' %}"> 
+                    <p> LostManJayK </p>
+                </a>
+                <a class="social_logo" href="mailto:andrews2192@gmail.com"> 
+                    <img src="{% static 'icons/profile_icons/logo-gmail.png' %}"> 
+                    <p> luminyx.labs@gmail.com </p>
+                </a>
+            </div>    
+        </div>
+    </section>
+</section>
+<script>
+    let img_filenames = "{{ img_filenames|escapejs }}";
+    let gallery_path = "{% static 'images/gallery_images/' %}";
+</script>
+<script src="{% static 'scripts/about.js' %}"></script>
+
+
+{% endblock %}

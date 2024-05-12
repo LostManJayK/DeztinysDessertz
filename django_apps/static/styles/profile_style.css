@@ -1,17 +1,21 @@
-#contact
+#about
 {
-    height: 150vh;
     padding-top: 18vh;
     padding-bottom: 18vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 1px;
 }
+
 
 .contact_card
 {
-    width: 40%;
+    width: 45%;
+    height: 320px;
     border-radius: 50px;
     padding: 2%;
     gap: 2%;
-    background-color: #a75097;
+    background-color: #FFDDFE;
     box-shadow: -1px 2px 5px darkslategray;
 }
 
@@ -26,17 +30,13 @@
     width: 100%;
     height: auto;
     border-radius: 50px;
-}
-
-#dev, #dev2, #dev3
-{
-    background-color: #048a81;
+    box-shadow: -1px 2px 5px darkslategray;
 }
 
 .bio ul li
 {
     font-size: 9pt;
-    color: #cecece;
+    color: #048a81;
 }
 
 
@@ -65,6 +65,106 @@
 .social_logo p
 {
     color: #cecece;
+}
+
+.info_section
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+    width: 75%;
+    margin-top: 10vh;
+    background-color: #a75097;
+    color: #FFDDFE;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 2px 5px darkslategray,
+            inset 0 -1px 5px darkslategray;
+    
+}
+
+.info_section h1
+{
+    margin-left: 0%;
+    width: 100%;
+    color: #FFDDFE;
+}
+
+.info_section h2
+{
+    width: 100%;
+}
+
+#dev
+{
+    background-color: #048a81;
+    justify-content: center;
+}
+
+#dev li
+{
+    color: #FFDDFE;
+}
+
+#baker .socials p
+{
+    color: #048a81;
+}
+
+#gallery
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery h2
+{
+    align-self: flex-start;
+}
+
+#gallery_img_holder
+{
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    box-shadow: 0 2px 5px darkslategray,
+            inset 0 -1px 5px darkslategray;
+
+}
+
+#gallery_img
+{
+    width: 75%;
+    height: auto;
+    display: inline-block;
+    box-shadow: 0 2px 5px darkslategray,
+            inset 0 -1px 5px darkslategray;
+}
+
+.nav_btn
+{
+    width: 4%;
+    border-radius: 100px;
+    border-width: 0;
+}
+
+.nav_btn img
+{
+    display: inline-block;
+    width: 80%;
+    height: auto;
+}
+
+#left_btn
+{
+    transform: scaleX(-1);
 }
 
 

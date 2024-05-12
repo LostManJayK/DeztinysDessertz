@@ -4,6 +4,7 @@ from .py_modules.OrderHandler import OrderHandler
 from .py_modules.SQLHandler import MySQLHandler
 from urllib.parse import parse_qs
 import json
+import os
 
 
 # Create your views here.
@@ -41,8 +42,19 @@ def menu(request):
 def requests(request):
     return render(request, "requests.html")
 
-def profile(request):
-    return render(request, "profile.html")
+
+def about(request):
+
+    #Set the filepath to the images
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.join(base_dir, '..')
+    img_path = os.path.join(base_dir, 'static', 'images', 'gallery_images')
+
+    #Retrive gallery image filenames
+    img_filenames = os.listdir(img_path)
+
+    return render(request, "about.html", {"img_filenames" : img_filenames})
+
 
 def catering(request):
     return render(request, "catering.html")
@@ -58,6 +70,11 @@ def cart(request):
     cart_data = handler.replace_keyval(cart_data)
    
     return render(request, "cart.html", {"cart_data" : cart_data})
+
+#Confirmation page
+def confirmation(request):
+
+    return render(request, 'confirmation.html')
 
 
 def add_to_cart(request):
@@ -145,14 +162,3 @@ def send_catering_request(request):
     else:
 
         return JsonResponse({'error': 'Invalid request method'})
-
-def confirmation(request):
-
-    return render(request, 'confirmation.html')
-
-
-
-
-    
-
-    
