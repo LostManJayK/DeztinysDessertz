@@ -31,7 +31,7 @@ VALUES
 -- Cake Layers
 INSERT IGNORE INTO CakeLayers(layer_vals)
 VALUES
-('1'),
+('1 (classic)'),
 ('2'),
 ('3'),
 ('4'),
@@ -44,7 +44,7 @@ VALUES
 ('Chocolate'),
 ('Vanilla'),
 ('Red Velvet'),
-('Angel Food'),
+('Cookies & Cream'),
 ('Other');
 
 -- Cake Fillings

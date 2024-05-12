@@ -435,3 +435,25 @@ for(let i=0; i<numItems; i++)
         event.preventDefault();
         items[i].addToCart();};
 }
+
+//Get the cake_type select element and add an onselect listener
+let cake_type_element = document.getElementById('cake_type');
+cake_type_element.value = 'tiered';
+let num_tiers_element = document.getElementById('num_tiers');
+let num_layers_label = document.querySelector('label[for="num_layers"]');
+//let num_tiers_label = document.querySelector('label[for="num_tiers"]');
+
+cake_type_element.onchange = function()
+{
+    if(cake_type_element.value != "tiered")
+    {
+        num_tiers_element.parentNode.style.display = 'none';
+        num_layers_label.innerHTML = "Layers";
+
+    }
+    else
+    {
+        num_tiers_element.parentNode.style.display = 'block';
+        num_layers_label.innerHTML = "Layers per Tier";
+    }
+};

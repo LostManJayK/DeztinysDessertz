@@ -55,11 +55,7 @@ def cart(request):
 
     cart_data = request.session.get("cart", [])
 
-    print("BEFORE KEYVAL: ", cart_data)
-
     cart_data = handler.replace_keyval(cart_data)
-
-    print("AFTER KEYVAL: ", cart_data)
    
     return render(request, "cart.html", {"cart_data" : cart_data})
 
@@ -81,8 +77,6 @@ def add_to_cart(request):
 
         # for item in request.session['cart']:
         #     print(f'\n{item}\n')
-
-        print(request.session['cart'])
 
         return JsonResponse({'message': 'Item added to cart successfully'})
 
@@ -136,13 +130,9 @@ def send_catering_request(request):
 
     handler = OrderHandler()
 
-    print('request function entered')
-
     if request.method == 'POST':
 
         catering_data = json.loads(request.body.decode())
-
-        print('decoded info: ', catering_data)
 
         customer_info = catering_data['customer_info']
 
