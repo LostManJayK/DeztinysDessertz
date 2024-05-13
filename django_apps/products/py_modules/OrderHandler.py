@@ -99,7 +99,7 @@ class OrderHandler:
        
 
     #Format the JSON string for the order email
-    def format_order_email(self, cart, customer_info):
+    def format_order_email(self, cart, customer_info, order_num):
 
         cart_data = cart
         cart_data = self.replace_keyval(cart_data)
@@ -112,7 +112,7 @@ class OrderHandler:
 
             items_html += '<tr style="height:200px">'
             description = ""
-            order_num = 123456
+            order_num = order_num
 
             items_html += '<td>'
 
@@ -175,10 +175,10 @@ class OrderHandler:
 
     
     #Send the email containing email details
-    def send_order_confirmation(self, html_str, customer_email, email_type, event_name=""):
+    def send_order_confirmation(self, html_str, customer_email, email_type, order_num=0, event_name=""):
 
         subjects = {
-            'order' : "ORDER #TEST - Confirmation",
+            'order' : f"ORDER #{order_num} - Confirmation",
             'catering' : f'Catering Request -  {event_name}'
         }
 
@@ -207,6 +207,8 @@ class OrderHandler:
         smtp_object.sendmail(from_email, from_email, msg)
 
         smtp_object.quit()
+
+
 
 if __name__ == "__main__":
 

@@ -5,37 +5,40 @@ USE DeztinysDessertzDB;
 CREATE TABLE IF NOT EXISTS Orders
 (
 		order_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-        customer_id INT UNSIGNED NOT NULL,
+        customer_id INT UNSIGNED,
         customer_name VARCHAR(40) NOT NULL,
-        contact VARCHAR(50) NOT NULL,
+        customer_email VARCHAR(50) NOT NULL,
+        customer_phone VARCHAR(14),
         date_ordered DATETIME NOT NULL,
-        date_fulfilled DATETIME,
+        time_fulfilled DATETIME,
+        date_fulfilled VARCHAR(20),
         total_price FLOAT(2),
         delivery_method VARCHAR(12),
-        order_status VARCHAR(10) NOT NULL
+        order_status VARCHAR(10),
+        order_contents JSON NOT NULL
 );
 
 -- Item specific order tables
-CREATE TABLE IF NOT EXISTS CakeOrders
-(
-	order_id INT UNSIGNED NOT NULL, -- Matches one in Orders table. May be repeated if multiple cakes in one order
-	cake_type VARCHAR(20) NOT NULL,
-	cake_flavour VARCHAR(20) NOT NULL,
-    has_filling TINYINT(1) NOT NULL DEFAULT 0,
-    filling VARCHAR(20),
-    num_tiers TINYINT(4) UNSIGNED DEFAULT 1,
-    num_layers TINYINT(4) UNSIGNED DEFAULT 2,
-    notes VARCHAR(300)
-);
+-- CREATE TABLE IF NOT EXISTS CakeOrders
+-- (
+-- 	order_id INT UNSIGNED NOT NULL, -- Matches one in Orders table. May be repeated if multiple cakes in one order
+-- 	cake_type VARCHAR(20) NOT NULL,
+-- 	cake_flavour VARCHAR(20) NOT NULL,
+--     has_filling TINYINT(1) NOT NULL DEFAULT 0,
+--     filling VARCHAR(20),
+--     num_tiers TINYINT(4) UNSIGNED DEFAULT 1,
+--     num_layers TINYINT(4) UNSIGNED DEFAULT 2,
+--     notes VARCHAR(300)
+-- );
 
-CREATE TABLE IF NOT EXISTS CupcakeOrders
-(
-	order_id INT UNSIGNED NOT NULL, -- Matches one in Orders table. May be repeated if multiple cakes in one order
-    quantity TINYINT(60) UNSIGNED NOT NULL,
-    cupcake_flavour VARCHAR(20) NOT NULL,
-    filling VARCHAR(20),
-    notes VARCHAR(300)
-);
+-- CREATE TABLE IF NOT EXISTS CupcakeOrders
+-- (
+-- 	order_id INT UNSIGNED NOT NULL, -- Matches one in Orders table. May be repeated if multiple cakes in one order
+--     quantity TINYINT(60) UNSIGNED NOT NULL,
+--     cupcake_flavour VARCHAR(20) NOT NULL,
+--     filling VARCHAR(20),
+--     notes VARCHAR(300)
+-- );
 
 
 -- Payment Table
@@ -54,14 +57,14 @@ CREATE TABLE IF NOT EXISTS Payments
 );
 
 -- Customers Table
-CREATE TABLE IF NOT EXISTS Customers
-(
-	customer_id INT PRIMARY KEY AUTO_INCREMENT,
-    customer_name  VARCHAR(40) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    phone VARCHAR(10),
-    user_pass VARCHAR(16) NOT NULL -- Hashed value
-);
+-- CREATE TABLE IF NOT EXISTS Customers
+-- (
+-- 	customer_id INT PRIMARY KEY AUTO_INCREMENT,
+--     customer_name  VARCHAR(40) NOT NULL,
+--     email VARCHAR(50) NOT NULL,
+--     phone VARCHAR(10),
+--     user_pass VARCHAR(16) NOT NULL -- Hashed value
+-- );
 
 -- Main Menu Table
 CREATE TABLE IF NOT EXISTS MenuItems

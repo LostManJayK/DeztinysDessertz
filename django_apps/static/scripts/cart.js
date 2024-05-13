@@ -57,12 +57,13 @@ function submitOrder()
 {   
     if(item_count == 0)
     {
-        console.log("Cart is emptry...")
+        window.alert("Cart is empty...");
         return;
     }
 
     let customer_object = {};
     let requiredFilled = true;
+    let tos_agree = document.getElementById('tos_agree');
 
     customer_info = document.querySelectorAll('.customer_detail');
     customer_info.forEach(detail =>
@@ -96,11 +97,14 @@ function submitOrder()
         {
             customer_object[detail.id] = detail.value;
         }
-        
     })
 
-    if(requiredFilled)
+
+
+    if(requiredFilled && tos_agree.checked)
     {
+        tos_agree.parentNode.style.Color = '';
+
         fetch('/submit_order/', {
             method: 'POST',
             headers: {
@@ -123,6 +127,11 @@ function submitOrder()
         .catch(error => {
             console.error('Error submitting order:', error);
         });
+    }
+    else
+    {
+        tos_agree.parentNode.style.Color = 'red';
+        window.alert("Please ensure all highlighted fields are filled & Terms of Service have been accepted.");
     }
         
 }

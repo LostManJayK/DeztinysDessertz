@@ -3,9 +3,26 @@
     min-height: 180vh;
 }
 
+#prices
+{
+    width: 70%;
+    text-align: center;
+    margin-top: 5%;
+    color:#a75097;
+}
+
+.price_img
+{
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-width: 0;
+    border-radius: 10px;
+}
+
 .menu_holder
 {
-    margin-top: 5%;
+    margin-top: 1%;
     width: 60%;
     min-height: 120vh;
     padding: 1vh;

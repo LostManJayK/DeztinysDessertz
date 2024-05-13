@@ -77,10 +77,7 @@ INSERT IGNORE INTO CupcakeQuantities(quantity)
 VALUES
 	(6),
 	(12),
-	(18),
-	(24),
-	(36),
-	(48);
+	(24);
 	
 -- Dipped Desert Types
 INSERT IGNORE INTO DippedDessertTypes(type_name)
@@ -96,15 +93,19 @@ VALUES
 	('Mangoes'),
 	('Banana'),
 	('Apple'),
+    ('Oreo'),
 	('Other');
 	
 -- Dipped Dessert Quantities
 INSERT IGNORE INTO DippedDessertQuantities(quantity)
 VALUES
-('5'),
-('10'),
-('20'),
-('40');
+('1'),
+('2'),
+('3'),
+('4'),
+('6'),
+('12'),
+('24');
 	
 -- Coatings
 INSERT IGNORE INTO Coatings(coating_name)
@@ -125,10 +126,13 @@ VALUES
 -- Other Dessert Quantities
 INSERT IGNORE INTO OtherDessertQuantities(quantity)
 VALUES
-	('5'),
-	('10'),
-	('20'),
-	('40');
+	('1'),
+    ('2'),
+    ('3'),
+    ('4'),
+    ('6'),
+    ('12'),
+    ('24');
     
 -- Options Tables
 

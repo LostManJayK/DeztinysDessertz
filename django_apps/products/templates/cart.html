@@ -22,6 +22,10 @@
                 <h1> Order Items </h1>
                 <div id="order_items"></div>
             </section>
+            <div id="tos_holder">
+                <label for="tos_agree">I have read and agree to the <a href="{% static 'files/tos.pdf' %}">Terms of Service</a></label>
+                <input id="tos_agree" type="checkbox">
+            </div>
             <button id="submit_order" type="submit"> Submit </button>
             
         </form>

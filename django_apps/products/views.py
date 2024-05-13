@@ -123,7 +123,8 @@ def remove_from_cart(request):
 
 def submit_order(request):
 
-    handler = OrderHandler()
+    order_handler = OrderHandler()
+    sql_handler = MySQLHandler()
 
     cart = request.session['cart']
 
@@ -131,9 +132,11 @@ def submit_order(request):
 
         customer_info = json.loads(request.body.decode())
 
-        html_str = handler.format_order_email(cart, customer_info)
+        order_num = sql_handler.insert_order(cart, customer_info)
 
-        handler.send_order_confirmation(html_str, customer_info['email'], 'order')
+        html_str = order_handler.format_order_email(cart, customer_info, order_num)
+
+        order_handler.send_order_confirmation(html_str, customer_info['email'], 'order', order_num=order_num)
 
         del request.session['cart']
         
@@ -155,7 +158,7 @@ def send_catering_request(request):
 
         html_str = handler.format_catering_email(catering_data)
 
-        handler.send_order_confirmation(html_str, customer_info['email'], 'catering', customer_info['event_title'])
+        handler.send_order_confirmation(html_str, customer_info['email'], 'catering', event_name=customer_info['event_title'])
 
         return JsonResponse({'message': 'Catering Request Sent'})
     

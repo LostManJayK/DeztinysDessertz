@@ -133,6 +133,21 @@ button:hover
     margin-right: 0;
 }
 
+#tos_holder
+{
+    text-align: center;
+    width: 100%;
+    color: #ceffe2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tos_agree
+{
+    display: inline-block;
+    width: 40px;
+    height: auto;
+}
+
 
 @media only screen and (max-width: 768px) {
     #cart 
