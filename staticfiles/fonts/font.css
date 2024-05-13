@@ -88,3 +88,13 @@ button
     font-family: 'NavbarItem';
     display: block;
 }
+
+#prices h2
+{
+    font-family: 'PictureNavs';
+}
+
+#prices p
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
