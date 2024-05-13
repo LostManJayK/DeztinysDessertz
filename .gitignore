@@ -1,3 +1,6 @@
 dd_venv/
 .ssh
 .ssh.pub
+
+*/__pycache__/
+*.logs
