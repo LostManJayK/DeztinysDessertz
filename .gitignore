@@ -3,4 +3,5 @@ dd_venv/
 .ssh.pub
 
 */__pycache__/
+./django_apps/products/__pycache__/
 *.logs
