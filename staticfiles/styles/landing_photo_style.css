@@ -1,3 +1,8 @@
+#landing_photos
+{
+    padding-top: 5%;
+}
+
 #main_home_photo
 {
     width: 70vw;
@@ -82,8 +87,8 @@
 
 .page_content
 {
-    min-height: 85vh;
-    max-height: 85vh;
+    min-height: 90vh;
+    max-height: 90vh;
 }
 
 @media screen and (min-width: 901px) and (max-width: 4096px)

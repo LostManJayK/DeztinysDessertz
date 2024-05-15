@@ -6,12 +6,13 @@
     align-items: center;
 }
 
-.form_holder form
+#customer_info
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #order_items

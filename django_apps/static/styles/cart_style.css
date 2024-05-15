@@ -1,12 +1,12 @@
 #cart
 {
-    padding-top: 40%;
+    padding-top: 5%;
     padding-bottom: 10%;
 }
 
 #cart .form_holder
 {
-    width: 90%;
+    width: 80%;
     min-height: 100vh;
     background-color: #048a81;
     padding: 1%;
@@ -32,10 +32,14 @@
 .form_holder input
 {
     width: 97.5%;
-    height: 30px;
     text-align: center;
     margin-top: 1%;
-    font-size: 14pt;
+    padding: 4px;
+    font-size: 12pt;
+    border-radius: 50px;
+    border-width: 0;
+    height: 7%;
+
 }
 
 .form_holder form #email, #phone
@@ -146,6 +150,11 @@ button:hover
     display: inline-block;
     width: 40px;
     height: auto;
+}
+
+#customer_info
+{
+    width: 100%;
 }
 
 

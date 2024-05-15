@@ -64,8 +64,8 @@ SESSION_COOKIE_DOMAIN = ".deztinysdessertz.ca"
 SESSION_COOKIE_SECURE = True
 SESSION_COOKIE_NAME = 'dd_sessionid'
 
-CORS_ALLOWED_ORIGINS = ['https://deztinysdessertz.ca', 'https://www.deztinysdessertz.ca', 'http://localhost:8000']
-CSRF_TRUSTED_ORIGINS = ['https://deztinysdessertz.ca', 'https://www.deztinysdessertz.ca', 'http://localhost:8000']
+CORS_ALLOWED_ORIGINS = ['https://deztinysdessertz.ca', 'https://www.deztinysdessertz.ca']#, 'http://localhost:8000']
+CSRF_TRUSTED_ORIGINS = ['https://deztinysdessertz.ca', 'https://www.deztinysdessertz.ca']#, 'http://localhost:8000']
 
 ROOT_URLCONF = 'dd_backend.urls'
 

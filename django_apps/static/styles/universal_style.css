@@ -20,7 +20,7 @@ body
     flex-direction: column;
     align-items: center;
     padding-top: 15vh;
-    padding-bottom: 16vh;
+    padding-bottom: 0;
     gap: 5%;
     background-image: url("../images/profile_images/border.png"), linear-gradient(180deg, #CEFFE2, #FFDDFE);
     background-position: center;

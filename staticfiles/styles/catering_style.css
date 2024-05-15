@@ -1,13 +1,13 @@
 #catering
 {
-    padding-top: 15%;
+    padding-top: 4%;
     padding-bottom: 10%;
 }
 
 #catering .form_holder
 {
-    width: 40%;
-    height: 100vh;
+    width: 60%;
+    height: 80vh;
     background-color: #048a81;
     padding: 2%;
     gap: 3%;
@@ -27,28 +27,35 @@
 {
     width: 100%;
     height: 52%;
+    justify-content: space-between;
 }
 
 .form_holder input
 {
-    width: 47.5%;
+    width: 48.5%;
     text-align: center;
     margin-top: 1%;
+    padding: 4px;
+    font-size: 12pt;
+    border-radius: 50px;
+    border-width: 0;
+    height: 7%;
 }
 
 .form_holder textarea
 {
     margin-top: 1%;
+    border-radius: 10px;
 }
 
 .form_holder #date, #time, #duration
 {
-    width: 31.2%;
+    width: 31%;
 }
 
 .form_holder #event_title
 {
-    width: 97.5%;
+    width: 100%;
 }
 
 .form_holder form #description
@@ -56,7 +63,7 @@
     height: 80%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 97.8%;
+    width: 100%;
     resize: none;
     scrollbar-width: thin; 
 }
@@ -71,7 +78,7 @@ button
     border-color: #ceffe2;
     font-size: 12pt;
     transition: background-color 1s, color 1s, border-color 1s;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 button:hover

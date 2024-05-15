@@ -7,7 +7,7 @@
 {
     width: 70%;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 20px;
     color:#a75097;
 }
 
@@ -23,8 +23,8 @@
 .menu_holder
 {
     margin-top: 1%;
-    width: 60%;
-    min-height: 120vh;
+    width: 70%;
+    min-height: 60vh;
     padding: 1vh;
 }
 
@@ -34,22 +34,26 @@
 {
     list-style: none;
     height: 100%;
-    gap: 15vh;
+    gap: 1%;
 }
 
 .menu_item
 {
     height: 20vh;
-    gap: 4%;
+    width: 30%;
+    gap: 1%;
+    /* margin-top: 50px; */
 }
 
 .menu_item div
 {
     background-image: linear-gradient(to right, #048a81 1%, #ceffe2 90%, #a75097);
     border-radius: 10px;
-    padding: 2%;
+    padding: 5%;
+    padding-bottom: 0;
+    padding-top: 4px;
     height: 70%;
-    width: 70%;
+    width: 50%;
     box-shadow: -1px 2px 5px darkslategray;
     
 }
@@ -154,21 +158,24 @@
     margin-left: 5px;
 }
 
-@media only screen and (max-width: 768px) {
-    #menu {
+@media only screen and (max-width: 1200px) 
+{
+    #menu 
+    {
         min-height: auto; /* Remove minimum height */
-        background-image: linear-gradient(180deg, #CEFFE2, #FFDDFE);
+        /* background-image: linear-gradient(180deg, #CEFFE2, #FFDDFE); */
     }
 
     .menu_holder {
         margin-top: 5%;
-        width: 90%; /* Adjust width for smaller screens */
+        width: 100%; /* Adjust width for smaller screens */
         min-height: auto; /* Remove minimum height */
-        padding: 1vh;
+        padding: 0;
     }
 
-    .menu_holder > ul {
-        gap: 10vh; /* Adjust gap between menu items */
+    .menu_holder > ul 
+    {
+        gap: 2vw;
     }
 
     .menu_item_content
@@ -176,9 +183,24 @@
         width: 100%;
     }
 
-    .menu_item {
-        height: auto; 
-        gap: 2%; 
+    .menu_item
+    {
+        width: 48%;
+        height: 20vh; 
+        gap: 1%; 
+        padding-right: 0;
+    }
+
+    .menu_item h2
+    {
+        font-size: 12pt;
+    }
+
+    .menu_item div
+    {
+        width: 62%;
+        padding: 4px;
+        /* min-height: 70px; */
     }
 
     .menu_item img {
@@ -187,33 +209,41 @@
         border-radius: 50%; /* Circular border radius */
     }
 
-    .option_holder select,
-    .option_holder input {
-        width: 90%; /* Adjust width to fill container */
-    }
-
     .menu_submit {
         width: 50%; /* Adjust width */
     }
 
-    /* Cake Styling */
-    #cake_size,
-    #num_tiers,
-    #tier_size,
-    #num_layers {
-        width: 90%; /* Adjust width to fill container */
+    label
+    {
+        display: inline-block;
+        font-size: 10pt;
+        /* min-width: 80vw; */
     }
 
-    /* Cupcake Styling */
-    #num_cupcakes {
-        width: 90%; /* Adjust width to fill container */
-    }
-
-    .note_area,
     .note_label,
-    .order_spec {
-        width: 90%; /* Adjust width to fill container */
-        margin-left: 0; /* Remove left margin */
+    .order_spec 
+    {
+        width: 35%; /* Adjust width to fill container */
+        font-size: 8pt;
+        margin-left: 5px; /* Remove left margin */
+    }
+
+    #num_layers,
+    #num_tiers,
+    #cake_size
+    {
+        width: 10%;
+    }
+
+    .note_area
+    {
+        height: 15vh;
+        width: 80%;
+    }
+
+    #menu_list
+    {
+        width:90%;
     }
 }
 
