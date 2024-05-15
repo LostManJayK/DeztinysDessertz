@@ -158,7 +158,7 @@
     margin-left: 5px;
 }
 
-@media only screen and (max-width: 1200px) 
+@media only screen and (max-width: 500px) 
 {
     #menu 
     {
@@ -166,7 +166,8 @@
         /* background-image: linear-gradient(180deg, #CEFFE2, #FFDDFE); */
     }
 
-    .menu_holder {
+    .menu_holder 
+    {
         margin-top: 5%;
         width: 100%; /* Adjust width for smaller screens */
         min-height: auto; /* Remove minimum height */

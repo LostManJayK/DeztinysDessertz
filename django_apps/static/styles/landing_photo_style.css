@@ -1,6 +1,6 @@
 #landing_photos
 {
-    padding-top: 5%;
+    padding-top: 15%;
 }
 
 #main_home_photo
@@ -86,13 +86,13 @@
 }
 
 .page_content
-{
-    min-height: 90vh;
+{vh    min-height: 90vh;
     max-height: 90vh;
 }
 
 @media screen and (min-width: 901px) and (max-width: 4096px)
 {
+
     #main_home_photo
     {
         width: 70vw;
@@ -178,7 +178,7 @@
 
 
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 1200px)
 {
 
     #home_cake, #home_cupcake
@@ -221,6 +221,7 @@
     #main_home_photo
     {
         width: 70vw;
+        margin-top: 20vh;
     }
 }
 

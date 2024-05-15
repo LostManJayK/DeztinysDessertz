@@ -166,7 +166,8 @@
         /* background-image: linear-gradient(180deg, #CEFFE2, #FFDDFE); */
     }
 
-    .menu_holder {
+    .menu_holder 
+    {
         margin-top: 5%;
         width: 100%; /* Adjust width for smaller screens */
         min-height: auto; /* Remove minimum height */
