@@ -295,7 +295,7 @@ class MenuItem
     //Expand the menu item
     #expand()
     {
-        let expand_height = 250+(window.screen.width <= 768)*10;
+        let expand_height = 200+(window.screen.width <= 768)*150;
         //this.element.style.height = 75 + 'vh';
         this.element.style.height = (this.element.scrollHeight+expand_height) + 'px';
         this.element.style.width = 100 + '%';

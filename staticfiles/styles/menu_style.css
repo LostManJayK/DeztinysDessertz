@@ -23,7 +23,7 @@
 .menu_holder
 {
     margin-top: 1%;
-    width: 90%;
+    width: 70%;
     min-height: 60vh;
     padding: 1vh;
 }
@@ -41,8 +41,8 @@
 {
     height: 20vh;
     width: 30%;
-    gap: 5%;
-    margin-top: 20px;
+    gap: 1%;
+    /* margin-top: 50px; */
 }
 
 .menu_item div
@@ -50,7 +50,9 @@
     background-image: linear-gradient(to right, #048a81 1%, #ceffe2 90%, #a75097);
     border-radius: 10px;
     padding: 5%;
-    /* height: 70%; */
+    padding-bottom: 0;
+    padding-top: 4px;
+    height: 70%;
     width: 50%;
     box-shadow: -1px 2px 5px darkslategray;
     
@@ -171,8 +173,9 @@
         padding: 0;
     }
 
-    .menu_holder > ul {
-        gap: 2vw; /* Adjust gap between menu items */
+    .menu_holder > ul 
+    {
+        gap: 2vw;
     }
 
     .menu_item_content
@@ -213,6 +216,7 @@
     label
     {
         display: inline-block;
+        font-size: 10pt;
         /* min-width: 80vw; */
     }
 
@@ -220,7 +224,7 @@
     .order_spec 
     {
         width: 35%; /* Adjust width to fill container */
-        font-size: 9pt;
+        font-size: 8pt;
         margin-left: 5px; /* Remove left margin */
     }
 
@@ -239,7 +243,7 @@
 
     #menu_list
     {
-        width:80%;
+        width:90%;
     }
 }
 
