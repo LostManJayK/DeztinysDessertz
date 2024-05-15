@@ -88,11 +88,11 @@ button:hover
     border-color: #FFDDFE;
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 1200px) 
 {
     #catering 
     {
-        padding-top: 35%;
+        padding-top: 25%;
         padding-bottom: 5%;
         width: 100%;
     }
@@ -100,19 +100,30 @@ button:hover
     #catering .form_holder 
     {
         width: 85%;
-        height: 70vh;
+        height: 90vh;
         padding: 5%;
-        
+        padding-bottom: 1%;
+        padding-top: 1%;
+    }
+
+    .form_holder h1
+    {
+        height: 1vh;
     }
 
     .form_holder input,
-    .form_holder textarea,
-    .form_holder select 
+    .form_holder textarea
     {
         width: 100%;
         text-align: center;
         margin-top: 2%;
     }
+
+    .form_holder input
+    {
+        height: 2.5vh;
+    }
+
 
     .form_holder #date,
     .form_holder #time,
@@ -130,7 +141,7 @@ button:hover
 
     .form_holder form #description 
     {
-        height: 10vh;
+        height: 15vh;
         border-radius: 0;
         width: 100%;
         resize: vertical;
@@ -142,6 +153,6 @@ button:hover
         height: 50px;
         width: 100%;
         max-width: 200px;
-        margin-top: 90px;
+        margin-top: 140px;
     }
 }

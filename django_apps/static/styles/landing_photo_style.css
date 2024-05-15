@@ -86,7 +86,8 @@
 }
 
 .page_content
-{vh    min-height: 90vh;
+{   
+    min-height: 90vh;
     max-height: 90vh;
 }
 
