@@ -131,6 +131,7 @@ function submitOrder()
     else
     {
         tos_agree.parentNode.style.Color = 'red';
+        document.documentElement.scrollTop = 0;
         window.alert("Please ensure all highlighted fields are filled & Terms of Service have been accepted.");
     }
         

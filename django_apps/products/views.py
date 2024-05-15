@@ -68,7 +68,7 @@ def cart(request):
     cart_data = request.session.get("cart", [])
 
     cart_data = handler.replace_keyval(cart_data)
-   
+ 
     return render(request, "cart.html", {"cart_data" : cart_data})
 
 #Confirmation page
@@ -103,7 +103,7 @@ def add_to_cart(request):
 
 
 def remove_from_cart(request):
-    
+
     cart = request.session.get('cart', [])
     item_index = int(json.loads(request.body.decode())['item_index']) - 1
 
@@ -124,22 +124,37 @@ def remove_from_cart(request):
 def submit_order(request):
 
     order_handler = OrderHandler()
+
+    print('DEBUG: Order Handler Created')
+
     sql_handler = MySQLHandler()
+
+    print('DEBUG: SQL Handler Created')
 
     cart = request.session['cart']
 
+    print(f'DEBUG:  Cart:\n{cart}')
+
+    print(f'DEBUG: {request.method == "POST"}')
+
     if request.method == 'POST':
+
+        print('DEBUG: POST ENTERED')
 
         customer_info = json.loads(request.body.decode())
 
+        print(f'DEBUG: CustomerInfo:\n{customer_info}')
+
         order_num = sql_handler.insert_order(cart, customer_info)
+
+        print(f'DEBUG: OrderNum: {order_num}')
 
         html_str = order_handler.format_order_email(cart, customer_info, order_num)
 
         order_handler.send_order_confirmation(html_str, customer_info['email'], 'order', order_num=order_num)
 
         del request.session['cart']
-        
+
         return JsonResponse({'message': 'Order Submitted'})
 
     else:
@@ -161,7 +176,7 @@ def send_catering_request(request):
         handler.send_order_confirmation(html_str, customer_info['email'], 'catering', event_name=customer_info['event_title'])
 
         return JsonResponse({'message': 'Catering Request Sent'})
-    
+
     else:
 
         return JsonResponse({'error': 'Invalid request method'})

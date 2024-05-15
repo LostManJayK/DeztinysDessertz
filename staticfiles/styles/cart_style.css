@@ -37,7 +37,7 @@
     padding: 4px;
     font-size: 12pt;
     border-radius: 50px;
-    border-width: 0;
+    border-width: 3px;
     height: 7%;
 
 }
@@ -98,7 +98,7 @@ button:hover
 {
     padding: 5px;
     width: 45%;
-    min-height: 50px;
+    min-height: 20px;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }

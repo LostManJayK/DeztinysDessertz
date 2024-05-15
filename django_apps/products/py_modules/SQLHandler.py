@@ -54,27 +54,32 @@ class MySQLHandler:
                     db_data[table][i] = db_data[table][i][0]
 
         return db_data
-    
+
     #Add a new order to the database Orders table
     def insert_order(self, cart, customer_info):
 
-        insert_query = f'''INSERT INTO Orders(customer_name, customer_email, customer_phone, date_ordered, date_fulfilled, time_fulfilled, order_contents) 
-                    VALUES
-                    ('{customer_info['name']}', 
-                    '{customer_info['email']}', 
-                    '{customer_info['phone']}', 
-                    '{date.today().strftime("%Y-%m-%d")}',
-                    '{customer_info['date']}',
-                    '{customer_info['time']}:00',
-                    '{json.dumps(cart)}')
+        try:
+
+            insert_query = f'''INSERT INTO Orders(customer_name, customer_email, customer_phone, date_ordered, date_fulfilled, time_fulfilled, order_contents) 
+                        VALUES
+                        ('{customer_info['name']}', 
+                        '{customer_info['email']}', 
+                        '{customer_info['phone']}', 
+                        '{date.today().strftime("%Y-%m-%d")}',
+                        '{customer_info['date']}',
+                        '{customer_info['time']}:00',
+                        '{json.dumps(cart)}')
                 '''
-        
-        self.cursor.execute(insert_query)
-        self.db.commit()
 
-        order_num = self.get_data(('Orders', ['order_id']))['Orders'][-1]
+            self.cursor.execute(insert_query)
+            self.db.commit()
 
-        return order_num
+            order_num = self.get_data(('Orders', ['order_id']))['Orders'][-1]
+
+            return order_num
+
+        except Exception as e:
+            print(e)
 
 
 if __name__ == "__main__":
