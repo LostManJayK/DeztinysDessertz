@@ -274,14 +274,17 @@ class MenuItem
 {
 
     //Initial height and width of the menu item elements
-    static #startHeight = itemsArr[0].offsetHeight * (1 - ((window.screen.width <= 768) * .75));
-    static #startWidth = itemsArr[0].querySelector('h2').offsetWidth;
+    static #startHeight = itemsArr[0].offsetHeight * (1 - ((window.screen.width <= 1200) * .75));
+    static #startWidth = 70 + '%';//itemsArr[0].querySelector('h2').offsetWidth;
+    static #imgStart = itemsArr[0].querySelector('img').offsetWidth;
 
     //Constructor
     constructor(element)
     {
         
         this.element = element; //Refers to the actual menu item element
+        this.element_start_width = this.element.offsetWidth;
+        this.element_start_height = this.element.offsetHeight;
         this.elementImg = element.querySelector('img'); //The image in each menu item
         this.elementContent = element.querySelector('.menu_item_content');//The header text in each menu item
         this.elementOptions = this.elementContent.querySelector('.menu_item_options');
@@ -310,8 +313,11 @@ class MenuItem
     #collapse()
     {
         this.element.style.height = (MenuItem.#startHeight) + "px";
-        this.element.style.width = 30 + '%';
+        this.element.style.width = this.element_start_width + 'px';
+        this.element.style.height = this.element_start_height + 'px';
         this.elementContent.style.width = MenuItem.#startWidth + "px";
+        this.elementImg.style.width = MenuItem.#imgStart + "px";
+
         this.isExpanded = false;
         this.element.style.flexWrap = "nowrap";
         this.elementOptions.style.visibility = "hidden";
@@ -439,7 +445,7 @@ for(let i=0; i<numItems; i++)
         event.preventDefault();
         items[i].addToCart();};
 
-    if(window.screen.width <= 768)
+    if(window.screen.width <= 1200)
     {
         items[i].imgClick();
         items[i].imgClick();
