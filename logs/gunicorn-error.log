@@ -2170,3 +2170,86 @@ Setting up SMTP
 [2024-05-15 22:17:02 +0000] [6084] [DEBUG] GET /cart/
 [2024-05-15 22:17:50 +0000] [6086] [DEBUG] POST /submit_order/
 [2024-05-15 22:17:52 +0000] [6084] [DEBUG] GET /confirmation/
+[2024-05-15 22:21:20 +0000] [6084] [DEBUG] GET /
+[2024-05-15 22:47:50 +0000] [6086] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-15 22:56:46 +0000] [6085] [DEBUG] GET /
+[2024-05-15 23:40:33 +0000] [6085] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 00:14:38 +0000] [6086] [DEBUG] GET /
+[2024-05-16 00:14:46 +0000] [6085] [DEBUG] GET /
+[2024-05-16 00:14:59 +0000] [6086] [DEBUG] GET /menu/
+[2024-05-16 00:32:56 +0000] [6084] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 01:53:49 +0000] [6086] [DEBUG] GET /
+[2024-05-16 01:53:50 +0000] [6084] [DEBUG] GET /favicon.ico
+[2024-05-16 02:00:51 +0000] [6084] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 02:23:56 +0000] [6084] [DEBUG] GET /
+[2024-05-16 02:27:54 +0000] [6085] [DEBUG] GET /robots.txt
+[2024-05-16 02:27:55 +0000] [6084] [DEBUG] GET /
+[2024-05-16 02:27:55 +0000] [6086] [DEBUG] GET /
+[2024-05-16 02:27:55 +0000] [6085] [DEBUG] GET /
+[2024-05-16 02:46:53 +0000] [6085] [DEBUG] GET /repeater.php
+[2024-05-16 02:46:54 +0000] [6084] [DEBUG] GET /admin.php
+[2024-05-16 02:46:54 +0000] [6086] [DEBUG] GET /about.php
+[2024-05-16 02:46:55 +0000] [6085] [DEBUG] GET /wp-2019.php
+[2024-05-16 02:46:55 +0000] [6084] [DEBUG] GET /atomlib.php
+[2024-05-16 02:46:56 +0000] [6086] [DEBUG] GET /css.php
+[2024-05-16 02:46:56 +0000] [6084] [DEBUG] GET /simple.php
+[2024-05-16 02:46:57 +0000] [6085] [DEBUG] GET /log.php
+[2024-05-16 02:46:57 +0000] [6086] [DEBUG] GET /index.php
+[2024-05-16 02:46:58 +0000] [6084] [DEBUG] GET /mail.php
+[2024-05-16 02:46:58 +0000] [6085] [DEBUG] GET /lufix.php
+[2024-05-16 02:46:59 +0000] [6086] [DEBUG] GET /doc.php
+[2024-05-16 02:47:00 +0000] [6084] [DEBUG] GET /bak.php
+[2024-05-16 02:47:00 +0000] [6085] [DEBUG] GET /content.php
+[2024-05-16 02:47:01 +0000] [6086] [DEBUG] GET /upfile.php
+[2024-05-16 02:47:01 +0000] [6084] [DEBUG] GET /wp.php
+[2024-05-16 02:47:02 +0000] [6085] [DEBUG] GET /wp-conflg.php
+[2024-05-16 02:47:02 +0000] [6086] [DEBUG] GET /bypass.php
+[2024-05-16 02:47:03 +0000] [6085] [DEBUG] GET /wp-activate.php
+[2024-05-16 02:47:03 +0000] [6084] [DEBUG] GET /404.php
+[2024-05-16 02:47:04 +0000] [6086] [DEBUG] GET /updates.php
+[2024-05-16 02:47:04 +0000] [6085] [DEBUG] GET /radio.php
+[2024-05-16 02:47:04 +0000] [6084] [DEBUG] GET /plugins.php
+[2024-05-16 02:47:05 +0000] [6086] [DEBUG] GET /xmrlpc.php
+[2024-05-16 02:47:05 +0000] [6085] [DEBUG] GET /ae.php
+[2024-05-16 02:47:06 +0000] [6084] [DEBUG] GET /moon.php
+[2024-05-16 02:47:06 +0000] [6086] [DEBUG] GET /blog.php
+[2024-05-16 02:47:07 +0000] [6085] [DEBUG] GET /themes.php
+[2024-05-16 02:47:07 +0000] [6084] [DEBUG] GET /ini.php
+[2024-05-16 02:47:08 +0000] [6086] [DEBUG] GET /as.php
+[2024-05-16 02:47:08 +0000] [6085] [DEBUG] GET /shell.php
+[2024-05-16 02:47:09 +0000] [6086] [DEBUG] GET /ws.php
+[2024-05-16 02:47:09 +0000] [6084] [DEBUG] GET /dropdown.php
+[2024-05-16 02:47:10 +0000] [6085] [DEBUG] GET /makeasmtp.php
+[2024-05-16 02:47:10 +0000] [6086] [DEBUG] GET /wp-sigunq.php
+[2024-05-16 02:47:11 +0000] [6084] [DEBUG] GET /wso112233.php
+[2024-05-16 02:47:11 +0000] [6085] [DEBUG] GET /wp-atom.php
+[2024-05-16 02:47:12 +0000] [6086] [DEBUG] GET /alfanew.php
+[2024-05-16 02:47:12 +0000] [6084] [DEBUG] GET /fw.php
+[2024-05-16 02:47:13 +0000] [6086] [DEBUG] GET /install.php
+[2024-05-16 02:47:13 +0000] [6085] [DEBUG] GET /wp-login.php
+[2024-05-16 03:16:43 +0000] [6085] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 03:34:54 +0000] [6086] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 03:54:43 +0000] [6086] [DEBUG] GET /
+[2024-05-16 03:54:43 +0000] [6085] [DEBUG] GET /favicon.ico
+[2024-05-16 04:10:22 +0000] [6081] [INFO] Handling signal: term
+[2024-05-16 04:10:22 +0000] [6084] [INFO] Worker exiting (pid: 6084)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7c1547fc2510>
+[2024-05-16 04:10:22 +0000] [6085] [INFO] Worker exiting (pid: 6085)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7c1547f926c0>
+[2024-05-16 04:10:22 +0000] [6086] [INFO] Worker exiting (pid: 6086)
+DEBUG: Order Handler Created
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7c1547e1df70>
+DEBUG: SQL Handler Created
+DEBUG:  Cart:
+[{'Name': 'Cakes', 'cake_type': 'tiered', 'num_tiers': '2', 'num_layers': '1', 'cake_flavour': 'chocolate', 'other_cake_flavour': '', 'cake_filling': 'boston cream', 'other_cake_filling': '', 'cake_size': '4', 'cake_shape': 'circle', 'other_cake_shape': '', 'cake_notes': ''}, {'Name': 'Cupcakes', 'cupcake_flavour': 'chocolate', 'other_cupcake_flavour': '', 'cupcake_filling': 'boston cream', 'other_cupcake_filling': '', 'num_cupcakes': '6', 'cupcake_notes': ''}]
+DEBUG: True
+DEBUG: POST ENTERED
+DEBUG: CustomerInfo:
+{'name': 'test', 'email': 'luminyx.labs@gmail.com', 'phone': '6725142253', 'date': 'May 31, 2024', 'time': '18:30'}
+DEBUG: OrderNum: 20
+Setting up SMTP
+(250, b'smtp.gmail.com at your service, [209.38.130.13]\nSIZE 35882577\n8BITMIME\nSTARTTLS\nENHANCEDSTATUSCODES\nPIPELINING\nCHUNKING\nSMTPUTF8')
+(220, b'2.0.0 Ready to start TLS')
+(235, b'2.7.0 Accepted')
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7c1547e51fd0>
+[2024-05-16 04:10:23 +0000] [6081] [INFO] Shutting down: Master
