@@ -73,39 +73,26 @@ header > img
 
 #site_logo
 {
-    overflow: hidden;
-    border-radius: 500px;
     box-shadow:0px 0px 13px 3px #ffddfe;
+    border-radius: 50%;
+    border-width: 0;
     transition: width 700ms ease, height 700ms ease, margin-top 700ms ease;
-    width: 5.5%;
-    height: 105%;
-    margin-top: 0;
+    width: auto;
+    height: 150%;
+    margin-top: 55px;
 
 }
 
 #site_logo:hover
 {
-    transition: width 700ms ease, height 700ms ease, margin-top 700ms ease;
-    width: 7%;
-    height: 130%;
-    margin-top: 20px;
-
+    transition: height 700ms ease;
+    height: 180%;
 }
 
 #site_logo > img
 {
-    height: 140%;
-    transition: margin-left 700ms ease, margin-top 700ms ease;
-    margin-left: -16px;
-    margin-top: -17px;
-    width: auto;
-}
-
-#site_logo:hover > img
-{
-    transition: margin-left 700ms ease, margin-top 700ms ease;
-    margin-left: -18.5px;
-    margin-top: -20px;
+    height: 100%;
+    width: auto; 
 }
 
 #cart_link
@@ -151,7 +138,7 @@ header > img
 
     #navbar
     {
-        max-width: 20vw;
+        width: 20vw;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -174,33 +161,6 @@ header > img
         display: none;
     }
 
-    #site_logo
-    {
-        height: 80%;
-        width: 15%;
-    }
-
-    #site_logo img
-    {
-        margin-left: -11px;
-        margin-top: -12px;
-    }
-
-    #site_logo:hover
-    {
-        transition: all 700ms ease;
-        width: 20%;
-        height: 110%;
-        margin-top: 1%;
-    }
-
-    #site_logo:hover img
-    {
-        transition: all 700ms ease;
-        margin-left: -16px;
-        margin-top: -15px;
-    }
-
     .navbar_item:hover p
     {
         transition-property: color, background-color, font-size;
@@ -208,5 +168,32 @@ header > img
         color: #048a81;
         background-color: #ffddfe;
         font-size: 10pt;
+    }
+
+    #site_logo
+    {
+        height: 110%;
+        margin-top: 0;
+        
+    }
+
+    #site_logo:hover
+    {
+        transition: margin-top 700ms ease, height 700ms ease;
+        height: 140%;
+        margin-top: 25px;
+    }
+
+    #cart_link
+    {
+        margin-right: 8px;
+    }
+}
+
+@media only screen and (max-width: 580px)
+{
+    #navbar
+    {
+        width: 30vw;
     }
 }

@@ -474,7 +474,30 @@ cake_type_element.onchange = function()
     }
 };
 
-if(window.screen.width <= 768)
+//Hide or show input text fields
+let text_inputs = {};
+
+document.querySelectorAll('input').forEach(txt =>
 {
-    
-}
+    txt.style.visibility = 'hidden';
+    text_inputs[txt.id] = txt;
+});
+
+let select_inputs = document.querySelectorAll('select');
+
+select_inputs.forEach(sel =>
+{
+    sel.addEventListener('change', function()
+    {
+        let txt_id = 'other_' + sel.id;
+
+        if(sel.value == 'other')
+        {
+            text_inputs[txt_id].style.visibility = 'visible';
+        }
+        else
+        {
+            text_inputs[txt_id].style.visibility = 'hidden';
+        }
+    });
+});
