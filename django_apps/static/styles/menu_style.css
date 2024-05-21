@@ -39,10 +39,10 @@
 
 .menu_item
 {
-    height: 20vh;
+    height: 30vh;
     width: 30%;
     gap: 1%;
-    /* margin-top: 50px; */
+    margin-top: 65px;
 }
 
 .menu_item div

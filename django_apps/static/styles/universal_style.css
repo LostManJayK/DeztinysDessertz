@@ -27,3 +27,8 @@ body
     background-size: 100% 130%;
     overflow: hidden;
 }
+
+textarea
+{
+    padding: 10px;
+}

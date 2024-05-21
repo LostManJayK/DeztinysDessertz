@@ -51,7 +51,8 @@ def about(request):
     img_path = os.path.join(base_dir, 'static', 'images', 'gallery_images')
 
     #Retrive gallery image filenames
-    img_filenames = os.listdir(img_path)
+    img_filenames = [filename for filename in os.listdir(img_path) if filename != '.DS_Store']
+
 
     return render(request, "about.html", {"img_filenames" : img_filenames})
 

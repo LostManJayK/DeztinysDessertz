@@ -298,7 +298,7 @@ class MenuItem
     //Expand the menu item
     #expand()
     {
-        let expand_height = 200+(window.screen.width <= 768)*150;
+        let expand_height = 250+(window.screen.width <= 768)*100;
         //this.element.style.height = 75 + 'vh';
         this.element.style.height = (this.element.scrollHeight+expand_height) + 'px';
         this.element.style.width = 100 + '%';
@@ -307,6 +307,7 @@ class MenuItem
         this.element.style.flexWrap = "wrap";
         this.elementOptions.style.visibility = "visible";
         this.elementContent.style.cursor = "default";
+        this.elementImg.style.width = MenuItem.#imgStart + 150 + 'px' ;
     }
 
     //Collapse the menu item

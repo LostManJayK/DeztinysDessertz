@@ -28,7 +28,18 @@ function getCookie(name) {
 }
 
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phoneNumberRegex = /^\d{3}-\d{3}-\d{4}$/;
 
+function isValidEmail(email)
+{
+    return emailRegex.test(email);
+}
+
+function isValidPhone(phone)
+{
+    return phoneNumberRegex.test(phone) || phone == '';
+}
 
 
 function sendCateringRequest()
@@ -46,19 +57,32 @@ function sendCateringRequest()
     customer_info.forEach(detail =>
     {
 
-        console.log(detail.value);
-        if(detail.hasAttribute('required') && !detail.value.trim())
+        if(detail.hasAttribute('required') && !detail.value.trim()) 
+        {
+            console.log('NOPE');
+            requiredFilled = false;
+            detail.style.borderColor = 'red';
+
+            return;
+        }
+        else if(detail.id == 'email' && !isValidEmail(detail.value.trim()))
+        {
+            requiedFilled = false;
+            detail.style.borderColor = 'red';
+            window.alert('Invalid email format');
+            return;
+        }
+        else if(detail.id == 'phone' && !isValidPhone(detail.value.trim()))
         {
             requiredFilled = false;
             detail.style.borderColor = 'red';
+            window.alert('Invalid phone format');
             return;
         }
         else
         {
             detail.style.borderColor = '';
         }
-
-        console.log(detail.id);
         
         if(detail.id == 'date')
         {
@@ -106,6 +130,12 @@ function sendCateringRequest()
             console.error('Error submitting order:', error);
         });
     }
+    else
+    {
+        document.documentElement.scrollTop = 0;
+        window.alert("Please ensure all highlighted fields are filled");
+    }
+
         
 }
 

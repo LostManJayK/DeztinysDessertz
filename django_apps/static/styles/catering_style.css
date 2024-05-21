@@ -38,7 +38,7 @@
     padding: 4px;
     font-size: 12pt;
     border-radius: 50px;
-    border-width: 0;
+    border-width: 2px;
     height: 7%;
 }
 
@@ -46,6 +46,7 @@
 {
     margin-top: 1%;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .form_holder #date, #time, #duration
@@ -78,7 +79,7 @@ button
     border-color: #ceffe2;
     font-size: 12pt;
     transition: background-color 1s, color 1s, border-color 1s;
-    margin-top: 150px;
+    margin-top: 170px;
 }
 
 button:hover

@@ -2253,3 +2253,2364 @@ Setting up SMTP
 (235, b'2.7.0 Accepted')
 <mysql.connector.connection_cext.CMySQLConnection object at 0x7c1547e51fd0>
 [2024-05-16 04:10:23 +0000] [6081] [INFO] Shutting down: Master
+[2024-05-16 04:11:56 +0000] [8346] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luminyx/DeztinysDessertz
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: “DeztinysDessertz”
+  default_proc_name: dd_backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7120e4a67c40>
+  on_reload: <function OnReload.on_reload at 0x7120e4a67d80>
+  when_ready: <function WhenReady.when_ready at 0x7120e4a67ec0>
+  pre_fork: <function Prefork.pre_fork at 0x7120e4a840e0>
+  post_fork: <function Postfork.post_fork at 0x7120e4a84220>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7120e4a84360>
+  worker_int: <function WorkerInt.worker_int at 0x7120e4a844a0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7120e4a845e0>
+  pre_exec: <function PreExec.pre_exec at 0x7120e4a84720>
+  pre_request: <function PreRequest.pre_request at 0x7120e4a84860>
+  post_request: <function PostRequest.post_request at 0x7120e4a84900>
+  child_exit: <function ChildExit.child_exit at 0x7120e4a84a40>
+  worker_exit: <function WorkerExit.worker_exit at 0x7120e4a84b80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7120e4a84cc0>
+  on_exit: <function OnExit.on_exit at 0x7120e4a84e00>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7120e4a84fe0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-05-16 04:11:56 +0000] [8346] [INFO] Starting gunicorn 22.0.0
+[2024-05-16 04:11:56 +0000] [8346] [DEBUG] Arbiter booted
+[2024-05-16 04:11:56 +0000] [8346] [INFO] Listening at: unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock (8346)
+[2024-05-16 04:11:56 +0000] [8346] [INFO] Using worker: sync
+[2024-05-16 04:11:56 +0000] [8349] [INFO] Booting worker with pid: 8349
+[2024-05-16 04:11:56 +0000] [8350] [INFO] Booting worker with pid: 8350
+[2024-05-16 04:11:56 +0000] [8351] [INFO] Booting worker with pid: 8351
+[2024-05-16 04:11:56 +0000] [8346] [DEBUG] 3 workers
+[2024-05-16 04:12:01 +0000] [8349] [DEBUG] GET /
+[2024-05-16 04:12:02 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-16 04:12:03 +0000] [8350] [DEBUG] GET /menu/
+[2024-05-16 04:17:15 +0000] [8350] [DEBUG] GET /
+[2024-05-16 04:17:23 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-16 04:35:15 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 04:41:35 +0000] [8349] [DEBUG] GET /confirmation/
+[2024-05-16 04:41:35 +0000] [8351] [DEBUG] GET /
+[2024-05-16 04:41:35 +0000] [8349] [DEBUG] GET /confirmation/
+[2024-05-16 04:41:36 +0000] [8350] [DEBUG] GET /
+[2024-05-16 04:41:36 +0000] [8351] [DEBUG] GET /
+[2024-05-16 04:41:36 +0000] [8349] [DEBUG] GET /
+[2024-05-16 04:41:36 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 04:41:36 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 04:47:27 +0000] [8351] [DEBUG] GET /
+[2024-05-16 04:47:35 +0000] [8349] [DEBUG] GET /cart/
+[2024-05-16 04:47:37 +0000] [8350] [DEBUG] GET /menu/
+[2024-05-16 04:47:39 +0000] [8351] [DEBUG] GET /about/
+[2024-05-16 05:00:26 +0000] [8351] [DEBUG] GET /
+[2024-05-16 07:13:03 +0000] [8351] [DEBUG] GET /
+[2024-05-16 07:13:08 +0000] [8349] [DEBUG] GET /
+[2024-05-16 07:13:11 +0000] [8350] [DEBUG] GET /
+[2024-05-16 07:13:25 +0000] [8349] [DEBUG] GET /cart/
+[2024-05-16 07:13:30 +0000] [8351] [DEBUG] GET /
+[2024-05-16 07:13:31 +0000] [8349] [DEBUG] GET /menu/
+[2024-05-16 07:16:34 +0000] [8349] [DEBUG] GET /
+[2024-05-16 07:22:06 +0000] [8349] [DEBUG] GET /about/
+[2024-05-16 07:22:06 +0000] [8350] [DEBUG] GET /catering/
+[2024-05-16 07:22:10 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-16 07:26:36 +0000] [8351] [DEBUG] GET /
+[2024-05-16 07:46:10 +0000] [8350] [DEBUG] GET /favicon-32x32.png
+[2024-05-16 07:59:17 +0000] [8350] [DEBUG] GET /
+[2024-05-16 08:55:34 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-16 08:55:35 +0000] [8351] [DEBUG] GET /robots.txt
+[2024-05-16 08:55:36 +0000] [8349] [DEBUG] GET /sitemap.xml
+[2024-05-16 09:26:59 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 10:15:14 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 10:19:47 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 11:23:13 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 11:59:57 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 12:09:14 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 12:32:24 +0000] [8351] [DEBUG] GET /
+[2024-05-16 12:32:25 +0000] [8349] [DEBUG] GET /
+[2024-05-16 12:39:51 +0000] [8350] [DEBUG] GET /.git/config
+[2024-05-16 12:45:29 +0000] [8349] [DEBUG] GET /
+[2024-05-16 12:45:29 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-16 12:45:44 +0000] [8350] [DEBUG] GET /
+[2024-05-16 12:48:35 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 13:02:23 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 13:04:24 +0000] [8350] [DEBUG] GET /
+[2024-05-16 13:14:17 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 13:24:39 +0000] [8349] [DEBUG] GET /.env
+[2024-05-16 14:10:16 +0000] [8351] [DEBUG] GET /
+[2024-05-16 14:10:21 +0000] [8349] [DEBUG] GET /
+[2024-05-16 14:10:28 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-16 14:10:29 +0000] [8349] [DEBUG] GET /cart/
+[2024-05-16 14:10:37 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-16 14:33:27 +0000] [8350] [DEBUG] GET /
+[2024-05-16 15:49:29 +0000] [8351] [DEBUG] GET /
+[2024-05-16 16:45:23 +0000] [8349] [DEBUG] GET /
+[2024-05-16 16:45:29 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-16 16:45:31 +0000] [8350] [DEBUG] GET /catering/
+[2024-05-16 16:45:33 +0000] [8349] [DEBUG] GET /about/
+[2024-05-16 16:45:52 +0000] [8349] [DEBUG] GET /about/
+[2024-05-16 16:45:59 +0000] [8351] [DEBUG] GET /about/
+[2024-05-16 16:46:08 +0000] [8349] [DEBUG] GET /menu/
+[2024-05-16 16:46:16 +0000] [8350] [DEBUG] GET /
+[2024-05-16 16:46:28 +0000] [8351] [DEBUG] GET /catering/
+[2024-05-16 16:47:30 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-16 16:49:51 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-16 17:06:32 +0000] [8351] [DEBUG] GET /actuator/gateway/routes
+[2024-05-16 17:26:48 +0000] [8351] [DEBUG] GET /.env
+[2024-05-16 17:36:31 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-16 17:57:40 +0000] [8350] [DEBUG] GET /wp-login.php
+[2024-05-16 18:03:16 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 18:26:29 +0000] [8351] [DEBUG] GET /
+[2024-05-16 19:11:01 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 19:44:06 +0000] [8350] [DEBUG] GET /
+[2024-05-16 19:44:06 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-16 19:45:18 +0000] [8351] [DEBUG] GET /
+[2024-05-16 19:45:18 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-16 19:45:18 +0000] [8350] [DEBUG] Ignoring EPIPE
+[2024-05-16 19:45:27 +0000] [8351] [DEBUG] GET /
+[2024-05-16 19:45:27 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-16 19:45:27 +0000] [8350] [DEBUG] Ignoring EPIPE
+[2024-05-16 19:46:05 +0000] [8350] [DEBUG] GET /about/
+[2024-05-16 19:47:34 +0000] [8351] [DEBUG] GET /
+[2024-05-16 19:52:55 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 20:11:16 +0000] [8349] [DEBUG] GET /
+[2024-05-16 21:16:11 +0000] [8350] [DEBUG] GET /
+[2024-05-16 21:16:12 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-16 21:16:13 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-16 21:16:19 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-16 21:37:59 +0000] [8351] [DEBUG] GET /
+[2024-05-16 21:38:01 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-16 21:38:01 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-16 21:38:04 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-16 21:55:22 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 22:04:55 +0000] [8351] [DEBUG] GET /
+[2024-05-16 22:05:05 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-16 22:05:05 +0000] [8351] [DEBUG] GET /
+[2024-05-16 22:05:19 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-16 22:26:45 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-16 23:20:40 +0000] [8349] [DEBUG] GET /
+[2024-05-16 23:20:40 +0000] [8351] [DEBUG] GET /
+[2024-05-16 23:20:40 +0000] [8350] [DEBUG] GET /
+[2024-05-16 23:20:40 +0000] [8349] [DEBUG] GET /
+[2024-05-17 00:38:35 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 00:43:21 +0000] [8349] [DEBUG] GET /
+[2024-05-17 00:43:22 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-17 00:43:30 +0000] [8349] [DEBUG] GET /menu/
+[2024-05-17 00:46:32 +0000] [8349] [DEBUG] GET /
+[2024-05-17 00:48:43 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-17 00:50:24 +0000] [8350] [DEBUG] GET /menu/
+[2024-05-17 00:59:49 +0000] [8349] [DEBUG] GET /
+[2024-05-17 01:43:28 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 02:24:37 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 02:47:23 +0000] [8351] [DEBUG] GET /wp-content/plugins/hellopress/wp_filemanager.php
+[2024-05-17 02:47:23 +0000] [8350] [DEBUG] GET /wp-includes/Requests/about.php
+[2024-05-17 02:47:24 +0000] [8351] [DEBUG] GET /wp-includes/style-engine/about.php
+[2024-05-17 02:47:24 +0000] [8349] [DEBUG] GET /wp-includes/rest-api/about.php
+[2024-05-17 02:47:24 +0000] [8350] [DEBUG] GET /wp-includes/SimplePie/about.php
+[2024-05-17 02:47:25 +0000] [8351] [DEBUG] GET /wp-content/banners/about.php
+[2024-05-17 02:47:25 +0000] [8349] [DEBUG] GET /wp-content/about.php
+[2024-05-17 02:47:25 +0000] [8350] [DEBUG] GET /.well-known/about.php
+[2024-05-17 02:47:26 +0000] [8351] [DEBUG] GET /wp-includes/Text/about.php
+[2024-05-17 02:47:26 +0000] [8349] [DEBUG] GET /wp-includes/ID3/about.php
+[2024-05-17 02:47:26 +0000] [8350] [DEBUG] GET /img/about.php
+[2024-05-17 02:47:27 +0000] [8351] [DEBUG] GET /wp-content/languages/about.php
+[2024-05-17 02:47:27 +0000] [8349] [DEBUG] GET /wp-includes/customize/about.php
+[2024-05-17 02:47:28 +0000] [8350] [DEBUG] GET /wp-includes.bak/html-api/about.php
+[2024-05-17 02:47:28 +0000] [8351] [DEBUG] GET /wp-includes/widgets/about.php
+[2024-05-17 02:47:28 +0000] [8349] [DEBUG] GET /wp-includes/IXR/about.php
+[2024-05-17 02:47:29 +0000] [8350] [DEBUG] GET /wp-admin/js/about.php
+[2024-05-17 02:47:29 +0000] [8349] [DEBUG] GET /.well-known/pki-validation/about.php
+[2024-05-17 02:47:29 +0000] [8351] [DEBUG] GET /wp-includes/pomo/about.php
+[2024-05-17 02:47:30 +0000] [8350] [DEBUG] GET /wp-includes/block-patterns/about.php
+[2024-05-17 02:47:30 +0000] [8349] [DEBUG] GET /wp-content/updraft/about.php
+[2024-05-17 02:47:30 +0000] [8351] [DEBUG] GET /wp-content/upgrade-temp-backup/about.php
+[2024-05-17 02:47:31 +0000] [8350] [DEBUG] GET /wp-content/themes/about.php
+[2024-05-17 02:47:31 +0000] [8349] [DEBUG] GET /wp-admin/includes/about.php
+[2024-05-17 02:47:32 +0000] [8351] [DEBUG] GET /images/about.php
+[2024-05-17 02:47:32 +0000] [8350] [DEBUG] GET /wp-content/blogs.dir/about.php
+[2024-05-17 02:47:32 +0000] [8349] [DEBUG] GET /wp-includes/images/about.php
+[2024-05-17 02:47:33 +0000] [8351] [DEBUG] GET /wp-includes/about.php
+[2024-05-17 02:47:33 +0000] [8350] [DEBUG] GET /cgi-bin/about.php
+[2024-05-17 02:47:33 +0000] [8349] [DEBUG] GET /wp-content/gallery/about.php
+[2024-05-17 02:47:34 +0000] [8351] [DEBUG] GET /wp-includes/blocks/about.php
+[2024-05-17 02:47:34 +0000] [8350] [DEBUG] GET /wp-admin/css/about.php
+[2024-05-17 02:47:34 +0000] [8349] [DEBUG] GET /wp-admin/images/about.php
+[2024-05-17 02:47:35 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/cloud.php
+[2024-05-17 02:47:35 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/cloud.php
+[2024-05-17 02:47:36 +0000] [8349] [DEBUG] GET /wp-admin/network/cloud.php
+[2024-05-17 02:47:36 +0000] [8351] [DEBUG] GET /cloud.php
+[2024-05-17 02:47:36 +0000] [8350] [DEBUG] GET /cgi-bin/cloud.php
+[2024-05-17 02:47:37 +0000] [8349] [DEBUG] GET /wp-content/updates.php
+[2024-05-17 02:47:37 +0000] [8351] [DEBUG] GET /css/cloud.php
+[2024-05-17 02:47:37 +0000] [8350] [DEBUG] GET /wp-admin/user/cloud.php
+[2024-05-17 02:47:38 +0000] [8349] [DEBUG] GET /img/cloud.php
+[2024-05-17 02:47:38 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/coffee/cloud.php
+[2024-05-17 02:47:38 +0000] [8350] [DEBUG] GET /wp-admin/images/cloud.php
+[2024-05-17 02:47:39 +0000] [8349] [DEBUG] GET /avaa.php
+[2024-05-17 02:47:39 +0000] [8351] [DEBUG] GET /images/cloud.php
+[2024-05-17 02:47:40 +0000] [8350] [DEBUG] GET /wp-admin/js/widgets/cloud.php
+[2024-05-17 02:47:40 +0000] [8349] [DEBUG] GET /wp-includes/Requests/Text/admin.php
+[2024-05-17 02:47:40 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/cloud.php
+[2024-05-17 02:47:41 +0000] [8349] [DEBUG] GET /wp-admin/includes/cloud.php
+[2024-05-17 02:47:41 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/blue/cloud.php
+[2024-05-17 02:47:41 +0000] [8350] [DEBUG] GET /wp-admin/cloud.php
+[2024-05-17 02:47:42 +0000] [8351] [DEBUG] GET /updates.php
+[2024-05-17 02:47:42 +0000] [8349] [DEBUG] GET /libraries/legacy/updates.php
+[2024-05-17 02:47:42 +0000] [8350] [DEBUG] GET /libraries/phpmailer/updates.php
+[2024-05-17 02:47:43 +0000] [8351] [DEBUG] GET /libraries/vendor/updates.php
+[2024-05-17 02:47:43 +0000] [8349] [DEBUG] GET /alfa-rex.php7
+[2024-05-17 02:47:44 +0000] [8350] [DEBUG] GET /alfanew.php
+[2024-05-17 02:47:44 +0000] [8349] [DEBUG] GET /wp-content/plugins/Cache/Cache.php
+[2024-05-17 02:47:44 +0000] [8351] [DEBUG] GET /wp-admin/js/widgets/about.php7
+[2024-05-17 02:47:45 +0000] [8349] [DEBUG] GET /wp-p.php7
+[2024-05-17 02:47:45 +0000] [8350] [DEBUG] GET /wp-admin/repeater.php
+[2024-05-17 02:47:45 +0000] [8351] [DEBUG] GET /wp-includes/repeater.php
+[2024-05-17 02:47:46 +0000] [8349] [DEBUG] GET /wp-content/repeater.php
+[2024-05-17 02:47:46 +0000] [8350] [DEBUG] GET /wsoyanz.php
+[2024-05-17 02:47:47 +0000] [8351] [DEBUG] GET /yanz.php
+[2024-05-17 02:47:47 +0000] [8349] [DEBUG] GET /wp-admin/js/about.php
+[2024-05-17 02:47:47 +0000] [8350] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz.php
+[2024-05-17 02:47:48 +0000] [8351] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz1.php
+[2024-05-17 02:47:48 +0000] [8350] [DEBUG] GET /cache-compat.php
+[2024-05-17 02:47:48 +0000] [8349] [DEBUG] GET /ajax-actions.php
+[2024-05-17 02:47:49 +0000] [8350] [DEBUG] GET /wp-admin/ajax-actions.php
+[2024-05-17 02:47:49 +0000] [8351] [DEBUG] GET /wp-consar.php
+[2024-05-17 02:47:49 +0000] [8349] [DEBUG] GET /repeater.php
+[2024-05-17 02:47:50 +0000] [8350] [DEBUG] GET /admin-post.php
+[2024-05-17 02:47:50 +0000] [8351] [DEBUG] GET /wp-admin/maint/maint/ajax-actions.php
+[2024-05-17 02:47:51 +0000] [8349] [DEBUG] GET /wp-admin/dropdown.php
+[2024-05-17 02:47:51 +0000] [8350] [DEBUG] GET /wp-admin/css/index.php
+[2024-05-17 02:47:51 +0000] [8351] [DEBUG] GET /dropdown.php
+[2024-05-17 02:47:52 +0000] [8349] [DEBUG] GET /about.php
+[2024-05-17 02:47:52 +0000] [8350] [DEBUG] GET /admin.php
+[2024-05-17 02:47:52 +0000] [8351] [DEBUG] GET /about.php7
+[2024-05-17 02:47:53 +0000] [8350] [DEBUG] GET /alfanew.php7
+[2024-05-17 02:47:53 +0000] [8349] [DEBUG] GET /adminfuns.php7
+[2024-05-17 02:47:53 +0000] [8351] [DEBUG] GET /ebs.php7
+[2024-05-17 02:47:54 +0000] [8350] [DEBUG] GET /ws.php7
+[2024-05-17 02:47:54 +0000] [8349] [DEBUG] GET /alfanew2.php7
+[2024-05-17 02:47:55 +0000] [8351] [DEBUG] GET /alfa-rex2.php7
+[2024-05-17 02:47:55 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/cloud.php
+[2024-05-17 02:47:55 +0000] [8349] [DEBUG] GET /wp-admin/images/index.php
+[2024-05-17 02:47:56 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/index.php
+[2024-05-17 02:47:56 +0000] [8350] [DEBUG] GET /wp-content/themes/pridmag/db.php
+[2024-05-17 02:47:56 +0000] [8349] [DEBUG] GET /wp-content/themes/seotheme/mar.php
+[2024-05-17 02:47:57 +0000] [8351] [DEBUG] GET /wp-content/plugins/linkpreview/db.php
+[2024-05-17 02:47:57 +0000] [8350] [DEBUG] GET /wp-content/themes/seotheme/db.php
+[2024-05-17 02:47:57 +0000] [8351] [DEBUG] GET /wp-content/plugins/seoplugins/db.php
+[2024-05-17 02:47:58 +0000] [8350] [DEBUG] GET /wp-content/plugins/seoplugins/mar.php
+[2024-05-17 02:47:58 +0000] [8349] [DEBUG] GET /.well-known/pki-validation/xmrlpc.php
+[2024-05-17 02:47:59 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/xmrlpc.php
+[2024-05-17 02:47:59 +0000] [8351] [DEBUG] GET /wp-admin/network/xmrlpc.php
+[2024-05-17 02:47:59 +0000] [8349] [DEBUG] GET /xmrlpc.php
+[2024-05-17 02:48:00 +0000] [8350] [DEBUG] GET /cgi-bin/xmrlpc.php
+[2024-05-17 02:48:00 +0000] [8351] [DEBUG] GET /css/xmrlpc.php
+[2024-05-17 02:48:00 +0000] [8350] [DEBUG] GET /wp-admin/user/xmrlpc.php
+[2024-05-17 02:48:01 +0000] [8349] [DEBUG] GET /img/xmrlpc.php
+[2024-05-17 02:48:01 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/coffee/xmrlpc.php
+[2024-05-17 02:48:02 +0000] [8351] [DEBUG] GET /wp-admin/images/xmrlpc.php
+[2024-05-17 02:48:02 +0000] [8351] [DEBUG] GET /images/xmrlpc.php
+[2024-05-17 02:48:02 +0000] [8350] [DEBUG] GET /wp-admin/js/widgets/xmrlpc.php
+[2024-05-17 02:48:03 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/xmrlpc.php
+[2024-05-17 02:48:03 +0000] [8351] [DEBUG] GET /wp-admin/includes/xmrlpc.php
+[2024-05-17 02:48:03 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/blue/xmrlpc.php
+[2024-05-17 02:48:04 +0000] [8349] [DEBUG] GET /wp-admin/xmrlpc.php
+[2024-05-17 02:48:04 +0000] [8351] [DEBUG] GET /wp-includes/Requests/about.php
+[2024-05-17 02:48:04 +0000] [8350] [DEBUG] GET /wp-includes/style-engine/about.php
+[2024-05-17 02:48:05 +0000] [8349] [DEBUG] GET /wp-includes/rest-api/about.php
+[2024-05-17 02:48:05 +0000] [8351] [DEBUG] GET /wp-includes/SimplePie/about.php
+[2024-05-17 02:48:05 +0000] [8350] [DEBUG] GET /wp-content/banners/about.php
+[2024-05-17 02:48:06 +0000] [8351] [DEBUG] GET /wp-content/about.php
+[2024-05-17 02:48:06 +0000] [8349] [DEBUG] GET /.well-known/about.php
+[2024-05-17 02:48:07 +0000] [8350] [DEBUG] GET /wp-includes/Text/about.php
+[2024-05-17 02:48:07 +0000] [8351] [DEBUG] GET /wp-includes/ID3/about.php
+[2024-05-17 02:48:07 +0000] [8349] [DEBUG] GET /img/about.php
+[2024-05-17 02:48:08 +0000] [8351] [DEBUG] GET /wp-content/languages/about.php
+[2024-05-17 02:48:08 +0000] [8350] [DEBUG] GET /wp-includes/customize/about.php
+[2024-05-17 02:48:08 +0000] [8349] [DEBUG] GET /wp-includes.bak/html-api/about.php
+[2024-05-17 02:48:09 +0000] [8351] [DEBUG] GET /wp-includes/widgets/about.php
+[2024-05-17 02:48:09 +0000] [8349] [DEBUG] GET /wp-includes/IXR/about.php
+[2024-05-17 02:48:09 +0000] [8350] [DEBUG] GET /wp-admin/js/about.php
+[2024-05-17 02:48:10 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/about.php
+[2024-05-17 02:48:10 +0000] [8350] [DEBUG] GET /wp-includes/pomo/about.php
+[2024-05-17 02:48:11 +0000] [8349] [DEBUG] GET /wp-includes/block-patterns/about.php
+[2024-05-17 02:48:11 +0000] [8350] [DEBUG] GET /wp-content/updraft/about.php
+[2024-05-17 02:48:11 +0000] [8351] [DEBUG] GET /wp-content/upgrade-temp-backup/about.php
+[2024-05-17 02:48:12 +0000] [8349] [DEBUG] GET /wp-content/themes/about.php
+[2024-05-17 02:48:12 +0000] [8350] [DEBUG] GET /wp-admin/includes/about.php
+[2024-05-17 02:48:12 +0000] [8351] [DEBUG] GET /images/about.php
+[2024-05-17 02:48:13 +0000] [8349] [DEBUG] GET /wp-content/blogs.dir/about.php
+[2024-05-17 02:48:13 +0000] [8350] [DEBUG] GET /wp-includes/images/about.php
+[2024-05-17 02:48:14 +0000] [8351] [DEBUG] GET /wp-includes/about.php
+[2024-05-17 02:48:14 +0000] [8349] [DEBUG] GET /cgi-bin/about.php
+[2024-05-17 02:48:14 +0000] [8350] [DEBUG] GET /wp-content/gallery/about.php
+[2024-05-17 02:48:15 +0000] [8351] [DEBUG] GET /wp-includes/blocks/about.php
+[2024-05-17 02:48:15 +0000] [8349] [DEBUG] GET /wp-admin/css/about.php
+[2024-05-17 02:48:15 +0000] [8350] [DEBUG] GET /wp-admin/images/about.php
+[2024-05-17 02:48:16 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/cloud.php
+[2024-05-17 02:48:16 +0000] [8349] [DEBUG] GET /.well-known/acme-challenge/cloud.php
+[2024-05-17 02:48:16 +0000] [8350] [DEBUG] GET /wp-admin/network/cloud.php
+[2024-05-17 02:48:17 +0000] [8351] [DEBUG] GET /cloud.php
+[2024-05-17 02:48:17 +0000] [8350] [DEBUG] GET /cgi-bin/cloud.php
+[2024-05-17 02:48:18 +0000] [8349] [DEBUG] GET /wp-content/updates.php
+[2024-05-17 02:48:18 +0000] [8351] [DEBUG] GET /css/cloud.php
+[2024-05-17 02:48:18 +0000] [8350] [DEBUG] GET /wp-admin/user/cloud.php
+[2024-05-17 02:48:19 +0000] [8349] [DEBUG] GET /img/cloud.php
+[2024-05-17 02:48:19 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/coffee/cloud.php
+[2024-05-17 02:48:19 +0000] [8350] [DEBUG] GET /wp-admin/images/cloud.php
+[2024-05-17 02:48:20 +0000] [8349] [DEBUG] GET /avaa.php
+[2024-05-17 02:48:20 +0000] [8351] [DEBUG] GET /images/cloud.php
+[2024-05-17 02:48:20 +0000] [8350] [DEBUG] GET /wp-admin/js/widgets/cloud.php
+[2024-05-17 02:48:21 +0000] [8349] [DEBUG] GET /wp-includes/Requests/Text/admin.php
+[2024-05-17 02:48:21 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/cloud.php
+[2024-05-17 02:48:21 +0000] [8350] [DEBUG] GET /wp-admin/includes/cloud.php
+[2024-05-17 02:48:22 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/blue/cloud.php
+[2024-05-17 02:48:22 +0000] [8351] [DEBUG] GET /wp-admin/cloud.php
+[2024-05-17 02:48:23 +0000] [8349] [DEBUG] GET /updates.php
+[2024-05-17 02:48:23 +0000] [8350] [DEBUG] GET /libraries/legacy/updates.php
+[2024-05-17 02:48:23 +0000] [8351] [DEBUG] GET /libraries/phpmailer/updates.php
+[2024-05-17 02:48:24 +0000] [8349] [DEBUG] GET /libraries/vendor/updates.php
+[2024-05-17 02:48:24 +0000] [8350] [DEBUG] GET /alfa-rex.php7
+[2024-05-17 02:48:24 +0000] [8351] [DEBUG] GET /alfanew.php
+[2024-05-17 02:48:25 +0000] [8349] [DEBUG] GET /wp-content/plugins/Cache/Cache.php
+[2024-05-17 02:48:25 +0000] [8350] [DEBUG] GET /wp-admin/js/widgets/about.php7
+[2024-05-17 02:48:25 +0000] [8351] [DEBUG] GET /wp-p.php7
+[2024-05-17 02:48:26 +0000] [8349] [DEBUG] GET /wp-admin/repeater.php
+[2024-05-17 02:48:26 +0000] [8350] [DEBUG] GET /wp-includes/repeater.php
+[2024-05-17 02:48:26 +0000] [8349] [DEBUG] GET /wp-content/repeater.php
+[2024-05-17 02:48:27 +0000] [8351] [DEBUG] GET /wsoyanz.php
+[2024-05-17 02:48:27 +0000] [8350] [DEBUG] GET /yanz.php
+[2024-05-17 02:48:28 +0000] [8349] [DEBUG] GET /wp-admin/js/about.php
+[2024-05-17 02:48:28 +0000] [8351] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz.php
+[2024-05-17 02:48:28 +0000] [8350] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz1.php
+[2024-05-17 02:48:29 +0000] [8351] [DEBUG] GET /cache-compat.php
+[2024-05-17 02:48:29 +0000] [8349] [DEBUG] GET /ajax-actions.php
+[2024-05-17 02:48:29 +0000] [8351] [DEBUG] GET /wp-admin/ajax-actions.php
+[2024-05-17 02:48:30 +0000] [8350] [DEBUG] GET /wp-consar.php
+[2024-05-17 02:48:30 +0000] [8349] [DEBUG] GET /repeater.php
+[2024-05-17 02:48:30 +0000] [8351] [DEBUG] GET /admin-post.php
+[2024-05-17 02:48:31 +0000] [8351] [DEBUG] GET /wp-admin/maint/maint/ajax-actions.php
+[2024-05-17 02:48:31 +0000] [8350] [DEBUG] GET /wp-admin/dropdown.php
+[2024-05-17 02:48:32 +0000] [8349] [DEBUG] GET /wp-admin/css/index.php
+[2024-05-17 02:48:32 +0000] [8350] [DEBUG] GET /dropdown.php
+[2024-05-17 02:48:32 +0000] [8351] [DEBUG] GET /about.php
+[2024-05-17 02:48:33 +0000] [8349] [DEBUG] GET /admin.php
+[2024-05-17 02:48:33 +0000] [8350] [DEBUG] GET /about.php7
+[2024-05-17 02:48:33 +0000] [8351] [DEBUG] GET /alfanew.php7
+[2024-05-17 02:48:34 +0000] [8349] [DEBUG] GET /adminfuns.php7
+[2024-05-17 02:48:34 +0000] [8351] [DEBUG] GET /ebs.php7
+[2024-05-17 02:48:34 +0000] [8350] [DEBUG] GET /ws.php7
+[2024-05-17 02:48:35 +0000] [8349] [DEBUG] GET /alfanew2.php7
+[2024-05-17 02:48:35 +0000] [8350] [DEBUG] GET /alfa-rex2.php7
+[2024-05-17 02:48:35 +0000] [8351] [DEBUG] GET /.well-known/acme-challenge/cloud.php
+[2024-05-17 02:48:36 +0000] [8349] [DEBUG] GET /wp-admin/images/index.php
+[2024-05-17 02:48:36 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/index.php
+[2024-05-17 02:48:37 +0000] [8351] [DEBUG] GET /wp-content/themes/pridmag/db.php
+[2024-05-17 02:48:37 +0000] [8350] [DEBUG] GET /wp-content/themes/seotheme/mar.php
+[2024-05-17 02:48:37 +0000] [8349] [DEBUG] GET /wp-content/plugins/linkpreview/db.php
+[2024-05-17 02:48:38 +0000] [8350] [DEBUG] GET /wp-content/themes/seotheme/db.php
+[2024-05-17 02:48:38 +0000] [8351] [DEBUG] GET /wp-content/plugins/seoplugins/db.php
+[2024-05-17 02:48:38 +0000] [8349] [DEBUG] GET /wp-content/plugins/seoplugins/mar.php
+[2024-05-17 02:48:39 +0000] [8350] [DEBUG] GET /.well-known/pki-validation/xmrlpc.php
+[2024-05-17 02:48:39 +0000] [8351] [DEBUG] GET /.well-known/acme-challenge/xmrlpc.php
+[2024-05-17 02:48:39 +0000] [8349] [DEBUG] GET /wp-admin/network/xmrlpc.php
+[2024-05-17 02:48:40 +0000] [8350] [DEBUG] GET /xmrlpc.php
+[2024-05-17 02:48:40 +0000] [8351] [DEBUG] GET /cgi-bin/xmrlpc.php
+[2024-05-17 02:48:40 +0000] [8350] [DEBUG] GET /css/xmrlpc.php
+[2024-05-17 02:48:41 +0000] [8349] [DEBUG] GET /wp-admin/user/xmrlpc.php
+[2024-05-17 02:48:41 +0000] [8350] [DEBUG] GET /img/xmrlpc.php
+[2024-05-17 02:48:42 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/coffee/xmrlpc.php
+[2024-05-17 02:48:42 +0000] [8349] [DEBUG] GET /wp-admin/images/xmrlpc.php
+[2024-05-17 02:48:42 +0000] [8350] [DEBUG] GET /images/xmrlpc.php
+[2024-05-17 02:48:43 +0000] [8351] [DEBUG] GET /wp-admin/js/widgets/xmrlpc.php
+[2024-05-17 02:48:43 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/xmrlpc.php
+[2024-05-17 02:48:43 +0000] [8350] [DEBUG] GET /wp-admin/includes/xmrlpc.php
+[2024-05-17 02:48:44 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/blue/xmrlpc.php
+[2024-05-17 02:48:44 +0000] [8349] [DEBUG] GET /wp-admin/xmrlpc.php
+[2024-05-17 03:36:13 +0000] [8349] [DEBUG] GET /
+[2024-05-17 04:00:29 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 05:37:18 +0000] [8349] [DEBUG] GET /
+[2024-05-17 05:37:19 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-17 06:05:14 +0000] [8351] [DEBUG] GET /
+[2024-05-17 06:27:01 +0000] [8351] [DEBUG] GET /robots.txt
+[2024-05-17 06:54:27 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 08:44:17 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 09:15:03 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 10:07:24 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-17 10:07:25 +0000] [8349] [DEBUG] GET /robots.txt
+[2024-05-17 10:07:27 +0000] [8350] [DEBUG] GET /sitemap.xml
+[2024-05-17 10:46:21 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 11:01:54 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 11:12:44 +0000] [8349] [DEBUG] GET /wp-content/plugins/hellopress/wp_filemanager.php
+[2024-05-17 11:12:44 +0000] [8350] [DEBUG] GET /lv.php
+[2024-05-17 11:12:44 +0000] [8351] [DEBUG] GET /wp-22.php
+[2024-05-17 11:12:44 +0000] [8349] [DEBUG] GET /wp-content/plugins/pwnd/pwnd.php
+[2024-05-17 11:12:44 +0000] [8350] [DEBUG] GET /wp-content/plugins/pwnd-1/pwnd.php
+[2024-05-17 11:12:44 +0000] [8351] [DEBUG] GET /wp-includes/Requests/about.php
+[2024-05-17 11:12:45 +0000] [8349] [DEBUG] GET /wp-includes/style-engine/about.php
+[2024-05-17 11:12:45 +0000] [8350] [DEBUG] GET /wp-includes/rest-api/about.php
+[2024-05-17 11:12:45 +0000] [8351] [DEBUG] GET /wp-includes/SimplePie/about.php
+[2024-05-17 11:12:45 +0000] [8349] [DEBUG] GET /wp-content/banners/about.php
+[2024-05-17 11:12:45 +0000] [8350] [DEBUG] GET /wp-content/about.php
+[2024-05-17 11:12:45 +0000] [8349] [DEBUG] GET /.well-known/about.php
+[2024-05-17 11:12:45 +0000] [8351] [DEBUG] GET /wp-includes/Text/about.php
+[2024-05-17 11:12:46 +0000] [8350] [DEBUG] GET /wp-includes/ID3/about.php
+[2024-05-17 11:12:46 +0000] [8349] [DEBUG] GET /img/about.php
+[2024-05-17 11:12:46 +0000] [8351] [DEBUG] GET /wp-content/languages/about.php
+[2024-05-17 11:12:46 +0000] [8349] [DEBUG] GET /wp-includes/customize/about.php
+[2024-05-17 11:12:46 +0000] [8350] [DEBUG] GET /wp-includes.bak/html-api/about.php
+[2024-05-17 11:12:46 +0000] [8349] [DEBUG] GET /wp-includes/widgets/about.php
+[2024-05-17 11:12:46 +0000] [8351] [DEBUG] GET /wp-includes/IXR/about.php
+[2024-05-17 11:12:46 +0000] [8350] [DEBUG] GET /wp-admin/js/about.php
+[2024-05-17 11:12:46 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/about.php
+[2024-05-17 11:12:47 +0000] [8349] [DEBUG] GET /wp-includes/pomo/about.php
+[2024-05-17 11:12:47 +0000] [8350] [DEBUG] GET /wp-includes/block-patterns/about.php
+[2024-05-17 11:12:47 +0000] [8351] [DEBUG] GET /wp-content/updraft/about.php
+[2024-05-17 11:12:47 +0000] [8349] [DEBUG] GET /wp-content/upgrade-temp-backup/about.php
+[2024-05-17 11:12:47 +0000] [8350] [DEBUG] GET /wp-content/themes/about.php
+[2024-05-17 11:12:47 +0000] [8351] [DEBUG] GET /wp-admin/includes/about.php
+[2024-05-17 11:12:47 +0000] [8349] [DEBUG] GET /images/about.php
+[2024-05-17 11:12:47 +0000] [8350] [DEBUG] GET /wp-content/blogs.dir/about.php
+[2024-05-17 11:12:47 +0000] [8351] [DEBUG] GET /wp-includes/images/about.php
+[2024-05-17 11:12:47 +0000] [8349] [DEBUG] GET /wp-includes/about.php
+[2024-05-17 11:12:48 +0000] [8350] [DEBUG] GET /cgi-bin/about.php
+[2024-05-17 11:12:48 +0000] [8349] [DEBUG] GET /wp-content/gallery/about.php
+[2024-05-17 11:12:48 +0000] [8351] [DEBUG] GET /wp-includes/blocks/about.php
+[2024-05-17 11:12:48 +0000] [8350] [DEBUG] GET /wp-admin/css/about.php
+[2024-05-17 11:12:48 +0000] [8349] [DEBUG] GET /wp-admin/images/about.php
+[2024-05-17 11:12:48 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/cloud.php
+[2024-05-17 11:12:48 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/cloud.php
+[2024-05-17 11:12:48 +0000] [8349] [DEBUG] GET /wp-admin/network/cloud.php
+[2024-05-17 11:12:48 +0000] [8350] [DEBUG] GET /cloud.php
+[2024-05-17 11:12:49 +0000] [8351] [DEBUG] GET /cgi-bin/cloud.php
+[2024-05-17 11:12:49 +0000] [8349] [DEBUG] GET /wp-content/updates.php
+[2024-05-17 11:12:49 +0000] [8350] [DEBUG] GET /css/cloud.php
+[2024-05-17 11:12:49 +0000] [8351] [DEBUG] GET /wp-admin/user/cloud.php
+[2024-05-17 11:12:49 +0000] [8350] [DEBUG] GET /img/cloud.php
+[2024-05-17 11:12:49 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/coffee/cloud.php
+[2024-05-17 11:12:49 +0000] [8351] [DEBUG] GET /wp-admin/images/cloud.php
+[2024-05-17 11:12:49 +0000] [8350] [DEBUG] GET /avaa.php
+[2024-05-17 11:12:49 +0000] [8349] [DEBUG] GET /images/cloud.php
+[2024-05-17 11:12:49 +0000] [8351] [DEBUG] GET /wp-admin/js/widgets/cloud.php
+[2024-05-17 11:12:50 +0000] [8350] [DEBUG] GET /wp-includes/Requests/Text/admin.php
+[2024-05-17 11:12:50 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/cloud.php
+[2024-05-17 11:12:50 +0000] [8351] [DEBUG] GET /wp-admin/includes/cloud.php
+[2024-05-17 11:12:50 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/blue/cloud.php
+[2024-05-17 11:12:50 +0000] [8351] [DEBUG] GET /wp-admin/cloud.php
+[2024-05-17 11:12:50 +0000] [8349] [DEBUG] GET /updates.php
+[2024-05-17 11:12:50 +0000] [8350] [DEBUG] GET /libraries/legacy/updates.php
+[2024-05-17 11:12:50 +0000] [8351] [DEBUG] GET /libraries/phpmailer/updates.php
+[2024-05-17 11:12:50 +0000] [8349] [DEBUG] GET /libraries/vendor/updates.php
+[2024-05-17 11:12:50 +0000] [8350] [DEBUG] GET /alfa-rex.php7
+[2024-05-17 11:12:51 +0000] [8351] [DEBUG] GET /alfanew.php
+[2024-05-17 11:12:51 +0000] [8349] [DEBUG] GET /wp-content/plugins/Cache/Cache.php
+[2024-05-17 11:12:51 +0000] [8350] [DEBUG] GET /wp-admin/js/widgets/about.php7
+[2024-05-17 11:12:51 +0000] [8351] [DEBUG] GET /wp-p.php7
+[2024-05-17 11:12:51 +0000] [8349] [DEBUG] GET /wp-admin/repeater.php
+[2024-05-17 11:12:51 +0000] [8350] [DEBUG] GET /wp-includes/repeater.php
+[2024-05-17 11:12:51 +0000] [8351] [DEBUG] GET /wp-content/repeater.php
+[2024-05-17 11:12:51 +0000] [8349] [DEBUG] GET /wsoyanz.php
+[2024-05-17 11:12:51 +0000] [8350] [DEBUG] GET /yanz.php
+[2024-05-17 11:12:52 +0000] [8351] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz.php
+[2024-05-17 11:12:52 +0000] [8349] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz1.php
+[2024-05-17 11:12:52 +0000] [8350] [DEBUG] GET /cache-compat.php
+[2024-05-17 11:12:52 +0000] [8351] [DEBUG] GET /ajax-actions.php
+[2024-05-17 11:12:52 +0000] [8349] [DEBUG] GET /wp-admin/ajax-actions.php
+[2024-05-17 11:12:52 +0000] [8350] [DEBUG] GET /wp-consar.php
+[2024-05-17 11:12:52 +0000] [8349] [DEBUG] GET /repeater.php
+[2024-05-17 11:12:52 +0000] [8351] [DEBUG] GET /admin-post.php
+[2024-05-17 11:12:52 +0000] [8350] [DEBUG] GET /wp-admin/maint/maint/ajax-actions.php
+[2024-05-17 11:12:52 +0000] [8351] [DEBUG] GET /wp-admin/dropdown.php
+[2024-05-17 11:12:53 +0000] [8350] [DEBUG] GET /wp-admin/css/index.php
+[2024-05-17 11:12:53 +0000] [8349] [DEBUG] GET /dropdown.php
+[2024-05-17 11:12:53 +0000] [8350] [DEBUG] GET /about.php
+[2024-05-17 11:12:53 +0000] [8351] [DEBUG] GET /admin.php
+[2024-05-17 11:12:53 +0000] [8349] [DEBUG] GET /about.php7
+[2024-05-17 11:12:53 +0000] [8350] [DEBUG] GET /alfanew.php7
+[2024-05-17 11:12:53 +0000] [8351] [DEBUG] GET /adminfuns.php7
+[2024-05-17 11:12:53 +0000] [8349] [DEBUG] GET /ebs.php7
+[2024-05-17 11:12:53 +0000] [8350] [DEBUG] GET /ws.php7
+[2024-05-17 11:12:53 +0000] [8351] [DEBUG] GET /alfanew2.php7
+[2024-05-17 11:12:54 +0000] [8350] [DEBUG] GET /alfa-rex2.php7
+[2024-05-17 11:12:54 +0000] [8349] [DEBUG] GET /wp-admin/images/index.php
+[2024-05-17 11:12:54 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/index.php
+[2024-05-17 11:12:54 +0000] [8350] [DEBUG] GET /wp-content/themes/pridmag/db.php
+[2024-05-17 11:12:54 +0000] [8349] [DEBUG] GET /wp-content/themes/seotheme/mar.php
+[2024-05-17 11:12:54 +0000] [8351] [DEBUG] GET /wp-content/plugins/linkpreview/db.php
+[2024-05-17 11:12:54 +0000] [8349] [DEBUG] GET /wp-content/themes/seotheme/db.php
+[2024-05-17 11:12:54 +0000] [8350] [DEBUG] GET /wp-content/plugins/seoplugins/db.php
+[2024-05-17 11:12:54 +0000] [8351] [DEBUG] GET /wp-content/plugins/seoplugins/mar.php
+[2024-05-17 11:12:55 +0000] [8349] [DEBUG] GET /.well-known/pki-validation/xmrlpc.php
+[2024-05-17 11:12:55 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/xmrlpc.php
+[2024-05-17 11:12:55 +0000] [8351] [DEBUG] GET /wp-admin/network/xmrlpc.php
+[2024-05-17 11:12:55 +0000] [8349] [DEBUG] GET /xmrlpc.php
+[2024-05-17 11:12:55 +0000] [8350] [DEBUG] GET /cgi-bin/xmrlpc.php
+[2024-05-17 11:12:55 +0000] [8351] [DEBUG] GET /css/xmrlpc.php
+[2024-05-17 11:12:55 +0000] [8349] [DEBUG] GET /wp-admin/user/xmrlpc.php
+[2024-05-17 11:12:55 +0000] [8350] [DEBUG] GET /img/xmrlpc.php
+[2024-05-17 11:12:55 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/coffee/xmrlpc.php
+[2024-05-17 11:12:55 +0000] [8349] [DEBUG] GET /wp-admin/images/xmrlpc.php
+[2024-05-17 11:12:56 +0000] [8350] [DEBUG] GET /images/xmrlpc.php
+[2024-05-17 11:12:56 +0000] [8351] [DEBUG] GET /wp-admin/js/widgets/xmrlpc.php
+[2024-05-17 11:12:56 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/xmrlpc.php
+[2024-05-17 11:12:56 +0000] [8350] [DEBUG] GET /wp-admin/includes/xmrlpc.php
+[2024-05-17 11:12:56 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/blue/xmrlpc.php
+[2024-05-17 11:12:56 +0000] [8349] [DEBUG] GET /wp-admin/xmrlpc.php
+[2024-05-17 11:12:56 +0000] [8350] [DEBUG] GET /smaxx.php
+[2024-05-17 11:12:56 +0000] [8351] [DEBUG] GET /wp-admin/smaxx.php
+[2024-05-17 11:12:56 +0000] [8349] [DEBUG] GET /wp-content/plugins/WordPressCore/smaxx.php
+[2024-05-17 11:12:56 +0000] [8350] [DEBUG] GET /wp-includes/images/smaxx.php
+[2024-05-17 11:12:57 +0000] [8351] [DEBUG] GET /wp-content/plugins/core-plugin/smaxx.php
+[2024-05-17 11:12:57 +0000] [8349] [DEBUG] GET /wp-includes/smaxx.php
+[2024-05-17 11:12:57 +0000] [8350] [DEBUG] GET /wp-content/plugins/smaxx.php
+[2024-05-17 11:12:57 +0000] [8351] [DEBUG] GET /xt/smaxx.php
+[2024-05-17 11:12:57 +0000] [8349] [DEBUG] GET /wp-content/smaxx.php
+[2024-05-17 11:12:57 +0000] [8350] [DEBUG] GET /wp-content/themes/twentyfive/smaxx.php
+[2024-05-17 11:12:57 +0000] [8351] [DEBUG] GET /wp-content/upgrade/sx.php
+[2024-05-17 11:12:57 +0000] [8349] [DEBUG] GET /.well-known/pki-validation/sx.php
+[2024-05-17 11:12:57 +0000] [8350] [DEBUG] GET /wp-admin/user/sx.php
+[2024-05-17 11:12:58 +0000] [8351] [DEBUG] GET /wp-includes/ID3/sx.php
+[2024-05-17 11:12:58 +0000] [8349] [DEBUG] GET /wp-includes/blocks/sx.php
+[2024-05-17 11:12:58 +0000] [8351] [DEBUG] GET /sx.php
+[2024-05-17 11:12:58 +0000] [8350] [DEBUG] GET /wp-includes/sx.php
+[2024-05-17 11:12:58 +0000] [8351] [DEBUG] GET /wp-admin/sx.php
+[2024-05-17 11:12:58 +0000] [8350] [DEBUG] GET /wp-content/plugins/fix/sx.php
+[2024-05-17 11:12:58 +0000] [8349] [DEBUG] GET /wp-admin/includes/sx.php
+[2024-05-17 11:12:58 +0000] [8351] [DEBUG] GET /cgi-bin/sx.php
+[2024-05-17 11:12:58 +0000] [8350] [DEBUG] GET /wp-admin/css/sx.php
+[2024-05-17 11:12:58 +0000] [8351] [DEBUG] GET /wp-admin/network/sx.php
+[2024-05-17 11:12:59 +0000] [8349] [DEBUG] GET /wp-includes/block-supports/sx.php
+[2024-05-17 11:12:59 +0000] [8351] [DEBUG] GET /wp-includes/IXR/sx.php
+[2024-05-17 11:12:59 +0000] [8350] [DEBUG] GET /.well-known/sx.php
+[2024-05-17 11:12:59 +0000] [8349] [DEBUG] GET /wp-includes/js/tinymce/skins/lightgray/fonts/sx.php
+[2024-05-17 11:12:59 +0000] [8350] [DEBUG] GET /wp-content/sx.php
+[2024-05-17 11:12:59 +0000] [8349] [DEBUG] GET /wp-content/plugins/elementor/sx.php
+[2024-05-17 11:12:59 +0000] [8351] [DEBUG] GET /.well-known/acme-challenge/sx.php
+[2024-05-17 11:12:59 +0000] [8350] [DEBUG] GET /wp-includes/js/jcrop/sx.php
+[2024-05-17 11:12:59 +0000] [8349] [DEBUG] GET /wp-includes/rest-api/sx.php
+[2024-05-17 11:13:00 +0000] [8351] [DEBUG] GET /wp-admin/images/sx.php
+[2024-05-17 11:13:00 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/blue/blue.php
+[2024-05-17 11:13:00 +0000] [8349] [DEBUG] GET /chosen
+[2024-05-17 11:13:00 +0000] [8351] [DEBUG] GET /wp-content/plugins/fix/up.php
+[2024-05-17 11:13:00 +0000] [8350] [DEBUG] GET /install.php
+[2024-05-17 11:13:00 +0000] [8349] [DEBUG] GET /wp-includes/images/include.php
+[2024-05-17 11:13:00 +0000] [8351] [DEBUG] GET /gel4y.php
+[2024-05-17 11:13:00 +0000] [8349] [DEBUG] GET /comfunctions.php
+[2024-05-17 11:13:00 +0000] [8351] [DEBUG] GET /wp-content/plugins/core-plugin/include.php
+[2024-05-17 11:13:00 +0000] [8349] [DEBUG] GET /wp-content/themes/wp-classic/inc/index.php
+[2024-05-17 11:13:01 +0000] [8350] [DEBUG] GET /assets/images/1p.php
+[2024-05-17 11:13:01 +0000] [8351] [DEBUG] GET /class.api.php
+[2024-05-17 11:13:01 +0000] [8349] [DEBUG] GET /plugin.php
+[2024-05-17 11:13:01 +0000] [8351] [DEBUG] GET /wp-mail.php
+[2024-05-17 11:13:01 +0000] [8350] [DEBUG] GET /cong.php
+[2024-05-17 11:13:01 +0000] [8349] [DEBUG] GET /wp-content/index.php
+[2024-05-17 11:13:01 +0000] [8351] [DEBUG] GET /.well-known/acme-challenge/xmrlpc.php
+[2024-05-17 11:13:01 +0000] [8350] [DEBUG] GET /wp-configs.php
+[2024-05-17 11:13:01 +0000] [8349] [DEBUG] GET /mah.php
+[2024-05-17 11:13:02 +0000] [8351] [DEBUG] GET /defaults.php
+[2024-05-17 11:13:02 +0000] [8349] [DEBUG] GET /wp-content/themes/sketch/404.php
+[2024-05-17 11:13:02 +0000] [8350] [DEBUG] GET /input.php
+[2024-05-17 11:13:02 +0000] [8351] [DEBUG] GET /admin-ajax.php
+[2024-05-17 11:13:02 +0000] [8349] [DEBUG] GET /0z.php
+[2024-05-17 11:13:02 +0000] [8350] [DEBUG] GET /media.php
+[2024-05-17 11:13:02 +0000] [8351] [DEBUG] GET /chosen.php
+[2024-05-17 11:13:02 +0000] [8349] [DEBUG] GET /wp-includes/fonts/wp-login.php
+[2024-05-17 11:13:02 +0000] [8350] [DEBUG] GET /wp-admin/users.php
+[2024-05-17 11:13:02 +0000] [8349] [DEBUG] GET /wp-content/uploads/cache.php
+[2024-05-17 11:13:03 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/file.php
+[2024-05-17 11:13:03 +0000] [8350] [DEBUG] GET /.wp-cli/wp-login.php
+[2024-05-17 11:13:03 +0000] [8349] [DEBUG] GET /authorize.php
+[2024-05-17 11:13:03 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/blue/CasperExV1.php
+[2024-05-17 11:13:03 +0000] [8350] [DEBUG] GET /wp-admin/includes/users.php
+[2024-05-17 11:13:03 +0000] [8349] [DEBUG] GET /wp-content/plugins/revslider/includes/external/page/index.php
+[2024-05-17 11:13:03 +0000] [8351] [DEBUG] GET /wp.php
+[2024-05-17 11:13:03 +0000] [8350] [DEBUG] GET /wp-content/plugins/WordPressCore/include.php
+[2024-05-17 11:13:03 +0000] [8349] [DEBUG] GET /wp-2019.php
+[2024-05-17 11:13:03 +0000] [8351] [DEBUG] GET /upload.php
+[2024-05-17 11:13:04 +0000] [8350] [DEBUG] GET /themes.php
+[2024-05-17 11:13:04 +0000] [8349] [DEBUG] GET /wp-admin/network/index.php
+[2024-05-17 11:13:04 +0000] [8351] [DEBUG] GET /wp-content/plugins/WordPressCore/blkfqnikz.php
+[2024-05-17 11:13:04 +0000] [8350] [DEBUG] GET /wp/wp-admin/includes/class-wp-page-mvb2yr.php
+[2024-05-17 11:13:04 +0000] [8349] [DEBUG] GET /content.php
+[2024-05-17 11:13:04 +0000] [8351] [DEBUG] GET /st.php
+[2024-05-17 11:13:04 +0000] [8350] [DEBUG] GET /wp-includes/images/smilies/about.php
+[2024-05-17 11:13:04 +0000] [8349] [DEBUG] GET /simple.php
+[2024-05-17 11:13:04 +0000] [8351] [DEBUG] GET /function.php
+[2024-05-17 11:13:04 +0000] [8349] [DEBUG] GET /ynz.PhP7
+[2024-05-17 11:13:05 +0000] [8350] [DEBUG] GET /wp-content/style-css.php
+[2024-05-17 11:13:05 +0000] [8351] [DEBUG] GET /wp-includes/IXR/wp-login.php
+[2024-05-17 11:13:05 +0000] [8349] [DEBUG] GET /.well-known/acme-challenge/about.php
+[2024-05-17 11:13:05 +0000] [8351] [DEBUG] GET /wordpress/wp-includes/IXR/allez.php
+[2024-05-17 11:13:05 +0000] [8350] [DEBUG] GET /rendixd.php
+[2024-05-17 11:13:05 +0000] [8351] [DEBUG] GET /wp-admin/css/admin.php
+[2024-05-17 11:13:05 +0000] [8349] [DEBUG] GET /filefuns.php
+[2024-05-17 11:13:05 +0000] [8350] [DEBUG] GET /options.php
+[2024-05-17 11:13:05 +0000] [8351] [DEBUG] GET /wp-includes/js/tinymce/skins/lightgray/img/index.php
+[2024-05-17 11:13:06 +0000] [8349] [DEBUG] GET /edit.php
+[2024-05-17 11:13:06 +0000] [8350] [DEBUG] GET /user.php
+[2024-05-17 11:13:06 +0000] [8351] [DEBUG] GET /worm0.PhP7
+[2024-05-17 11:13:06 +0000] [8350] [DEBUG] GET /wp-includes/js/tinymce/skins/wordpress/images/index.php
+[2024-05-17 11:13:06 +0000] [8351] [DEBUG] GET /.well-known//.well-known/owlmailer.php
+[2024-05-17 11:13:06 +0000] [8349] [DEBUG] GET /wp-content/uploads/cong.php
+[2024-05-17 11:13:06 +0000] [8350] [DEBUG] GET /01.php
+[2024-05-17 11:13:06 +0000] [8351] [DEBUG] GET /wp-content/uploads/wp-login.php.suspected
+[2024-05-17 11:13:06 +0000] [8349] [DEBUG] GET /wp-includes/rest-api/endpoints/html.php
+[2024-05-17 11:13:06 +0000] [8351] [DEBUG] GET /wp-admin/js/widgets/cong.php
+[2024-05-17 11:13:07 +0000] [8350] [DEBUG] GET /doc.php
+[2024-05-17 11:13:07 +0000] [8349] [DEBUG] GET /ws.php
+[2024-05-17 11:13:07 +0000] [8351] [DEBUG] GET /link.php
+[2024-05-17 11:13:07 +0000] [8350] [DEBUG] GET /autoload_classmap.php
+[2024-05-17 11:13:07 +0000] [8351] [DEBUG] GET /wp-admin/js/privacy-tools.min.php
+[2024-05-17 11:13:07 +0000] [8349] [DEBUG] GET /wp-includes/pomo/wp-login.php
+[2024-05-17 11:13:07 +0000] [8350] [DEBUG] GET /db.php
+[2024-05-17 11:13:07 +0000] [8351] [DEBUG] GET /wp-content/uploads/error_log.php
+[2024-05-17 11:13:07 +0000] [8349] [DEBUG] GET /google.php
+[2024-05-17 11:13:07 +0000] [8351] [DEBUG] GET /wp-includes/sts.php
+[2024-05-17 11:13:08 +0000] [8350] [DEBUG] GET /wp-includes/pomo/fgertreyersd.php.suspected
+[2024-05-17 11:13:08 +0000] [8349] [DEBUG] GET /wp-includes/Requests/dropdown.php
+[2024-05-17 11:13:08 +0000] [8351] [DEBUG] GET /wp-content/install.php
+[2024-05-17 11:13:08 +0000] [8350] [DEBUG] GET /.well-known/admin.php
+[2024-05-17 11:13:08 +0000] [8349] [DEBUG] GET /revision.php
+[2024-05-17 11:13:08 +0000] [8351] [DEBUG] GET /css/sgd.php
+[2024-05-17 11:13:08 +0000] [8350] [DEBUG] GET /wp-content/plugins/index.php
+[2024-05-17 11:32:56 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 12:35:39 +0000] [8350] [DEBUG] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:35:41 +0000] [8351] [DEBUG] GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php
+[2024-05-17 12:35:43 +0000] [8350] [DEBUG] GET /vendor/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:35:45 +0000] [8349] [DEBUG] GET /vendor/phpunit/Util/PHP/eval-stdin.php
+[2024-05-17 12:35:47 +0000] [8350] [DEBUG] GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:35:49 +0000] [8351] [DEBUG] GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php
+[2024-05-17 12:35:51 +0000] [8349] [DEBUG] GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:35:53 +0000] [8350] [DEBUG] GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php
+[2024-05-17 12:35:55 +0000] [8351] [DEBUG] GET /lib/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:35:57 +0000] [8349] [DEBUG] GET /lib/phpunit/Util/PHP/eval-stdin.php
+[2024-05-17 12:35:59 +0000] [8350] [DEBUG] GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:01 +0000] [8351] [DEBUG] GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:03 +0000] [8349] [DEBUG] GET /phpunit/phpunit/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:05 +0000] [8350] [DEBUG] GET /phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:06 +0000] [8351] [DEBUG] GET /phpunit/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:09 +0000] [8350] [DEBUG] GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:11 +0000] [8349] [DEBUG] GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:13 +0000] [8351] [DEBUG] GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:15 +0000] [8350] [DEBUG] GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:17 +0000] [8349] [DEBUG] GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:19 +0000] [8351] [DEBUG] GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:21 +0000] [8350] [DEBUG] GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:23 +0000] [8351] [DEBUG] GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:25 +0000] [8349] [DEBUG] GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:27 +0000] [8350] [DEBUG] GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:29 +0000] [8351] [DEBUG] GET /all/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:31 +0000] [8349] [DEBUG] GET /advanced/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:33 +0000] [8350] [DEBUG] GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:35 +0000] [8351] [DEBUG] GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:37 +0000] [8350] [DEBUG] GET /back/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:39 +0000] [8351] [DEBUG] GET /backend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:41 +0000] [8349] [DEBUG] GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:43 +0000] [8351] [DEBUG] GET /beta/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:45 +0000] [8350] [DEBUG] GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:47 +0000] [8349] [DEBUG] GET /blog/www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:49 +0000] [8350] [DEBUG] GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:51 +0000] [8351] [DEBUG] GET /config/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:52 +0000] [8349] [DEBUG] GET /core/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:54 +0000] [8350] [DEBUG] GET /core/app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:56 +0000] [8351] [DEBUG] GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:36:59 +0000] [8349] [DEBUG] GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:01 +0000] [8350] [DEBUG] GET /dev/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:02 +0000] [8351] [DEBUG] GET /develop/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:04 +0000] [8349] [DEBUG] GET /ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:06 +0000] [8350] [DEBUG] GET /ecc/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:08 +0000] [8351] [DEBUG] GET /git/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:10 +0000] [8349] [DEBUG] GET /lab/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:12 +0000] [8351] [DEBUG] GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:14 +0000] [8350] [DEBUG] GET /laravel_api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:16 +0000] [8349] [DEBUG] GET /laravel_web/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:18 +0000] [8351] [DEBUG] GET /live/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:20 +0000] [8349] [DEBUG] GET /local/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:22 +0000] [8350] [DEBUG] GET /modules/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:24 +0000] [8351] [DEBUG] GET /new/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:26 +0000] [8349] [DEBUG] GET /old/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:28 +0000] [8350] [DEBUG] GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:30 +0000] [8351] [DEBUG] GET /pid/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:32 +0000] [8349] [DEBUG] GET /pkm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:34 +0000] [8350] [DEBUG] GET /pms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:36 +0000] [8349] [DEBUG] GET /portal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:38 +0000] [8350] [DEBUG] GET /pos/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:40 +0000] [8351] [DEBUG] GET /pos/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:42 +0000] [8349] [DEBUG] GET /production/api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:44 +0000] [8350] [DEBUG] GET /production/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:46 +0000] [8351] [DEBUG] GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:48 +0000] [8350] [DEBUG] GET /server/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:50 +0000] [8349] [DEBUG] GET /site/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:53 +0000] [8351] [DEBUG] GET /workspace/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:37:55 +0000] [8350] [DEBUG] GET /web/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-05-17 12:44:08 +0000] [8351] [DEBUG] GET /
+[2024-05-17 12:44:10 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-17 13:05:41 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 13:27:28 +0000] [8349] [DEBUG] GET /
+[2024-05-17 13:27:36 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-17 13:36:31 +0000] [8349] [DEBUG] GET /query
+[2024-05-17 13:36:31 +0000] [8351] [DEBUG] GET /cgi-bin/authLogin.cgi
+[2024-05-17 13:36:53 +0000] [8351] [DEBUG] GET /v2/_catalog
+[2024-05-17 13:44:37 +0000] [8349] [DEBUG] GET /
+[2024-05-17 15:55:02 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 16:00:29 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 16:28:49 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 16:52:21 +0000] [8350] [DEBUG] GET /
+[2024-05-17 17:32:24 +0000] [8350] [DEBUG] GET /wp-content/plugins/wp-ver.php
+[2024-05-17 17:32:35 +0000] [8351] [DEBUG] GET /wp-content/wp-ver.php
+[2024-05-17 17:32:44 +0000] [8349] [DEBUG] GET /wp-ver.php
+[2024-05-17 17:32:51 +0000] [8351] [DEBUG] POST /wp-content/plugins/wp-term.php
+[2024-05-17 17:33:02 +0000] [8349] [DEBUG] POST /wp-content/wp-term.php
+[2024-05-17 17:33:08 +0000] [8350] [DEBUG] POST /wp-term.php
+[2024-05-17 17:46:30 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 17:51:35 +0000] [8349] [DEBUG] GET /repeater.php
+[2024-05-17 17:51:36 +0000] [8351] [DEBUG] GET /admin.php
+[2024-05-17 17:51:36 +0000] [8350] [DEBUG] GET /about.php
+[2024-05-17 17:51:36 +0000] [8349] [DEBUG] GET /wp-2019.php
+[2024-05-17 17:51:36 +0000] [8351] [DEBUG] GET /atomlib.php
+[2024-05-17 17:51:37 +0000] [8350] [DEBUG] GET /css.php
+[2024-05-17 17:51:37 +0000] [8351] [DEBUG] GET /simple.php
+[2024-05-17 17:51:37 +0000] [8349] [DEBUG] GET /log.php
+[2024-05-17 17:51:38 +0000] [8350] [DEBUG] GET /index.php
+[2024-05-17 17:51:38 +0000] [8351] [DEBUG] GET /mail.php
+[2024-05-17 17:51:38 +0000] [8349] [DEBUG] GET /lufix.php
+[2024-05-17 17:51:38 +0000] [8350] [DEBUG] GET /doc.php
+[2024-05-17 17:51:39 +0000] [8351] [DEBUG] GET /bak.php
+[2024-05-17 17:51:39 +0000] [8349] [DEBUG] GET /content.php
+[2024-05-17 17:51:39 +0000] [8351] [DEBUG] GET /upfile.php
+[2024-05-17 17:51:39 +0000] [8349] [DEBUG] GET /wp.php
+[2024-05-17 17:51:40 +0000] [8351] [DEBUG] GET /wp-conflg.php
+[2024-05-17 17:51:40 +0000] [8350] [DEBUG] GET /bypass.php
+[2024-05-17 17:51:40 +0000] [8349] [DEBUG] GET /wp-activate.php
+[2024-05-17 17:51:41 +0000] [8350] [DEBUG] GET /404.php
+[2024-05-17 17:51:41 +0000] [8351] [DEBUG] GET /updates.php
+[2024-05-17 17:51:41 +0000] [8349] [DEBUG] GET /radio.php
+[2024-05-17 17:51:42 +0000] [8350] [DEBUG] GET /plugins.php
+[2024-05-17 17:51:42 +0000] [8351] [DEBUG] GET /xmrlpc.php
+[2024-05-17 17:51:42 +0000] [8350] [DEBUG] GET /ae.php
+[2024-05-17 17:51:42 +0000] [8349] [DEBUG] GET /moon.php
+[2024-05-17 17:51:42 +0000] [8351] [DEBUG] GET /blog.php
+[2024-05-17 17:51:43 +0000] [8350] [DEBUG] GET /themes.php
+[2024-05-17 17:51:43 +0000] [8349] [DEBUG] GET /ini.php
+[2024-05-17 17:51:43 +0000] [8351] [DEBUG] GET /as.php
+[2024-05-17 17:51:44 +0000] [8350] [DEBUG] GET /shell.php
+[2024-05-17 17:51:44 +0000] [8349] [DEBUG] GET /ws.php
+[2024-05-17 17:51:44 +0000] [8351] [DEBUG] GET /dropdown.php
+[2024-05-17 17:51:45 +0000] [8349] [DEBUG] GET /makeasmtp.php
+[2024-05-17 17:51:45 +0000] [8350] [DEBUG] GET /wp-sigunq.php
+[2024-05-17 17:51:46 +0000] [8351] [DEBUG] GET /wso112233.php
+[2024-05-17 17:51:46 +0000] [8349] [DEBUG] GET /wp-atom.php
+[2024-05-17 17:51:46 +0000] [8351] [DEBUG] GET /alfanew.php
+[2024-05-17 17:51:47 +0000] [8350] [DEBUG] GET /fw.php
+[2024-05-17 17:51:47 +0000] [8351] [DEBUG] GET /install.php
+[2024-05-17 17:51:48 +0000] [8349] [DEBUG] GET /wp-login.php
+[2024-05-17 18:06:23 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 18:20:05 +0000] [8351] [DEBUG] GET /robots.txt
+[2024-05-17 18:20:05 +0000] [8349] [DEBUG] GET /robots.txt
+[2024-05-17 18:20:05 +0000] [8351] [DEBUG] GET /robots.txt
+[2024-05-17 18:20:09 +0000] [8350] [DEBUG] GET /
+[2024-05-17 18:20:09 +0000] [8349] [DEBUG] GET /
+[2024-05-17 18:20:09 +0000] [8351] [DEBUG] GET /
+[2024-05-17 18:20:09 +0000] [8350] [DEBUG] GET /
+[2024-05-17 18:20:09 +0000] [8349] [DEBUG] GET /
+[2024-05-17 18:20:09 +0000] [8350] [DEBUG] GET /
+[2024-05-17 18:20:09 +0000] [8351] [DEBUG] GET /
+[2024-05-17 18:20:13 +0000] [8350] [DEBUG] GET /
+[2024-05-17 18:20:13 +0000] [8349] [DEBUG] GET /
+[2024-05-17 18:22:39 +0000] [8349] [DEBUG] GET /
+[2024-05-17 18:25:47 +0000] [8350] [DEBUG] GET /
+[2024-05-17 19:36:26 +0000] [8350] [DEBUG] GET /
+[2024-05-17 19:36:28 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-17 20:35:12 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-17 21:42:08 +0000] [8349] [DEBUG] GET /
+[2024-05-17 22:21:45 +0000] [8351] [DEBUG] GET /
+[2024-05-17 22:21:47 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-17 22:21:55 +0000] [8349] [DEBUG] GET /menu/
+[2024-05-17 22:25:57 +0000] [8349] [DEBUG] GET /
+[2024-05-17 22:25:59 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-17 22:25:59 +0000] [8349] [DEBUG] GET /about/
+[2024-05-17 22:28:41 +0000] [8351] [DEBUG] GET /
+[2024-05-17 22:28:47 +0000] [8349] [DEBUG] GET /
+[2024-05-17 22:28:50 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-17 22:36:52 +0000] [8351] [DEBUG] GET /
+[2024-05-17 22:36:58 +0000] [8350] [DEBUG] GET /
+[2024-05-17 22:37:00 +0000] [8349] [DEBUG] GET /catering/
+[2024-05-17 22:37:07 +0000] [8350] [DEBUG] GET /menu/
+[2024-05-17 23:01:00 +0000] [8350] [DEBUG] GET /wp-content/plugins/hellopress/wp_filemanager.php
+[2024-05-17 23:01:00 +0000] [8349] [DEBUG] GET /lv.php
+[2024-05-17 23:01:00 +0000] [8351] [DEBUG] GET /wp-22.php
+[2024-05-17 23:01:00 +0000] [8350] [DEBUG] GET /wp-content/plugins/pwnd/pwnd.php
+[2024-05-17 23:01:00 +0000] [8349] [DEBUG] GET /wp-content/plugins/pwnd-1/pwnd.php
+[2024-05-17 23:01:00 +0000] [8351] [DEBUG] GET /wp-includes/Requests/about.php
+[2024-05-17 23:01:01 +0000] [8350] [DEBUG] GET /wp-includes/style-engine/about.php
+[2024-05-17 23:01:01 +0000] [8349] [DEBUG] GET /wp-includes/rest-api/about.php
+[2024-05-17 23:01:01 +0000] [8351] [DEBUG] GET /wp-includes/SimplePie/about.php
+[2024-05-17 23:01:01 +0000] [8350] [DEBUG] GET /wp-content/banners/about.php
+[2024-05-17 23:01:01 +0000] [8349] [DEBUG] GET /wp-content/about.php
+[2024-05-17 23:01:01 +0000] [8351] [DEBUG] GET /.well-known/about.php
+[2024-05-17 23:01:01 +0000] [8350] [DEBUG] GET /wp-includes/Text/about.php
+[2024-05-17 23:01:01 +0000] [8349] [DEBUG] GET /wp-includes/ID3/about.php
+[2024-05-17 23:01:01 +0000] [8351] [DEBUG] GET /img/about.php
+[2024-05-17 23:01:02 +0000] [8350] [DEBUG] GET /wp-content/languages/about.php
+[2024-05-17 23:01:02 +0000] [8349] [DEBUG] GET /wp-includes/customize/about.php
+[2024-05-17 23:01:02 +0000] [8351] [DEBUG] GET /wp-includes.bak/html-api/about.php
+[2024-05-17 23:01:02 +0000] [8350] [DEBUG] GET /wp-includes/widgets/about.php
+[2024-05-17 23:01:02 +0000] [8349] [DEBUG] GET /wp-includes/IXR/about.php
+[2024-05-17 23:01:02 +0000] [8351] [DEBUG] GET /wp-admin/js/about.php
+[2024-05-17 23:01:02 +0000] [8350] [DEBUG] GET /.well-known/pki-validation/about.php
+[2024-05-17 23:01:02 +0000] [8349] [DEBUG] GET /wp-includes/pomo/about.php
+[2024-05-17 23:01:03 +0000] [8351] [DEBUG] GET /wp-includes/block-patterns/about.php
+[2024-05-17 23:01:03 +0000] [8350] [DEBUG] GET /wp-content/updraft/about.php
+[2024-05-17 23:01:03 +0000] [8349] [DEBUG] GET /wp-content/upgrade-temp-backup/about.php
+[2024-05-17 23:01:03 +0000] [8351] [DEBUG] GET /wp-content/themes/about.php
+[2024-05-17 23:01:03 +0000] [8350] [DEBUG] GET /wp-admin/includes/about.php
+[2024-05-17 23:01:03 +0000] [8349] [DEBUG] GET /images/about.php
+[2024-05-17 23:01:04 +0000] [8351] [DEBUG] GET /wp-content/blogs.dir/about.php
+[2024-05-17 23:01:04 +0000] [8349] [DEBUG] GET /wp-includes/images/about.php
+[2024-05-17 23:01:04 +0000] [8350] [DEBUG] GET /wp-includes/about.php
+[2024-05-17 23:01:04 +0000] [8351] [DEBUG] GET /cgi-bin/about.php
+[2024-05-17 23:01:04 +0000] [8349] [DEBUG] GET /wp-content/gallery/about.php
+[2024-05-17 23:01:05 +0000] [8350] [DEBUG] GET /wp-includes/blocks/about.php
+[2024-05-17 23:01:05 +0000] [8351] [DEBUG] GET /wp-admin/css/about.php
+[2024-05-17 23:01:05 +0000] [8349] [DEBUG] GET /wp-admin/images/about.php
+[2024-05-17 23:01:05 +0000] [8350] [DEBUG] GET /.well-known/pki-validation/cloud.php
+[2024-05-17 23:01:06 +0000] [8351] [DEBUG] GET /.well-known/acme-challenge/cloud.php
+[2024-05-17 23:01:06 +0000] [8349] [DEBUG] GET /wp-admin/network/cloud.php
+[2024-05-17 23:01:06 +0000] [8350] [DEBUG] GET /cloud.php
+[2024-05-17 23:01:06 +0000] [8349] [DEBUG] GET /cgi-bin/cloud.php
+[2024-05-17 23:01:06 +0000] [8351] [DEBUG] GET /wp-content/updates.php
+[2024-05-17 23:01:06 +0000] [8349] [DEBUG] GET /css/cloud.php
+[2024-05-17 23:01:07 +0000] [8350] [DEBUG] GET /wp-admin/user/cloud.php
+[2024-05-17 23:01:07 +0000] [8351] [DEBUG] GET /img/cloud.php
+[2024-05-17 23:01:07 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/coffee/cloud.php
+[2024-05-17 23:01:07 +0000] [8351] [DEBUG] GET /wp-admin/images/cloud.php
+[2024-05-17 23:01:07 +0000] [8350] [DEBUG] GET /avaa.php
+[2024-05-17 23:01:07 +0000] [8349] [DEBUG] GET /images/cloud.php
+[2024-05-17 23:01:07 +0000] [8351] [DEBUG] GET /wp-admin/js/widgets/cloud.php
+[2024-05-17 23:01:08 +0000] [8349] [DEBUG] GET /wp-includes/Requests/Text/admin.php
+[2024-05-17 23:01:08 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/cloud.php
+[2024-05-17 23:01:08 +0000] [8351] [DEBUG] GET /wp-admin/includes/cloud.php
+[2024-05-17 23:01:09 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/blue/cloud.php
+[2024-05-17 23:01:09 +0000] [8350] [DEBUG] GET /wp-admin/cloud.php
+[2024-05-17 23:01:09 +0000] [8351] [DEBUG] GET /updates.php
+[2024-05-17 23:01:09 +0000] [8349] [DEBUG] GET /libraries/legacy/updates.php
+[2024-05-17 23:01:09 +0000] [8350] [DEBUG] GET /libraries/phpmailer/updates.php
+[2024-05-17 23:01:09 +0000] [8351] [DEBUG] GET /libraries/vendor/updates.php
+[2024-05-17 23:01:09 +0000] [8349] [DEBUG] GET /alfa-rex.php7
+[2024-05-17 23:01:10 +0000] [8350] [DEBUG] GET /alfanew.php
+[2024-05-17 23:01:10 +0000] [8349] [DEBUG] GET /wp-content/plugins/Cache/Cache.php
+[2024-05-17 23:01:10 +0000] [8351] [DEBUG] GET /wp-admin/js/widgets/about.php7
+[2024-05-17 23:01:10 +0000] [8350] [DEBUG] GET /wp-p.php7
+[2024-05-17 23:01:10 +0000] [8349] [DEBUG] GET /wp-admin/repeater.php
+[2024-05-17 23:01:10 +0000] [8351] [DEBUG] GET /wp-includes/repeater.php
+[2024-05-17 23:01:10 +0000] [8349] [DEBUG] GET /wp-content/repeater.php
+[2024-05-17 23:01:12 +0000] [8350] [DEBUG] GET /wsoyanz.php
+[2024-05-17 23:01:12 +0000] [8351] [DEBUG] GET /yanz.php
+[2024-05-17 23:01:12 +0000] [8349] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz.php
+[2024-05-17 23:01:12 +0000] [8350] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz1.php
+[2024-05-17 23:01:12 +0000] [8351] [DEBUG] GET /cache-compat.php
+[2024-05-17 23:01:13 +0000] [8350] [DEBUG] GET /ajax-actions.php
+[2024-05-17 23:01:13 +0000] [8349] [DEBUG] GET /wp-admin/ajax-actions.php
+[2024-05-17 23:01:13 +0000] [8351] [DEBUG] GET /wp-consar.php
+[2024-05-17 23:01:13 +0000] [8350] [DEBUG] GET /repeater.php
+[2024-05-17 23:01:13 +0000] [8349] [DEBUG] GET /admin-post.php
+[2024-05-17 23:01:14 +0000] [8351] [DEBUG] GET /wp-admin/maint/maint/ajax-actions.php
+[2024-05-17 23:01:15 +0000] [8350] [DEBUG] GET /wp-admin/dropdown.php
+[2024-05-17 23:01:15 +0000] [8349] [DEBUG] GET /wp-admin/css/index.php
+[2024-05-17 23:01:16 +0000] [8351] [DEBUG] GET /dropdown.php
+[2024-05-17 23:01:16 +0000] [8349] [DEBUG] GET /about.php
+[2024-05-17 23:01:16 +0000] [8350] [DEBUG] GET /admin.php
+[2024-05-17 23:01:17 +0000] [8351] [DEBUG] GET /about.php7
+[2024-05-17 23:01:17 +0000] [8349] [DEBUG] GET /alfanew.php7
+[2024-05-17 23:01:17 +0000] [8351] [DEBUG] GET /adminfuns.php7
+[2024-05-17 23:01:17 +0000] [8350] [DEBUG] GET /ebs.php7
+[2024-05-17 23:01:18 +0000] [8349] [DEBUG] GET /ws.php7
+[2024-05-17 23:01:18 +0000] [8351] [DEBUG] GET /alfanew2.php7
+[2024-05-17 23:01:18 +0000] [8350] [DEBUG] GET /alfa-rex2.php7
+[2024-05-17 23:01:18 +0000] [8349] [DEBUG] GET /wp-admin/images/index.php
+[2024-05-17 23:01:18 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/index.php
+[2024-05-17 23:01:18 +0000] [8350] [DEBUG] GET /wp-content/themes/pridmag/db.php
+[2024-05-17 23:01:18 +0000] [8349] [DEBUG] GET /wp-content/themes/seotheme/mar.php
+[2024-05-17 23:01:18 +0000] [8350] [DEBUG] GET /wp-content/plugins/linkpreview/db.php
+[2024-05-17 23:01:19 +0000] [8351] [DEBUG] GET /wp-content/themes/seotheme/db.php
+[2024-05-17 23:01:19 +0000] [8349] [DEBUG] GET /wp-content/plugins/seoplugins/db.php
+[2024-05-17 23:01:19 +0000] [8350] [DEBUG] GET /wp-content/plugins/seoplugins/mar.php
+[2024-05-17 23:01:19 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/xmrlpc.php
+[2024-05-17 23:01:19 +0000] [8349] [DEBUG] GET /.well-known/acme-challenge/xmrlpc.php
+[2024-05-17 23:01:19 +0000] [8350] [DEBUG] GET /wp-admin/network/xmrlpc.php
+[2024-05-17 23:01:19 +0000] [8351] [DEBUG] GET /xmrlpc.php
+[2024-05-17 23:01:19 +0000] [8349] [DEBUG] GET /cgi-bin/xmrlpc.php
+[2024-05-17 23:01:20 +0000] [8350] [DEBUG] GET /css/xmrlpc.php
+[2024-05-17 23:01:20 +0000] [8351] [DEBUG] GET /wp-admin/user/xmrlpc.php
+[2024-05-17 23:01:20 +0000] [8349] [DEBUG] GET /img/xmrlpc.php
+[2024-05-17 23:01:20 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/coffee/xmrlpc.php
+[2024-05-17 23:01:20 +0000] [8351] [DEBUG] GET /wp-admin/images/xmrlpc.php
+[2024-05-17 23:01:20 +0000] [8349] [DEBUG] GET /images/xmrlpc.php
+[2024-05-17 23:01:20 +0000] [8350] [DEBUG] GET /wp-admin/js/widgets/xmrlpc.php
+[2024-05-17 23:01:20 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/xmrlpc.php
+[2024-05-17 23:01:21 +0000] [8349] [DEBUG] GET /wp-admin/includes/xmrlpc.php
+[2024-05-17 23:01:21 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/blue/xmrlpc.php
+[2024-05-17 23:01:21 +0000] [8351] [DEBUG] GET /wp-admin/xmrlpc.php
+[2024-05-17 23:01:21 +0000] [8349] [DEBUG] GET /smaxx.php
+[2024-05-17 23:01:21 +0000] [8350] [DEBUG] GET /wp-admin/smaxx.php
+[2024-05-17 23:01:21 +0000] [8351] [DEBUG] GET /wp-content/plugins/WordPressCore/smaxx.php
+[2024-05-17 23:01:21 +0000] [8349] [DEBUG] GET /wp-includes/images/smaxx.php
+[2024-05-17 23:01:22 +0000] [8350] [DEBUG] GET /wp-content/plugins/core-plugin/smaxx.php
+[2024-05-17 23:01:22 +0000] [8351] [DEBUG] GET /wp-includes/smaxx.php
+[2024-05-17 23:01:22 +0000] [8349] [DEBUG] GET /wp-content/plugins/smaxx.php
+[2024-05-17 23:01:22 +0000] [8350] [DEBUG] GET /xt/smaxx.php
+[2024-05-17 23:01:22 +0000] [8351] [DEBUG] GET /wp-content/smaxx.php
+[2024-05-17 23:01:22 +0000] [8350] [DEBUG] GET /wp-content/themes/twentyfive/smaxx.php
+[2024-05-17 23:01:22 +0000] [8349] [DEBUG] GET /wp-content/upgrade/sx.php
+[2024-05-17 23:01:23 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/sx.php
+[2024-05-17 23:01:24 +0000] [8350] [DEBUG] GET /wp-admin/user/sx.php
+[2024-05-17 23:01:24 +0000] [8351] [DEBUG] GET /wp-includes/ID3/sx.php
+[2024-05-17 23:01:24 +0000] [8349] [DEBUG] GET /wp-includes/blocks/sx.php
+[2024-05-17 23:01:24 +0000] [8350] [DEBUG] GET /sx.php
+[2024-05-17 23:01:24 +0000] [8351] [DEBUG] GET /wp-includes/sx.php
+[2024-05-17 23:01:24 +0000] [8349] [DEBUG] GET /wp-admin/sx.php
+[2024-05-17 23:01:24 +0000] [8350] [DEBUG] GET /wp-content/plugins/fix/sx.php
+[2024-05-17 23:01:24 +0000] [8351] [DEBUG] GET /wp-admin/includes/sx.php
+[2024-05-17 23:01:25 +0000] [8349] [DEBUG] GET /cgi-bin/sx.php
+[2024-05-17 23:01:25 +0000] [8350] [DEBUG] GET /wp-admin/css/sx.php
+[2024-05-17 23:01:25 +0000] [8351] [DEBUG] GET /wp-admin/network/sx.php
+[2024-05-17 23:01:25 +0000] [8349] [DEBUG] GET /wp-includes/block-supports/sx.php
+[2024-05-17 23:01:25 +0000] [8350] [DEBUG] GET /wp-includes/IXR/sx.php
+[2024-05-17 23:01:25 +0000] [8351] [DEBUG] GET /.well-known/sx.php
+[2024-05-17 23:01:25 +0000] [8349] [DEBUG] GET /wp-includes/js/tinymce/skins/lightgray/fonts/sx.php
+[2024-05-17 23:01:25 +0000] [8350] [DEBUG] GET /wp-content/sx.php
+[2024-05-17 23:01:26 +0000] [8351] [DEBUG] GET /wp-content/plugins/elementor/sx.php
+[2024-05-17 23:01:26 +0000] [8349] [DEBUG] GET /.well-known/acme-challenge/sx.php
+[2024-05-17 23:01:26 +0000] [8350] [DEBUG] GET /wp-includes/js/jcrop/sx.php
+[2024-05-17 23:01:26 +0000] [8351] [DEBUG] GET /wp-includes/rest-api/sx.php
+[2024-05-17 23:01:26 +0000] [8349] [DEBUG] GET /wp-admin/images/sx.php
+[2024-05-17 23:01:26 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/blue/blue.php
+[2024-05-17 23:01:26 +0000] [8351] [DEBUG] GET /chosen
+[2024-05-17 23:01:27 +0000] [8350] [DEBUG] GET /wp-content/plugins/fix/up.php
+[2024-05-17 23:01:27 +0000] [8349] [DEBUG] GET /install.php
+[2024-05-17 23:01:27 +0000] [8351] [DEBUG] GET /wp-includes/images/include.php
+[2024-05-17 23:01:27 +0000] [8350] [DEBUG] GET /gel4y.php
+[2024-05-17 23:01:27 +0000] [8349] [DEBUG] GET /comfunctions.php
+[2024-05-17 23:01:27 +0000] [8351] [DEBUG] GET /wp-content/plugins/core-plugin/include.php
+[2024-05-17 23:01:28 +0000] [8350] [DEBUG] GET /wp-content/themes/wp-classic/inc/index.php
+[2024-05-17 23:01:28 +0000] [8351] [DEBUG] GET /assets/images/1p.php
+[2024-05-17 23:01:28 +0000] [8349] [DEBUG] GET /class.api.php
+[2024-05-17 23:01:28 +0000] [8350] [DEBUG] GET /plugin.php
+[2024-05-17 23:01:28 +0000] [8351] [DEBUG] GET /wp-mail.php
+[2024-05-17 23:01:28 +0000] [8349] [DEBUG] GET /cong.php
+[2024-05-17 23:01:28 +0000] [8350] [DEBUG] GET /wp-content/index.php
+[2024-05-17 23:01:28 +0000] [8351] [DEBUG] GET /.well-known/acme-challenge/xmrlpc.php
+[2024-05-17 23:01:29 +0000] [8349] [DEBUG] GET /wp-configs.php
+[2024-05-17 23:01:29 +0000] [8350] [DEBUG] GET /mah.php
+[2024-05-17 23:01:29 +0000] [8351] [DEBUG] GET /defaults.php
+[2024-05-17 23:01:29 +0000] [8350] [DEBUG] GET /wp-content/themes/sketch/404.php
+[2024-05-17 23:01:29 +0000] [8349] [DEBUG] GET /input.php
+[2024-05-17 23:01:30 +0000] [8351] [DEBUG] GET /admin-ajax.php
+[2024-05-17 23:01:30 +0000] [8350] [DEBUG] GET /0z.php
+[2024-05-17 23:01:30 +0000] [8349] [DEBUG] GET /media.php
+[2024-05-17 23:01:31 +0000] [8351] [DEBUG] GET /chosen.php
+[2024-05-17 23:01:31 +0000] [8349] [DEBUG] GET /wp-includes/fonts/wp-login.php
+[2024-05-17 23:01:31 +0000] [8350] [DEBUG] GET /wp-admin/users.php
+[2024-05-17 23:01:31 +0000] [8349] [DEBUG] GET /wp-content/uploads/cache.php
+[2024-05-17 23:01:32 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/file.php
+[2024-05-17 23:01:32 +0000] [8350] [DEBUG] GET /.wp-cli/wp-login.php
+[2024-05-17 23:01:32 +0000] [8349] [DEBUG] GET /authorize.php
+[2024-05-17 23:01:32 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/blue/CasperExV1.php
+[2024-05-17 23:01:32 +0000] [8351] [DEBUG] GET /wp-admin/includes/users.php
+[2024-05-17 23:01:32 +0000] [8350] [DEBUG] GET /wp-content/plugins/revslider/includes/external/page/index.php
+[2024-05-17 23:01:32 +0000] [8349] [DEBUG] GET /wp.php
+[2024-05-17 23:01:32 +0000] [8351] [DEBUG] GET /wp-content/plugins/WordPressCore/include.php
+[2024-05-17 23:01:32 +0000] [8349] [DEBUG] GET /wp-2019.php
+[2024-05-17 23:01:33 +0000] [8350] [DEBUG] GET /upload.php
+[2024-05-17 23:01:33 +0000] [8351] [DEBUG] GET /themes.php
+[2024-05-17 23:01:33 +0000] [8349] [DEBUG] GET /wp-admin/network/index.php
+[2024-05-17 23:01:33 +0000] [8350] [DEBUG] GET /wp-content/plugins/WordPressCore/blkfqnikz.php
+[2024-05-17 23:01:33 +0000] [8351] [DEBUG] GET /wp/wp-admin/includes/class-wp-page-mvb2yr.php
+[2024-05-17 23:01:33 +0000] [8349] [DEBUG] GET /content.php
+[2024-05-17 23:01:34 +0000] [8350] [DEBUG] GET /st.php
+[2024-05-17 23:01:34 +0000] [8351] [DEBUG] GET /wp-includes/images/smilies/about.php
+[2024-05-17 23:01:34 +0000] [8349] [DEBUG] GET /simple.php
+[2024-05-17 23:01:34 +0000] [8350] [DEBUG] GET /function.php
+[2024-05-17 23:01:34 +0000] [8351] [DEBUG] GET /ynz.PhP7
+[2024-05-17 23:01:34 +0000] [8349] [DEBUG] GET /wp-content/style-css.php
+[2024-05-17 23:01:35 +0000] [8350] [DEBUG] GET /wp-includes/IXR/wp-login.php
+[2024-05-17 23:01:35 +0000] [8351] [DEBUG] GET /.well-known/acme-challenge/about.php
+[2024-05-17 23:01:36 +0000] [8349] [DEBUG] GET /wordpress/wp-includes/IXR/allez.php
+[2024-05-17 23:01:36 +0000] [8350] [DEBUG] GET /rendixd.php
+[2024-05-17 23:01:36 +0000] [8351] [DEBUG] GET /wp-admin/css/admin.php
+[2024-05-17 23:01:36 +0000] [8349] [DEBUG] GET /filefuns.php
+[2024-05-17 23:01:36 +0000] [8350] [DEBUG] GET /options.php
+[2024-05-17 23:01:36 +0000] [8351] [DEBUG] GET /wp-includes/js/tinymce/skins/lightgray/img/index.php
+[2024-05-17 23:01:36 +0000] [8349] [DEBUG] GET /edit.php
+[2024-05-17 23:01:36 +0000] [8350] [DEBUG] GET /user.php
+[2024-05-17 23:01:37 +0000] [8349] [DEBUG] GET /worm0.PhP7
+[2024-05-17 23:01:37 +0000] [8351] [DEBUG] GET /wp-includes/js/tinymce/skins/wordpress/images/index.php
+[2024-05-17 23:01:37 +0000] [8350] [DEBUG] GET /.well-known//.well-known/owlmailer.php
+[2024-05-17 23:01:37 +0000] [8349] [DEBUG] GET /wp-content/uploads/cong.php
+[2024-05-17 23:01:37 +0000] [8351] [DEBUG] GET /01.php
+[2024-05-17 23:01:37 +0000] [8350] [DEBUG] GET /wp-content/uploads/wp-login.php.suspected
+[2024-05-17 23:01:38 +0000] [8349] [DEBUG] GET /wp-includes/rest-api/endpoints/html.php
+[2024-05-17 23:01:38 +0000] [8351] [DEBUG] GET /wp-admin/js/widgets/cong.php
+[2024-05-17 23:01:38 +0000] [8350] [DEBUG] GET /doc.php
+[2024-05-17 23:01:38 +0000] [8349] [DEBUG] GET /ws.php
+[2024-05-17 23:01:39 +0000] [8351] [DEBUG] GET /link.php
+[2024-05-17 23:01:39 +0000] [8350] [DEBUG] GET /autoload_classmap.php
+[2024-05-17 23:01:39 +0000] [8351] [DEBUG] GET /wp-admin/js/privacy-tools.min.php
+[2024-05-17 23:01:39 +0000] [8350] [DEBUG] GET /wp-includes/pomo/wp-login.php
+[2024-05-17 23:01:39 +0000] [8349] [DEBUG] GET /db.php
+[2024-05-17 23:01:39 +0000] [8351] [DEBUG] GET /wp-content/uploads/error_log.php
+[2024-05-17 23:01:39 +0000] [8350] [DEBUG] GET /google.php
+[2024-05-17 23:01:39 +0000] [8349] [DEBUG] GET /wp-includes/sts.php
+[2024-05-17 23:01:40 +0000] [8351] [DEBUG] GET /wp-includes/pomo/fgertreyersd.php.suspected
+[2024-05-17 23:01:40 +0000] [8350] [DEBUG] GET /wp-includes/Requests/dropdown.php
+[2024-05-17 23:01:40 +0000] [8349] [DEBUG] GET /wp-content/install.php
+[2024-05-17 23:01:40 +0000] [8351] [DEBUG] GET /.well-known/admin.php
+[2024-05-17 23:01:40 +0000] [8350] [DEBUG] GET /revision.php
+[2024-05-17 23:01:40 +0000] [8349] [DEBUG] GET /css/sgd.php
+[2024-05-17 23:01:40 +0000] [8351] [DEBUG] GET /wp-content/plugins/index.php
+[2024-05-17 23:19:10 +0000] [8351] [DEBUG] GET /
+[2024-05-17 23:40:30 +0000] [8349] [DEBUG] GET /
+[2024-05-17 23:40:32 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-17 23:40:36 +0000] [8350] [DEBUG] GET /
+[2024-05-17 23:40:38 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-17 23:40:39 +0000] [8350] [DEBUG] GET /catering/
+[2024-05-17 23:40:41 +0000] [8351] [DEBUG] GET /about/
+[2024-05-17 23:54:26 +0000] [8350] [DEBUG] GET /
+[2024-05-17 23:54:35 +0000] [8349] [DEBUG] GET /menu/
+[2024-05-17 23:55:02 +0000] [8351] [DEBUG] POST /add_to_cart/
+[2024-05-17 23:55:04 +0000] [8349] [DEBUG] GET /cart/
+[2024-05-17 23:55:13 +0000] [8351] [DEBUG] GET /cart/
+[2024-05-18 00:54:36 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 02:28:00 +0000] [8349] [DEBUG] GET /
+[2024-05-18 02:35:45 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 02:45:55 +0000] [8350] [DEBUG] GET /
+[2024-05-18 02:55:46 +0000] [8349] [DEBUG] GET /
+[2024-05-18 02:58:00 +0000] [8350] [DEBUG] GET /
+[2024-05-18 02:58:43 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 03:08:22 +0000] [8351] [DEBUG] GET /
+[2024-05-18 03:16:01 +0000] [8350] [DEBUG] GET /
+[2024-05-18 03:40:35 +0000] [8350] [DEBUG] GET /
+[2024-05-18 03:56:46 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 04:05:32 +0000] [8349] [DEBUG] GET /
+[2024-05-18 04:22:57 +0000] [8351] [DEBUG] GET /
+[2024-05-18 04:22:59 +0000] [8349] [DEBUG] GET /
+[2024-05-18 04:23:00 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-18 04:23:01 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-18 04:23:33 +0000] [8350] [DEBUG] GET /
+[2024-05-18 05:16:57 +0000] [8350] [DEBUG] GET /
+[2024-05-18 07:03:58 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-18 07:03:59 +0000] [8350] [DEBUG] GET /robots.txt
+[2024-05-18 07:03:59 +0000] [8349] [DEBUG] GET /sitemap.xml
+[2024-05-18 07:04:00 +0000] [8351] [DEBUG] GET /
+[2024-05-18 07:04:04 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-18 07:04:07 +0000] [8349] [DEBUG] GET /robots.txt
+[2024-05-18 07:04:07 +0000] [8350] [DEBUG] GET /sitemap.xml
+[2024-05-18 07:10:29 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 07:10:29 +0000] [8351] [DEBUG] GET /wp-content/plugins/wp-ver.php
+[2024-05-18 07:10:39 +0000] [8350] [DEBUG] GET /wp-content/wp-ver.php
+[2024-05-18 07:10:46 +0000] [8349] [DEBUG] GET /wp-ver.php
+[2024-05-18 07:10:51 +0000] [8350] [DEBUG] POST /wp-content/plugins/wp-term.php
+[2024-05-18 07:10:54 +0000] [8351] [DEBUG] POST /wp-content/wp-term.php
+[2024-05-18 07:10:58 +0000] [8349] [DEBUG] POST /wp-term.php
+[2024-05-18 07:35:03 +0000] [8349] [DEBUG] GET /
+[2024-05-18 07:35:04 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-18 07:35:04 +0000] [8350] [DEBUG] Ignoring EPIPE
+[2024-05-18 07:36:01 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-18 07:50:12 +0000] [8350] [DEBUG] GET /
+[2024-05-18 08:10:57 +0000] [8349] [DEBUG] GET /.env
+[2024-05-18 08:33:52 +0000] [8351] [DEBUG] GET /
+[2024-05-18 08:41:22 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 10:04:33 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 10:19:50 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-18 10:19:50 +0000] [8351] [DEBUG] GET /robots.txt
+[2024-05-18 10:19:50 +0000] [8349] [DEBUG] GET /sitemap.xml
+[2024-05-18 10:33:20 +0000] [8349] [DEBUG] GET /wp-content/plugins/hellopress/wp_filemanager.php
+[2024-05-18 10:33:20 +0000] [8350] [DEBUG] GET /lv.php
+[2024-05-18 10:33:21 +0000] [8351] [DEBUG] GET /wp-22.php
+[2024-05-18 10:33:21 +0000] [8350] [DEBUG] GET /wp-content/plugins/pwnd/pwnd.php
+[2024-05-18 10:33:21 +0000] [8351] [DEBUG] GET /wp-content/plugins/pwnd-1/pwnd.php
+[2024-05-18 10:33:22 +0000] [8349] [DEBUG] GET /wp-includes/Requests/about.php
+[2024-05-18 10:33:22 +0000] [8350] [DEBUG] GET /wp-includes/style-engine/about.php
+[2024-05-18 10:33:22 +0000] [8351] [DEBUG] GET /wp-includes/rest-api/about.php
+[2024-05-18 10:33:22 +0000] [8349] [DEBUG] GET /wp-includes/SimplePie/about.php
+[2024-05-18 10:33:23 +0000] [8350] [DEBUG] GET /wp-content/banners/about.php
+[2024-05-18 10:33:23 +0000] [8351] [DEBUG] GET /wp-content/about.php
+[2024-05-18 10:33:23 +0000] [8349] [DEBUG] GET /.well-known/about.php
+[2024-05-18 10:33:24 +0000] [8350] [DEBUG] GET /wp-includes/Text/about.php
+[2024-05-18 10:33:24 +0000] [8351] [DEBUG] GET /wp-includes/ID3/about.php
+[2024-05-18 10:33:24 +0000] [8349] [DEBUG] GET /img/about.php
+[2024-05-18 10:33:25 +0000] [8350] [DEBUG] GET /wp-content/languages/about.php
+[2024-05-18 10:33:25 +0000] [8351] [DEBUG] GET /wp-includes/customize/about.php
+[2024-05-18 10:33:26 +0000] [8349] [DEBUG] GET /wp-includes.bak/html-api/about.php
+[2024-05-18 10:33:26 +0000] [8350] [DEBUG] GET /wp-includes/widgets/about.php
+[2024-05-18 10:33:26 +0000] [8351] [DEBUG] GET /wp-includes/IXR/about.php
+[2024-05-18 10:33:27 +0000] [8350] [DEBUG] GET /wp-admin/js/about.php
+[2024-05-18 10:33:27 +0000] [8349] [DEBUG] GET /.well-known/pki-validation/about.php
+[2024-05-18 10:33:27 +0000] [8351] [DEBUG] GET /wp-includes/pomo/about.php
+[2024-05-18 10:33:28 +0000] [8350] [DEBUG] GET /wp-includes/block-patterns/about.php
+[2024-05-18 10:33:28 +0000] [8349] [DEBUG] GET /wp-content/updraft/about.php
+[2024-05-18 10:33:28 +0000] [8351] [DEBUG] GET /wp-content/upgrade-temp-backup/about.php
+[2024-05-18 10:33:28 +0000] [8350] [DEBUG] GET /wp-content/themes/about.php
+[2024-05-18 10:33:29 +0000] [8349] [DEBUG] GET /wp-admin/includes/about.php
+[2024-05-18 10:33:29 +0000] [8351] [DEBUG] GET /images/about.php
+[2024-05-18 10:33:29 +0000] [8350] [DEBUG] GET /wp-content/blogs.dir/about.php
+[2024-05-18 10:33:30 +0000] [8349] [DEBUG] GET /wp-includes/images/about.php
+[2024-05-18 10:33:30 +0000] [8351] [DEBUG] GET /wp-includes/about.php
+[2024-05-18 10:33:30 +0000] [8350] [DEBUG] GET /cgi-bin/about.php
+[2024-05-18 10:33:31 +0000] [8349] [DEBUG] GET /wp-content/gallery/about.php
+[2024-05-18 10:33:31 +0000] [8351] [DEBUG] GET /wp-includes/blocks/about.php
+[2024-05-18 10:33:31 +0000] [8350] [DEBUG] GET /wp-admin/css/about.php
+[2024-05-18 10:33:32 +0000] [8349] [DEBUG] GET /wp-admin/images/about.php
+[2024-05-18 10:33:32 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/cloud.php
+[2024-05-18 10:33:32 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/cloud.php
+[2024-05-18 10:33:33 +0000] [8349] [DEBUG] GET /wp-admin/network/cloud.php
+[2024-05-18 10:33:33 +0000] [8351] [DEBUG] GET /cloud.php
+[2024-05-18 10:33:34 +0000] [8349] [DEBUG] GET /cgi-bin/cloud.php
+[2024-05-18 10:33:34 +0000] [8350] [DEBUG] GET /wp-content/updates.php
+[2024-05-18 10:33:34 +0000] [8351] [DEBUG] GET /css/cloud.php
+[2024-05-18 10:33:35 +0000] [8349] [DEBUG] GET /wp-admin/user/cloud.php
+[2024-05-18 10:33:35 +0000] [8351] [DEBUG] GET /img/cloud.php
+[2024-05-18 10:33:35 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/coffee/cloud.php
+[2024-05-18 10:33:35 +0000] [8349] [DEBUG] GET /wp-admin/images/cloud.php
+[2024-05-18 10:33:36 +0000] [8351] [DEBUG] GET /avaa.php
+[2024-05-18 10:33:36 +0000] [8349] [DEBUG] GET /images/cloud.php
+[2024-05-18 10:33:37 +0000] [8351] [DEBUG] GET /wp-admin/js/widgets/cloud.php
+[2024-05-18 10:33:37 +0000] [8350] [DEBUG] GET /wp-includes/Requests/Text/admin.php
+[2024-05-18 10:33:37 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/cloud.php
+[2024-05-18 10:33:38 +0000] [8351] [DEBUG] GET /wp-admin/includes/cloud.php
+[2024-05-18 10:33:38 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/blue/cloud.php
+[2024-05-18 10:33:38 +0000] [8349] [DEBUG] GET /wp-admin/cloud.php
+[2024-05-18 10:33:39 +0000] [8351] [DEBUG] GET /updates.php
+[2024-05-18 10:33:39 +0000] [8350] [DEBUG] GET /libraries/legacy/updates.php
+[2024-05-18 10:33:39 +0000] [8349] [DEBUG] GET /libraries/phpmailer/updates.php
+[2024-05-18 10:33:40 +0000] [8351] [DEBUG] GET /libraries/vendor/updates.php
+[2024-05-18 10:33:40 +0000] [8350] [DEBUG] GET /alfa-rex.php7
+[2024-05-18 10:33:40 +0000] [8349] [DEBUG] GET /alfanew.php
+[2024-05-18 10:33:41 +0000] [8351] [DEBUG] GET /wp-content/plugins/Cache/Cache.php
+[2024-05-18 10:33:41 +0000] [8350] [DEBUG] GET /wp-admin/js/widgets/about.php7
+[2024-05-18 10:33:41 +0000] [8349] [DEBUG] GET /wp-p.php7
+[2024-05-18 10:33:42 +0000] [8350] [DEBUG] GET /wp-admin/repeater.php
+[2024-05-18 10:33:42 +0000] [8351] [DEBUG] GET /wp-includes/repeater.php
+[2024-05-18 10:33:42 +0000] [8349] [DEBUG] GET /wp-content/repeater.php
+[2024-05-18 10:33:43 +0000] [8350] [DEBUG] GET /wsoyanz.php
+[2024-05-18 10:33:43 +0000] [8351] [DEBUG] GET /yanz.php
+[2024-05-18 10:33:43 +0000] [8349] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz.php
+[2024-05-18 10:33:44 +0000] [8350] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz1.php
+[2024-05-18 10:33:44 +0000] [8351] [DEBUG] GET /cache-compat.php
+[2024-05-18 10:33:44 +0000] [8349] [DEBUG] GET /ajax-actions.php
+[2024-05-18 10:33:45 +0000] [8350] [DEBUG] GET /wp-admin/ajax-actions.php
+[2024-05-18 10:33:45 +0000] [8351] [DEBUG] GET /wp-consar.php
+[2024-05-18 10:33:45 +0000] [8349] [DEBUG] GET /repeater.php
+[2024-05-18 10:33:46 +0000] [8350] [DEBUG] GET /admin-post.php
+[2024-05-18 10:33:46 +0000] [8351] [DEBUG] GET /wp-admin/maint/maint/ajax-actions.php
+[2024-05-18 10:33:46 +0000] [8350] [DEBUG] GET /wp-admin/dropdown.php
+[2024-05-18 10:33:46 +0000] [8349] [DEBUG] GET /wp-admin/css/index.php
+[2024-05-18 10:33:47 +0000] [8351] [DEBUG] GET /dropdown.php
+[2024-05-18 10:33:47 +0000] [8350] [DEBUG] GET /about.php
+[2024-05-18 10:33:47 +0000] [8349] [DEBUG] GET /admin.php
+[2024-05-18 10:33:48 +0000] [8351] [DEBUG] GET /about.php7
+[2024-05-18 10:33:48 +0000] [8350] [DEBUG] GET /alfanew.php7
+[2024-05-18 10:33:48 +0000] [8349] [DEBUG] GET /adminfuns.php7
+[2024-05-18 10:33:49 +0000] [8351] [DEBUG] GET /ebs.php7
+[2024-05-18 10:33:49 +0000] [8350] [DEBUG] GET /ws.php7
+[2024-05-18 10:33:49 +0000] [8349] [DEBUG] GET /alfanew2.php7
+[2024-05-18 10:33:50 +0000] [8351] [DEBUG] GET /alfa-rex2.php7
+[2024-05-18 10:33:50 +0000] [8350] [DEBUG] GET /wp-admin/images/index.php
+[2024-05-18 10:33:50 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/index.php
+[2024-05-18 10:33:51 +0000] [8349] [DEBUG] GET /wp-content/themes/pridmag/db.php
+[2024-05-18 10:33:51 +0000] [8350] [DEBUG] GET /wp-content/themes/seotheme/mar.php
+[2024-05-18 10:33:51 +0000] [8351] [DEBUG] GET /wp-content/plugins/linkpreview/db.php
+[2024-05-18 10:33:52 +0000] [8349] [DEBUG] GET /wp-content/themes/seotheme/db.php
+[2024-05-18 10:33:52 +0000] [8350] [DEBUG] GET /wp-content/plugins/seoplugins/db.php
+[2024-05-18 10:33:52 +0000] [8351] [DEBUG] GET /wp-content/plugins/seoplugins/mar.php
+[2024-05-18 10:33:53 +0000] [8349] [DEBUG] GET /.well-known/pki-validation/xmrlpc.php
+[2024-05-18 10:33:53 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/xmrlpc.php
+[2024-05-18 10:33:53 +0000] [8351] [DEBUG] GET /wp-admin/network/xmrlpc.php
+[2024-05-18 10:33:54 +0000] [8349] [DEBUG] GET /xmrlpc.php
+[2024-05-18 10:33:54 +0000] [8350] [DEBUG] GET /cgi-bin/xmrlpc.php
+[2024-05-18 10:33:55 +0000] [8351] [DEBUG] GET /css/xmrlpc.php
+[2024-05-18 10:33:55 +0000] [8349] [DEBUG] GET /wp-admin/user/xmrlpc.php
+[2024-05-18 10:33:55 +0000] [8350] [DEBUG] GET /img/xmrlpc.php
+[2024-05-18 10:33:56 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/coffee/xmrlpc.php
+[2024-05-18 10:33:56 +0000] [8349] [DEBUG] GET /wp-admin/images/xmrlpc.php
+[2024-05-18 10:33:56 +0000] [8351] [DEBUG] GET /images/xmrlpc.php
+[2024-05-18 10:33:57 +0000] [8350] [DEBUG] GET /wp-admin/js/widgets/xmrlpc.php
+[2024-05-18 10:33:57 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/xmrlpc.php
+[2024-05-18 10:33:57 +0000] [8351] [DEBUG] GET /wp-admin/includes/xmrlpc.php
+[2024-05-18 10:33:58 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/blue/xmrlpc.php
+[2024-05-18 10:33:58 +0000] [8349] [DEBUG] GET /wp-admin/xmrlpc.php
+[2024-05-18 10:33:58 +0000] [8351] [DEBUG] GET /smaxx.php
+[2024-05-18 10:33:59 +0000] [8350] [DEBUG] GET /wp-admin/smaxx.php
+[2024-05-18 10:33:59 +0000] [8349] [DEBUG] GET /wp-content/plugins/WordPressCore/smaxx.php
+[2024-05-18 10:33:59 +0000] [8351] [DEBUG] GET /wp-includes/images/smaxx.php
+[2024-05-18 10:34:00 +0000] [8349] [DEBUG] GET /wp-content/plugins/core-plugin/smaxx.php
+[2024-05-18 10:34:00 +0000] [8350] [DEBUG] GET /wp-includes/smaxx.php
+[2024-05-18 10:34:00 +0000] [8351] [DEBUG] GET /wp-content/plugins/smaxx.php
+[2024-05-18 10:34:01 +0000] [8349] [DEBUG] GET /xt/smaxx.php
+[2024-05-18 10:34:01 +0000] [8350] [DEBUG] GET /wp-content/smaxx.php
+[2024-05-18 10:34:01 +0000] [8351] [DEBUG] GET /wp-content/themes/twentyfive/smaxx.php
+[2024-05-18 10:34:02 +0000] [8349] [DEBUG] GET /wp-content/upgrade/sx.php
+[2024-05-18 10:34:02 +0000] [8350] [DEBUG] GET /.well-known/pki-validation/sx.php
+[2024-05-18 10:34:02 +0000] [8351] [DEBUG] GET /wp-admin/user/sx.php
+[2024-05-18 10:34:03 +0000] [8349] [DEBUG] GET /wp-includes/ID3/sx.php
+[2024-05-18 10:34:03 +0000] [8350] [DEBUG] GET /wp-includes/blocks/sx.php
+[2024-05-18 10:34:03 +0000] [8351] [DEBUG] GET /sx.php
+[2024-05-18 10:34:04 +0000] [8349] [DEBUG] GET /wp-includes/sx.php
+[2024-05-18 10:34:04 +0000] [8350] [DEBUG] GET /wp-admin/sx.php
+[2024-05-18 10:34:04 +0000] [8351] [DEBUG] GET /wp-content/plugins/fix/sx.php
+[2024-05-18 10:34:05 +0000] [8349] [DEBUG] GET /wp-admin/includes/sx.php
+[2024-05-18 10:34:05 +0000] [8350] [DEBUG] GET /cgi-bin/sx.php
+[2024-05-18 10:34:05 +0000] [8349] [DEBUG] GET /wp-admin/css/sx.php
+[2024-05-18 10:34:06 +0000] [8351] [DEBUG] GET /wp-admin/network/sx.php
+[2024-05-18 10:34:06 +0000] [8350] [DEBUG] GET /wp-includes/block-supports/sx.php
+[2024-05-18 10:34:06 +0000] [8349] [DEBUG] GET /wp-includes/IXR/sx.php
+[2024-05-18 10:34:07 +0000] [8350] [DEBUG] GET /.well-known/sx.php
+[2024-05-18 10:34:07 +0000] [8351] [DEBUG] GET /wp-includes/js/tinymce/skins/lightgray/fonts/sx.php
+[2024-05-18 10:34:07 +0000] [8349] [DEBUG] GET /wp-content/sx.php
+[2024-05-18 10:34:08 +0000] [8350] [DEBUG] GET /wp-content/plugins/elementor/sx.php
+[2024-05-18 10:34:08 +0000] [8351] [DEBUG] GET /.well-known/acme-challenge/sx.php
+[2024-05-18 10:34:08 +0000] [8349] [DEBUG] GET /wp-includes/js/jcrop/sx.php
+[2024-05-18 10:34:08 +0000] [8351] [DEBUG] GET /wp-includes/rest-api/sx.php
+[2024-05-18 10:34:09 +0000] [8350] [DEBUG] GET /wp-admin/images/sx.php
+[2024-05-18 10:34:09 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/blue/blue.php
+[2024-05-18 10:34:10 +0000] [8350] [DEBUG] GET /chosen
+[2024-05-18 10:34:10 +0000] [8351] [DEBUG] GET /wp-content/plugins/fix/up.php
+[2024-05-18 10:34:10 +0000] [8349] [DEBUG] GET /install.php
+[2024-05-18 10:34:11 +0000] [8350] [DEBUG] GET /wp-includes/images/include.php
+[2024-05-18 10:34:11 +0000] [8351] [DEBUG] GET /gel4y.php
+[2024-05-18 10:34:11 +0000] [8349] [DEBUG] GET /comfunctions.php
+[2024-05-18 10:34:12 +0000] [8350] [DEBUG] GET /wp-content/plugins/core-plugin/include.php
+[2024-05-18 10:34:12 +0000] [8351] [DEBUG] GET /wp-content/themes/wp-classic/inc/index.php
+[2024-05-18 10:34:12 +0000] [8349] [DEBUG] GET /assets/images/1p.php
+[2024-05-18 10:34:13 +0000] [8350] [DEBUG] GET /class.api.php
+[2024-05-18 10:34:13 +0000] [8351] [DEBUG] GET /plugin.php
+[2024-05-18 10:34:13 +0000] [8349] [DEBUG] GET /wp-mail.php
+[2024-05-18 10:34:14 +0000] [8350] [DEBUG] GET /cong.php
+[2024-05-18 10:34:14 +0000] [8349] [DEBUG] GET /wp-content/index.php
+[2024-05-18 10:34:14 +0000] [8351] [DEBUG] GET /.well-known/acme-challenge/xmrlpc.php
+[2024-05-18 10:34:15 +0000] [8350] [DEBUG] GET /wp-configs.php
+[2024-05-18 10:34:15 +0000] [8349] [DEBUG] GET /mah.php
+[2024-05-18 10:34:15 +0000] [8351] [DEBUG] GET /defaults.php
+[2024-05-18 10:34:16 +0000] [8350] [DEBUG] GET /wp-content/themes/sketch/404.php
+[2024-05-18 10:34:16 +0000] [8349] [DEBUG] GET /input.php
+[2024-05-18 10:34:16 +0000] [8351] [DEBUG] GET /admin-ajax.php
+[2024-05-18 10:34:17 +0000] [8350] [DEBUG] GET /0z.php
+[2024-05-18 10:34:17 +0000] [8349] [DEBUG] GET /media.php
+[2024-05-18 10:34:17 +0000] [8351] [DEBUG] GET /chosen.php
+[2024-05-18 10:34:18 +0000] [8349] [DEBUG] GET /wp-includes/fonts/wp-login.php
+[2024-05-18 10:34:18 +0000] [8350] [DEBUG] GET /wp-admin/users.php
+[2024-05-18 10:34:18 +0000] [8351] [DEBUG] GET /wp-content/uploads/cache.php
+[2024-05-18 10:34:19 +0000] [8350] [DEBUG] GET /.well-known/pki-validation/file.php
+[2024-05-18 10:34:19 +0000] [8349] [DEBUG] GET /.wp-cli/wp-login.php
+[2024-05-18 10:34:19 +0000] [8351] [DEBUG] GET /authorize.php
+[2024-05-18 10:34:20 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/blue/CasperExV1.php
+[2024-05-18 10:34:20 +0000] [8349] [DEBUG] GET /wp-admin/includes/users.php
+[2024-05-18 10:34:20 +0000] [8350] [DEBUG] GET /wp-content/plugins/revslider/includes/external/page/index.php
+[2024-05-18 10:34:21 +0000] [8351] [DEBUG] GET /wp.php
+[2024-05-18 10:34:21 +0000] [8349] [DEBUG] GET /wp-content/plugins/WordPressCore/include.php
+[2024-05-18 10:34:21 +0000] [8350] [DEBUG] GET /wp-2019.php
+[2024-05-18 10:34:22 +0000] [8351] [DEBUG] GET /upload.php
+[2024-05-18 10:34:22 +0000] [8349] [DEBUG] GET /themes.php
+[2024-05-18 10:34:22 +0000] [8350] [DEBUG] GET /wp-admin/network/index.php
+[2024-05-18 10:34:23 +0000] [8349] [DEBUG] GET /wp-content/plugins/WordPressCore/blkfqnikz.php
+[2024-05-18 10:34:23 +0000] [8351] [DEBUG] GET /wp/wp-admin/includes/class-wp-page-mvb2yr.php
+[2024-05-18 10:34:23 +0000] [8350] [DEBUG] GET /content.php
+[2024-05-18 10:34:24 +0000] [8349] [DEBUG] GET /st.php
+[2024-05-18 10:34:24 +0000] [8351] [DEBUG] GET /wp-includes/images/smilies/about.php
+[2024-05-18 10:34:24 +0000] [8350] [DEBUG] GET /simple.php
+[2024-05-18 10:34:25 +0000] [8349] [DEBUG] GET /function.php
+[2024-05-18 10:34:25 +0000] [8351] [DEBUG] GET /ynz.PhP7
+[2024-05-18 10:34:25 +0000] [8350] [DEBUG] GET /wp-content/style-css.php
+[2024-05-18 10:34:26 +0000] [8349] [DEBUG] GET /wp-includes/IXR/wp-login.php
+[2024-05-18 10:34:26 +0000] [8351] [DEBUG] GET /.well-known/acme-challenge/about.php
+[2024-05-18 10:34:26 +0000] [8350] [DEBUG] GET /wordpress/wp-includes/IXR/allez.php
+[2024-05-18 10:34:26 +0000] [8349] [DEBUG] GET /rendixd.php
+[2024-05-18 10:34:27 +0000] [8351] [DEBUG] GET /wp-admin/css/admin.php
+[2024-05-18 10:34:27 +0000] [8350] [DEBUG] GET /filefuns.php
+[2024-05-18 10:34:27 +0000] [8349] [DEBUG] GET /options.php
+[2024-05-18 10:34:28 +0000] [8351] [DEBUG] GET /wp-includes/js/tinymce/skins/lightgray/img/index.php
+[2024-05-18 10:34:28 +0000] [8350] [DEBUG] GET /edit.php
+[2024-05-18 10:34:28 +0000] [8349] [DEBUG] GET /user.php
+[2024-05-18 10:34:29 +0000] [8351] [DEBUG] GET /worm0.PhP7
+[2024-05-18 10:34:29 +0000] [8350] [DEBUG] GET /wp-includes/js/tinymce/skins/wordpress/images/index.php
+[2024-05-18 10:34:29 +0000] [8349] [DEBUG] GET /.well-known//.well-known/owlmailer.php
+[2024-05-18 10:34:30 +0000] [8351] [DEBUG] GET /wp-content/uploads/cong.php
+[2024-05-18 10:34:30 +0000] [8350] [DEBUG] GET /01.php
+[2024-05-18 10:34:30 +0000] [8349] [DEBUG] GET /wp-content/uploads/wp-login.php.suspected
+[2024-05-18 10:34:31 +0000] [8351] [DEBUG] GET /wp-includes/rest-api/endpoints/html.php
+[2024-05-18 10:34:31 +0000] [8350] [DEBUG] GET /wp-admin/js/widgets/cong.php
+[2024-05-18 10:34:31 +0000] [8349] [DEBUG] GET /doc.php
+[2024-05-18 10:34:32 +0000] [8351] [DEBUG] GET /ws.php
+[2024-05-18 10:34:32 +0000] [8349] [DEBUG] GET /link.php
+[2024-05-18 10:34:32 +0000] [8350] [DEBUG] GET /autoload_classmap.php
+[2024-05-18 10:34:33 +0000] [8351] [DEBUG] GET /wp-admin/js/privacy-tools.min.php
+[2024-05-18 10:34:33 +0000] [8349] [DEBUG] GET /wp-includes/pomo/wp-login.php
+[2024-05-18 10:34:33 +0000] [8350] [DEBUG] GET /db.php
+[2024-05-18 10:34:34 +0000] [8351] [DEBUG] GET /wp-content/uploads/error_log.php
+[2024-05-18 10:34:34 +0000] [8349] [DEBUG] GET /google.php
+[2024-05-18 10:34:34 +0000] [8350] [DEBUG] GET /wp-includes/sts.php
+[2024-05-18 10:34:34 +0000] [8351] [DEBUG] GET /wp-includes/pomo/fgertreyersd.php.suspected
+[2024-05-18 10:34:35 +0000] [8349] [DEBUG] GET /wp-includes/Requests/dropdown.php
+[2024-05-18 10:34:35 +0000] [8351] [DEBUG] GET /wp-content/install.php
+[2024-05-18 10:34:35 +0000] [8350] [DEBUG] GET /.well-known/admin.php
+[2024-05-18 10:34:36 +0000] [8349] [DEBUG] GET /revision.php
+[2024-05-18 10:34:36 +0000] [8351] [DEBUG] GET /css/sgd.php
+[2024-05-18 10:34:36 +0000] [8350] [DEBUG] GET /wp-content/plugins/index.php
+[2024-05-18 11:57:04 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 14:14:37 +0000] [8351] [DEBUG] GET /
+[2024-05-18 14:51:45 +0000] [8349] [DEBUG] GET /.env
+[2024-05-18 15:14:25 +0000] [8351] [DEBUG] GET /
+[2024-05-18 15:14:26 +0000] [8349] [DEBUG] GET /
+[2024-05-18 15:14:28 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-18 16:10:25 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 16:34:58 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 17:02:39 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 17:24:47 +0000] [8350] [DEBUG] GET /.DS_Store
+[2024-05-18 17:41:25 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 17:59:39 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 18:07:06 +0000] [8349] [DEBUG] GET /catering/
+[2024-05-18 18:07:10 +0000] [8350] [DEBUG] GET /menu/
+[2024-05-18 18:07:11 +0000] [8349] [DEBUG] GET /
+[2024-05-18 18:07:13 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 18:11:30 +0000] [8350] [DEBUG] GET /
+[2024-05-18 18:11:32 +0000] [8351] [DEBUG] GET /catering/
+[2024-05-18 18:11:34 +0000] [8349] [DEBUG] GET /
+[2024-05-18 19:20:14 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 19:45:41 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 20:56:46 +0000] [8351] [DEBUG] GET /robots.txt
+[2024-05-18 20:56:46 +0000] [8350] [DEBUG] GET /
+[2024-05-18 20:56:52 +0000] [8351] [DEBUG] GET /
+[2024-05-18 20:56:53 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-18 21:31:08 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 21:53:15 +0000] [8350] [DEBUG] GET /
+[2024-05-18 21:53:19 +0000] [8351] [DEBUG] GET /
+[2024-05-18 21:53:19 +0000] [8350] [DEBUG] GET /
+[2024-05-18 21:53:19 +0000] [8349] [DEBUG] GET /
+[2024-05-18 21:53:38 +0000] [8349] [DEBUG] GET /
+[2024-05-18 21:53:38 +0000] [8351] [DEBUG] GET /
+[2024-05-18 21:56:58 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 22:48:29 +0000] [8349] [DEBUG] GET /
+[2024-05-18 22:48:30 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-18 23:05:51 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-18 23:27:01 +0000] [8349] [DEBUG] GET /
+[2024-05-18 23:27:03 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-18 23:27:21 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 00:02:30 +0000] [8350] [DEBUG] GET /
+[2024-05-19 00:02:43 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-19 00:02:48 +0000] [8349] [DEBUG] GET /menu/
+[2024-05-19 00:02:53 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-19 00:03:00 +0000] [8350] [DEBUG] GET /
+[2024-05-19 00:03:03 +0000] [8351] [DEBUG] GET /menu/
+[2024-05-19 00:03:07 +0000] [8350] [DEBUG] GET /
+[2024-05-19 00:03:10 +0000] [8349] [DEBUG] GET /about/
+[2024-05-19 00:07:04 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 00:34:27 +0000] [8349] [DEBUG] GET /
+[2024-05-19 00:38:23 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 00:48:04 +0000] [8349] [DEBUG] GET /
+[2024-05-19 00:53:09 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 01:08:09 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 01:36:35 +0000] [8350] [DEBUG] GET /
+[2024-05-19 01:36:38 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-19 01:57:45 +0000] [8351] [DEBUG] GET /actuator/gateway/routes
+[2024-05-19 02:13:18 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 03:14:05 +0000] [8351] [DEBUG] GET /.env
+[2024-05-19 03:14:06 +0000] [8350] [DEBUG] GET /
+[2024-05-19 03:32:09 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 03:39:44 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 04:23:28 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 04:25:35 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 04:28:29 +0000] [8350] [DEBUG] GET /
+[2024-05-19 07:23:31 +0000] [8351] [DEBUG] GET /
+[2024-05-19 07:58:34 +0000] [8351] [DEBUG] GET /
+[2024-05-19 08:34:03 +0000] [8349] [DEBUG] GET /
+[2024-05-19 08:45:58 +0000] [8350] [DEBUG] GET /
+[2024-05-19 10:16:06 +0000] [8350] [DEBUG] GET /sitemap.xml
+[2024-05-19 10:20:55 +0000] [8351] [DEBUG] GET /
+[2024-05-19 10:20:55 +0000] [8350] [DEBUG] GET //wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:55 +0000] [8349] [DEBUG] GET //xmlrpc.php
+[2024-05-19 10:20:55 +0000] [8351] [DEBUG] GET /
+[2024-05-19 10:20:56 +0000] [8350] [DEBUG] GET //blog/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:56 +0000] [8349] [DEBUG] GET //web/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:56 +0000] [8350] [DEBUG] GET //wordpress/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:56 +0000] [8351] [DEBUG] GET //website/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:56 +0000] [8349] [DEBUG] GET //wp/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:57 +0000] [8351] [DEBUG] GET //news/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:57 +0000] [8350] [DEBUG] GET //2018/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:57 +0000] [8349] [DEBUG] GET //2019/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:57 +0000] [8351] [DEBUG] GET //shop/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:58 +0000] [8349] [DEBUG] GET //wp1/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:58 +0000] [8350] [DEBUG] GET //test/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:58 +0000] [8351] [DEBUG] GET //media/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:58 +0000] [8349] [DEBUG] GET //wp2/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:58 +0000] [8350] [DEBUG] GET //site/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:59 +0000] [8351] [DEBUG] GET //cms/wp-includes/wlwmanifest.xml
+[2024-05-19 10:20:59 +0000] [8349] [DEBUG] GET //sito/wp-includes/wlwmanifest.xml
+[2024-05-19 10:48:27 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 10:55:32 +0000] [8351] [DEBUG] GET /.vscode/sftp.json
+[2024-05-19 14:56:30 +0000] [8351] [DEBUG] GET /
+[2024-05-19 14:56:31 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-19 14:56:32 +0000] [8350] [DEBUG] GET /ads.txt
+[2024-05-19 14:56:33 +0000] [8351] [DEBUG] GET /app-ads.txt
+[2024-05-19 14:56:34 +0000] [8350] [DEBUG] GET /sellers.json
+[2024-05-19 15:07:10 +0000] [8350] [DEBUG] GET /
+[2024-05-19 15:07:10 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-19 15:07:11 +0000] [8350] [DEBUG] GET /ads.txt
+[2024-05-19 15:07:12 +0000] [8349] [DEBUG] GET /app-ads.txt
+[2024-05-19 15:07:13 +0000] [8351] [DEBUG] GET /sellers.json
+[2024-05-19 15:08:06 +0000] [8351] [DEBUG] GET /
+[2024-05-19 15:08:07 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-19 15:08:08 +0000] [8349] [DEBUG] GET /ads.txt
+[2024-05-19 15:08:09 +0000] [8351] [DEBUG] GET /app-ads.txt
+[2024-05-19 15:08:09 +0000] [8350] [DEBUG] GET /sellers.json
+[2024-05-19 16:16:50 +0000] [8350] [DEBUG] GET /
+[2024-05-19 16:16:51 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-19 16:16:52 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-19 16:16:56 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-19 16:24:20 +0000] [8349] [DEBUG] GET /
+[2024-05-19 16:47:49 +0000] [8351] [DEBUG] GET /
+[2024-05-19 16:47:53 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-19 16:47:55 +0000] [8351] [DEBUG] GET /robots.txt
+[2024-05-19 16:47:56 +0000] [8349] [DEBUG] GET /
+[2024-05-19 16:47:58 +0000] [8350] [DEBUG] GET /
+[2024-05-19 16:47:58 +0000] [8349] [DEBUG] GET /
+[2024-05-19 16:47:58 +0000] [8351] [DEBUG] GET /catering/
+[2024-05-19 16:48:00 +0000] [8350] [DEBUG] GET /
+[2024-05-19 16:48:00 +0000] [8349] [DEBUG] GET /
+[2024-05-19 17:00:37 +0000] [8349] [DEBUG] GET /
+[2024-05-19 17:47:50 +0000] [8350] [DEBUG] GET /
+[2024-05-19 18:28:38 +0000] [8350] [DEBUG] GET /
+[2024-05-19 21:33:19 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-19 22:53:36 +0000] [8350] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-20 00:14:19 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-20 00:43:02 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-20 00:50:17 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-20 01:15:10 +0000] [8351] [DEBUG] GET /
+[2024-05-20 01:15:11 +0000] [8349] [DEBUG] GET //wp-content/uploads/
+[2024-05-20 01:15:11 +0000] [8351] [DEBUG] GET //wp-content/plugins/
+[2024-05-20 01:15:12 +0000] [8349] [DEBUG] GET //wp-admin/admin-ajax.php
+[2024-05-20 01:15:12 +0000] [8350] [DEBUG] GET //wp-content/themes/twenty/twenty.php
+[2024-05-20 01:15:13 +0000] [8351] [DEBUG] GET //wp-content/patior/
+[2024-05-20 01:15:13 +0000] [8349] [DEBUG] GET //wp-includes/js/tinymce/plugins/compat3x/css/index.php
+[2024-05-20 01:15:13 +0000] [8350] [DEBUG] GET //dropdown.php
+[2024-05-20 01:15:14 +0000] [8351] [DEBUG] GET //wp-includes/Text/about.php
+[2024-05-20 01:15:14 +0000] [8349] [DEBUG] GET //wp-includes/rest-api/about.php
+[2024-05-20 01:15:15 +0000] [8351] [DEBUG] GET //ee.php
+[2024-05-20 01:15:15 +0000] [8350] [DEBUG] GET //wp-admin/install.php
+[2024-05-20 01:15:16 +0000] [8349] [DEBUG] GET //wp-content/plugins/install.php
+[2024-05-20 01:15:16 +0000] [8351] [DEBUG] GET //wp-content/install.php
+[2024-05-20 01:15:18 +0000] [8350] [DEBUG] GET //install.php
+[2024-05-20 01:15:18 +0000] [8349] [DEBUG] GET //wp-includes/install.php
+[2024-05-20 01:15:19 +0000] [8351] [DEBUG] GET //wp-admin/images/install.php
+[2024-05-20 01:15:19 +0000] [8350] [DEBUG] GET //cgi-bin/install.php
+[2024-05-20 01:15:20 +0000] [8349] [DEBUG] GET //.well-known/acme-challenge/install.php
+[2024-05-20 01:15:20 +0000] [8351] [DEBUG] GET //css/install.php
+[2024-05-20 01:15:21 +0000] [8350] [DEBUG] GET //wp-admin/js/about.php7
+[2024-05-20 01:15:22 +0000] [8349] [DEBUG] GET //wp-admin/js/about.php
+[2024-05-20 01:15:23 +0000] [8351] [DEBUG] GET //wp-admin/maint/moon.php
+[2024-05-20 01:15:23 +0000] [8350] [DEBUG] GET //cgi-bin/cgi-bin/about.php
+[2024-05-20 01:15:24 +0000] [8349] [DEBUG] GET //cgi-bin/cgi-bin/about.php7
+[2024-05-20 01:15:24 +0000] [8351] [DEBUG] GET //wp-admin/dropdown.php
+[2024-05-20 01:15:25 +0000] [8350] [DEBUG] GET //wp-content/plugins/Cache/dropdown.php
+[2024-05-20 01:15:25 +0000] [8349] [DEBUG] GET //wp-content/dropdown.php
+[2024-05-20 02:14:41 +0000] [8351] [DEBUG] GET /
+[2024-05-20 02:14:42 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-20 02:14:42 +0000] [8349] [DEBUG] Ignoring EPIPE
+[2024-05-20 02:14:47 +0000] [8351] [DEBUG] GET /about/
+[2024-05-20 02:15:43 +0000] [8349] [DEBUG] GET /catering/
+[2024-05-20 02:17:29 +0000] [8349] [DEBUG] GET /menu/
+[2024-05-20 05:00:19 +0000] [8349] [DEBUG] GET /
+[2024-05-20 05:00:26 +0000] [8350] [DEBUG] GET /cart/
+[2024-05-20 05:00:26 +0000] [8349] [DEBUG] GET /about/
+[2024-05-20 05:00:28 +0000] [8351] [DEBUG] GET /catering/
+[2024-05-20 05:00:28 +0000] [8350] [DEBUG] GET /menu/
+[2024-05-20 05:00:28 +0000] [8349] [DEBUG] GET /
+[2024-05-20 05:23:51 +0000] [8349] [DEBUG] GET /.env
+[2024-05-20 05:47:38 +0000] [8349] [DEBUG] GET /
+[2024-05-20 06:03:14 +0000] [8349] [DEBUG] GET /
+[2024-05-20 06:07:46 +0000] [8350] [DEBUG] GET /
+[2024-05-20 06:39:28 +0000] [8350] [DEBUG] GET /
+[2024-05-20 06:40:34 +0000] [8351] [DEBUG] GET /
+[2024-05-20 06:40:34 +0000] [8350] [DEBUG] GET //wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:34 +0000] [8349] [DEBUG] GET //xmlrpc.php
+[2024-05-20 06:40:34 +0000] [8351] [DEBUG] GET /
+[2024-05-20 06:40:35 +0000] [8350] [DEBUG] GET //blog/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:35 +0000] [8351] [DEBUG] GET //web/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:35 +0000] [8349] [DEBUG] GET //wordpress/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:35 +0000] [8350] [DEBUG] GET //website/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:35 +0000] [8351] [DEBUG] GET //wp/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:35 +0000] [8350] [DEBUG] GET //news/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:35 +0000] [8349] [DEBUG] GET //2020/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:35 +0000] [8351] [DEBUG] GET //2019/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:35 +0000] [8350] [DEBUG] GET //shop/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:36 +0000] [8349] [DEBUG] GET //wp1/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:36 +0000] [8351] [DEBUG] GET //test/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:36 +0000] [8349] [DEBUG] GET //wp2/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:36 +0000] [8350] [DEBUG] GET //site/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:36 +0000] [8351] [DEBUG] GET //cms/wp-includes/wlwmanifest.xml
+[2024-05-20 06:40:36 +0000] [8349] [DEBUG] GET //sito/wp-includes/wlwmanifest.xml
+[2024-05-20 07:25:14 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-20 07:46:47 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-20 08:09:04 +0000] [8349] [DEBUG] GET /wp-content/plugins/hellopress/wp_filemanager.php
+[2024-05-20 08:09:04 +0000] [8350] [DEBUG] GET /lv.php
+[2024-05-20 08:09:05 +0000] [8351] [DEBUG] GET /wp-22.php
+[2024-05-20 08:09:05 +0000] [8349] [DEBUG] GET /wp-content/plugins/pwnd/pwnd.php
+[2024-05-20 08:09:05 +0000] [8350] [DEBUG] GET /wp-content/plugins/pwnd-1/pwnd.php
+[2024-05-20 08:09:05 +0000] [8351] [DEBUG] GET /wp-includes/Requests/about.php
+[2024-05-20 08:09:06 +0000] [8349] [DEBUG] GET /wp-includes/style-engine/about.php
+[2024-05-20 08:09:06 +0000] [8350] [DEBUG] GET /wp-includes/rest-api/about.php
+[2024-05-20 08:09:06 +0000] [8351] [DEBUG] GET /wp-includes/SimplePie/about.php
+[2024-05-20 08:09:06 +0000] [8349] [DEBUG] GET /wp-content/banners/about.php
+[2024-05-20 08:09:07 +0000] [8350] [DEBUG] GET /wp-content/about.php
+[2024-05-20 08:09:07 +0000] [8351] [DEBUG] GET /.well-known/about.php
+[2024-05-20 08:09:07 +0000] [8349] [DEBUG] GET /wp-includes/Text/about.php
+[2024-05-20 08:09:08 +0000] [8351] [DEBUG] GET /wp-includes/ID3/about.php
+[2024-05-20 08:09:08 +0000] [8350] [DEBUG] GET /img/about.php
+[2024-05-20 08:09:08 +0000] [8351] [DEBUG] GET /wp-content/languages/about.php
+[2024-05-20 08:09:08 +0000] [8350] [DEBUG] GET /wp-includes/customize/about.php
+[2024-05-20 08:09:09 +0000] [8349] [DEBUG] GET /wp-includes.bak/html-api/about.php
+[2024-05-20 08:09:09 +0000] [8351] [DEBUG] GET /wp-includes/widgets/about.php
+[2024-05-20 08:09:09 +0000] [8350] [DEBUG] GET /wp-includes/IXR/about.php
+[2024-05-20 08:09:09 +0000] [8349] [DEBUG] GET /wp-admin/js/about.php
+[2024-05-20 08:09:10 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/about.php
+[2024-05-20 08:09:10 +0000] [8350] [DEBUG] GET /wp-includes/pomo/about.php
+[2024-05-20 08:09:10 +0000] [8349] [DEBUG] GET /wp-includes/block-patterns/about.php
+[2024-05-20 08:09:11 +0000] [8351] [DEBUG] GET /wp-content/updraft/about.php
+[2024-05-20 08:09:11 +0000] [8350] [DEBUG] GET /wp-content/upgrade-temp-backup/about.php
+[2024-05-20 08:09:11 +0000] [8349] [DEBUG] GET /wp-content/themes/about.php
+[2024-05-20 08:09:12 +0000] [8351] [DEBUG] GET /wp-admin/includes/about.php
+[2024-05-20 08:09:12 +0000] [8350] [DEBUG] GET /images/about.php
+[2024-05-20 08:09:12 +0000] [8349] [DEBUG] GET /wp-content/blogs.dir/about.php
+[2024-05-20 08:09:12 +0000] [8351] [DEBUG] GET /wp-includes/images/about.php
+[2024-05-20 08:09:13 +0000] [8349] [DEBUG] GET /wp-includes/about.php
+[2024-05-20 08:09:13 +0000] [8350] [DEBUG] GET /cgi-bin/about.php
+[2024-05-20 08:09:13 +0000] [8351] [DEBUG] GET /wp-content/gallery/about.php
+[2024-05-20 08:09:14 +0000] [8349] [DEBUG] GET /wp-includes/blocks/about.php
+[2024-05-20 08:09:14 +0000] [8350] [DEBUG] GET /wp-admin/css/about.php
+[2024-05-20 08:09:14 +0000] [8351] [DEBUG] GET /wp-admin/images/about.php
+[2024-05-20 08:09:15 +0000] [8349] [DEBUG] GET /.well-known/pki-validation/cloud.php
+[2024-05-20 08:09:15 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/cloud.php
+[2024-05-20 08:09:15 +0000] [8351] [DEBUG] GET /wp-admin/network/cloud.php
+[2024-05-20 08:09:15 +0000] [8350] [DEBUG] GET /cloud.php
+[2024-05-20 08:09:16 +0000] [8349] [DEBUG] GET /cgi-bin/cloud.php
+[2024-05-20 08:09:16 +0000] [8351] [DEBUG] GET /wp-content/updates.php
+[2024-05-20 08:09:16 +0000] [8350] [DEBUG] GET /css/cloud.php
+[2024-05-20 08:09:17 +0000] [8349] [DEBUG] GET /wp-admin/user/cloud.php
+[2024-05-20 08:09:17 +0000] [8351] [DEBUG] GET /img/cloud.php
+[2024-05-20 08:09:17 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/coffee/cloud.php
+[2024-05-20 08:09:17 +0000] [8349] [DEBUG] GET /wp-admin/images/cloud.php
+[2024-05-20 08:09:18 +0000] [8351] [DEBUG] GET /avaa.php
+[2024-05-20 08:09:18 +0000] [8350] [DEBUG] GET /images/cloud.php
+[2024-05-20 08:09:18 +0000] [8349] [DEBUG] GET /wp-admin/js/widgets/cloud.php
+[2024-05-20 08:09:19 +0000] [8351] [DEBUG] GET /wp-includes/Requests/Text/admin.php
+[2024-05-20 08:09:19 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/cloud.php
+[2024-05-20 08:09:19 +0000] [8349] [DEBUG] GET /wp-admin/includes/cloud.php
+[2024-05-20 08:09:19 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/blue/cloud.php
+[2024-05-20 08:09:20 +0000] [8350] [DEBUG] GET /wp-admin/cloud.php
+[2024-05-20 08:09:20 +0000] [8349] [DEBUG] GET /updates.php
+[2024-05-20 08:09:20 +0000] [8351] [DEBUG] GET /libraries/legacy/updates.php
+[2024-05-20 08:09:21 +0000] [8349] [DEBUG] GET /libraries/phpmailer/updates.php
+[2024-05-20 08:09:21 +0000] [8350] [DEBUG] GET /libraries/vendor/updates.php
+[2024-05-20 08:09:21 +0000] [8349] [DEBUG] GET /alfa-rex.php7
+[2024-05-20 08:09:21 +0000] [8351] [DEBUG] GET /alfanew.php
+[2024-05-20 08:09:22 +0000] [8350] [DEBUG] GET /wp-content/plugins/Cache/Cache.php
+[2024-05-20 08:09:22 +0000] [8349] [DEBUG] GET /wp-admin/js/widgets/about.php7
+[2024-05-20 08:09:22 +0000] [8350] [DEBUG] GET /wp-p.php7
+[2024-05-20 08:09:22 +0000] [8351] [DEBUG] GET /wp-admin/repeater.php
+[2024-05-20 08:09:23 +0000] [8349] [DEBUG] GET /wp-includes/repeater.php
+[2024-05-20 08:09:23 +0000] [8350] [DEBUG] GET /wp-content/repeater.php
+[2024-05-20 08:09:23 +0000] [8351] [DEBUG] GET /wsoyanz.php
+[2024-05-20 08:09:24 +0000] [8349] [DEBUG] GET /yanz.php
+[2024-05-20 08:09:24 +0000] [8350] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz.php
+[2024-05-20 08:09:24 +0000] [8351] [DEBUG] GET /wp-content/plugins/seoo/wsoyanz1.php
+[2024-05-20 08:09:24 +0000] [8349] [DEBUG] GET /cache-compat.php
+[2024-05-20 08:09:25 +0000] [8350] [DEBUG] GET /ajax-actions.php
+[2024-05-20 08:09:25 +0000] [8351] [DEBUG] GET /wp-admin/ajax-actions.php
+[2024-05-20 08:09:25 +0000] [8349] [DEBUG] GET /wp-consar.php
+[2024-05-20 08:09:25 +0000] [8350] [DEBUG] GET /repeater.php
+[2024-05-20 08:09:26 +0000] [8351] [DEBUG] GET /admin-post.php
+[2024-05-20 08:09:26 +0000] [8350] [DEBUG] GET /wp-admin/maint/maint/ajax-actions.php
+[2024-05-20 08:09:26 +0000] [8349] [DEBUG] GET /wp-admin/dropdown.php
+[2024-05-20 08:09:27 +0000] [8351] [DEBUG] GET /wp-admin/css/index.php
+[2024-05-20 08:09:27 +0000] [8350] [DEBUG] GET /dropdown.php
+[2024-05-20 08:09:27 +0000] [8351] [DEBUG] GET /about.php
+[2024-05-20 08:09:28 +0000] [8350] [DEBUG] GET /admin.php
+[2024-05-20 08:09:28 +0000] [8349] [DEBUG] GET /about.php7
+[2024-05-20 08:09:28 +0000] [8351] [DEBUG] GET /alfanew.php7
+[2024-05-20 08:09:28 +0000] [8349] [DEBUG] GET /adminfuns.php7
+[2024-05-20 08:09:29 +0000] [8350] [DEBUG] GET /ebs.php7
+[2024-05-20 08:09:29 +0000] [8351] [DEBUG] GET /ws.php7
+[2024-05-20 08:09:29 +0000] [8350] [DEBUG] GET /alfanew2.php7
+[2024-05-20 08:09:30 +0000] [8351] [DEBUG] GET /alfa-rex2.php7
+[2024-05-20 08:09:30 +0000] [8350] [DEBUG] GET /wp-admin/images/index.php
+[2024-05-20 08:09:30 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/index.php
+[2024-05-20 08:09:30 +0000] [8351] [DEBUG] GET /wp-content/themes/pridmag/db.php
+[2024-05-20 08:09:31 +0000] [8350] [DEBUG] GET /wp-content/themes/seotheme/mar.php
+[2024-05-20 08:09:31 +0000] [8349] [DEBUG] GET /wp-content/plugins/linkpreview/db.php
+[2024-05-20 08:09:31 +0000] [8351] [DEBUG] GET /wp-content/themes/seotheme/db.php
+[2024-05-20 08:09:31 +0000] [8349] [DEBUG] GET /wp-content/plugins/seoplugins/db.php
+[2024-05-20 08:09:32 +0000] [8350] [DEBUG] GET /wp-content/plugins/seoplugins/mar.php
+[2024-05-20 08:09:32 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/xmrlpc.php
+[2024-05-20 08:09:32 +0000] [8349] [DEBUG] GET /.well-known/acme-challenge/xmrlpc.php
+[2024-05-20 08:09:33 +0000] [8351] [DEBUG] GET /wp-admin/network/xmrlpc.php
+[2024-05-20 08:09:33 +0000] [8350] [DEBUG] GET /xmrlpc.php
+[2024-05-20 08:09:33 +0000] [8349] [DEBUG] GET /cgi-bin/xmrlpc.php
+[2024-05-20 08:09:33 +0000] [8351] [DEBUG] GET /css/xmrlpc.php
+[2024-05-20 08:09:34 +0000] [8350] [DEBUG] GET /wp-admin/user/xmrlpc.php
+[2024-05-20 08:09:34 +0000] [8349] [DEBUG] GET /img/xmrlpc.php
+[2024-05-20 08:09:34 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/coffee/xmrlpc.php
+[2024-05-20 08:09:35 +0000] [8350] [DEBUG] GET /wp-admin/images/xmrlpc.php
+[2024-05-20 08:09:35 +0000] [8349] [DEBUG] GET /images/xmrlpc.php
+[2024-05-20 08:09:35 +0000] [8351] [DEBUG] GET /wp-admin/js/widgets/xmrlpc.php
+[2024-05-20 08:09:36 +0000] [8350] [DEBUG] GET /wp-admin/css/colors/xmrlpc.php
+[2024-05-20 08:09:36 +0000] [8349] [DEBUG] GET /wp-admin/includes/xmrlpc.php
+[2024-05-20 08:09:36 +0000] [8351] [DEBUG] GET /wp-admin/css/colors/blue/xmrlpc.php
+[2024-05-20 08:09:36 +0000] [8350] [DEBUG] GET /wp-admin/xmrlpc.php
+[2024-05-20 08:09:37 +0000] [8349] [DEBUG] GET /smaxx.php
+[2024-05-20 08:09:37 +0000] [8351] [DEBUG] GET /wp-admin/smaxx.php
+[2024-05-20 08:09:37 +0000] [8350] [DEBUG] GET /wp-content/plugins/WordPressCore/smaxx.php
+[2024-05-20 08:09:37 +0000] [8349] [DEBUG] GET /wp-includes/images/smaxx.php
+[2024-05-20 08:09:38 +0000] [8351] [DEBUG] GET /wp-content/plugins/core-plugin/smaxx.php
+[2024-05-20 08:09:38 +0000] [8350] [DEBUG] GET /wp-includes/smaxx.php
+[2024-05-20 08:09:38 +0000] [8349] [DEBUG] GET /wp-content/plugins/smaxx.php
+[2024-05-20 08:09:39 +0000] [8351] [DEBUG] GET /xt/smaxx.php
+[2024-05-20 08:09:39 +0000] [8350] [DEBUG] GET /wp-content/smaxx.php
+[2024-05-20 08:09:39 +0000] [8349] [DEBUG] GET /wp-content/themes/twentyfive/smaxx.php
+[2024-05-20 08:09:39 +0000] [8351] [DEBUG] GET /wp-content/upgrade/sx.php
+[2024-05-20 08:09:40 +0000] [8350] [DEBUG] GET /.well-known/pki-validation/sx.php
+[2024-05-20 08:09:40 +0000] [8349] [DEBUG] GET /wp-admin/user/sx.php
+[2024-05-20 08:09:40 +0000] [8351] [DEBUG] GET /wp-includes/ID3/sx.php
+[2024-05-20 08:09:41 +0000] [8349] [DEBUG] GET /wp-includes/blocks/sx.php
+[2024-05-20 08:09:41 +0000] [8350] [DEBUG] GET /sx.php
+[2024-05-20 08:09:41 +0000] [8351] [DEBUG] GET /wp-includes/sx.php
+[2024-05-20 08:09:41 +0000] [8349] [DEBUG] GET /wp-admin/sx.php
+[2024-05-20 08:09:42 +0000] [8350] [DEBUG] GET /wp-content/plugins/fix/sx.php
+[2024-05-20 08:09:42 +0000] [8351] [DEBUG] GET /wp-admin/includes/sx.php
+[2024-05-20 08:09:42 +0000] [8349] [DEBUG] GET /cgi-bin/sx.php
+[2024-05-20 08:09:43 +0000] [8350] [DEBUG] GET /wp-admin/css/sx.php
+[2024-05-20 08:09:43 +0000] [8351] [DEBUG] GET /wp-admin/network/sx.php
+[2024-05-20 08:09:43 +0000] [8349] [DEBUG] GET /wp-includes/block-supports/sx.php
+[2024-05-20 08:09:43 +0000] [8350] [DEBUG] GET /wp-includes/IXR/sx.php
+[2024-05-20 08:09:44 +0000] [8351] [DEBUG] GET /.well-known/sx.php
+[2024-05-20 08:09:44 +0000] [8349] [DEBUG] GET /wp-includes/js/tinymce/skins/lightgray/fonts/sx.php
+[2024-05-20 08:09:44 +0000] [8350] [DEBUG] GET /wp-content/sx.php
+[2024-05-20 08:09:44 +0000] [8351] [DEBUG] GET /wp-content/plugins/elementor/sx.php
+[2024-05-20 08:09:45 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/sx.php
+[2024-05-20 08:09:45 +0000] [8349] [DEBUG] GET /wp-includes/js/jcrop/sx.php
+[2024-05-20 08:09:45 +0000] [8351] [DEBUG] GET /wp-includes/rest-api/sx.php
+[2024-05-20 08:09:46 +0000] [8350] [DEBUG] GET /wp-admin/images/sx.php
+[2024-05-20 08:09:46 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/blue/blue.php
+[2024-05-20 08:09:46 +0000] [8351] [DEBUG] GET /chosen
+[2024-05-20 08:09:46 +0000] [8350] [DEBUG] GET /wp-content/plugins/fix/up.php
+[2024-05-20 08:09:47 +0000] [8349] [DEBUG] GET /install.php
+[2024-05-20 08:09:47 +0000] [8351] [DEBUG] GET /wp-includes/images/include.php
+[2024-05-20 08:09:47 +0000] [8351] [DEBUG] GET /gel4y.php
+[2024-05-20 08:09:48 +0000] [8349] [DEBUG] GET /comfunctions.php
+[2024-05-20 08:09:48 +0000] [8350] [DEBUG] GET /wp-content/plugins/core-plugin/include.php
+[2024-05-20 08:09:48 +0000] [8349] [DEBUG] GET /wp-content/themes/wp-classic/inc/index.php
+[2024-05-20 08:09:48 +0000] [8350] [DEBUG] GET /assets/images/1p.php
+[2024-05-20 08:09:49 +0000] [8351] [DEBUG] GET /class.api.php
+[2024-05-20 08:09:49 +0000] [8350] [DEBUG] GET /plugin.php
+[2024-05-20 08:09:49 +0000] [8349] [DEBUG] GET /wp-mail.php
+[2024-05-20 08:09:50 +0000] [8351] [DEBUG] GET /cong.php
+[2024-05-20 08:09:50 +0000] [8349] [DEBUG] GET /wp-content/index.php
+[2024-05-20 08:09:50 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/xmrlpc.php
+[2024-05-20 08:09:50 +0000] [8351] [DEBUG] GET /wp-configs.php
+[2024-05-20 08:09:51 +0000] [8349] [DEBUG] GET /mah.php
+[2024-05-20 08:09:51 +0000] [8350] [DEBUG] GET /defaults.php
+[2024-05-20 08:09:51 +0000] [8351] [DEBUG] GET /wp-content/themes/sketch/404.php
+[2024-05-20 08:09:52 +0000] [8350] [DEBUG] GET /input.php
+[2024-05-20 08:09:52 +0000] [8349] [DEBUG] GET /admin-ajax.php
+[2024-05-20 08:09:52 +0000] [8351] [DEBUG] GET /0z.php
+[2024-05-20 08:09:52 +0000] [8350] [DEBUG] GET /media.php
+[2024-05-20 08:09:53 +0000] [8349] [DEBUG] GET /chosen.php
+[2024-05-20 08:09:53 +0000] [8351] [DEBUG] GET /wp-includes/fonts/wp-login.php
+[2024-05-20 08:09:53 +0000] [8350] [DEBUG] GET /wp-admin/users.php
+[2024-05-20 08:09:54 +0000] [8349] [DEBUG] GET /wp-content/uploads/cache.php
+[2024-05-20 08:09:54 +0000] [8351] [DEBUG] GET /.well-known/pki-validation/file.php
+[2024-05-20 08:09:54 +0000] [8350] [DEBUG] GET /.wp-cli/wp-login.php
+[2024-05-20 08:09:54 +0000] [8351] [DEBUG] GET /authorize.php
+[2024-05-20 08:09:55 +0000] [8349] [DEBUG] GET /wp-admin/css/colors/blue/CasperExV1.php
+[2024-05-20 08:09:55 +0000] [8350] [DEBUG] GET /wp-admin/includes/users.php
+[2024-05-20 08:09:55 +0000] [8351] [DEBUG] GET /wp-content/plugins/revslider/includes/external/page/index.php
+[2024-05-20 08:09:55 +0000] [8349] [DEBUG] GET /wp.php
+[2024-05-20 08:09:56 +0000] [8350] [DEBUG] GET /wp-content/plugins/WordPressCore/include.php
+[2024-05-20 08:09:56 +0000] [8351] [DEBUG] GET /wp-2019.php
+[2024-05-20 08:09:56 +0000] [8349] [DEBUG] GET /upload.php
+[2024-05-20 08:09:57 +0000] [8350] [DEBUG] GET /themes.php
+[2024-05-20 08:09:57 +0000] [8351] [DEBUG] GET /wp-admin/network/index.php
+[2024-05-20 08:09:57 +0000] [8349] [DEBUG] GET /wp-content/plugins/WordPressCore/blkfqnikz.php
+[2024-05-20 08:09:57 +0000] [8350] [DEBUG] GET /wp/wp-admin/includes/class-wp-page-mvb2yr.php
+[2024-05-20 08:09:58 +0000] [8351] [DEBUG] GET /content.php
+[2024-05-20 08:09:58 +0000] [8349] [DEBUG] GET /st.php
+[2024-05-20 08:09:58 +0000] [8350] [DEBUG] GET /wp-includes/images/smilies/about.php
+[2024-05-20 08:09:58 +0000] [8349] [DEBUG] GET /simple.php
+[2024-05-20 08:09:59 +0000] [8351] [DEBUG] GET /function.php
+[2024-05-20 08:09:59 +0000] [8350] [DEBUG] GET /ynz.PhP7
+[2024-05-20 08:09:59 +0000] [8349] [DEBUG] GET /wp-content/style-css.php
+[2024-05-20 08:10:00 +0000] [8351] [DEBUG] GET /wp-includes/IXR/wp-login.php
+[2024-05-20 08:10:00 +0000] [8350] [DEBUG] GET /.well-known/acme-challenge/about.php
+[2024-05-20 08:10:00 +0000] [8349] [DEBUG] GET /wordpress/wp-includes/IXR/allez.php
+[2024-05-20 08:10:00 +0000] [8351] [DEBUG] GET /rendixd.php
+[2024-05-20 08:10:01 +0000] [8350] [DEBUG] GET /wp-admin/css/admin.php
+[2024-05-20 08:10:01 +0000] [8349] [DEBUG] GET /filefuns.php
+[2024-05-20 08:10:01 +0000] [8351] [DEBUG] GET /options.php
+[2024-05-20 08:10:01 +0000] [8349] [DEBUG] GET /wp-includes/js/tinymce/skins/lightgray/img/index.php
+[2024-05-20 08:10:02 +0000] [8350] [DEBUG] GET /edit.php
+[2024-05-20 08:10:02 +0000] [8351] [DEBUG] GET /user.php
+[2024-05-20 08:10:02 +0000] [8349] [DEBUG] GET /worm0.PhP7
+[2024-05-20 08:10:03 +0000] [8350] [DEBUG] GET /wp-includes/js/tinymce/skins/wordpress/images/index.php
+[2024-05-20 08:10:03 +0000] [8351] [DEBUG] GET /.well-known//.well-known/owlmailer.php
+[2024-05-20 08:10:03 +0000] [8349] [DEBUG] GET /wp-content/uploads/cong.php
+[2024-05-20 08:10:03 +0000] [8350] [DEBUG] GET /01.php
+[2024-05-20 08:10:04 +0000] [8351] [DEBUG] GET /wp-content/uploads/wp-login.php.suspected
+[2024-05-20 08:10:04 +0000] [8349] [DEBUG] GET /wp-includes/rest-api/endpoints/html.php
+[2024-05-20 08:10:04 +0000] [8350] [DEBUG] GET /wp-admin/js/widgets/cong.php
+[2024-05-20 08:10:04 +0000] [8351] [DEBUG] GET /doc.php
+[2024-05-20 08:10:05 +0000] [8349] [DEBUG] GET /ws.php
+[2024-05-20 08:10:05 +0000] [8350] [DEBUG] GET /link.php
+[2024-05-20 08:10:05 +0000] [8349] [DEBUG] GET /autoload_classmap.php
+[2024-05-20 08:10:06 +0000] [8350] [DEBUG] GET /wp-admin/js/privacy-tools.min.php
+[2024-05-20 08:10:06 +0000] [8351] [DEBUG] GET /wp-includes/pomo/wp-login.php
+[2024-05-20 08:10:06 +0000] [8349] [DEBUG] GET /db.php
+[2024-05-20 08:10:06 +0000] [8350] [DEBUG] GET /wp-content/uploads/error_log.php
+[2024-05-20 08:10:07 +0000] [8351] [DEBUG] GET /google.php
+[2024-05-20 08:10:07 +0000] [8349] [DEBUG] GET /wp-includes/sts.php
+[2024-05-20 08:10:07 +0000] [8350] [DEBUG] GET /wp-includes/pomo/fgertreyersd.php.suspected
+[2024-05-20 08:10:07 +0000] [8351] [DEBUG] GET /wp-includes/Requests/dropdown.php
+[2024-05-20 08:10:08 +0000] [8349] [DEBUG] GET /wp-content/install.php
+[2024-05-20 08:10:08 +0000] [8350] [DEBUG] GET /.well-known/admin.php
+[2024-05-20 08:10:08 +0000] [8351] [DEBUG] GET /revision.php
+[2024-05-20 08:10:08 +0000] [8349] [DEBUG] GET /css/sgd.php
+[2024-05-20 08:10:09 +0000] [8350] [DEBUG] GET /wp-content/plugins/index.php
+[2024-05-20 08:14:15 +0000] [8350] [DEBUG] GET /
+[2024-05-20 08:14:16 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-20 08:14:16 +0000] [8349] [DEBUG] GET /favicon.ico
+[2024-05-20 08:14:17 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-20 09:05:02 +0000] [8351] [DEBUG] GET /robots.txt
+[2024-05-20 09:05:02 +0000] [8349] [DEBUG] GET /robots.txt
+[2024-05-20 09:05:03 +0000] [8350] [DEBUG] GET /
+[2024-05-20 09:05:03 +0000] [8351] [DEBUG] GET /
+[2024-05-20 09:51:47 +0000] [8351] [DEBUG] GET /
+[2024-05-20 10:11:57 +0000] [8350] [DEBUG] GET /favicon.ico
+[2024-05-20 10:11:58 +0000] [8351] [DEBUG] GET /robots.txt
+[2024-05-20 10:11:59 +0000] [8349] [DEBUG] GET /sitemap.xml
+[2024-05-20 10:14:24 +0000] [8349] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-20 10:41:34 +0000] [8351] [DEBUG] GET /
+[2024-05-20 10:43:21 +0000] [8351] [DEBUG] GET //.env
+[2024-05-20 10:50:22 +0000] [8351] [DEBUG] GET /actuator/gateway/routes
+[2024-05-20 11:23:54 +0000] [8351] [DEBUG] GET /.env
+[2024-05-20 11:53:09 +0000] [8350] [DEBUG] GET /
+[2024-05-20 11:53:09 +0000] [8351] [DEBUG] GET /favicon.ico
+[2024-05-20 12:36:24 +0000] [8349] [DEBUG] GET /
+[2024-05-20 14:06:33 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-20 16:54:40 +0000] [8351] [DEBUG] GET /wp-login.php
+[2024-05-20 16:57:02 +0000] [8351] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-20 17:11:37 +0000] [8350] [DEBUG] GET /
+[2024-05-20 17:11:38 +0000] [8351] [DEBUG] GET //cjfuns.php
+[2024-05-20 17:11:38 +0000] [8350] [DEBUG] GET //wp-head.php
+[2024-05-20 17:11:39 +0000] [8349] [DEBUG] GET //class.api.php
+[2024-05-20 17:11:39 +0000] [8350] [DEBUG] GET //st.php
+[2024-05-20 17:11:40 +0000] [8351] [DEBUG] GET //my1.php
+[2024-05-20 17:27:24 +0000] [8351] [DEBUG] GET /
+[2024-05-20 17:27:49 +0000] [8350] [DEBUG] GET /
+[2024-05-20 17:47:24 +0000] [8346] [INFO] Handling signal: term
+[2024-05-20 17:47:24 +0000] [8349] [INFO] Worker exiting (pid: 8349)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f56120>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f85d90>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f86750>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f87b00>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f24fe0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f855e0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f864b0>
+[2024-05-20 17:47:24 +0000] [8350] [INFO] Worker exiting (pid: 8350)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e28a6660>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f258e0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f56060>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f43560>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f43800>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f571a0>
+[2024-05-20 17:47:24 +0000] [8351] [INFO] Worker exiting (pid: 8351)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e28dac90>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f2b5c0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f54d40>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f3a750>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f54110>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f2a6f0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f6f110>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f420c0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f43470>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f3a420>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x7120e1f40140>
+[2024-05-20 17:47:25 +0000] [8346] [INFO] Shutting down: Master
+[2024-05-20 17:47:31 +0000] [53869] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luminyx/DeztinysDessertz
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: “DeztinysDessertz”
+  default_proc_name: dd_backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x70a216a1fc40>
+  on_reload: <function OnReload.on_reload at 0x70a216a1fd80>
+  when_ready: <function WhenReady.when_ready at 0x70a216a1fec0>
+  pre_fork: <function Prefork.pre_fork at 0x70a216a3c0e0>
+  post_fork: <function Postfork.post_fork at 0x70a216a3c220>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x70a216a3c360>
+  worker_int: <function WorkerInt.worker_int at 0x70a216a3c4a0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x70a216a3c5e0>
+  pre_exec: <function PreExec.pre_exec at 0x70a216a3c720>
+  pre_request: <function PreRequest.pre_request at 0x70a216a3c860>
+  post_request: <function PostRequest.post_request at 0x70a216a3c900>
+  child_exit: <function ChildExit.child_exit at 0x70a216a3ca40>
+  worker_exit: <function WorkerExit.worker_exit at 0x70a216a3cb80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x70a216a3ccc0>
+  on_exit: <function OnExit.on_exit at 0x70a216a3ce00>
+  ssl_context: <function NewSSLContext.ssl_context at 0x70a216a3cfe0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-05-20 17:47:31 +0000] [53869] [INFO] Starting gunicorn 22.0.0
+[2024-05-20 17:47:31 +0000] [53869] [DEBUG] Arbiter booted
+[2024-05-20 17:47:31 +0000] [53869] [INFO] Listening at: unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock (53869)
+[2024-05-20 17:47:31 +0000] [53869] [INFO] Using worker: sync
+[2024-05-20 17:47:31 +0000] [53872] [INFO] Booting worker with pid: 53872
+[2024-05-20 17:47:32 +0000] [53873] [INFO] Booting worker with pid: 53873
+[2024-05-20 17:47:32 +0000] [53874] [INFO] Booting worker with pid: 53874
+[2024-05-20 17:47:32 +0000] [53869] [DEBUG] 3 workers
+[2024-05-20 17:47:39 +0000] [53873] [DEBUG] GET /
+[2024-05-20 17:47:45 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 17:47:47 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 17:49:17 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 17:49:51 +0000] [53872] [DEBUG] GET /menu/
+[2024-05-20 17:49:52 +0000] [53873] [DEBUG] GET /favicon.ico
+[2024-05-20 17:50:06 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 17:53:12 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 17:53:13 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 17:54:09 +0000] [53874] [DEBUG] GET /
+[2024-05-20 17:54:23 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 17:54:27 +0000] [53872] [DEBUG] GET /menu/
+[2024-05-20 17:54:28 +0000] [53874] [DEBUG] GET /favicon.ico
+[2024-05-20 17:55:00 +0000] [53874] [DEBUG] GET /
+[2024-05-20 17:55:02 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 17:56:29 +0000] [53872] [DEBUG] GET /menu/
+[2024-05-20 17:56:34 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 17:56:35 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 18:06:39 +0000] [53872] [DEBUG] GET /wp-login.php
+[2024-05-20 18:06:40 +0000] [53873] [DEBUG] GET /
+[2024-05-20 18:06:42 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 18:07:06 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 18:07:58 +0000] [53873] [DEBUG] GET /
+[2024-05-20 18:08:02 +0000] [53874] [DEBUG] GET /
+[2024-05-20 18:08:04 +0000] [53872] [DEBUG] GET /
+[2024-05-20 18:17:22 +0000] [53872] [DEBUG] GET /
+[2024-05-20 18:17:23 +0000] [53873] [DEBUG] GET /favicon.ico
+[2024-05-20 18:17:41 +0000] [53874] [DEBUG] GET /
+[2024-05-20 18:17:44 +0000] [53872] [DEBUG] GET /menu/
+[2024-05-20 18:17:50 +0000] [53873] [DEBUG] POST /add_to_cart/
+[2024-05-20 18:17:53 +0000] [53874] [DEBUG] GET /cart/
+[2024-05-20 18:17:59 +0000] [53873] [DEBUG] GET /
+[2024-05-20 18:18:02 +0000] [53872] [DEBUG] GET /catering/
+[2024-05-20 18:19:50 +0000] [53872] [DEBUG] GET /menu/
+[2024-05-20 18:21:21 +0000] [53872] [DEBUG] GET /cart/
+[2024-05-20 18:21:35 +0000] [53874] [DEBUG] GET /cart/
+[2024-05-20 18:21:37 +0000] [53873] [DEBUG] GET /cart/
+[2024-05-20 18:21:38 +0000] [53873] [DEBUG] GET /favicon.ico
+[2024-05-20 18:21:45 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 18:21:46 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 18:22:11 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 18:22:12 +0000] [53874] [DEBUG] GET /catering/
+[2024-05-20 18:22:14 +0000] [53872] [DEBUG] GET /
+[2024-05-20 18:22:16 +0000] [53872] [DEBUG] GET /about/
+[2024-05-20 18:22:17 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 18:22:31 +0000] [53872] [DEBUG] GET /
+[2024-05-20 18:22:31 +0000] [53874] [DEBUG] GET /favicon.ico
+[2024-05-20 18:22:32 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 18:22:43 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 18:23:25 +0000] [53873] [DEBUG] GET /about/
+[2024-05-20 18:26:00 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 18:26:02 +0000] [53873] [DEBUG] GET /catering/
+[2024-05-20 18:26:38 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 18:26:56 +0000] [53873] [DEBUG] GET /catering/
+[2024-05-20 18:26:58 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 18:26:59 +0000] [53872] [DEBUG] GET /
+[2024-05-20 18:27:02 +0000] [53873] [DEBUG] GET /about/
+[2024-05-20 18:27:05 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 18:27:22 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 18:29:55 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 18:29:55 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 18:30:34 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 18:31:25 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 18:31:25 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 18:31:31 +0000] [53874] [DEBUG] GET /menu/
+[2024-05-20 18:47:21 +0000] [53874] [DEBUG] GET /catering/
+[2024-05-20 19:03:58 +0000] [53873] [DEBUG] GET /.env
+[2024-05-20 19:05:11 +0000] [53872] [DEBUG] GET /.env
+[2024-05-20 19:17:57 +0000] [53872] [DEBUG] GET /cart/
+[2024-05-20 19:18:14 +0000] [53874] [DEBUG] GET /cart/
+[2024-05-20 19:18:14 +0000] [53873] [DEBUG] GET /favicon.ico
+[2024-05-20 19:19:19 +0000] [53873] [DEBUG] GET /menu/
+[2024-05-20 19:19:20 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 19:19:41 +0000] [53872] [DEBUG] GET /catering/
+[2024-05-20 19:21:26 +0000] [53873] [DEBUG] GET //
+[2024-05-20 19:24:47 +0000] [53874] [DEBUG] GET /catering/
+[2024-05-20 19:26:18 +0000] [53874] [DEBUG] GET /catering/
+[2024-05-20 19:26:19 +0000] [53873] [DEBUG] GET /favicon.ico
+[2024-05-20 19:27:41 +0000] [53873] [DEBUG] GET /catering/
+[2024-05-20 19:27:42 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 19:28:06 +0000] [53874] [DEBUG] GET /catering/
+[2024-05-20 19:28:07 +0000] [53873] [DEBUG] GET /favicon.ico
+[2024-05-20 19:30:02 +0000] [53872] [DEBUG] GET /
+[2024-05-20 19:30:21 +0000] [53874] [DEBUG] GET /
+[2024-05-20 19:30:22 +0000] [53873] [DEBUG] GET /about/
+[2024-05-20 19:30:22 +0000] [53873] [DEBUG] GET /catering/
+[2024-05-20 19:30:23 +0000] [53874] [DEBUG] GET /favicon.ico
+[2024-05-20 19:31:17 +0000] [53872] [DEBUG] GET /catering/
+[2024-05-20 19:31:17 +0000] [53873] [DEBUG] GET /favicon.ico
+[2024-05-20 19:34:14 +0000] [53874] [DEBUG] GET /
+[2024-05-20 19:34:15 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 19:34:15 +0000] [53873] [DEBUG] GET /catering/
+[2024-05-20 19:35:03 +0000] [53873] [DEBUG] GET /cart/
+[2024-05-20 19:35:07 +0000] [53874] [DEBUG] GET /
+[2024-05-20 19:35:08 +0000] [53872] [DEBUG] GET /menu/
+[2024-05-20 19:35:11 +0000] [53873] [DEBUG] POST /add_to_cart/
+[2024-05-20 19:35:15 +0000] [53873] [DEBUG] GET /cart/
+[2024-05-20 19:35:49 +0000] [53873] [DEBUG] GET /catering/
+[2024-05-20 19:37:42 +0000] [53872] [DEBUG] GET /catering/
+[2024-05-20 19:38:01 +0000] [53874] [DEBUG] GET /cart/
+[2024-05-20 19:38:32 +0000] [53873] [DEBUG] GET /catering/
+[2024-05-20 19:42:36 +0000] [53874] [DEBUG] GET /catering/
+[2024-05-20 19:42:37 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 19:43:37 +0000] [53874] [DEBUG] GET /catering/
+[2024-05-20 19:43:37 +0000] [53873] [DEBUG] GET /favicon.ico
+[2024-05-20 19:44:28 +0000] [53873] [DEBUG] GET /catering/
+[2024-05-20 19:44:29 +0000] [53872] [DEBUG] GET /favicon.ico
+[2024-05-20 19:45:01 +0000] [53874] [DEBUG] GET /catering/
+[2024-05-20 19:45:01 +0000] [53874] [DEBUG] GET /favicon.ico
+[2024-05-20 19:52:01 +0000] [53869] [INFO] Handling signal: term
+[2024-05-20 19:52:01 +0000] [53872] [INFO] Worker exiting (pid: 53872)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a214bde8d0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f2c5f0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a215678fe0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f2dfa0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f48fe0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f8eb10>
+[2024-05-20 19:52:01 +0000] [53873] [INFO] Worker exiting (pid: 53873)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f03050>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f295e0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f02fc0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f29580>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f2b710>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f7cbf0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f7dac0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f7e7b0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f4fe00>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f99370>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f99f10>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f9adb0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f7c740>
+[2024-05-20 19:52:01 +0000] [53874] [INFO] Worker exiting (pid: 53874)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a214baa5a0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f2a630>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f2af30>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f2bc20>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f481a0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f4ad20>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f07770>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f71bb0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f726c0>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f73500>
+<mysql.connector.connection_cext.CMySQLConnection object at 0x70a213f90140>
+[2024-05-20 19:52:01 +0000] [53869] [INFO] Shutting down: Master
+[2024-05-20 19:52:11 +0000] [54488] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luminyx/DeztinysDessertz
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: “DeztinysDessertz”
+  default_proc_name: dd_backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x79c7ac0c7c40>
+  on_reload: <function OnReload.on_reload at 0x79c7ac0c7d80>
+  when_ready: <function WhenReady.when_ready at 0x79c7ac0c7ec0>
+  pre_fork: <function Prefork.pre_fork at 0x79c7ac0e40e0>
+  post_fork: <function Postfork.post_fork at 0x79c7ac0e4220>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x79c7ac0e4360>
+  worker_int: <function WorkerInt.worker_int at 0x79c7ac0e44a0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x79c7ac0e45e0>
+  pre_exec: <function PreExec.pre_exec at 0x79c7ac0e4720>
+  pre_request: <function PreRequest.pre_request at 0x79c7ac0e4860>
+  post_request: <function PostRequest.post_request at 0x79c7ac0e4900>
+  child_exit: <function ChildExit.child_exit at 0x79c7ac0e4a40>
+  worker_exit: <function WorkerExit.worker_exit at 0x79c7ac0e4b80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x79c7ac0e4cc0>
+  on_exit: <function OnExit.on_exit at 0x79c7ac0e4e00>
+  ssl_context: <function NewSSLContext.ssl_context at 0x79c7ac0e4fe0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-05-20 19:52:11 +0000] [54488] [INFO] Starting gunicorn 22.0.0
+[2024-05-20 19:52:11 +0000] [54488] [DEBUG] Arbiter booted
+[2024-05-20 19:52:11 +0000] [54488] [INFO] Listening at: unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock (54488)
+[2024-05-20 19:52:11 +0000] [54488] [INFO] Using worker: sync
+[2024-05-20 19:52:11 +0000] [54491] [INFO] Booting worker with pid: 54491
+[2024-05-20 19:52:11 +0000] [54492] [INFO] Booting worker with pid: 54492
+[2024-05-20 19:52:11 +0000] [54493] [INFO] Booting worker with pid: 54493
+[2024-05-20 19:52:11 +0000] [54488] [DEBUG] 3 workers
+[2024-05-20 19:52:32 +0000] [54491] [DEBUG] GET /about/
+[2024-05-20 19:53:19 +0000] [54488] [INFO] Handling signal: term
+[2024-05-20 19:53:19 +0000] [54493] [INFO] Worker exiting (pid: 54493)
+[2024-05-20 19:53:19 +0000] [54492] [INFO] Worker exiting (pid: 54492)
+[2024-05-20 19:53:19 +0000] [54491] [INFO] Worker exiting (pid: 54491)
+[2024-05-20 19:53:20 +0000] [54488] [INFO] Shutting down: Master
+[2024-05-20 19:53:25 +0000] [54526] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/luminyx/DeztinysDessertz
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: “DeztinysDessertz”
+  default_proc_name: dd_backend.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x735fb9697c40>
+  on_reload: <function OnReload.on_reload at 0x735fb9697d80>
+  when_ready: <function WhenReady.when_ready at 0x735fb9697ec0>
+  pre_fork: <function Prefork.pre_fork at 0x735fb96b40e0>
+  post_fork: <function Postfork.post_fork at 0x735fb96b4220>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x735fb96b4360>
+  worker_int: <function WorkerInt.worker_int at 0x735fb96b44a0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x735fb96b45e0>
+  pre_exec: <function PreExec.pre_exec at 0x735fb96b4720>
+  pre_request: <function PreRequest.pre_request at 0x735fb96b4860>
+  post_request: <function PostRequest.post_request at 0x735fb96b4900>
+  child_exit: <function ChildExit.child_exit at 0x735fb96b4a40>
+  worker_exit: <function WorkerExit.worker_exit at 0x735fb96b4b80>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x735fb96b4cc0>
+  on_exit: <function OnExit.on_exit at 0x735fb96b4e00>
+  ssl_context: <function NewSSLContext.ssl_context at 0x735fb96b4fe0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  header_map: drop
+  tolerate_dangerous_framing: False
+[2024-05-20 19:53:25 +0000] [54526] [INFO] Starting gunicorn 22.0.0
+[2024-05-20 19:53:25 +0000] [54526] [DEBUG] Arbiter booted
+[2024-05-20 19:53:25 +0000] [54526] [INFO] Listening at: unix:/home/luminyx/DeztinysDessertz/run/gunicorn.sock (54526)
+[2024-05-20 19:53:25 +0000] [54526] [INFO] Using worker: sync
+[2024-05-20 19:53:25 +0000] [54530] [INFO] Booting worker with pid: 54530
+[2024-05-20 19:53:25 +0000] [54531] [INFO] Booting worker with pid: 54531
+[2024-05-20 19:53:25 +0000] [54532] [INFO] Booting worker with pid: 54532
+[2024-05-20 19:53:25 +0000] [54526] [DEBUG] 3 workers
+[2024-05-20 19:53:32 +0000] [54532] [DEBUG] GET /about/
+[2024-05-20 19:53:33 +0000] [54531] [DEBUG] GET /favicon.ico
+[2024-05-20 20:07:54 +0000] [54531] [DEBUG] GET /menu/
+[2024-05-20 20:08:05 +0000] [54530] [DEBUG] GET /menu/
+[2024-05-20 20:08:06 +0000] [54531] [DEBUG] GET /favicon.ico
+[2024-05-20 20:08:15 +0000] [54532] [DEBUG] GET /catering/
+[2024-05-20 20:08:51 +0000] [54530] [DEBUG] GET /catering/
+[2024-05-20 20:08:51 +0000] [54531] [DEBUG] GET /favicon.ico
+[2024-05-20 20:09:08 +0000] [54532] [DEBUG] GET /catering/
+[2024-05-20 20:09:09 +0000] [54530] [DEBUG] GET /favicon.ico
+[2024-05-20 20:23:49 +0000] [54530] [DEBUG] GET /catering/
+[2024-05-20 20:23:50 +0000] [54531] [DEBUG] GET /favicon.ico
+[2024-05-20 20:25:46 +0000] [54532] [DEBUG] GET /catering/
+[2024-05-20 20:25:47 +0000] [54530] [DEBUG] GET /favicon.ico
+[2024-05-20 20:25:49 +0000] [54531] [DEBUG] GET /menu/
+[2024-05-20 20:25:51 +0000] [54531] [DEBUG] GET /
+[2024-05-20 20:25:52 +0000] [54532] [DEBUG] GET /menu/
+[2024-05-20 20:35:18 +0000] [54532] [DEBUG] GET /wp-login.php
+[2024-05-20 20:54:39 +0000] [54531] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-20 22:01:57 +0000] [54531] [DEBUG] GET /menu/
+[2024-05-20 22:01:57 +0000] [54530] [DEBUG] GET /favicon.ico
+[2024-05-20 22:01:57 +0000] [54530] [DEBUG] Ignoring EPIPE
+[2024-05-20 22:02:00 +0000] [54532] [DEBUG] GET /about/
+[2024-05-20 22:04:05 +0000] [54530] [DEBUG] GET /about/
+[2024-05-20 22:04:06 +0000] [54532] [DEBUG] GET /favicon.ico
+[2024-05-20 22:09:33 +0000] [54531] [DEBUG] GET /about/
+[2024-05-20 22:12:29 +0000] [54532] [DEBUG] GET /about/
+[2024-05-20 22:12:38 +0000] [54531] [DEBUG] GET /
+[2024-05-20 22:12:41 +0000] [54532] [DEBUG] GET /catering/
+[2024-05-20 22:12:46 +0000] [54530] [DEBUG] GET /about/
+[2024-05-20 22:12:47 +0000] [54531] [DEBUG] GET /favicon.ico
+[2024-05-20 22:12:53 +0000] [54532] [DEBUG] GET /about/
+[2024-05-20 22:14:35 +0000] [54531] [DEBUG] GET /about/
+[2024-05-20 22:15:15 +0000] [54530] [DEBUG] GET /about/
+[2024-05-20 22:21:15 +0000] [54530] [DEBUG] GET /about/
+[2024-05-20 22:21:17 +0000] [54531] [DEBUG] GET /favicon.ico
+[2024-05-20 22:21:51 +0000] [54532] [DEBUG] GET /about/
+[2024-05-20 22:21:52 +0000] [54530] [DEBUG] GET /favicon.ico
+[2024-05-20 22:23:44 +0000] [54530] [DEBUG] GET /about/
+[2024-05-20 22:23:56 +0000] [54531] [DEBUG] GET /about/
+[2024-05-20 22:23:57 +0000] [54530] [DEBUG] GET /favicon.ico
+[2024-05-20 22:37:44 +0000] [54530] [DEBUG] GET /
+[2024-05-20 22:38:02 +0000] [54532] [DEBUG] GET /about/
+[2024-05-20 22:38:06 +0000] [54531] [DEBUG] GET /favicon.ico
+[2024-05-20 22:38:39 +0000] [54531] [DEBUG] GET /menu/
+[2024-05-21 00:10:58 +0000] [54531] [DEBUG] GET /favicon.ico
+[2024-05-21 00:10:58 +0000] [54531] [DEBUG] Ignoring EPIPE
+[2024-05-21 02:05:50 +0000] [54531] [DEBUG] GET /
+[2024-05-21 03:38:05 +0000] [54532] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-05-21 04:55:46 +0000] [54530] [DEBUG] GET /

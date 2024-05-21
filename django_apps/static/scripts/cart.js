@@ -53,6 +53,20 @@ function removeFromCart(target)
 
 }
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phoneNumberRegex = /^\d{3}-\d{3}-\d{4}$/;
+
+function isValidEmail(email)
+{
+    return emailRegex.test(email);
+}
+
+function isValidPhone(phone)
+{
+    return phoneNumberRegex.test(phone) || phone == '';
+}
+
+
 function submitOrder()
 {   
     if(item_count == 0)
@@ -73,6 +87,21 @@ function submitOrder()
             requiredFilled = false;
             detail.style.borderColor = 'red';
         }
+        else if(detail.id == 'email' && !isValidEmail(detail.value.trim()))
+        {
+            requiedFilled = false;
+            detail.style.borderColor = 'red';
+            window.alert('Invalid email format');
+            return;
+        }
+        else if(detail.id == 'phone' && !isValidPhone)
+        {
+            requiredFilled = false;
+            detail.style.borderColor = 'red';
+            window.alert('Invalid phone format');
+            return;
+        }
+
         else
         {
             detail.style.borderColor = '';
